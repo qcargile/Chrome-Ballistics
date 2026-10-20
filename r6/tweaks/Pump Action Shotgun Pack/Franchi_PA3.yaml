@@ -1,0 +1,211 @@
+Items.Franchi_PA3:
+  $base: Items.Preset_Tactician_Default
+  tags:
+    - !append ForceDismember
+    - !append DriverCombatRangedWeapon
+    - !append DriverCombatBikeWeapon
+    - !append OneHandedRangedWeapon
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.pa3stats_damage
+    - !append-once Items.pa3stats_rof
+    - !append-once Items.pa3stats_spread
+    - !append-once Items.pa3stats_mag
+    - !append-once Items.pa3stats_pierce
+    - !append-once Items.pa3stats_armor
+    - !append-once Items.pa3stats_crit
+    - !append-once Items.pa3stats_bleeding
+    - !append-once Items.pa3stats_burning
+    - !append-once Items.pa3stats_electrocute
+    - !append-once Items.pa3stats_poison
+    - !append-once Items.pa3stats_stun
+    - !append-once Items.pa3stats_headshotmult
+    - !append-once Items.pa3stats_effectiverange
+    - !append-once Items.pa3stats_maxrange
+    - !append-once Items.pa3stats_aimoffset
+  statModifierGroups: 
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  ammo: Ammo.ShotgunAmmo
+  appearanceResourceName: pa3_app
+  blueprint: Items.Base_Power_Shotgun_Blueprint
+  fxPackage: WeaponFxPackage.PowerLargeCaliber
+  hudIcon:
+    atlasResourcePath: pa3\icon\pa3_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: pa3\icon\pa3.inkatlas
+    atlasPartName: slot_01
+  quality: Quality.Common
+  displayName: pa3_name
+  localizedDescription: pa3_description
+  slotPartList:
+    - Items.Base_pa3_inline2
+    - Items.Base_pa3_inline4
+    - Items.Base_pa3_inline6
+    - Items.Base_pa3_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.RiflePossibleScopesList
+    - Items.UniversalShotgunSuppressorList
+  slotPartListPreset:
+    - Items.Preset_pa3_inline0
+    - Items.Preset_pa3_inline1
+    - Items.Preset_pa3_inline2
+    - Items.Preset_pa3_inline3
+  visualTags:
+    - Default
+    
+Items.Base_pa3_inline2:
+  $base: Items.Base_Tactician_inline2
+  itemPartList:
+    - Items.Base_pa3_inline3
+Items.Base_pa3_inline3:
+  $base: Items.Base_Tactician_inline3
+  item: Items.pa3_rcv_prt
+Items.pa3_rcv_prt:
+  $base: Items.w_shotgun_constitutional_tactician_rcv1
+  appearanceResourceName: pa3_rcv
+Items.Base_pa3_inline4:
+  $base: Items.Base_Tactician_inline4
+  itemPartList:
+    - Items.Base_pa3_inline5
+Items.Base_pa3_inline5:
+  $base: Items.Base_Tactician_inline5
+  item: Items.pa3_base_prt
+Items.pa3_base_prt:
+  $base: Items.w_shotgun_constitutional_tactician_base1
+  appearanceResourceName: pa3_base
+Items.Base_pa3_inline6:
+  $base: Items.Base_Tactician_inline6
+  itemPartList:
+    - Items.Base_pa3_inline7
+Items.Base_pa3_inline7:
+  $base: Items.Base_Tactician_inline7
+  item: Items.pa3_mag_std_prt
+Items.pa3_mag_std_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_std
+  appearanceResourceName: pa3_mag_std
+Items.Base_pa3_inline8:
+  $base: Items.Base_Tactician_inline8
+  itemPartList:
+    - Items.Base_pa3_inline9
+Items.Base_pa3_inline9:
+  $base: Items.Base_Tactician_inline9
+  item: Items.pa3_mag_stdr_prt
+Items.pa3_mag_stdr_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_stdr
+  appearanceResourceName: pa3_mag_stdr
+Items.Preset_pa3_inline0:
+  $base: Items.Preset_Tactician_Default_inline0
+  itemPartPreset: Items.pa3_rcv_prt
+Items.Preset_pa3_inline1:
+  $base: Items.Preset_Tactician_Default_inline1
+  itemPartPreset: Items.pa3_base_prt
+Items.Preset_pa3_inline2:
+  $base: Items.Preset_Tactician_Default_inline2
+  itemPartPreset: Items.pa3_mag_std_prt
+Items.Preset_pa3_inline3:
+  $base: Items.Preset_Tactician_Default_inline3
+  itemPartPreset: Items.pa3_mag_stdr_prt
+  
+Items.pa3stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.pa3stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.pa3stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -4
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.pa3stats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.pa3stats_crit:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Items.pa3stats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Items.pa3stats_poison:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.PoisonedApplicationRate
+  
+Items.pa3stats_electrocute:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.pa3stats_bleeding:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  
+Items.pa3stats_burning:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.pa3stats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.15
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+
+Items.pa3stats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.pa3stats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.pa3stats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.pa3stats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+Items.pa3stats_aimoffset:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.1
+  modifierType: Additive
+  statType: BaseStats.AimOffset
+  

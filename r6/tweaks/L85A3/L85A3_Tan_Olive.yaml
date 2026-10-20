@@ -1,0 +1,163 @@
+Items.L85A3_Tan_Olive:
+  $base: Items.Preset_Pulsar_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.l85tanolivestats_damage
+    - !append-once Items.l85tanolivestats_mag
+    - !append-once Items.l85tanolivestats_rof
+    - !append-once Items.l85tanolivestats_armor
+    - !append-once Items.l85tanolivestats_effectiverange
+    - !append-once Items.l85tanolivestats_maxrange
+    - !append-once Items.l85tanolivestats_recoil
+    - !append-once Items.l85tanolivestats_offset
+    - !append-once Items.l85tanolivestats_spread
+  statModifierGroups:
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  appearanceResourceName: l85tanolive_app
+  ammo: Ammo.RifleAmmo
+  audioName: wea_set_copperhead
+  quality: Quality.Epic
+  displayName: l85tanolive_name
+  localizedDescription: l85tanolive_description
+  itemType: ItemType.Wea_Rifle
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: l85tanolive\icon\l85tanolive_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: l85tanolive\icon\l85tanolive.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_l85tanolive_inline1
+    - Items.Base_l85tanolive_inline3
+    - Items.Base_l85tanolive_inline5
+    - Items.Base_l85tanolive_inline7
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.RiflePossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_l85tanolive_inline0
+    - Items.Preset_l85tanolive_inline1
+    - Items.Preset_l85tanolive_inline2
+    - Items.Preset_l85tanolive_inline3
+    
+Items.Base_l85tanolive_inline1:
+  $base: Items.Base_Pulsar_inline1
+  itemPartList:
+    - Items.Base_l85tanolive_inline2
+Items.Base_l85tanolive_inline2:
+  $base: Items.Base_Pulsar_inline2
+  item: Items.l85tanolive_rcv_prt
+Items.l85tanolive_rcv_prt:
+  $base: Items.w_submachinegun__darra_pulsar__rcv1
+  appearanceResourceName: l85tanolive_rcv
+Items.Base_l85tanolive_inline3:
+  $base: Items.Base_Pulsar_inline3
+  itemPartList:
+    - Items.Base_l85tanolive_inline4
+Items.Base_l85tanolive_inline4:
+  $base: Items.Base_Pulsar_inline4
+  item: Items.l85tanolive_base_prt
+Items.l85tanolive_base_prt:
+  $base: Items.w_submachinegun__darra_pulsar__base1
+  appearanceResourceName: l85tanolive_base
+Items.Base_l85tanolive_inline5:
+  $base: Items.Base_Pulsar_inline5
+  itemPartList:
+    - Items.Base_l85tanolive_inline6
+Items.Base_l85tanolive_inline6:
+  $base: Items.Base_Pulsar_inline6
+  item: Items.l85tanolive_mag_std_prt
+Items.l85tanolive_mag_std_prt:
+  $base: Items.w_submachinegun__darra_pulsar__mag_std
+  appearanceResourceName: l85tanolive_mag_std
+Items.Base_l85tanolive_inline7:
+  $base: Items.Base_Pulsar_inline7
+  itemPartList:
+    - Items.Base_l85tanolive_inline8
+Items.Base_l85tanolive_inline8:
+  $base: Items.Base_Pulsar_inline8
+  item: Items.l85tanolive_mag_stdr_prt
+Items.l85tanolive_mag_stdr_prt:
+  $base: Items.w_submachinegun__darra_pulsar__mag_stdr
+  appearanceResourceName: l85tanolive_mag_stdr
+Items.Preset_l85tanolive_inline0:
+  $base: Items.Preset_Pulsar_Default_inline0
+  itemPartPreset: Items.l85tanolive_rcv_prt
+Items.Preset_l85tanolive_inline1:
+  $base: Items.Preset_Pulsar_Default_inline1
+  itemPartPreset: Items.l85tanolive_base_prt
+Items.Preset_l85tanolive_inline2:
+  $base: Items.Preset_Pulsar_Default_inline2
+  itemPartPreset: Items.l85tanolive_mag_std_prt
+Items.Preset_l85tanolive_inline3:
+  $base: Items.Preset_Pulsar_Default_inline3
+  itemPartPreset: Items.l85tanolive_mag_stdr_prt
+
+Items.l85tanolivestats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 40
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.l85tanolivestats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.l85tanolivestats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.015
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.l85tanolivestats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+Items.l85tanolivestats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.l85tanolivestats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 40
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.l85tanolivestats_recoil:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.04
+  modifierType: Additive
+  statType: BaseStats.RecoilHoldDuration
+  
+Items.l85tanolivestats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.l85tanolivestats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.l85tanolivestats_offset:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.06
+  modifierType: Additive
+  statType: BaseStats.AimOffset
+  

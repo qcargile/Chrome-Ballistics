@@ -1,0 +1,118 @@
+Items.OSP_18:
+  $base: Items.Preset_Liberty_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.ospstats_damage
+    - !append-once Items.ospstats_rof
+    - !append-once Items.ospstats_mag
+    - !append-once Items.ospstats_armor
+  appearanceResourceName: osp_app
+  audioName: wea_set_unity
+  quality: Quality.Uncommon
+  displayName: osp_name
+  localizedDescription: osp_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: osp\icon\osp_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: osp\icon\osp.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_osp_inline2
+    - Items.Base_osp_inline4
+    - Items.Base_osp_inline6
+    - Items.Base_osp_inline8
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+  slotPartListPreset:
+    - Items.Preset_osp_inline0
+    - Items.Preset_osp_inline1
+    - Items.Preset_osp_inline2
+    - Items.Preset_osp_inline3
+  
+Items.Base_osp_inline2:
+  $base: Items.Base_Liberty_inline2
+  itemPartList:
+    - Items.Base_osp_inline3
+Items.Base_osp_inline3:
+  $base: Items.Base_Liberty_inline3
+  item: Items.osp_rcv_prt
+Items.osp_rcv_prt:
+  $base: Items.w_handgun__constitutional_liberty__rcv1
+  appearanceResourceName: osp_rcv
+#base
+Items.Base_osp_inline4:
+  $base: Items.Base_Liberty_inline4
+  itemPartList:
+    - Items.Base_osp_inline5
+Items.Base_osp_inline5:
+  $base: Items.Base_Liberty_inline5
+  item: Items.osp_base_prt
+Items.osp_base_prt:
+  $base: Items.w_handgun__constitutional_liberty__base1
+  appearanceResourceName: osp_base
+#mag
+Items.Base_osp_inline6:
+  $base: Items.Base_Liberty_inline6
+  itemPartList:
+    - Items.Base_osp_inline7
+Items.Base_osp_inline7:
+  $base: Items.Base_Liberty_inline7
+  item: Items.osp_mag_std_prt
+Items.osp_mag_std_prt:
+  $base: Items.w_handgun__constitutional_liberty__mag_std
+  appearanceResourceName: osp_mag_std
+#reload
+Items.Base_osp_inline8:
+  $base: Items.Base_Liberty_inline8
+  itemPartList:
+    - Items.Base_osp_inline9
+Items.Base_osp_inline9:
+  $base: Items.Base_Liberty_inline9
+  item: Items.osp_mag_stdr_prt
+Items.osp_mag_stdr_prt:
+  $base: Items.w_handgun__constitutional_liberty__mag_stdr
+  appearanceResourceName: osp_mag_stdr
+#preset
+Items.Preset_osp_inline0:
+  $base: Items.Preset_Liberty_Default_inline0
+  itemPartPreset: Items.osp_rcv_prt
+Items.Preset_osp_inline1:
+  $base: Items.Preset_Liberty_Default_inline1
+  itemPartPreset: Items.osp_base_prt
+Items.Preset_osp_inline2:
+  $base: Items.Preset_Liberty_Default_inline2
+  itemPartPreset: Items.osp_mag_std_prt
+Items.Preset_osp_inline3:
+  $base: Items.Preset_Liberty_Default_inline3
+  itemPartPreset: Items.osp_mag_stdr_prt
+  
+Items.ospstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 42
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.ospstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.15
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.ospstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -2
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.ospstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+

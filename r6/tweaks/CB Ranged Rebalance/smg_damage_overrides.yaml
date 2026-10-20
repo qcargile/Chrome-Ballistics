@@ -1,0 +1,55 @@
+# DS1 Pulsar / Buzzsaw
+Items.Base_Pulsar_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 135               # default value – 71
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# G-58 Dian / Yinglong
+Items.Base_Dian_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 126               # default value – 64
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Saratoga / Fenrir, Problem Solver
+Items.Base_Saratoga_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 132               # default value – 63
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Senkoh LX / Raiju
+Items.Base_Senkoh_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 114               # default value – 51
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# TKI-20 Shingen / Prototype: Shingen Mark V
+Items.Base_Shingen_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 150               # default value – 45
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Guillotine / x-MOD2
+Items.Base_Guillotine_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 138               # default value – 70
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Warden / Chesapeake, Pizdets
+Items.Base_Warden_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 168               # default value – 65
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Borg4a / (no special variants)
+Items.Base_Borg4a_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 108               # default value – 69
+  modifierType: Additive
+  statType: BaseStats.DPS

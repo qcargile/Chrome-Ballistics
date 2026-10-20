@@ -1,0 +1,54 @@
+Items.Hatchet_Riddle_Of_Steel:
+  $base: Items.Preset_Tomahawk_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.riddlestats_recovery
+    - !append-once Items.riddlestats_damage
+  appearanceResourceName: riddle_app
+  quality: Quality.Uncommon
+  displayName: riddle_name
+  hudIcon:
+    atlasResourcePath: riddle\icon\riddle_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: riddle\icon\riddle.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_riddle_inline0
+    - Items.Base_riddle_inline1
+  slotPartListPreset:
+    - Items.Preset_riddle_inline1
+  statPools:
+    - BaseStatPools.ThrowRecovery
+    
+Items.Base_riddle_inline0:
+  $base: Items.Base_Axe_inline0
+  itemPartList:
+    - Items.Base_riddle_inline1
+Items.Base_riddle_inline1:
+  $base: Items.Base_Axe_inline1
+  item: Items.riddle_grip_prt
+Items.riddle_grip_prt:
+  $base: Items.w_tomahawk_common_grip
+  appearanceResourceName: riddle_grip    
+  
+Items.Preset_riddle_inline1:
+  $base: Items.Preset_Tomahawk_Default_inline1
+  itemPartPreset: Items.riddle_grip_prt
+  
+Items.riddlestats_recovery:
+  $type: gamedataConstantStatModifier_Record
+  value: -5.4
+  modifierType: Additive
+  statType: BaseStats.ThrowRecovery
+  
+Items.riddlestats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+
+

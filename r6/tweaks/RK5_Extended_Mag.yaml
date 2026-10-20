@@ -1,0 +1,117 @@
+Items.RK5_Extended_Mag:
+  $base: Items.Preset_Liberty_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.rk5exstats_damage
+    - !append-once Items.rk5exstats_rof
+    - !append-once Items.rk5exstats_mag
+  appearanceResourceName: rk5ex_app
+  primaryTriggerMode: TriggerMode.FullAuto
+  audioName: wea_set_copperhead
+  triggerModes:
+    - TriggerMode.FullAuto
+  quality: Quality.Rare
+  displayName: rk5ex_name
+  localizedDescription: rk5ex_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: rk5ex\icon\rk5ex_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: rk5ex\icon\rk5ex.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_rk5ex_inline2
+    - Items.Base_rk5ex_inline4
+    - Items.Base_rk5ex_inline6
+    - Items.Base_rk5ex_inline8
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+  slotPartListPreset:
+    - Items.Preset_rk5ex_inline0
+    - Items.Preset_rk5ex_inline1
+    - Items.Preset_rk5ex_inline2
+    - Items.Preset_rk5ex_inline3
+  
+Items.Base_rk5ex_inline2:
+  $base: Items.Base_Liberty_inline2
+  itemPartList:
+    - Items.Base_rk5ex_inline3
+Items.Base_rk5ex_inline3:
+  $base: Items.Base_Liberty_inline3
+  item: Items.rk5ex_rcv_prt
+Items.rk5ex_rcv_prt:
+  $base: Items.w_handgun__constitutional_liberty__rcv1
+  appearanceResourceName: rk5ex_rcv
+#base
+Items.Base_rk5ex_inline4:
+  $base: Items.Base_Liberty_inline4
+  itemPartList:
+    - Items.Base_rk5ex_inline5
+Items.Base_rk5ex_inline5:
+  $base: Items.Base_Liberty_inline5
+  item: Items.rk5ex_base_prt
+Items.rk5ex_base_prt:
+  $base: Items.w_handgun__constitutional_liberty__base1
+  appearanceResourceName: rk5ex_base
+#mag
+Items.Base_rk5ex_inline6:
+  $base: Items.Base_Liberty_inline6
+  itemPartList:
+    - Items.Base_rk5ex_inline7
+Items.Base_rk5ex_inline7:
+  $base: Items.Base_Liberty_inline7
+  item: Items.rk5ex_mag_std_prt
+Items.rk5ex_mag_std_prt:
+  $base: Items.w_handgun__constitutional_liberty__mag_std
+  appearanceResourceName: rk5ex_mag_std
+#reload
+Items.Base_rk5ex_inline8:
+  $base: Items.Base_Liberty_inline8
+  itemPartList:
+    - Items.Base_rk5ex_inline9
+Items.Base_rk5ex_inline9:
+  $base: Items.Base_Liberty_inline9
+  item: Items.rk5ex_mag_stdr_prt
+Items.rk5ex_mag_stdr_prt:
+  $base: Items.w_handgun__constitutional_liberty__mag_stdr
+  appearanceResourceName: rk5ex_mag_stdr
+#preset
+Items.Preset_rk5ex_inline0:
+  $base: Items.Preset_Liberty_Default_inline0
+  itemPartPreset: Items.rk5ex_rcv_prt
+Items.Preset_rk5ex_inline1:
+  $base: Items.Preset_Liberty_Default_inline1
+  itemPartPreset: Items.rk5ex_base_prt
+Items.Preset_rk5ex_inline2:
+  $base: Items.Preset_Liberty_Default_inline2
+  itemPartPreset: Items.rk5ex_mag_std_prt
+Items.Preset_rk5ex_inline3:
+  $base: Items.Preset_Liberty_Default_inline3
+  itemPartPreset: Items.rk5ex_mag_stdr_prt
+  
+Items.rk5exstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.22
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.rk5exstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 100
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+Items.rk5exstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 7
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+
+
+
+    

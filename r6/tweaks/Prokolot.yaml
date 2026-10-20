@@ -1,0 +1,109 @@
+Items.Prokolot:
+  $base: Items.Preset_Lexington_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.prokstats_damage
+    - !append-once Items.prokstats_rof
+    - !append-once Items.prokstats_mag
+  appearanceResourceName: prok_app
+  quality: Quality.Common
+  displayName: prok_name
+  localizedDescription: prok_description
+  hudIcon:
+    atlasResourcePath: prok\icon\prok_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: prok\icon\prok.inkatlas
+    atlasPartName: slot_01
+  visualTags:
+    - Default
+  slotPartList:
+    - Items.Base_prok_inline2
+    - Items.Base_prok_inline4
+    - Items.Base_prok_inline6
+    - Items.Base_prok_inline8
+    - Items.HandgunPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_prok_inline0
+    - Items.Preset_prok_inline1
+    - Items.Preset_prok_inline2
+    - Items.Preset_prok_inline3
+  
+Items.Base_prok_inline2:
+  $base: Items.Base_Lexington_inline2
+  itemPartList:
+    - Items.Base_prok_inline3
+Items.Base_prok_inline3:
+  $base: Items.Base_Lexington_inline3
+  item: Items.prok_rcv_prt
+Items.prok_rcv_prt:
+  $base: Items.w_handgun_militech_lexington__rcv1
+  appearanceResourceName: prok_rcv
+#base
+Items.Base_prok_inline4:
+  $base: Items.Base_Lexington_inline4
+  itemPartList:
+    - Items.Base_prok_inline5
+Items.Base_prok_inline5:
+  $base: Items.Base_Lexington_inline5
+  item: Items.prok_base_prt
+Items.prok_base_prt:
+  $base: Items.w_handgun_militech_lexington__base1
+  appearanceResourceName: prok_base
+#mag
+Items.Base_prok_inline6:
+  $base: Items.Base_Lexington_inline6
+  itemPartList:
+    - Items.Base_prok_inline7
+Items.Base_prok_inline7:
+  $base: Items.Base_Lexington_inline7
+  item: Items.prok_mag_std_prt
+Items.prok_mag_std_prt:
+  $base: Items.w_handgun_militech_lexington__mag_std
+  appearanceResourceName: prok_mag_std
+#reload
+Items.Base_prok_inline8:
+  $base: Items.Base_Lexington_inline8
+  itemPartList:
+    - Items.Base_prok_inline9
+Items.Base_prok_inline9:
+  $base: Items.Base_Lexington_inline9
+  item: Items.prok_mag_stdr_prt
+Items.prok_mag_stdr_prt:
+  $base: Items.w_handgun_militech_lexington__mag_stdr
+  appearanceResourceName: prok_mag_stdr
+#preset
+Items.Preset_prok_inline0:
+  $base: Items.Preset_Base_Lexington_inline0
+  itemPartPreset: Items.prok_rcv_prt
+Items.Preset_prok_inline1:
+  $base: Items.Preset_Base_Lexington_inline1
+  itemPartPreset: Items.prok_base_prt
+Items.Preset_prok_inline2:
+  $base: Items.Preset_Base_Lexington_inline2
+  itemPartPreset: Items.prok_mag_std_prt
+Items.Preset_prok_inline3:
+  $base: Items.Preset_Base_Lexington_inline3
+  itemPartPreset: Items.prok_mag_stdr_prt 
+
+Items.prokstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 40
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.prokstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.04
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.prokstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+

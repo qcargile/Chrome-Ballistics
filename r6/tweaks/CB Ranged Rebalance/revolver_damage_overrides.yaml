@@ -1,0 +1,34 @@
+# DR5 Nova / Doom Doom, Mancinella
+Items.Base_Nova_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 135                # default value – 45
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# DR12 Quasar / Gris-Gris
+Items.Base_Quasar_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 143               # default value – 52
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Overture / Amnesty, Archangel, Crash, Ol’ Reliable, Rosco
+Items.Base_Overture_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 140                # default value – 40
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# RT-46 Burya / Comrade’s Hammer, Laika
+Items.Base_Burya_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 132               # default value – 38
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Metel
+Items.Base_Metel_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 139               # default value – 45
+  modifierType: Additive
+  statType: BaseStats.DPS

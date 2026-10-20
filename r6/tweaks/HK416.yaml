@@ -1,0 +1,134 @@
+Items.HK416:
+  $base: Items.Preset_Copperhead_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.416stats_rof 
+    - !append-once Items.416stats_damage
+    - !append-once Items.416stats_firstequip 
+    - !append-once Items.416stats_mag
+    - !append-once Items.416stats_effectiverange
+    - !append-once Items.416stats_maxrange    
+  statModifierGroups:
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  appearanceResourceName: 416_app
+  quality: Quality.Rare
+  displayName: 416_name
+  localizedDescription: 416_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: 416\icon\416_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: 416\icon\416.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_416_inline2
+    - Items.Base_416_inline4
+    - Items.Base_416_inline6
+    - Items.Base_416_inline8
+    - Items.RiflePossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_416_inline0
+    - Items.Preset_416_inline1
+    - Items.Preset_416_inline2
+    - Items.Preset_416_inline3
+  
+Items.Base_416_inline2:
+  $base: Items.Base_Copperhead_inline2
+  itemPartList:
+    - Items.Base_416_inline3
+Items.Base_416_inline3:
+  $base: Items.Base_Copperhead_inline3
+  item: Items.416_rcv_prt
+Items.416_rcv_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__rcv1
+  appearanceResourceName: 416_rcv
+Items.Base_416_inline4:
+  $base: Items.Base_Copperhead_inline4
+  itemPartList:
+    - Items.Base_416_inline5
+Items.Base_416_inline5:
+  $base: Items.Base_Copperhead_inline5
+  item: Items.416_base_prt
+Items.416_base_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__base1
+  appearanceResourceName: 416_base
+Items.Base_416_inline6:
+  $base: Items.Base_Copperhead_inline6
+  itemPartList:
+    - Items.Base_416_inline7
+Items.Base_416_inline7:
+  $base: Items.Base_Copperhead_inline7
+  item: Items.416_mag_std_prt
+Items.416_mag_std_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__mag_std
+  appearanceResourceName: 416_mag_std
+Items.Base_416_inline8:
+  $base: Items.Base_Copperhead_inline8
+  itemPartList:
+    - Items.Base_416_inline9
+Items.Base_416_inline9:
+  $base: Items.Base_Copperhead_inline9
+  item: Items.416_mag_stdr_prt
+Items.416_mag_stdr_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__mag_stdr
+  appearanceResourceName: 416_mag_stdr
+Items.Preset_416_inline0:
+  $base: Items.Preset_Base_Copperhead_inline0
+  itemPartPreset: Items.416_rcv_prt
+Items.Preset_416_inline1:
+  $base: Items.Preset_Base_Copperhead_inline1
+  itemPartPreset: Items.416_base_prt
+Items.Preset_416_inline2:
+  $base: Items.Preset_Base_Copperhead_inline2
+  itemPartPreset: Items.416_mag_std_prt
+Items.Preset_416_inline3:
+  $base: Items.Preset_Base_Copperhead_inline3
+  itemPartPreset: Items.416_mag_stdr_prt
+  
+Items.416stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.03
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.416stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 45
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.416stats_firstequip:
+  $type: gamedataConstantStatModifier_Record
+  value: -4.9
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.416stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase 
+  
+Items.416stats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 60
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.416stats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 70
+  modifierType: Additive
+  statType: BaseStats.MaximumRange

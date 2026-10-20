@@ -1,0 +1,131 @@
+Items.OTs14_Groza:
+  $base: Items.Preset_Pulsar_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.otsstats_damage
+    - !append-once Items.otsstats_mag
+    - !append-once Items.otsstats_rof
+    - !append-once Items.otsstats_armor
+    - !append-once Items.otsstats_recoil
+  appearanceResourceName: ots_app
+  ammo: Ammo.RifleAmmo
+  audioName: wea_set_pulsar
+  quality: Quality.Rare
+  displayName: ots_name
+  localizedDescription: ots_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: ots\icon\ots_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: ots\icon\ots.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_ots_inline1
+    - Items.Base_ots_inline3
+    - Items.Base_ots_inline5
+    - Items.Base_ots_inline7
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+    - Items.RiflePossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_ots_inline0
+    - Items.Preset_ots_inline1
+    - Items.Preset_ots_inline2
+    - Items.Preset_ots_inline3
+    
+Items.Base_ots_inline1:
+  $base: Items.Base_Pulsar_inline1
+  itemPartList:
+    - Items.Base_ots_inline2
+Items.Base_ots_inline2:
+  $base: Items.Base_Pulsar_inline2
+  item: Items.ots_rcv_prt
+Items.ots_rcv_prt:
+  $base: Items.w_submachinegun__darra_pulsar__rcv1
+  appearanceResourceName: ots_rcv
+#base
+Items.Base_ots_inline3:
+  $base: Items.Base_Pulsar_inline3
+  itemPartList:
+    - Items.Base_ots_inline4
+Items.Base_ots_inline4:
+  $base: Items.Base_Pulsar_inline4
+  item: Items.ots_base_prt
+Items.ots_base_prt:
+  $base: Items.w_submachinegun__darra_pulsar__base1
+  appearanceResourceName: ots_base
+#mag
+Items.Base_ots_inline5:
+  $base: Items.Base_Pulsar_inline5
+  itemPartList:
+    - Items.Base_ots_inline6
+Items.Base_ots_inline6:
+  $base: Items.Base_Pulsar_inline6
+  item: Items.ots_mag_std_prt
+Items.ots_mag_std_prt:
+  $base: Items.w_submachinegun__darra_pulsar__mag_std
+  appearanceResourceName: ots_mag_std
+#reload
+Items.Base_ots_inline7:
+  $base: Items.Base_Pulsar_inline7
+  itemPartList:
+    - Items.Base_ots_inline8
+Items.Base_ots_inline8:
+  $base: Items.Base_Pulsar_inline8
+  item: Items.ots_mag_stdr_prt
+Items.ots_mag_stdr_prt:
+  $base: Items.w_submachinegun__darra_pulsar__mag_stdr
+  appearanceResourceName: ots_mag_stdr
+#preset
+Items.Preset_ots_inline0:
+  $base: Items.Preset_Pulsar_Default_inline0
+  itemPartPreset: Items.ots_rcv_prt
+Items.Preset_ots_inline1:
+  $base: Items.Preset_Pulsar_Default_inline1
+  itemPartPreset: Items.ots_base_prt
+Items.Preset_ots_inline2:
+  $base: Items.Preset_Pulsar_Default_inline2
+  itemPartPreset: Items.ots_mag_std_prt
+Items.Preset_ots_inline3:
+  $base: Items.Preset_Pulsar_Default_inline3
+  itemPartPreset: Items.ots_mag_stdr_prt
+
+Items.otsstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 70
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.otsstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -10
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.otsstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.02
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.otsstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.25
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+Items.otsstats_recoil:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.04
+  modifierType: Additive
+  statType: BaseStats.RecoilHoldDuration
+  
+
+    

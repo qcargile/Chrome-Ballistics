@@ -1,0 +1,164 @@
+Items.Scar_Sludge_Default_Stock:
+  $base: Items.Preset_Saratoga_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.sludge2stats_damage
+    - !append-once Items.sludge2stats_rof
+    - !append-once Items.sludge2stats_mag
+    - !append-once Items.sludge2stats_chemical
+  appearanceResourceName: sludge2_app
+  ammo: Ammo.RifleAmmo
+  attacks:
+    - !append-once Attacks.sludge2_fullautomode
+  rangedAttacks: Attacks.sludge2attacks
+  audioName: wea_set_copperhead
+  quality: Quality.Legendary
+  displayName: sludge2_name
+  localizedDescription: sludge2_description
+  gameplayDescription: sludge2_iconic_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: sludge2\icon\sludge2_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: sludge2\icon\sludge2.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_sludge2_inline2
+    - Items.Base_sludge2_inline4
+    - Items.Base_sludge2_inline6
+    - Items.Base_sludge2_inline8
+  slotPartListPreset:
+    - Items.Preset_sludge2_inline0
+    - Items.Preset_sludge2_inline1
+    - Items.Preset_sludge2_inline2
+    - Items.Preset_sludge2_inline3
+  
+Items.Base_sludge2_inline2:
+  $base: Items.Base_Saratoga_inline2
+  itemPartList:
+    - Items.Base_sludge2_inline3
+Items.Base_sludge2_inline3:
+  $base: Items.Base_Saratoga_inline3
+  item: Items.sludge2_rcv_prt
+Items.sludge2_rcv_prt:
+  $base: Items.w_submachinegun__militech_saratoga__rcv1
+  appearanceResourceName: sludge2_rcv
+#base
+Items.Base_sludge2_inline4:
+  $base: Items.Base_Saratoga_inline4
+  itemPartList:
+    - Items.Base_sludge2_inline5
+Items.Base_sludge2_inline5:
+  $base: Items.Base_Saratoga_inline5
+  item: Items.sludge2_base_prt
+Items.sludge2_base_prt:
+  $base: Items.w_submachinegun__militech_saratoga__base1
+  appearanceResourceName: sludge2_base
+#mag
+Items.Base_sludge2_inline6:
+  $base: Items.Base_Saratoga_inline6
+  itemPartList:
+    - Items.Base_sludge2_inline7
+Items.Base_sludge2_inline7:
+  $base: Items.Base_Saratoga_inline7
+  item: Items.sludge2_mag_std_prt
+Items.sludge2_mag_std_prt:
+  $base: Items.w_submachinegun__militech_saratoga__mag_std
+  appearanceResourceName: sludge2_mag_std
+#reload
+Items.Base_sludge2_inline8:
+  $base: Items.Base_Saratoga_inline8
+  itemPartList:
+    - Items.Base_sludge2_inline9
+Items.Base_sludge2_inline9:
+  $base: Items.Base_Saratoga_inline9
+  item: Items.sludge2_mag_stdr_prt
+Items.sludge2_mag_stdr_prt:
+  $base: Items.w_submachinegun__militech_saratoga__mag_stdr
+  appearanceResourceName: sludge2_mag_stdr
+#preset
+Items.Preset_sludge2_inline0:
+  $base: Items.Preset_Saratoga_Default_inline0
+  itemPartPreset: Items.sludge2_rcv_prt
+Items.Preset_sludge2_inline1:
+  $base: Items.Preset_Saratoga_Default_inline1
+  itemPartPreset: Items.sludge2_base_prt
+Items.Preset_sludge2_inline2:
+  $base: Items.Preset_Saratoga_Default_inline2
+  itemPartPreset: Items.sludge2_mag_std_prt
+Items.Preset_sludge2_inline3:
+  $base: Items.Preset_Saratoga_Default_inline3
+  itemPartPreset: Items.sludge2_mag_stdr_prt
+  
+Items.sludge2stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: -25
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.sludge2stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.03
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.sludge2stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -10
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.sludge2stats_chemical:
+  $type: gamedataConstantStatModifier_Record
+  value: 85
+  modifierType: Additive
+  statType: BaseStats.ChemicalDamage
+   
+  
+Attacks.sludge2_fullautomode:
+    $base: Attacks.PoisonBulletEffect
+    explosionAttack:
+        $base: Attacks.ChemicalBulletEffect
+        playerIncomingDamageMultiplier: 0.20
+        effectName: weaponShoot
+        effectTag: player_ray
+        range: 100.0
+        statModifiers:
+        -   $type: CombinedStatModifier
+            refStat: BaseStats.DamagePerHit
+            statType: BaseStats.ChemicalDamage
+            modifierType: Additive
+            refObject: Owner
+            value: 500.0
+        hitFlags:
+        -   !append-once Explosion
+        hitReactionSeverityMin: 2
+        explosionDamageVSVehicles: 5.0
+        statusEffects:
+        -   $type: StatusEffectAttackData
+            statusEffect: BaseStatusEffect.Poisoned
+            resistPool: BaseStatPools.PoisonTrigger
+            applyImmediately: true
+            
+
+Attacks.sludge2attack1:
+    $type: RangedAttack
+    playerAttack: Attacks.sludge2_fullautomode
+    playerTimeDilated: Attacks.sludge2_fullautomode
+
+Attacks.sludge2attacks:
+    $type: RangedAttackPackage
+    defaultFire: Attacks.sludge2attack1
+  
+  
+  
+
+  
+  
+  
+  
+  

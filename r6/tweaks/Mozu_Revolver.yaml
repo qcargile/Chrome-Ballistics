@@ -1,0 +1,99 @@
+Items.Mozu_Revolver:
+  $base: Items.Preset_Overture_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.mozustats_damage
+  appearanceResourceName: mozu_app
+  quality: Quality.Uncommon
+  displayName: mozu_name
+  localizedDescription: mozu_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: mozu\icon\mozu_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: mozu\icon\mozu.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_mozu_inline1
+    - Items.Base_mozu_inline3
+    - Items.Base_mozu_inline5
+    - Items.Base_mozu_inline7
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+  slotPartListPreset:
+    - Items.Preset_mozu_inline0
+    - Items.Preset_mozu_inline1
+    - Items.Preset_mozu_inline2
+    - Items.Preset_mozu_inline3
+  
+Items.Base_mozu_inline1:
+  $base: Items.Base_Overture_inline1
+  itemPartList:
+    - Items.Base_mozu_inline2
+Items.Base_mozu_inline2:
+  $base: Items.Base_Overture_inline2
+  item: Items.mozu_rcv_prt
+Items.mozu_rcv_prt:
+  $base: Items.w_revolver__malorian_overture__rcv1
+  appearanceResourceName: mozu_rcv
+#base
+Items.Base_mozu_inline3:
+  $base: Items.Base_Overture_inline3
+  itemPartList:
+    - Items.Base_mozu_inline4
+Items.Base_mozu_inline4:
+  $base: Items.Base_Overture_inline4
+  item: Items.mozu_base_prt
+Items.mozu_base_prt:
+  $base: Items.w_revolver__malorian_overture__base1
+  appearanceResourceName: mozu_base
+#mag
+Items.Base_mozu_inline5:
+  $base: Items.Base_Overture_inline5
+  itemPartList:
+    - Items.Base_mozu_inline6
+Items.Base_mozu_inline6:
+  $base: Items.Base_Overture_inline6
+  item: Items.mozu_mag_std_prt
+Items.mozu_mag_std_prt:
+  $base: Items.w_revolver__malorian_overture__mag_std
+  appearanceResourceName: mozu_mag_std
+#reload
+Items.Base_mozu_inline7:
+  $base: Items.Base_Overture_inline7
+  itemPartList:
+    - Items.Base_mozu_inline8
+Items.Base_mozu_inline8:
+  $base: Items.Base_Overture_inline8
+  item: Items.mozu_mag_stdr_prt
+Items.mozu_mag_stdr_prt:
+  $base: Items.w_revolver__malorian_overture__mag_stdr
+  appearanceResourceName: mozu_mag_stdr
+#preset stuff
+Items.Preset_mozu_inline0:
+  $base: Items.Preset_Overture_Default_inline0
+  itemPartPreset: Items.mozu_rcv_prt
+Items.Preset_mozu_inline1:
+  $base: Items.Preset_Overture_Default_inline1
+  itemPartPreset: Items.mozu_base_prt
+Items.Preset_mozu_inline2:
+  $base: Items.Preset_Overture_Default_inline2
+  itemPartPreset: Items.mozu_mag_std_prt
+Items.Preset_mozu_inline3:
+  $base: Items.Preset_Overture_Default_inline3
+  itemPartPreset: Items.mozu_mag_stdr_prt
+  
+Items.mozustats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 13
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+
+    
+    

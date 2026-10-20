@@ -1,0 +1,13 @@
+# Baseball Bat (Two-Handed Club)
+Items.Baseball_Bat_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 180.0               # default value – 67
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Kanabo (Two-Handed Club)
+Items.Kanabo_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 230.0               # default value – 67
+  modifierType: Additive
+  statType: BaseStats.DPS

@@ -1,0 +1,50 @@
+Items.Scythe_Blood_Bunny:
+  $base: Items.Preset_Machete_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.bunstats_damage
+    - !append-once Items.bunstats_leap
+  appearanceResourceName: bun_app
+  quality: Quality.Epic
+  displayName: bun_name
+  hudIcon:
+    atlasResourcePath: bun\icon\bun_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: bun\icon\bun.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_bun_inline2
+  slotPartListPreset:
+    - Items.Preset_bun_inline0
+    
+Items.Base_chete_inline1:
+  $base: Items.Base_Machete_inline1
+  itemPartList:
+    - Items.Base_bun_inline2
+Items.Base_bun_inline2:
+  $base: Items.Base_Machete_inline3
+  item: Items.bun_grip_prt
+Items.bun_grip_prt:
+  $base: Items.w_machete_common_grip
+  appearanceResourceName: bun_grip    
+  
+Items.Preset_bun_inline0:
+  $base: Items.Preset_Machete_Default_inline0
+  itemPartPreset: Items.bun_grip_prt
+  
+Items.bunstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.bunstats_leap:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CanMeleeLeap
+
+

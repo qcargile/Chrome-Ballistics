@@ -1,0 +1,48 @@
+Items.Teeth_of_Terra:
+  $base: Items.Preset_Chainsword_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.terrastats_dismember
+    - !append-once Items.terrastats_damage
+    - !append-once Items.terrastats_leap
+  appearanceResourceName: terra_app
+  quality: Quality.Epic
+  displayName: terra_name
+  localizedDescription: terra_description
+  hudIcon:
+    atlasResourcePath: terra\icon\terra_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: terra\icon\terra.inkatlas
+    atlasPartName: slot_01
+  slotPartList: []
+  slotPartListPreset:
+    - Items.Preset_Chainsword_Default_inline1
+    - Items.Preset_Chainsword_Default_inline2
+    - Items.Preset_Chainsword_Default_inline3
+  visualTags:
+    - Default
+  statPools:
+    - BaseStatPools.TechMeleeCharge
+
+Items.terrastats_dismember:
+  $type: gamedataConstantStatModifier_Record
+  value: 200
+  modifierType: Multiplier
+  statType: BaseStats.HitDismembermentFactor
+  
+Items.terrastats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 400
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.terrastats_leap:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CanMeleeLeap
+
+    

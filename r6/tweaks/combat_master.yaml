@@ -1,0 +1,129 @@
+Items.combat_master:
+  $base: Items.Preset_Unity_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.wickstats_damage
+    - !append-once Items.wickstats_rof
+    - !append-once Items.wickstats_mag
+    - !append-once Items.wickstats_recoil
+    - !append-once Items.wickstats_recoil2
+    - !append-once Items.wickstats_recoil3
+  appearanceResourceName: combat_master_app
+  quality: Quality.Common
+  displayName: combat_master_gun_name
+  localizedDescription: combat_master_gun_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: combat_master\icon\combat_master_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: combat_master\icon\combat_master.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_wick_inline2
+    - Items.Base_wick_inline4
+    - Items.Base_wick_inline6
+    - Items.Base_wick_inline8
+  slotPartListPreset:
+    - Items.Preset_wick_inline0
+    - Items.Preset_wick_inline1
+    - Items.Preset_wick_inline2
+    - Items.Preset_wick_inline3
+  
+Items.Base_wick_inline2:
+  $base: Items.Base_Unity_inline2
+  itemPartList:
+    - Items.Base_wick_inline3
+Items.Base_wick_inline3:
+  $base: Items.Base_Unity_inline3
+  item: Items.combat_master_rcv_prt
+Items.combat_master_rcv_prt:
+  $base: Items.w_handgun__constitutional_unity__rcv1
+  appearanceResourceName: combat_master_rcv
+#base
+Items.Base_wick_inline4:
+  $base: Items.Base_Unity_inline4
+  itemPartList:
+    - Items.Base_wick_inline5
+Items.Base_wick_inline5:
+  $base: Items.Base_Unity_inline5
+  item: Items.combat_master_base_prt
+Items.combat_master_base_prt:
+  $base: Items.w_handgun__constitutional_unity__base1
+  appearanceResourceName: combat_master_base
+#mag
+Items.Base_wick_inline6:
+  $base: Items.Base_Unity_inline6
+  itemPartList:
+    - Items.Base_wick_inline7
+Items.Base_wick_inline7:
+  $base: Items.Base_Unity_inline7
+  item: Items.combat_master_mag_std_prt
+Items.combat_master_mag_std_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_std
+  appearanceResourceName: combat_master_mag_std
+#reload
+Items.Base_wick_inline8:
+  $base: Items.Base_Unity_inline8
+  itemPartList:
+    - Items.Base_wick_inline9
+Items.Base_wick_inline9:
+  $base: Items.Base_Unity_inline9
+  item: Items.combat_master_mag_stdr_prt
+Items.combat_master_mag_stdr_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_stdr
+  appearanceResourceName: combat_master_mag_stdr
+#preset
+Items.Preset_wick_inline0:
+  $base: Items.Preset_Unity_Default_inline0
+  itemPartPreset: Items.combat_master_rcv_prt
+Items.Preset_wick_inline1:
+  $base: Items.Preset_Unity_Default_inline1
+  itemPartPreset: Items.combat_master_base_prt
+Items.Preset_wick_inline2:
+  $base: Items.Preset_Unity_Default_inline2
+  itemPartPreset: Items.combat_master_mag_std_prt
+Items.Preset_wick_inline3:
+  $base: Items.Preset_Unity_Default_inline3
+  itemPartPreset: Items.combat_master_mag_stdr_prt
+  
+Items.wickstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 110
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.wickstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.15
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.wickstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 9
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.wickstats_recoil:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.3
+  modifierType: Additive
+  statType: BaseStats.RecoilRecoveryTime
+  
+Items.wickstats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: -15
+  modifierType: Additive
+  statType: BaseStats.RecoilDir
+  
+Items.wickstats_recoil3:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.05
+  modifierType: Additive
+  statType: BaseStats.RecoilTime
+  
+    

@@ -1,0 +1,126 @@
+Items.Flatline:
+  $base: Items.Preset_Pulsar_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.flatlinestats_damage
+    - !append-once Items.flatlinestats_mag
+    - !append-once Items.flatlinestats_rof
+    - !append-once Items.flatlinestats_armor
+  appearanceResourceName: flatline_app
+  ammo: Ammo.RifleAmmo
+  audioName: wea_set_ajax
+  quality: Quality.Epic
+  displayName: flatline_name
+  itemType: ItemType.Wea_SubmachineGun
+  ammo: Ammo.RifleAmmo
+  localizedDescription: flatline_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: flatline\icon\flatline_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: flatline\icon\flatline.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_flatline_inline1
+    - Items.Base_flatline_inline3
+    - Items.Base_flatline_inline5
+    - Items.Base_flatline_inline7
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+    - Items.RiflePossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_flatline_inline0
+    - Items.Preset_flatline_inline1
+    - Items.Preset_flatline_inline2
+    - Items.Preset_flatline_inline3
+    
+Items.Base_flatline_inline1:
+  $base: Items.Base_Pulsar_inline1
+  itemPartList:
+    - Items.Base_flatline_inline2
+Items.Base_flatline_inline2:
+  $base: Items.Base_Pulsar_inline2
+  item: Items.flatline_rcv_prt
+Items.flatline_rcv_prt:
+  $base: Items.w_submachinegun__darra_pulsar__rcv1
+  appearanceResourceName: flatline_rcv
+#base
+Items.Base_flatline_inline3:
+  $base: Items.Base_Pulsar_inline3
+  itemPartList:
+    - Items.Base_flatline_inline4
+Items.Base_flatline_inline4:
+  $base: Items.Base_Pulsar_inline4
+  item: Items.flatline_base_prt
+Items.flatline_base_prt:
+  $base: Items.w_submachinegun__darra_pulsar__base1
+  appearanceResourceName: flatline_base
+#mag
+Items.Base_flatline_inline5:
+  $base: Items.Base_Pulsar_inline5
+  itemPartList:
+    - Items.Base_flatline_inline6
+Items.Base_flatline_inline6:
+  $base: Items.Base_Pulsar_inline6
+  item: Items.flatline_mag_std_prt
+Items.flatline_mag_std_prt:
+  $base: Items.w_submachinegun__darra_pulsar__mag_std
+  appearanceResourceName: flatline_mag_std
+#reload
+Items.Base_flatline_inline7:
+  $base: Items.Base_Pulsar_inline7
+  itemPartList:
+    - Items.Base_flatline_inline8
+Items.Base_flatline_inline8:
+  $base: Items.Base_Pulsar_inline8
+  item: Items.flatline_mag_stdr_prt
+Items.flatline_mag_stdr_prt:
+  $base: Items.w_submachinegun__darra_pulsar__mag_stdr
+  appearanceResourceName: flatline_mag_stdr
+#preset
+Items.Preset_flatline_inline0:
+  $base: Items.Preset_Pulsar_Default_inline0
+  itemPartPreset: Items.flatline_rcv_prt
+Items.Preset_flatline_inline1:
+  $base: Items.Preset_Pulsar_Default_inline1
+  itemPartPreset: Items.flatline_base_prt
+Items.Preset_flatline_inline2:
+  $base: Items.Preset_Pulsar_Default_inline2
+  itemPartPreset: Items.flatline_mag_std_prt
+Items.Preset_flatline_inline3:
+  $base: Items.Preset_Pulsar_Default_inline3
+  itemPartPreset: Items.flatline_mag_stdr_prt
+
+Items.flatlinestats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 55
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.flatlinestats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -20
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.flatlinestats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.02
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.flatlinestats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+
+    

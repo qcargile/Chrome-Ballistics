@@ -1,0 +1,2492 @@
+Items.CB_AK_117_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_AK_117_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: ak117_name
+  localizedDescription: ak117_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_AK_117_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_AK_117_Crafting_Uncommon
+
+Items.CB_AK_117_Crafting_Uncommon:
+  $base: Items.AK_117
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_AK_205_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_AK_205_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: ak205_name
+  localizedDescription: ak205_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_AK_205_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_AK_205_Crafting_Uncommon
+
+Items.CB_AK_205_Crafting_Uncommon:
+  $base: Items.AK_205
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_AK_Custom_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_AK_Custom_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: akcus_name
+  localizedDescription: akcus_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_AK_Custom_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_AK_Custom_Crafting_Common
+
+Items.CB_AK_Custom_Crafting_Common:
+  $base: Items.AK_Custom
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_AK_Prototype_MkII_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_AK_Prototype_MkII_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: akpro_name
+  localizedDescription: akpro_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_AK_Prototype_MkII_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_AK_Prototype_MkII_Crafting_Legendary
+
+Items.CB_AK_Prototype_MkII_Crafting_Legendary:
+  $base: Items.AK_Prototype_MkII
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_AK47_Black_Cat_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_AK47_Black_Cat_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: bcat_name
+  localizedDescription: bcat_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_AK47_Black_Cat_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_AK47_Black_Cat_Crafting_Rare
+
+Items.CB_AK47_Black_Cat_Crafting_Rare:
+  $base: Items.AK47_Black_Cat
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_AK47_Steel_Curtain_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_AK47_Steel_Curtain_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: steel_name
+  localizedDescription: steel_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_AK47_Steel_Curtain_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_AK47_Steel_Curtain_Crafting_Rare
+
+Items.CB_AK47_Steel_Curtain_Crafting_Rare:
+  $base: Items.AK47_Steel_Curtain
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_AKM_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_AKM_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: akm_name
+  localizedDescription: akm_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_AKM_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_AKM_Crafting_Rare
+
+Items.CB_AKM_Crafting_Rare:
+  $base: Items.AKM
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_AKS_74U_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_AKS_74U_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: 74u_name
+  localizedDescription: 74u_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_AKS_74U_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_AKS_74U_Crafting_Common
+
+Items.CB_AKS_74U_Crafting_Common:
+  $base: Items.AKS_74U
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_KN44_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_KN44_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: kn44_name
+  localizedDescription: kn44_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_KN44_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_KN44_Crafting_Uncommon
+
+Items.CB_KN44_Crafting_Uncommon:
+  $base: Items.KN44
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_RPK_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_RPK_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: rpk_name
+  localizedDescription: rpk_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_RPK_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_RPK_Crafting_Epic
+
+Items.CB_RPK_Crafting_Epic:
+  $base: Items.RPK
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_Zastava_M76_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Zastava_M76_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: m76_name
+  localizedDescription: m76_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Zastava_M76_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Zastava_M76_Crafting_Epic
+
+Items.CB_Zastava_M76_Crafting_Epic:
+  $base: Items.Zastava_M76
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_glock_17_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_glock_17_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: glock_17_gun_name
+  localizedDescription: glock_17_gun_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_glock_17_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_glock_17_Crafting_Common
+
+Items.CB_glock_17_Crafting_Common:
+  $base: Items.glock_17
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_glock_18_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_glock_18_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: glock_18_gun_name
+  localizedDescription: glock_18_gun_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_glock_18_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_glock_18_Crafting_Uncommon
+
+Items.CB_glock_18_Crafting_Uncommon:
+  $base: Items.glock_18
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_glock_18_100_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_glock_18_100_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: glock_18_100_gun_name
+  localizedDescription: glock_18_100_gun_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_glock_18_100_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_glock_18_100_Crafting_Rare
+
+Items.CB_glock_18_100_Crafting_Rare:
+  $base: Items.glock_18_100
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_glock_18_vspec_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_glock_18_vspec_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: glock_18_h_gun_name
+  localizedDescription: glock_18_h_gun_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_glock_18_vspec_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_glock_18_vspec_Crafting_Epic
+
+Items.CB_glock_18_vspec_Crafting_Epic:
+  $base: Items.glock_18_vspec
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_glock_valentinos_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_glock_valentinos_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: glock_prototype_gun_name
+  localizedDescription: glock_prototype_gun_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_glock_valentinos_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_glock_valentinos_Crafting_Legendary
+
+Items.CB_glock_valentinos_Crafting_Legendary:
+  $base: Items.glock_valentinos
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_Militech_M77_Viper_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Militech_M77_Viper_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: vip_name
+  localizedDescription: vip_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_Militech_M77_Viper_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Militech_M77_Viper_Crafting_Uncommon
+
+Items.CB_Militech_M77_Viper_Crafting_Uncommon:
+  $base: Items.Militech_M77_Viper
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_Militech_Beam_Rifle_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Militech_Beam_Rifle_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: ajax3_name
+  localizedDescription: ajax3_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Militech_Beam_Rifle_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Militech_Beam_Rifle_Crafting_Epic
+
+Items.CB_Militech_Beam_Rifle_Crafting_Epic:
+  $base: Items.Militech_Beam_Rifle
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_Militech_Beam_Rifle_Smart_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Militech_Beam_Rifle_Smart_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: ajax3_smart_name
+  localizedDescription: ajax3_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Militech_Beam_Rifle_Smart_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Militech_Beam_Rifle_Smart_Crafting_Epic
+
+Items.CB_Militech_Beam_Rifle_Smart_Crafting_Epic:
+  $base: Items.Militech_Beam_Rifle_Smart
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_Arasaka_Masayuki_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Arasaka_Masayuki_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: masayuki_name
+  localizedDescription: masayuki_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_Arasaka_Masayuki_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Arasaka_Masayuki_Crafting_Common
+
+Items.CB_Arasaka_Masayuki_Crafting_Common:
+  $base: Items.Arasaka_Masayuki
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_Desert_Eagle_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Desert_Eagle_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: deagle_name
+  localizedDescription: deagle_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_Desert_Eagle_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Desert_Eagle_Crafting_Common
+
+Items.CB_Desert_Eagle_Crafting_Common:
+  $base: Items.Desert_Eagle
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_Militech_Stinger_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Militech_Stinger_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: mt_stinger_loc_name
+  localizedDescription: mt_stinger_loc_desc
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_Militech_Stinger_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Militech_Stinger_Crafting_Legendary
+
+Items.CB_Militech_Stinger_Crafting_Legendary:
+  $base: Items.Militech_Stinger
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_RSh12_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_RSh12_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: rsh12_name
+  localizedDescription: rsh12_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_RSh12_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_RSh12_Crafting_Rare
+
+Items.CB_RSh12_Crafting_Rare:
+  $base: Items.RSh12
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_Longbow_DMR_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Longbow_DMR_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: longbow_name
+  localizedDescription: longbow_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Longbow_DMR_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Longbow_DMR_Crafting_Epic
+
+Items.CB_Longbow_DMR_Crafting_Epic:
+  $base: Items.Longbow_DMR
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_VHS_D2_Tactical_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_VHS_D2_Tactical_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: vhs2_name
+  localizedDescription: vhs2_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_VHS_D2_Tactical_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_VHS_D2_Tactical_Crafting_Common
+
+Items.CB_VHS_D2_Tactical_Crafting_Common:
+  $base: Items.VHS_D2_Tactical
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_Lawgiver_MKIII_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Lawgiver_MKIII_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: lawgiver_name
+  localizedDescription: lawgiver_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Lawgiver_MKIII_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Lawgiver_MKIII_Crafting_Epic
+
+Items.CB_Lawgiver_MKIII_Crafting_Epic:
+  $base: Items.Lawgiver_MKIII
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_Lawgiver_MKIII_Stun_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Lawgiver_MKIII_Stun_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: lawgiver_name_stun
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Lawgiver_MKIII_Stun_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Lawgiver_MKIII_Stun_Crafting_Epic
+
+Items.CB_Lawgiver_MKIII_Stun_Crafting_Epic:
+  $base: Items.Lawgiver_MKIII_Stun
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_Lawgiver_MKIII_Fire_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Lawgiver_MKIII_Fire_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: lawgiver_name_fire
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Lawgiver_MKIII_Fire_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Lawgiver_MKIII_Fire_Crafting_Epic
+
+Items.CB_Lawgiver_MKIII_Fire_Crafting_Epic:
+  $base: Items.Lawgiver_MKIII_Fire
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_Lawgiver_MKIII_Flechette_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Lawgiver_MKIII_Flechette_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: lawgiver_name_flechette
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Lawgiver_MKIII_Flechette_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Lawgiver_MKIII_Flechette_Crafting_Epic
+
+Items.CB_Lawgiver_MKIII_Flechette_Crafting_Epic:
+  $base: Items.Lawgiver_MKIII_Flechette
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_MasterpieceArms_MPA30SST_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_MasterpieceArms_MPA30SST_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: mpa30_name
+  localizedDescription: mpa30_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_MasterpieceArms_MPA30SST_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_MasterpieceArms_MPA30SST_Crafting_Common
+
+Items.CB_MasterpieceArms_MPA30SST_Crafting_Common:
+  $base: Items.MasterpieceArms_MPA30SST
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_OTs14_Groza_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_OTs14_Groza_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: ots_name
+  localizedDescription: ots_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_OTs14_Groza_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_OTs14_Groza_Crafting_Rare
+
+Items.CB_OTs14_Groza_Crafting_Rare:
+  $base: Items.OTs14_Groza
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_B23R_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_B23R_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: b23_name
+  localizedDescription: b23_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_B23R_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_B23R_Crafting_Common
+
+Items.CB_B23R_Crafting_Common:
+  $base: Items.B23R
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_Beretta_93R_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Beretta_93R_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: 93r_name
+  localizedDescription: 93r_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_Beretta_93R_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Beretta_93R_Crafting_Common
+
+Items.CB_Beretta_93R_Crafting_Common:
+  $base: Items.Beretta_93R
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_Desolator_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Desolator_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: des50_name
+  localizedDescription: des50_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Desolator_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Desolator_Crafting_Epic
+
+Items.CB_Desolator_Crafting_Epic:
+  $base: Items.Desolator
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_Malorian_Arms_FireX_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Malorian_Arms_FireX_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: pistolx2_name
+  localizedDescription: pistolx2_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_Malorian_Arms_FireX_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Malorian_Arms_FireX_Crafting_Legendary
+
+Items.CB_Malorian_Arms_FireX_Crafting_Legendary:
+  $base: Items.Malorian_Arms_FireX
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_Malorian_Arms_StunX_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Malorian_Arms_StunX_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: pistolx3_name
+  localizedDescription: pistolx3_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_Malorian_Arms_StunX_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Malorian_Arms_StunX_Crafting_Legendary
+
+Items.CB_Malorian_Arms_StunX_Crafting_Legendary:
+  $base: Items.Malorian_Arms_StunX
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_Malorian_Arms_X_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Malorian_Arms_X_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: pistolx_name
+  localizedDescription: pistolx_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_Malorian_Arms_X_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Malorian_Arms_X_Crafting_Legendary
+
+Items.CB_Malorian_Arms_X_Crafting_Legendary:
+  $base: Items.Malorian_Arms_X
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_Mozu_Revolver_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Mozu_Revolver_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: mozu_name
+  localizedDescription: mozu_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_Mozu_Revolver_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Mozu_Revolver_Crafting_Uncommon
+
+Items.CB_Mozu_Revolver_Crafting_Uncommon:
+  $base: Items.Mozu_Revolver
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_MR6_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_MR6_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: mr6_name
+  localizedDescription: mr6_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_MR6_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_MR6_Crafting_Common
+
+Items.CB_MR6_Crafting_Common:
+  $base: Items.MR6
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_Prokolot_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Prokolot_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: prok_name
+  localizedDescription: prok_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_Prokolot_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Prokolot_Crafting_Common
+
+Items.CB_Prokolot_Crafting_Common:
+  $base: Items.Prokolot
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_RK5_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_RK5_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: rk5_name
+  localizedDescription: rk5_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_RK5_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_RK5_Crafting_Uncommon
+
+Items.CB_RK5_Crafting_Uncommon:
+  $base: Items.RK5
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_RK5_Extended_Mag_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_RK5_Extended_Mag_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: rk5ex_name
+  localizedDescription: rk5ex_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_RK5_Extended_Mag_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_RK5_Extended_Mag_Crafting_Rare
+
+Items.CB_RK5_Extended_Mag_Crafting_Rare:
+  $base: Items.RK5_Extended_Mag
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_Strife_Mk2_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Strife_Mk2_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: strife_name
+  localizedDescription: strife_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_Strife_Mk2_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Strife_Mk2_Crafting_Common
+
+Items.CB_Strife_Mk2_Crafting_Common:
+  $base: Items.Strife_Mk2
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_Strife_Mk2_Extended_Mag_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Strife_Mk2_Extended_Mag_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: strife2_name
+  localizedDescription: strife2_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_Strife_Mk2_Extended_Mag_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Strife_Mk2_Extended_Mag_Crafting_Uncommon
+
+Items.CB_Strife_Mk2_Extended_Mag_Crafting_Uncommon:
+  $base: Items.Strife_Mk2_Extended_Mag
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_Zenith_CA40_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Zenith_CA40_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: zenith_name
+  localizedDescription: zenith_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_Zenith_CA40_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Zenith_CA40_Crafting_Common
+
+Items.CB_Zenith_CA40_Crafting_Common:
+  $base: Items.Zenith_CA40
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_Canik_Rival_S_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Canik_Rival_S_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: rival_name
+  localizedDescription: rival_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_Canik_Rival_S_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Canik_Rival_S_Crafting_Uncommon
+
+Items.CB_Canik_Rival_S_Crafting_Uncommon:
+  $base: Items.Canik_Rival_S
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_Daemon_9mm_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Daemon_9mm_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: stac11_name
+  localizedDescription: stac11_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_Daemon_9mm_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Daemon_9mm_Crafting_Rare
+
+Items.CB_Daemon_9mm_Crafting_Rare:
+  $base: Items.Daemon_9mm
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_GS_9mm_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_GS_9mm_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: gs9_name
+  localizedDescription: gs9_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_GS_9mm_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_GS_9mm_Crafting_Epic
+
+Items.CB_GS_9mm_Crafting_Epic:
+  $base: Items.GS_9mm
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_Kendall44_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Kendall44_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: kendall_name
+  localizedDescription: kendall_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_Kendall44_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Kendall44_Crafting_Rare
+
+Items.CB_Kendall44_Crafting_Rare:
+  $base: Items.Kendall44
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_M9_Phantom_Limb_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_M9_Phantom_Limb_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: phantom9_name
+  localizedDescription: phantom9_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_M9_Phantom_Limb_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_M9_Phantom_Limb_Crafting_Common
+
+Items.CB_M9_Phantom_Limb_Crafting_Common:
+  $base: Items.M9_Phantom_Limb
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_M27S_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_M27S_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: m27_name
+  localizedDescription: m27_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_M27S_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_M27S_Crafting_Uncommon
+
+Items.CB_M27S_Crafting_Uncommon:
+  $base: Items.M27S
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_ONI_Smart_Pistol_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_ONI_Smart_Pistol_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: oni_name
+  localizedDescription: oni_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_ONI_Smart_Pistol_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_ONI_Smart_Pistol_Crafting_Rare
+
+Items.CB_ONI_Smart_Pistol_Crafting_Rare:
+  $base: Items.ONI_Smart_Pistol
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_OSP_18_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_OSP_18_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: osp_name
+  localizedDescription: osp_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_OSP_18_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_OSP_18_Crafting_Uncommon
+
+Items.CB_OSP_18_Crafting_Uncommon:
+  $base: Items.OSP_18
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_P220_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_P220_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: p220_name
+  localizedDescription: p220_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_P220_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_P220_Crafting_Common
+
+Items.CB_P220_Crafting_Common:
+  $base: Items.P220
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_Stechkin_APS_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Stechkin_APS_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: stechkin_name
+  localizedDescription: stechkin_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_Stechkin_APS_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Stechkin_APS_Crafting_Common
+
+Items.CB_Stechkin_APS_Crafting_Common:
+  $base: Items.Stechkin_APS
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_USP_45_Fate_Maker_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_USP_45_Fate_Maker_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: t800_name
+  localizedDescription: t800_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_USP_45_Fate_Maker_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_USP_45_Fate_Maker_Crafting_Legendary
+
+Items.CB_USP_45_Fate_Maker_Crafting_Legendary:
+  $base: Items.USP_45_Fate_Maker
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_AR15_SLR_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_AR15_SLR_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: ar15_name
+  localizedDescription: ar15_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_AR15_SLR_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_AR15_SLR_Crafting_Rare
+
+Items.CB_AR15_SLR_Crafting_Rare:
+  $base: Items.AR15_SLR
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_Flatline_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Flatline_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: flatline_name
+  localizedDescription: flatline_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Flatline_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Flatline_Crafting_Epic
+
+Items.CB_Flatline_Crafting_Epic:
+  $base: Items.Flatline
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_XPR_50_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_XPR_50_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: xrp_name
+  localizedDescription: xrp_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_XPR_50_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_XPR_50_Crafting_Legendary
+
+Items.CB_XPR_50_Crafting_Legendary:
+  $base: Items.XPR_50
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_Scar_Black_Default_Stock_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Scar_Black_Default_Stock_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: mack4_name
+  localizedDescription: mack4_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_Scar_Black_Default_Stock_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Scar_Black_Default_Stock_Crafting_Uncommon
+
+Items.CB_Scar_Black_Default_Stock_Crafting_Uncommon:
+  $base: Items.Scar_Black_Default_Stock
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_Scar_Black_Short_Stock_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Scar_Black_Short_Stock_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: mack3_name
+  localizedDescription: mack3_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_Scar_Black_Short_Stock_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Scar_Black_Short_Stock_Crafting_Uncommon
+
+Items.CB_Scar_Black_Short_Stock_Crafting_Uncommon:
+  $base: Items.Scar_Black_Short_Stock
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_Scar_Jack_Default_Stock_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Scar_Jack_Default_Stock_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: jack2_name
+  localizedDescription: jack2_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_Scar_Jack_Default_Stock_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Scar_Jack_Default_Stock_Crafting_Rare
+
+Items.CB_Scar_Jack_Default_Stock_Crafting_Rare:
+  $base: Items.Scar_Jack_Default_Stock
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_Scar_Jack_Short_Stock_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Scar_Jack_Short_Stock_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: jack_name
+  localizedDescription: jack_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_Scar_Jack_Short_Stock_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Scar_Jack_Short_Stock_Crafting_Rare
+
+Items.CB_Scar_Jack_Short_Stock_Crafting_Rare:
+  $base: Items.Scar_Jack_Short_Stock
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_Scar_Mack_Default_Stock_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Scar_Mack_Default_Stock_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: mack2_name
+  localizedDescription: mack2_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Scar_Mack_Default_Stock_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Scar_Mack_Default_Stock_Crafting_Epic
+
+Items.CB_Scar_Mack_Default_Stock_Crafting_Epic:
+  $base: Items.Scar_Mack_Default_Stock
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_Scar_Mack_Short_Stock_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Scar_Mack_Short_Stock_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: mack_name
+  localizedDescription: mack_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Scar_Mack_Short_Stock_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Scar_Mack_Short_Stock_Crafting_Epic
+
+Items.CB_Scar_Mack_Short_Stock_Crafting_Epic:
+  $base: Items.Scar_Mack_Short_Stock
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_Scar_Night_City_Special_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Scar_Night_City_Special_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: ncs2_name
+  localizedDescription: ncs2_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_Scar_Night_City_Special_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Scar_Night_City_Special_Crafting_Legendary
+
+Items.CB_Scar_Night_City_Special_Crafting_Legendary:
+  $base: Items.Scar_Night_City_Special
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_Scar_Sludge_Default_Stock_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Scar_Sludge_Default_Stock_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: sludge2_name
+  localizedDescription: sludge2_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_Scar_Sludge_Default_Stock_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Scar_Sludge_Default_Stock_Crafting_Legendary
+
+Items.CB_Scar_Sludge_Default_Stock_Crafting_Legendary:
+  $base: Items.Scar_Sludge_Default_Stock
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_Scar_Sludge_Short_Stock_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Scar_Sludge_Short_Stock_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: sludge_name
+  localizedDescription: sludge_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_Scar_Sludge_Short_Stock_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Scar_Sludge_Short_Stock_Crafting_Legendary
+
+Items.CB_Scar_Sludge_Short_Stock_Crafting_Legendary:
+  $base: Items.Scar_Sludge_Short_Stock
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_Nokota_Stingray_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Nokota_Stingray_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: stingray_name
+  localizedDescription: stingray_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_Nokota_Stingray_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Nokota_Stingray_Crafting_Legendary
+
+Items.CB_Nokota_Stingray_Crafting_Legendary:
+  $base: Items.Nokota_Stingray
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_Nokota_Taipan_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Nokota_Taipan_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: taipan_name
+  localizedDescription: taipan_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_Nokota_Taipan_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Nokota_Taipan_Crafting_Legendary
+
+Items.CB_Nokota_Taipan_Crafting_Legendary:
+  $base: Items.Nokota_Taipan
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_Doom_Chainsaw_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Doom_Chainsaw_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: chain_name
+  localizedDescription: chain_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_Doom_Chainsaw_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Doom_Chainsaw_Crafting_Rare
+
+Items.CB_Doom_Chainsaw_Crafting_Rare:
+  $base: Items.Doom_Chainsaw
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_Fleshlight_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Fleshlight_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: flesh_name
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_Fleshlight_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Fleshlight_Crafting_Legendary
+
+Items.CB_Fleshlight_Crafting_Legendary:
+  $base: Items.Fleshlight
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_Hatchet_Heat_Hawk_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Hatchet_Heat_Hawk_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: heat_name
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_Hatchet_Heat_Hawk_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Hatchet_Heat_Hawk_Crafting_Rare
+
+Items.CB_Hatchet_Heat_Hawk_Crafting_Rare:
+  $base: Items.Hatchet_Heat_Hawk
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_Hatchet_No_Masters_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Hatchet_No_Masters_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: mast_name
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_Hatchet_No_Masters_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Hatchet_No_Masters_Crafting_Uncommon
+
+Items.CB_Hatchet_No_Masters_Crafting_Uncommon:
+  $base: Items.Hatchet_No_Masters
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_Hatchet_Riddle_Of_Steel_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Hatchet_Riddle_Of_Steel_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: riddle_name
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_Hatchet_Riddle_Of_Steel_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Hatchet_Riddle_Of_Steel_Crafting_Uncommon
+
+Items.CB_Hatchet_Riddle_Of_Steel_Crafting_Uncommon:
+  $base: Items.Hatchet_Riddle_Of_Steel
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_HF_Murasama_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_HF_Murasama_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: sam_name
+  localizedDescription: sam_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_HF_Murasama_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_HF_Murasama_Crafting_Legendary
+
+Items.CB_HF_Murasama_Crafting_Legendary:
+  $base: Items.HF_Murasama
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_Leviathan_Axe_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Leviathan_Axe_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: lev_name
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Leviathan_Axe_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Leviathan_Axe_Crafting_Epic
+
+Items.CB_Leviathan_Axe_Crafting_Epic:
+  $base: Items.Leviathan_Axe
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_Louisville_Slugger_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Louisville_Slugger_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: slugger_name
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_Louisville_Slugger_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Louisville_Slugger_Crafting_Common
+
+Items.CB_Louisville_Slugger_Crafting_Common:
+  $base: Items.Louisville_Slugger
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_Machete_Default_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Machete_Default_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: chete_name
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_Machete_Default_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Machete_Default_Crafting_Common
+
+Items.CB_Machete_Default_Crafting_Common:
+  $base: Items.Machete_Default
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_Scythe_Blood_Bunny_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Scythe_Blood_Bunny_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: bun_name
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Scythe_Blood_Bunny_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Scythe_Blood_Bunny_Crafting_Epic
+
+Items.CB_Scythe_Blood_Bunny_Crafting_Epic:
+  $base: Items.Scythe_Blood_Bunny
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_Scythe_Default_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Scythe_Default_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: scy_name
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_Scythe_Default_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Scythe_Default_Crafting_Common
+
+Items.CB_Scythe_Default_Crafting_Common:
+  $base: Items.Scythe_Default
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_Sledgehammer_Doom_Hammer_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Sledgehammer_Doom_Hammer_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: dham_name
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_Sledgehammer_Doom_Hammer_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Sledgehammer_Doom_Hammer_Crafting_Rare
+
+Items.CB_Sledgehammer_Doom_Hammer_Crafting_Rare:
+  $base: Items.Sledgehammer_Doom_Hammer
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_Swiss_Army_Knife_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Swiss_Army_Knife_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: swiss_name
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_Swiss_Army_Knife_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Swiss_Army_Knife_Crafting_Common
+
+Items.CB_Swiss_Army_Knife_Crafting_Common:
+  $base: Items.Swiss_Army_Knife
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_Teeth_of_Terra_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Teeth_of_Terra_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: terra_name
+  localizedDescription: terra_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Teeth_of_Terra_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Teeth_of_Terra_Crafting_Epic
+
+Items.CB_Teeth_of_Terra_Crafting_Epic:
+  $base: Items.Teeth_of_Terra
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_Vampire_Metal_Stake_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Vampire_Metal_Stake_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: vamp_name
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_Vampire_Metal_Stake_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Vampire_Metal_Stake_Crafting_Uncommon
+
+Items.CB_Vampire_Metal_Stake_Crafting_Uncommon:
+  $base: Items.Vampire_Metal_Stake
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_Zelda_Master_Sword_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Zelda_Master_Sword_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: link_name
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_Zelda_Master_Sword_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Zelda_Master_Sword_Crafting_Legendary
+
+Items.CB_Zelda_Master_Sword_Crafting_Legendary:
+  $base: Items.Zelda_Master_Sword
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_Electric_Hellfire_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Electric_Hellfire_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: el_hf_gun_name
+  localizedDescription: el_hf_gun_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_Electric_Hellfire_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Electric_Hellfire_Crafting_Legendary
+
+Items.CB_Electric_Hellfire_Crafting_Legendary:
+  $base: Items.Electric_Hellfire
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_Electric_HellfireMk2_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Electric_HellfireMk2_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: el2_hf_gun_name
+  localizedDescription: el2_hf_gun_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_Electric_HellfireMk2_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Electric_HellfireMk2_Crafting_Legendary
+
+Items.CB_Electric_HellfireMk2_Crafting_Legendary:
+  $base: Items.Electric_HellfireMk2
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_M79_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_M79_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: m79_name
+  localizedDescription: m79_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_M79_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_M79_Crafting_Legendary
+
+Items.CB_M79_Crafting_Legendary:
+  $base: Items.M79
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_XM25_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_XM25_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: xm25_name
+  localizedDescription: xm25_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_XM25_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_XM25_Crafting_Legendary
+
+Items.CB_XM25_Crafting_Legendary:
+  $base: Items.XM25
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_manavortex_vergil_devil_katana_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_manavortex_vergil_devil_katana_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: LocKey#vergil_devil_katana_i18n
+  localizedDescription: LocKey#vergil_devil_katana_desc_i18n
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_manavortex_vergil_devil_katana_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_manavortex_vergil_devil_katana_Crafting_Legendary
+
+Items.CB_manavortex_vergil_devil_katana_Crafting_Legendary:
+  $base: Items.manavortex_vergil_devil_katana
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_combat_master_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_combat_master_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: combat_master_gun_name
+  localizedDescription: combat_master_gun_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_combat_master_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_combat_master_Crafting_Common
+
+Items.CB_combat_master_Crafting_Common:
+  $base: Items.combat_master
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_Burya_Basilic_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Burya_Basilic_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: LocKey("basilic_name")
+  localizedDescription: LocKey("basilic_desc")
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_Burya_Basilic_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Burya_Basilic_Crafting_Legendary
+
+Items.CB_Burya_Basilic_Crafting_Legendary:
+  $base: Items.Burya_Basilic
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_Gravitazer_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Gravitazer_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: grav_name
+  localizedDescription: grav_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_Gravitazer_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Gravitazer_Crafting_Legendary
+
+Items.CB_Gravitazer_Crafting_Legendary:
+  $base: Items.Gravitazer
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+
+Items.CB_HK416_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_HK416_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: 416_name
+  localizedDescription: 416_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_HK416_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_HK416_Crafting_Rare
+
+Items.CB_HK416_Crafting_Rare:
+  $base: Items.HK416
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_Colt_M4_Carbine_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Colt_M4_Carbine_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: tacm4_name
+  localizedDescription: tacm4_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_Colt_M4_Carbine_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Colt_M4_Carbine_Crafting_Rare
+
+Items.CB_Colt_M4_Carbine_Crafting_Rare:
+  $base: Items.Colt_M4_Carbine
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_Sig_Sauer_XM7_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Sig_Sauer_XM7_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: sigmcx_name
+  localizedDescription: sigmcx_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_Sig_Sauer_XM7_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Sig_Sauer_XM7_Crafting_Rare
+
+Items.CB_Sig_Sauer_XM7_Crafting_Rare:
+  $base: Items.Sig_Sauer_XM7
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+
+Items.CB_Fabarm_SDASS_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Fabarm_SDASS_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: sdass_name
+  localizedDescription: sdass_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Fabarm_SDASS_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Fabarm_SDASS_Crafting_Epic
+
+Items.CB_Fabarm_SDASS_Crafting_Epic:
+  $base: Items.Fabarm_SDASS
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_Franchi_PA3_Recipe_Common:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Franchi_PA3_Recipe_Common_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Common
+  displayName: pa3_name
+  localizedDescription: pa3_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Common
+
+Items.CB_Franchi_PA3_Recipe_Common_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Franchi_PA3_Crafting_Common
+
+Items.CB_Franchi_PA3_Crafting_Common:
+  $base: Items.Franchi_PA3
+  quality: Quality.Common
+  CraftingData: Items.Big_Common_Crafting_Materials_Weapon
+
+Items.CB_FS12_Shotgun_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_FS12_Shotgun_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: fs12_name
+  localizedDescription: fs12_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_FS12_Shotgun_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_FS12_Shotgun_Crafting_Rare
+
+Items.CB_FS12_Shotgun_Crafting_Rare:
+  $base: Items.FS12_Shotgun
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_HardReboot_Shotgun_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_HardReboot_Shotgun_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: reboot_name
+  localizedDescription: reboot_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_HardReboot_Shotgun_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_HardReboot_Shotgun_Crafting_Legendary
+
+Items.CB_HardReboot_Shotgun_Crafting_Legendary:
+  $base: Items.HardReboot_Shotgun
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_KS23_Shotgun_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_KS23_Shotgun_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: ks23_name
+  localizedDescription: ks23_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_KS23_Shotgun_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_KS23_Shotgun_Crafting_Legendary
+
+Items.CB_KS23_Shotgun_Crafting_Legendary:
+  $base: Items.KS23_Shotgun
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+
+Items.CB_Lockwood680_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Lockwood680_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: lockwood_name
+  localizedDescription: lockwood_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_Lockwood680_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Lockwood680_Crafting_Rare
+
+Items.CB_Lockwood680_Crafting_Rare:
+  $base: Items.Lockwood680
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_M10Breacher_Wasteland_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_M10Breacher_Wasteland_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: m10_name
+  localizedDescription: m10_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_M10Breacher_Wasteland_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_M10Breacher_Wasteland_Crafting_Epic
+
+Items.CB_M10Breacher_Wasteland_Crafting_Epic:
+  $base: Items.M10Breacher_Wasteland
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_MCS880_Recipe_Rare:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_MCS880_Recipe_Rare_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Rare
+  displayName: mcs880_name
+  localizedDescription: mcs880_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Rare
+
+Items.CB_MCS880_Recipe_Rare_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_MCS880_Crafting_Rare
+
+Items.CB_MCS880_Crafting_Rare:
+  $base: Items.MCS880
+  quality: Quality.Rare
+  CraftingData: Items.Big_Rare_Crafting_Materials_Weapon
+
+Items.CB_Model680_Showstopper_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Model680_Showstopper_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: showstopper_name
+  localizedDescription: showstopper_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Model680_Showstopper_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Model680_Showstopper_Crafting_Epic
+
+Items.CB_Model680_Showstopper_Crafting_Epic:
+  $base: Items.Model680_Showstopper
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_Model680_Recipe_Epic:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Model680_Recipe_Epic_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Epic
+  displayName: model680_name
+  localizedDescription: model680_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Epic
+
+Items.CB_Model680_Recipe_Epic_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Model680_Crafting_Epic
+
+Items.CB_Model680_Crafting_Epic:
+  $base: Items.Model680
+  quality: Quality.Epic
+  CraftingData: Items.Big_Epic_Crafting_Materials_Weapon
+
+Items.CB_Mossberg590_Cruiser_Recipe_Uncommon:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Mossberg590_Cruiser_Recipe_Uncommon_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Uncommon
+  displayName: cruiser_name
+  localizedDescription: cruiser_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Uncommon
+
+Items.CB_Mossberg590_Cruiser_Recipe_Uncommon_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Mossberg590_Cruiser_Crafting_Uncommon
+
+Items.CB_Mossberg590_Cruiser_Crafting_Uncommon:
+  $base: Items.Mossberg590_Cruiser
+  quality: Quality.Uncommon
+  CraftingData: Items.Big_Uncommon_Crafting_Materials_Weapon
+
+Items.CB_Shotgun_LastRites_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.CB_Shotgun_LastRites_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: lastrites_name
+  localizedDescription: lastrites_description
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.CB_Shotgun_LastRites_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.CB_Shotgun_LastRites_Crafting_Legendary
+
+Items.CB_Shotgun_LastRites_Crafting_Legendary:
+  $base: Items.Shotgun_LastRites
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon

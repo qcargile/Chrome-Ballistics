@@ -1,0 +1,210 @@
+Items.Gravitazer:
+  $base: Items.Preset_Lexington_Toygun
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.gravstats_damage
+    - !append-once Items.gravstats_rof
+    - !append-once Items.gravstats_mag
+    - !append-once Items.gravstats_silent
+    - !append-once Items.gravstats_stun
+  appearanceResourceName: grav_app
+  quality: Quality.Legendary
+  attacks:
+    - !append-once Attacks.grav_jammode
+  rangedAttacks: Attacks.grav_attacks
+  displayName: grav_name
+  localizedDescription: grav_description
+  blueprint: Items.Base_Power_Handgun_NoMuzzle_Blueprint
+  hudIcon:
+    atlasResourcePath: grav\icon\grav_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: grav\Icon\grav.inkatlas
+    atlasPartName: slot_01
+  visualTags:
+    - Default
+  slotPartList:
+    - Items.Base_grav_inline2
+    - Items.Base_grav_inline4
+    - Items.Base_grav_inline6
+    - Items.Base_grav_inline8
+    - Items.HandgunPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_grav_inline0
+    - Items.Preset_grav_inline1
+    - Items.Preset_grav_inline2
+    - Items.Preset_grav_inline3
+  
+Items.Base_grav_inline2:
+  $base: Items.Base_Lexington_inline2
+  itemPartList:
+    - Items.Base_grav_inline3
+Items.Base_grav_inline3:
+  $base: Items.Base_Lexington_inline3
+  item: Items.grav_rcv_prt
+Items.grav_rcv_prt:
+  $base: Items.w_handgun_militech_lexington__rcv1
+  appearanceResourceName: grav_rcv
+#base
+Items.Base_grav_inline4:
+  $base: Items.Base_Lexington_inline4
+  itemPartList:
+    - Items.Base_grav_inline5
+Items.Base_grav_inline5:
+  $base: Items.Base_Lexington_inline5
+  item: Items.grav_base_prt
+Items.grav_base_prt:
+  $base: Items.w_handgun_militech_lexington__base1
+  appearanceResourceName: grav_base
+#mag
+Items.Base_grav_inline6:
+  $base: Items.Base_Lexington_inline6
+  itemPartList:
+    - Items.Base_grav_inline7
+Items.Base_grav_inline7:
+  $base: Items.Base_Lexington_inline7
+  item: Items.grav_mag_std_prt
+Items.grav_mag_std_prt:
+  $base: Items.w_handgun_militech_lexington__mag_std
+  appearanceResourceName: grav_mag_std
+#reload
+Items.Base_grav_inline8:
+  $base: Items.Base_Lexington_inline8
+  itemPartList:
+    - Items.Base_grav_inline9
+Items.Base_grav_inline9:
+  $base: Items.Base_Lexington_inline9
+  item: Items.grav_mag_stdr_prt
+Items.grav_mag_stdr_prt:
+  $base: Items.w_handgun_militech_lexington__mag_stdr
+  appearanceResourceName: grav_mag_stdr
+#preset
+Items.Preset_grav_inline0:
+  $base: Items.Preset_Base_Lexington_inline0
+  itemPartPreset: Items.grav_rcv_prt
+Items.Preset_grav_inline1:
+  $base: Items.Preset_Base_Lexington_inline1
+  itemPartPreset: Items.grav_base_prt
+Items.Preset_grav_inline2:
+  $base: Items.Preset_Base_Lexington_inline2
+  itemPartPreset: Items.grav_mag_std_prt
+Items.Preset_grav_inline3:
+  $base: Items.Preset_Base_Lexington_inline3
+  itemPartPreset: Items.grav_mag_stdr_prt 
+
+Items.gravstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.gravstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.04
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.gravstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.gravstats_silent:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanSilentKill
+  
+Items.gravstats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Attacks.grav_jammode:
+    $base: Attacks.Bullet_GameEffect
+    explosionAttack:
+        $base: Attacks.Bullet_GameEffect
+        playerIncomingDamageMultiplier: 0.00
+        effectName: weaponShoot
+        effectTag: player_ray
+        range: 0.5
+        statusEffects:   
+        -   $type: StatusEffectAttackData
+            statusEffect: BaseStatusEffect.PingMarkStatusEffect
+            applyImmediately: true  
+
+BaseStatusEffect.PingMarkStatusEffect:
+  $type: gamedataStatusEffect_Record
+  SFX: []
+
+Attacks.grav_attack1:
+    $type: RangedAttack
+    playerAttack: Attacks.grav_jammode
+    secondaryPlayerAttack: Attacks.grav_jammode
+    playerTimeDilated: Attacks.grav_jammode
+    secondaryPlayerTimeDilated: Attacks.grav_jammode
+
+Attacks.grav_attacks:
+    $type: RangedAttackPackage
+    defaultFire: Attacks.grav_attack1
+    chargeFire: Attacks.grav_attack1
+  
+Vendors.pac_wwd_gunsmith_01:
+  itemStock:
+    - !append Items.grav_stock
+    
+Vendors.hey_rey_gunsmith_01:
+  itemStock:
+    - !append Items.grav_stock
+
+Vendors.wbr_jpn_gunsmith_01:
+  itemStock:
+    - !append Items.grav_stock
+    
+Vendors.wat_nid_gunsmith_01:
+  itemStock:
+    - !append Items.grav_stock
+    
+Vendors.wat_lch_gunsmith_01:
+  itemStock:
+    - !append Items.grav_stock
+    
+Vendors.wat_kab_gunsmith_02:
+  itemStock:
+    - !append Items.grav_stock
+    
+Vendors.wat_kab_gunsmith_01:
+  itemStock:
+    - !append Items.grav_stock
+    
+Vendors.hey_gle_gunsmith_01:
+  itemStock:
+    - !append Items.grav_stock
+    
+Vendors.hey_spr_gunsmith_01:
+  itemStock:
+    - !append Items.grav_stock
+    
+Vendors.std_arr_gunsmith_01:
+  itemStock:
+    - !append Items.grav_stock
+    
+Vendors.std_rcr_gunsmith_01:
+  itemStock:
+    - !append Items.grav_stock
+    
+Vendors.cct_dtn_guns_01:
+  itemStock:
+    - !append Items.grav_stock
+
+Items.grav_stock:
+  $type: VendorItem
+  generationPrereqs:
+    - !append LootPrereqs.PlayerLevel_Tier_3_Start_Prereq
+  item: Items.Gravitazer
+  quantity:
+    - !append Vendors.Always_Present

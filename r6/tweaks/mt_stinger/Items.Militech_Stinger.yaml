@@ -1,0 +1,231 @@
+# ------------------------------------------------------------
+# weapon parts' appearances overrides (used later in the file)
+# ------------------------------------------------------------
+
+Items.w_handgun__militech_stinger__rcv1:
+  $base: Items.w_handgun__tsunami_kappa__rcv1
+  appearanceResourceName: mt_stinger_rcv_appfile_path
+
+Items.w_handgun__militech_stinger__base1:
+  $base: Items.w_handgun__tsunami_kappa__base1
+  appearanceResourceName: mt_stinger_base_appfile_path
+
+Items.w_handgun__militech_stinger__mag_std:
+  $base: Items.w_handgun__tsunami_kappa__mag_std
+  appearanceResourceName: mt_stinger_mag_std_appfile_path
+
+Items.w_handgun__militech_stinger__mag_stdr:
+  $base: Items.w_handgun__tsunami_kappa__mag_stdr
+  appearanceResourceName: mt_stinger_mag_stdr_appfile_path
+
+# -----------------------
+# custom weapon blueprint
+# -----------------------
+
+Items.Base_Smart_Handgun_NoAttachments_IconicMod_Blueprint:
+  $type: gamedataItemBlueprint_Record
+  rootElement: Items.Base_Smart_Handgun_NoAttachments_IconicMod_Blueprint_rootElement
+
+Items.Base_Smart_Handgun_NoAttachments_IconicMod_Blueprint_rootElement:
+  $base: Items.Base_Smart_Handgun_NoAttachments_Blueprint_inline0
+  childElements:
+  - !remove Items.Smart_Handgun_WeaponMod1Element
+  - !append-once Items.IconicRangedWeaponModElement
+
+# -------------------------
+# weapon mod ability params
+# -------------------------
+
+Items.Militech_Stinger_Effector:
+  $base: Items.DianYinglongWeaponModAbility_inline0
+  # applicationChance: 0.0659999996 # <- default value
+
+Items.EMP_Sting_Ability:
+  $base: Items.IconicWeaponModAbilityBase
+  UIData:
+    $type: GameplayLogicPackageUIData
+    localizedDescription: LocKey#mt_stinger_loc_desc_iconic # iconic description shown in yellow text when hovering over a weapon
+  effectors:
+  - !append-once Items.Militech_Stinger_Effector # stealing Yinglong's EMP mod just like that because I like it and it's totally not too OP on a pistol lol
+
+# -----------------
+# weapon mod params
+# -----------------
+
+Items.EMP_Sting_Mod:
+  $base: Items.IconicWeaponModBase
+  OnAttach: [ Items.EMP_Sting_Ability ]
+
+# ------------------
+# main weapon params
+# ------------------
+
+Items.Militech_Stinger:
+  # base to draw from:
+  $base: Items.Preset_Kappa_Default
+
+  # different blueprint to accommodate an iconic mod (and remove one weapon mod slot for balancing - peeps might e.g. also want to make the gun non-lethal, so the other slot stays):
+  blueprint: Items.Base_Smart_Handgun_NoAttachments_IconicMod_Blueprint
+
+  # weapon appearance:
+  appearanceName: mt_stinger
+  appearanceResourceName: mt_stinger_main_appfile_path
+  visualTags: [ mt_stinger ]
+
+  # tag to allow for weapon upgrades:
+  tags:
+  - !append-once IconicWeapon
+
+  # localized text data:
+  displayName: mt_stinger_loc_name
+  localizedDescription: mt_stinger_loc_desc
+
+  # weapon components:
+  slotPartList:
+  - $base: Items.Base_Kappa_inline1
+    itemPartList:
+    - $type: ItemPartListElement
+      item: Items.w_handgun__militech_stinger__rcv1
+  - $base: Items.Base_Kappa_inline3
+    itemPartList:
+    - $type: ItemPartListElement
+      item: Items.w_handgun__militech_stinger__base1
+  - $base: Items.Base_Kappa_inline5
+    itemPartList:
+    - $type: ItemPartListElement
+      item: Items.w_handgun__militech_stinger__mag_std
+  - $base: Items.Base_Kappa_inline7
+    itemPartList:
+    - $type: ItemPartListElement
+      item: Items.w_handgun__militech_stinger__mag_stdr
+
+  slotPartListPreset:
+  - $base: Items.Preset_Kappa_Default_inline0
+    itemPartPreset: Items.w_handgun__militech_stinger__rcv1
+  - $base: Items.Preset_Kappa_Default_inline1
+    itemPartPreset: Items.w_handgun__militech_stinger__base1
+  - $base: Items.Preset_Kappa_Default_inline2
+    itemPartPreset: Items.w_handgun__militech_stinger__mag_std
+  - $base: Items.Preset_Kappa_Default_inline3
+    itemPartPreset: Items.w_handgun__militech_stinger__mag_stdr
+  - Items.HandgunAndRevolverScopesPartList
+  - Items.Preset_Kappa_Default_inline4
+  - Items.Preset_Kappa_Default_inline5
+  -
+    $type: SlotItemPartPreset
+    itemPartPreset: Items.EMP_Sting_Mod
+    slot: AttachmentSlots.IconicWeaponModLegendary
+
+  # hud and inventory icons:
+  hudIcon:
+    atlasResourcePath: militech_stinger\icons\icon_hud.inkatlas
+    atlasPartName: slot_01
+  icon:
+    atlasResourcePath: militech_stinger\icons\icon_inventory.inkatlas
+    atlasPartName: slot_01
+    
+  # quality and stats:
+  quality: Quality.Legendary
+
+  statModifiers:
+  - !append-once Quality.IconicItem
+  - !append-once Character.ScaleToPlayerLevel
+
+  statModifierGroups: # groups of weapon stat modifiers
+  - !append-once Items.Militech_Stinger_Technical_Stats
+  - !append-once Items.Militech_Stinger_Damage_Stats
+  # remove "duplicates"
+  - !remove Items.Base_Kappa_Technical_Stats
+  - !remove Items.Base_Kappa_Damage_Stats
+  # remove unneeded
+  - !remove Items.QualityRandomization
+  - !remove Items.ItemPlusRandomizer_MaxQuality
+  - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  - !remove Items.WeaponModsWeights_On_Tier2Plus
+  - !remove Items.WeaponModsWeights_On_Tier3Plus
+  - !remove Items.WeaponModsWeights_On_Tier4Plus
+  - !remove Items.WeaponModsWeights_On_Tier5Plus
+  - !remove Items.WeaponModsWeights_On_Tier5PlusPlus
+
+  # pricing:
+  buyPrice:
+  - !remove Price.KangTao
+  - !append-once Price.Militech
+  - !append-once Price.Militech_Stinger_BasePrice
+
+  sellPrice:
+  - !remove Price.KangTao
+  - !append-once Price.Militech
+  - !append-once Price.Militech_Stinger_BasePrice
+
+# ------------
+# custom stats
+# ------------
+
+Items.Militech_Stinger_NumShotsToFire:
+  $base: Items.Base_Kappa_Technical_Stats_inline0
+  value: 2
+
+Items.Militech_Stinger_Accuracy:
+  $base: Items.Base_Kappa_Technical_Stats_inline1
+  value: 5
+
+# the higher the number here, the lower the fire rate
+Items.Militech_Stinger_CycleTime:
+  $base: Items.Base_Kappa_Technical_Stats_inline2
+  value: 0.126 # slightly slower than stock Kappa
+
+Items.Militech_Stinger_MagazineCapacityBase:
+  $base: Items.Base_Kappa_Technical_Stats_inline3
+  value: 60
+
+Items.Militech_Stinger_Range:
+  $base: Items.Base_Kappa_Technical_Stats_inline4
+  value: 1.600000024
+
+Items.Militech_Stinger_ProjectilesPerShotBase:
+  $base: Items.Base_Kappa_Technical_Stats_inline5
+  value: 2
+
+Items.Militech_Stinger_ProjectilesPerShotCombinedModifier:
+  $base: BaseStats.ProjectilesPerShotCombinedModifier
+  value: 2
+
+Items.Militech_Stinger_Technical_Stats:
+  $base: Items.Base_Kappa_Technical_Stats
+  statModifiers:
+  - !remove Items.Base_Kappa_Technical_Stats_inline0
+  - !remove Items.Base_Kappa_Technical_Stats_inline1
+  - !remove Items.Base_Kappa_Technical_Stats_inline2
+  - !remove Items.Base_Kappa_Technical_Stats_inline3
+  - !remove Items.Base_Kappa_Technical_Stats_inline4
+  - !remove Items.Base_Kappa_Technical_Stats_inline5
+  - !remove BaseStats.ProjectilesPerShotCombinedModifier
+  - !append-once Items.Militech_Stinger_NumShotsToFire
+  - !append-once Items.Militech_Stinger_Accuracy
+  - !append-once Items.Militech_Stinger_CycleTime
+  - !append-once Items.Militech_Stinger_MagazineCapacityBase
+  - !append-once Items.Militech_Stinger_Range
+  - !append-once Items.Militech_Stinger_ProjectilesPerShotBase
+  - !append-once Items.Militech_Stinger_ProjectilesPerShotCombinedModifier
+
+Items.Militech_Stinger_DPS:
+  $base: Items.Base_Kappa_Damage_Stats_inline0
+  value: 125
+
+Items.Militech_Stinger_Damage_Stats:
+  $base: Items.Base_Kappa_Damage_Stats
+  statModifiers:
+  - !remove Items.Base_Kappa_Damage_Stats_inline0
+  - !append-once Items.Militech_Stinger_DPS
+
+# -----------------
+# custom base price
+# -----------------
+
+Price.Militech_Stinger_BasePrice:
+  $base: Items.Base_Kappa_inline0
+  value: 150
+
+
+

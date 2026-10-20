@@ -1,0 +1,49 @@
+Items.Doom_Chainsaw:
+  $base: Items.Preset_Chainsword_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.chainstats_dismember
+    - !append-once Items.chainstats_damage
+    - !append-once Items.chainstats_leap
+  appearanceResourceName: chain_app
+  quality: Quality.Rare
+  displayName: chain_name
+  localizedDescription: chain_description
+  hudIcon:
+    atlasResourcePath: chain\icon\chain_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: chain\icon\chain.inkatlas
+    atlasPartName: slot_01
+  slotPartList: []
+  slotPartListPreset:
+    - Items.Preset_Chainsword_Default_inline1
+    - Items.Preset_Chainsword_Default_inline2
+    - Items.Preset_Chainsword_Default_inline3
+  visualTags:
+    - Default
+  statPools:
+    - BaseStatPools.TechMeleeCharge
+
+Items.chainstats_dismember:
+  $type: gamedataConstantStatModifier_Record
+  value: 500
+  modifierType: Multiplier
+  statType: BaseStats.HitDismembermentFactor
+  
+Items.chainstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 300
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.chainstats_leap:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CanMeleeLeap
+  
+
+    

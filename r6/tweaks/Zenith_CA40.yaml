@@ -1,0 +1,124 @@
+Items.Zenith_CA40:
+  $base: Items.Preset_Liberty_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.zenithstats_damage
+    - !append-once Items.zenithstats_rof
+    - !append-once Items.zenithstats_mag
+    - !append-once Items.zenithstats_armor
+  appearanceResourceName: zenith_app
+  audioName: wea_set_unity
+  quality: Quality.Common
+  displayName: zenith_name
+  localizedDescription: zenith_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: zenith\icon\zenith_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: zenith\icon\zenith.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_zenith_inline2
+    - Items.Base_zenith_inline4
+    - Items.Base_zenith_inline6
+    - Items.Base_zenith_inline8
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+  slotPartListPreset:
+    - Items.Preset_zenith_inline0
+    - Items.Preset_zenith_inline1
+    - Items.Preset_zenith_inline2
+    - Items.Preset_zenith_inline3
+  
+Items.Base_zenith_inline2:
+  $base: Items.Base_Liberty_inline2
+  itemPartList:
+    - Items.Base_zenith_inline3
+Items.Base_zenith_inline3:
+  $base: Items.Base_Liberty_inline3
+  item: Items.zenith_rcv_prt
+Items.zenith_rcv_prt:
+  $base: Items.w_handgun__constitutional_liberty__rcv1
+  appearanceResourceName: zenith_rcv
+#base
+Items.Base_zenith_inline4:
+  $base: Items.Base_Liberty_inline4
+  itemPartList:
+    - Items.Base_zenith_inline5
+Items.Base_zenith_inline5:
+  $base: Items.Base_Liberty_inline5
+  item: Items.zenith_base_prt
+Items.zenith_base_prt:
+  $base: Items.w_handgun__constitutional_liberty__base1
+  appearanceResourceName: zenith_base
+#mag
+Items.Base_zenith_inline6:
+  $base: Items.Base_Liberty_inline6
+  itemPartList:
+    - Items.Base_zenith_inline7
+Items.Base_zenith_inline7:
+  $base: Items.Base_Liberty_inline7
+  item: Items.zenith_mag_std_prt
+Items.zenith_mag_std_prt:
+  $base: Items.w_handgun__constitutional_liberty__mag_std
+  appearanceResourceName: zenith_mag_std
+#reload
+Items.Base_zenith_inline8:
+  $base: Items.Base_Liberty_inline8
+  itemPartList:
+    - Items.Base_zenith_inline9
+Items.Base_zenith_inline9:
+  $base: Items.Base_Liberty_inline9
+  item: Items.zenith_mag_stdr_prt
+Items.zenith_mag_stdr_prt:
+  $base: Items.w_handgun__constitutional_liberty__mag_stdr
+  appearanceResourceName: zenith_mag_stdr
+#preset
+Items.Preset_zenith_inline0:
+  $base: Items.Preset_Liberty_Default_inline0
+  itemPartPreset: Items.zenith_rcv_prt
+Items.Preset_zenith_inline1:
+  $base: Items.Preset_Liberty_Default_inline1
+  itemPartPreset: Items.zenith_base_prt
+Items.Preset_zenith_inline2:
+  $base: Items.Preset_Liberty_Default_inline2
+  itemPartPreset: Items.zenith_mag_std_prt
+Items.Preset_zenith_inline3:
+  $base: Items.Preset_Liberty_Default_inline3
+  itemPartPreset: Items.zenith_mag_stdr_prt
+  
+Items.zenithstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.22
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.zenithstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 140
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+Items.zenithstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 2
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.zenithstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+
+    
+Items.Zenith_CA40_PlanB:
+  $base: Items.Preset_Liberty_Dex_Legendary
+  slotPartListPreset:
+    - Items.Preset_Liberty_Dex_inline7
+    

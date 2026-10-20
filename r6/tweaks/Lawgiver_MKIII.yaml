@@ -1,0 +1,440 @@
+Items.Lawgiver_MKIII:
+  $base: Items.Preset_Lexington_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.lawgiverstats_damage
+    - !append-once Items.lawgiverstats_rof
+    - !append-once Items.lawgiverstats_mag
+    - !append-once Items.lawgiverstats_pierce
+    - !append-once Items.lawgiverstats_armor
+  appearanceResourceName: lawgiver_app
+  quality: Quality.Epic
+  attacks:
+    - !append-once Attacks.lawgiver_ads
+    - !append-once Attacks.lawgiver_hip
+  rangedAttacks: Attacks.lawgiverattacks
+  OnAttach:
+    - !append Items.lawgiver_hipstats
+    - !remove Items.lawgiver_hipstats_stun
+    - !remove Items.lawgiver_hipstats_fire
+    - !remove Items.lawgiver_hipstats_flechette
+  displayName: lawgiver_name
+  localizedDescription: lawgiver_description
+  hudIcon:
+    atlasResourcePath: lawgiver\icon\lawgiver_hud.inkatlas
+    atlasPartName: lawgiver_hud
+  icon:  
+    atlasResourcePath: lawgiver\Icon\lawgiver.inkatlas
+    atlasPartName: slot_01
+  visualTags:
+    - Default
+  slotPartList:
+    - Items.Base_lawgiver_inline2
+    - Items.Base_lawgiver_inline4
+    - Items.Base_lawgiver_inline6
+    - Items.Base_lawgiver_inline8
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+    - Items.RiflePossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_lawgiver_inline0
+    - Items.Preset_lawgiver_inline1
+    - Items.Preset_lawgiver_inline2
+    - Items.Preset_lawgiver_inline3
+  
+Items.Base_lawgiver_inline2:
+  $base: Items.Base_Lexington_inline2
+  itemPartList:
+    - Items.Base_lawgiver_inline3
+Items.Base_lawgiver_inline3:
+  $base: Items.Base_Lexington_inline3
+  item: Items.lawgiver_rcv_prt
+Items.lawgiver_rcv_prt:
+  $base: Items.w_handgun_militech_lexington__rcv1
+  appearanceResourceName: lawgiver_rcv
+#base
+Items.Base_lawgiver_inline4:
+  $base: Items.Base_Lexington_inline4
+  itemPartList:
+    - Items.Base_lawgiver_inline5
+Items.Base_lawgiver_inline5:
+  $base: Items.Base_Lexington_inline5
+  item: Items.lawgiver_base_prt
+Items.lawgiver_base_prt:
+  $base: Items.w_handgun_militech_lexington__base1
+  appearanceResourceName: lawgiver_base
+#mag
+Items.Base_lawgiver_inline6:
+  $base: Items.Base_Lexington_inline6
+  itemPartList:
+    - Items.Base_lawgiver_inline7
+Items.Base_lawgiver_inline7:
+  $base: Items.Base_Lexington_inline7
+  item: Items.lawgiver_mag_std_prt
+Items.lawgiver_mag_std_prt:
+  $base: Items.w_handgun_militech_lexington__mag_std
+  appearanceResourceName: lawgiver_mag_std
+#reload
+Items.Base_lawgiver_inline8:
+  $base: Items.Base_Lexington_inline8
+  itemPartList:
+    - Items.Base_lawgiver_inline9
+Items.Base_lawgiver_inline9:
+  $base: Items.Base_Lexington_inline9
+  item: Items.lawgiver_mag_stdr_prt
+Items.lawgiver_mag_stdr_prt:
+  $base: Items.w_handgun_militech_lexington__mag_stdr
+  appearanceResourceName: lawgiver_mag_stdr
+#preset
+Items.Preset_lawgiver_inline0:
+  $base: Items.Preset_Base_Lexington_inline0
+  itemPartPreset: Items.lawgiver_rcv_prt
+Items.Preset_lawgiver_inline1:
+  $base: Items.Preset_Base_Lexington_inline1
+  itemPartPreset: Items.lawgiver_base_prt
+Items.Preset_lawgiver_inline2:
+  $base: Items.Preset_Base_Lexington_inline2
+  itemPartPreset: Items.lawgiver_mag_std_prt
+Items.Preset_lawgiver_inline3:
+  $base: Items.Preset_Base_Lexington_inline3
+  itemPartPreset: Items.lawgiver_mag_stdr_prt 
+
+Items.lawgiverstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 40
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.lawgiverstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.04
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.lawgiverstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.lawgiverstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.lawgiverstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+Attacks.lawgiver_ads:
+    $base: Attacks.Bullet_GameEffect
+    statusEffects:
+    -   $type: StatusEffectAttackData
+        statusEffect:
+            $base: BaseStatusEffect.Vulnerable
+            maxStacks:
+                statModifiers:
+                -   $type: ConstantStatModifier
+                    statType: BaseStats.MaxStacks
+                    modifierType: Additive
+                    value: 0.0
+            reapplyPackagesOnMaxStacks: false
+            removeAllStacksWhenDurationEnds: false
+            packages:
+            -   $base: BaseStatusEffect.Vulnerable_inline2
+                stackable: true
+        resistPool: BaseStatPools.BurningTrigger
+        applyImmediately: true
+
+Attacks.lawgiver_hip:
+    $base: Attacks.Bullet_GameEffect
+    statusEffects:
+    -   $type: StatusEffectAttackData
+        statusEffect:
+            $base: BaseStatusEffect.Vulnerable
+            maxStacks:
+                statModifiers:
+                -   $type: ConstantStatModifier
+                    statType: BaseStats.MaxStacks
+                    modifierType: Additive
+                    value: 0.0
+            reapplyPackagesOnMaxStacks: false
+            removeAllStacksWhenDurationEnds: false
+            packages:
+            -   $base: BaseStatusEffect.Vulnerable_inline2
+                stackable: true
+        resistPool: BaseStatPools.BurningTrigger
+        applyImmediately: true
+        
+Attacks.lawgiverattack1:
+    $type: RangedAttack
+    playerAttack: Attacks.lawgiver_ads
+    secondaryPlayerAttack: Attacks.lawgiver_hip
+    playerTimeDilated: Attacks.lawgiver_ads
+    secondaryPlayerTimeDilated: Attacks.lawgiver_hip
+    
+Attacks.lawgiverattacks:
+    $type: RangedAttackPackage
+    defaultFire: Attacks.lawgiverattack1
+    chargeFire: Attacks.lawgiverattack1
+
+Items.lawgiver_hipstats:
+  $type: GameplayLogicPackage
+  effectors:
+    - !append Items.lawgiver_hipstats_inline0
+
+Items.lawgiver_hipstats_inline0:
+  $type: ApplyStatGroupEffector
+  applicationTarget: Weapon
+  removeWithEffector: True
+  statGroup: Items.lawgiver_hipstats_inline1
+  effectorClassName: ApplyStatGroupEffector
+  prereqRecord: Perks.PlayerIsNotAiming
+  reapplyOnWeaponChange: False
+
+# HIP FIRE STATS
+Items.lawgiver_hipstats_inline1:
+  $type: StatModifierGroup
+  statModsLimit: -1
+  statModifiers:
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.CycleTimeBonus
+      modifierType: Additive
+      value: 0.0  
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.DPS
+      modifierType: Additive
+      value: 0
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.HitDismembermentFactor
+      modifierType: Multiplier
+      value: 0
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.EffectiveRange
+      modifierType: Additive
+      value: 30
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.SpreadMaxX
+      modifierType: Additive
+      value: 0
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.StunApplicationRate
+      modifierType: Additive
+      value: 0
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.ElectrocutedApplicationRate
+      modifierType: Additive
+      value: 0
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.ElectricDamage
+      modifierType: Additive
+      value: 0
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.DealsElectricDamage
+      modifierType: Additive
+      value: 0
+  
+Items.Lawgiver_MKIII_Stun:
+  $base: Items.Lawgiver_MKIII
+  OnAttach:
+    - !append Items.lawgiver_hipstats_stun
+    - !remove Items.lawgiver_hipstats
+    - !remove Items.lawgiver_hipstats_fire
+    - !remove Items.lawgiver_hipstats_flechette
+  displayName: lawgiver_name_stun
+  icon:  
+    atlasResourcePath: lawgiver\icon\lawgiver_stun.inkatlas
+    atlasPartName: slot_01
+    
+Items.lawgiver_hipstats_stun:
+  $type: GameplayLogicPackage
+  effectors:
+    - !append Items.lawgiver_hipstats_stun_inline0
+
+Items.lawgiver_hipstats_stun_inline0:
+  $type: ApplyStatGroupEffector
+  applicationTarget: Weapon
+  removeWithEffector: True
+  statGroup: Items.lawgiver_hipstats_stun_inline1
+  effectorClassName: ApplyStatGroupEffector
+  prereqRecord: Perks.PlayerIsNotAiming
+  reapplyOnWeaponChange: False
+    
+Items.lawgiver_hipstats_stun_inline1:
+  $type: StatModifierGroup
+  statModsLimit: -1
+  statModifiers:
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.CycleTimeBonus
+      modifierType: Additive
+      value: 0.0  
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.DPS
+      modifierType: Additive
+      value: 0
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.EffectiveRange
+      modifierType: Additive
+      value: 30
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.StunApplicationRate
+      modifierType: Additive
+      value: 100
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.ElectrocutedApplicationRate
+      modifierType: Additive
+      value: 100
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.ElectricDamage
+      modifierType: Additive
+      value: 10
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.DealsElectricDamage
+      modifierType: Additive
+      value: 1
+      
+   
+Items.Lawgiver_MKIII_Fire:
+  $base: Items.Lawgiver_MKIII
+  OnAttach:
+    - !append Items.lawgiver_hipstats_fire
+    - !remove Items.lawgiver_hipstats
+    - !remove Items.lawgiver_hipstats_stun
+    - !remove Items.lawgiver_hipstats_flechette
+  displayName: lawgiver_name_fire
+  icon:  
+    atlasResourcePath: lawgiver\Icon\lawgiver_fire.inkatlas
+    atlasPartName: slot_01
+    
+Items.lawgiver_hipstats_fire:
+  $type: GameplayLogicPackage
+  effectors:
+    - !append Items.lawgiver_hipstats_fire_inline0
+
+Items.lawgiver_hipstats_fire_inline0:
+  $type: ApplyStatGroupEffector
+  applicationTarget: Weapon
+  removeWithEffector: True
+  statGroup: Items.lawgiver_hipstats_fire_inline1
+  effectorClassName: ApplyStatGroupEffector
+  prereqRecord: Perks.PlayerIsNotAiming
+  reapplyOnWeaponChange: False
+    
+Items.lawgiver_hipstats_fire_inline1:
+  $type: StatModifierGroup
+  statModsLimit: -1
+  statModifiers:
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.CycleTimeBonus
+      modifierType: Additive
+      value: 0.0  
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.DPS
+      modifierType: Additive
+      value: 0
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.EffectiveRange
+      modifierType: Additive
+      value: 30
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.BurningApplicationRate
+      modifierType: Additive
+      value: 100
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.ThermalDamage
+      modifierType: Additive
+      value: 10
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.DealsThermalDamage
+      modifierType: Additive
+      value: 1
+      
+      
+Items.Lawgiver_MKIII_Flechette:
+  $base: Items.Lawgiver_MKIII
+  OnAttach:
+    - !append Items.lawgiver_hipstats_flechette
+    - !remove Items.lawgiver_hipstats
+    - !remove Items.lawgiver_hipstats_fire
+    - !remove Items.lawgiver_hipstats_stun
+  displayName: lawgiver_name_flechette
+  icon:  
+    atlasResourcePath: lawgiver\Icon\lawgiver_flechette.inkatlas
+    atlasPartName: slot_01
+    
+Items.lawgiver_hipstats_flechette:
+  $type: GameplayLogicPackage
+  effectors:
+    - !append Items.lawgiver_hipstats_flechette_inline0
+
+Items.lawgiver_hipstats_flechette_inline0:
+  $type: ApplyStatGroupEffector
+  applicationTarget: Weapon
+  removeWithEffector: True
+  statGroup: Items.lawgiver_hipstats_flechette_inline1
+  effectorClassName: ApplyStatGroupEffector
+  prereqRecord: Perks.PlayerIsNotAiming
+  reapplyOnWeaponChange: False
+    
+Items.lawgiver_hipstats_flechette_inline1:
+  $type: StatModifierGroup
+  statModsLimit: -1
+  statModifiers:
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.CycleTimeBonus
+      modifierType: Additive
+      value: 0.0  
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.DPS
+      modifierType: Additive
+      value: 0
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.EffectiveRange
+      modifierType: Additive
+      value: 30
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.BleedingApplicationRate
+      modifierType: Additive
+      value: 100
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.HitDismembermentFactor
+      modifierType: Multiplier
+      value: 10
+      
+
+  

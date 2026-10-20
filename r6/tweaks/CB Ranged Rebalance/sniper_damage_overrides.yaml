@@ -1,0 +1,34 @@
+# Ashura / Yasha
+Items.Base_Ashura_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 59.5                # default value – 35 
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Nekomata / Breakthrough, Foxhound
+Items.Base_Nekomata_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 115.4                # default value – 42 
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# SPT32 Grad / O’Five, Overwatch, Borzaya, Sparky
+Items.Base_Grad_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 71.4               # default value – 42 
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Rasetsu / (no variants)
+Items.Base_Rasetsu_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 85.5                # default value – 25
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# NDI Osprey / (no variants)
+Items.Base_Osprey_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 100.1                # default value – 43
+  modifierType: Additive
+  statType: BaseStats.DPS

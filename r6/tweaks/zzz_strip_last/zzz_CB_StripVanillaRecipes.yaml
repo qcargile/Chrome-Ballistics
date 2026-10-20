@@ -1,0 +1,244 @@
+Vendors.cct_dtn_guns_01:
+  itemStock:
+    - !remove Items.armasocom_stock
+    - !remove Items.armasocom_stock_common
+    - !remove Items.armasocom_stock_uncommon
+    - !remove Items.armatech556_stock
+    - !remove Items.armatech_sight_stock
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !remove Items.hcar3_stock
+    - !remove Items.hcar4_stock
+    - !remove Items.mateba_stock
+    - !remove Items.mk78_stock
+    - !remove Items.nobunaga_stock
+    - !remove Items.nobunaga_supp2_stock
+    - !remove Items.nobunaga_supp_stock
+    - !remove Items.unica6_stock
+
+Vendors.cz_stadium_gunsmith_01:
+  itemStock:
+    - !remove Items.hcar3_stock
+    - !remove Items.hcar4_stock
+    - !remove Items.mateba_stock
+    - !remove Items.unica6_stock
+
+Vendors.hey_gle_gunsmith_01:
+  itemStock:
+    - !remove Items.AjaxRaptor_recipe_Common_stock
+    - !remove Items.Armatech556_recipe_Common_stock
+    - !remove Items.DTIRBlack_recipe_Common_stock
+    - !remove Items.HCARBlack_recipe_Common_stock
+    - !remove Items.MK78SAW_recipe_Common_stock
+    - !remove Items.Mateba6Comp_recipe_Common_stock
+    - !remove Items.Mateba6Unica_recipe_Common_stock
+    - !remove Items.Nobunaga_recipe_Common_stock
+    - !remove Items.armasocom_stock
+    - !remove Items.armatech556_stock
+    - !remove Items.armatech_sight_stock_common
+    - !remove Items.armatech_supp_stock_common
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !remove Items.hcar3_stock
+    - !remove Items.hcar4_stock
+    - !remove Items.mateba_stock
+    - !remove Items.mk78_stock
+    - !remove Items.nobunaga_stock
+    - !remove Items.nobunaga_supp2_stock
+    - !remove Items.nobunaga_supp_stock
+    - !remove Items.unica6_stock
+
+Vendors.hey_rey_gunsmith_01:
+  itemStock:
+    - !remove Items.AjaxRaptor_recipe_Rare_stock
+    - !remove Items.Armatech556_recipe_Rare_stock
+    - !remove Items.ArmatechSocom_recipe_Rare_stock
+    - !remove Items.DTIRBlack_recipe_Rare_stock
+    - !remove Items.HCARBlack_recipe_Rare_stock
+    - !remove Items.MK78SAW_recipe_Rare_stock
+    - !remove Items.Mateba6Comp_recipe_Rare_stock
+    - !remove Items.Mateba6Unica_recipe_Rare_stock
+    - !remove Items.Nobunaga_recipe_Legendary_stock
+    - !remove Items.Nobunaga_recipe_Rare_stock
+    - !remove Items.armasocom_stock
+    - !remove Items.armatech556_stock
+    - !remove Items.armatech_sight_stock_rare
+    - !remove Items.armatech_supp_stock_rare
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !remove Items.hcar3_stock
+    - !remove Items.hcar4_stock
+    - !remove Items.mateba_stock
+    - !remove Items.mk78_stock
+    - !remove Items.nobunaga_stock
+    - !remove Items.nobunaga_supp2_stock
+    - !remove Items.nobunaga_supp_stock
+    - !remove Items.unica6_stock
+
+Vendors.hey_spr_gunsmith_01:
+  itemStock:
+    - !remove Items.AjaxRaptor_recipe_Uncommon_stock
+    - !remove Items.Armatech556_recipe_Uncommon_stock
+    - !remove Items.DTIRBlack_recipe_Uncommon_stock
+    - !remove Items.HCARBlack_recipe_Uncommon_stock
+    - !remove Items.MK78SAW_recipe_Uncommon_stock
+    - !remove Items.Mateba6Comp_recipe_Uncommon_stock
+    - !remove Items.Mateba6Unica_recipe_Uncommon_stock
+    - !remove Items.Nobunaga_recipe_Uncommon_stock
+    - !remove Items.armasocom_stock
+    - !remove Items.armatech556_stock
+    - !remove Items.armatech_sight_stock_uncommon
+    - !remove Items.armatech_supp_stock_uncommon
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !remove Items.hcar3_stock
+    - !remove Items.hcar4_stock
+    - !remove Items.mateba_stock
+    - !remove Items.mk78_stock
+    - !remove Items.nobunaga_stock
+    - !remove Items.nobunaga_supp2_stock
+    - !remove Items.nobunaga_supp_stock
+    - !remove Items.unica6_stock
+
+Vendors.pac_wwd_gunsmith_01:
+  itemStock:
+    - !remove Items.AjaxRaptor_recipe_Epic_stock
+    - !remove Items.Armatech556_recipe_Epic_stock
+    - !remove Items.ArmatechSocom_recipe_Epic_stock
+    - !remove Items.DTIRBlack_recipe_Epic_stock
+    - !remove Items.HCARBlack_recipe_Epic_stock
+    - !remove Items.MK78SAW_recipe_Epic_stock
+    - !remove Items.Mateba6Comp_recipe_Epic_stock
+    - !remove Items.Mateba6Unica_recipe_Epic_stock
+    - !remove Items.Nobunaga_recipe_Epic_stock
+    - !remove Items.ajax_Smart_Beam_stock
+    - !remove Items.armasocom_stock
+    - !remove Items.armatech556_stock
+    - !remove Items.armatech_sight_stock_epic
+    - !remove Items.armatech_supp_stock_epic
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !remove Items.hcar3_stock
+    - !remove Items.hcar4_stock
+    - !remove Items.m79_stock
+    - !remove Items.mateba_stock
+    - !remove Items.mk78_stock
+    - !remove Items.nobunaga_stock
+    - !remove Items.nobunaga_supp2_stock
+    - !remove Items.nobunaga_supp_stock
+    - !remove Items.unica6_stock
+
+Vendors.std_arr_gunsmith_01:
+  itemStock:
+    - !remove Items.armasocom_stock
+    - !remove Items.armatech556_stock
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !remove Items.hcar3_stock
+    - !remove Items.hcar4_stock
+    - !remove Items.mateba_stock
+    - !remove Items.mk78_stock
+    - !remove Items.nobunaga_stock
+    - !remove Items.nobunaga_supp2_stock
+    - !remove Items.nobunaga_supp_stock
+    - !remove Items.unica6_stock
+
+Vendors.std_rcr_gunsmith_01:
+  itemStock:
+    - !remove Items.armasocom_stock
+    - !remove Items.armatech556_stock
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !remove Items.hcar3_stock
+    - !remove Items.hcar4_stock
+    - !remove Items.mateba_stock
+    - !remove Items.mk78_stock
+    - !remove Items.nobunaga_stock
+    - !remove Items.nobunaga_supp2_stock
+    - !remove Items.nobunaga_supp_stock
+    - !remove Items.unica6_stock
+
+Vendors.wat_kab_gunsmith_01:
+  itemStock:
+    - !remove Items.armasocom_stock
+    - !remove Items.armatech556_stock
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !remove Items.hcar3_stock
+    - !remove Items.hcar4_stock
+    - !remove Items.mateba_stock
+    - !remove Items.mk78_stock
+    - !remove Items.nobunaga_stock
+    - !remove Items.nobunaga_supp2_stock
+    - !remove Items.nobunaga_supp_stock
+    - !remove Items.unica6_stock
+
+Vendors.wat_kab_gunsmith_02:
+  itemStock:
+    - !remove Items.armasocom_stock
+    - !remove Items.armatech556_stock
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !remove Items.hcar3_stock
+    - !remove Items.hcar4_stock
+    - !remove Items.mateba_stock
+    - !remove Items.mk78_stock
+    - !remove Items.nobunaga_stock
+    - !remove Items.nobunaga_supp2_stock
+    - !remove Items.nobunaga_supp_stock
+    - !remove Items.unica6_stock
+
+Vendors.wat_lch_gunsmith_01:
+  itemStock:
+    - !remove Items.AjaxRaptor_recipe_Legendary_stock
+    - !remove Items.Armatech556_recipe_Legendary_stock
+    - !remove Items.ArmatechSocom_recipe_Legendary_stock
+    - !remove Items.DTIRBlack_recipe_Legendary_stock
+    - !remove Items.HCARBlack_recipe_Legendary_stock
+    - !remove Items.MK78SAW_recipe_Legendary_stock
+    - !remove Items.Mateba6Comp_recipe_Legendary_stock
+    - !remove Items.Mateba6Unica_recipe_Legendary_stock
+    - !remove Items.armasocom_stock
+    - !remove Items.armatech556_stock
+    - !remove Items.armatech_sight_stock
+    - !remove Items.armatech_supp_stock
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !remove Items.hcar3_stock
+    - !remove Items.hcar4_stock
+    - !remove Items.mateba_stock
+    - !remove Items.mk78_stock
+    - !remove Items.nobunaga_stock
+    - !remove Items.nobunaga_supp2_stock
+    - !remove Items.nobunaga_supp_stock
+    - !remove Items.unica6_stock
+
+Vendors.wat_nid_gunsmith_01:
+  itemStock:
+    - !remove Items.armasocom_stock
+    - !remove Items.armatech556_stock
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !remove Items.hcar3_stock
+    - !remove Items.hcar4_stock
+    - !remove Items.mateba_stock
+    - !remove Items.mk78_stock
+    - !remove Items.nobunaga_stock
+    - !remove Items.nobunaga_supp2_stock
+    - !remove Items.nobunaga_supp_stock
+    - !remove Items.unica6_stock
+
+Vendors.wbr_jpn_gunsmith_01:
+  itemStock:
+    - !remove Items.armasocom_stock
+    - !remove Items.armatech556_stock
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !remove Items.hcar3_stock
+    - !remove Items.hcar4_stock
+    - !remove Items.mateba_stock
+    - !remove Items.mk78_stock
+    - !remove Items.nobunaga_stock
+    - !remove Items.nobunaga_supp2_stock
+    - !remove Items.nobunaga_supp_stock
+    - !remove Items.unica6_stock

@@ -1,0 +1,300 @@
+StatGroups.Misoru_StampedeStats:
+  $type: StatModifierGroup
+  statModifiers:
+  - $base: BaseStats.DPSModifier
+    value: -6
+  - $type: ConstantStatModifier
+    value: -0.35
+    modifierType: Additive
+    statType: BaseStats.HeadshotDamageMultiplier
+  - $type: ConstantStatModifier
+    value: 1
+    modifierType: Additive
+    statType: BaseStats.TechPierceEnabled
+  - $type: ConstantStatModifier
+    value: -0.25
+    modifierType: Additive
+    statType: BaseStats.TechPierceDamageFactor
+  - $type: ConstantStatModifier
+    value: 0
+    modifierType: Multiplier
+    statType: BaseStats.RicochetCount
+  - $type: ConstantStatModifier
+    value: 0
+    modifierType: Additive
+    statType: BaseStats.CanWeaponIgnoreArmor
+  - $type: ConstantStatModifier
+    value: 1
+    modifierType: AdditiveMultiplier
+    statType: BaseStats.Weight
+  - $type: ConstantStatModifier
+    value: 0.8
+    modifierType: Multiplier
+    statType: BaseStats.SpreadMaxX
+  - $type: ConstantStatModifier
+    value: 0.8
+    modifierType: Multiplier
+    statType: BaseStats.SpreadMaxY
+  - $type: ConstantStatModifier
+    value: 0.8
+    modifierType: Multiplier
+    statType: BaseStats.SpreadAdsMaxX
+  - $type: ConstantStatModifier
+    value: 0.8
+    modifierType: Multiplier
+    statType: BaseStats.SpreadAdsMaxY
+
+StatGroups.Misoru_BloomStats:
+  $type: StatModifierGroup
+  statModifiers:
+  - $type: ConstantStatModifier
+    value: 0.1
+    modifierType: Multiplier
+    statType: BaseStats.DPS
+  - $type: ConstantStatModifier
+    value: 0
+    modifierType: Additive
+    statType: BaseStats.CanWeaponIgnoreArmor
+  - $type: ConstantStatModifier
+    value: 0
+    modifierType: Multiplier
+    statType: BaseStats.HeadshotDamageMultiplier
+  - $type: ConstantStatModifier
+    value: -14
+    modifierType: Additive
+    statType: BaseStats.MagazineCapacityBase
+  - $type: ConstantStatModifier
+    value: -2
+    modifierType: Additive
+    statType: BaseStats.NumShotsInBurst
+  - $type: ConstantStatModifier
+    value: -2
+    modifierType: Additive
+    statType: BaseStats.NumShotsInBurstSecondary
+  - $type: ConstantStatModifier
+    value: 0.5
+    modifierType: Multiplier
+    statType: BaseStats.EffectiveRange
+  - $type: ConstantStatModifier
+    value: 0.35
+    modifierType: Multiplier
+    statType: BaseStats.MaximumRange
+  - $type: ConstantStatModifier
+    value: 2
+    modifierType: Additive
+    statType: BaseStats.ChargeTime
+  - $type: CombinedStatModifier
+    value: 0
+    modifierType: Multiplier
+    opSymbol: "*"
+    refObject: Player
+    refStat: BaseStats.SEApplicationRateBasedOnWeaponCharge
+    statType: BaseStats.ElectrocutedApplicationRate
+
+StatGroups.Misoru_MakoStats:
+  $type: StatModifierGroup
+  statModifiers:
+  - $base: BaseStats.DPSModifier
+    value: -25
+  - $base: BaseStats.MagazineCapacityModifier
+    value: -4
+  - $base: BaseStats.EffectiveRangeModifier
+    value: -3
+  - $type: ConstantStatModifier
+    value: -0.35
+    modifierType: Additive
+    statType: BaseStats.HeadshotDamageMultiplier
+  - $type: ConstantStatModifier
+    value: 0.25
+    modifierType: Additive
+    statType: BaseStats.CanWeaponIgnoreArmor
+
+StatGroups.Misoru_IvyStats:
+  $type: StatModifierGroup
+  statModifiers:
+  - $type: ConstantStatModifier
+    statType: BaseStats.WeaponNoise
+    modifierType: Additive
+    value: -20
+  - $type: ConstantStatModifier
+    statType: BaseStats.HeadshotDamageMultiplier
+    modifierType: Multiplier
+    value: 0
+  - $type: ConstantStatModifier
+    statType: BaseStats.CanWeaponIgnoreArmor
+    modifierType: Multiplier
+    value: 0
+  - $base: BaseStats.SmartGunAddSpiralTrajectoryModifier
+    value: 1
+  - $base: BaseStats.DPSModifier
+    modifierType: Multiplier
+    value: 0
+  - $base: BaseStats.SmartGunPlayerProjectileVelocityModifier
+    modifierType: Multiplier
+    value: 0.6
+  - $base: BaseStats.SmartGunSpiralRadiusModifier
+    modifierType: Multiplier
+    value: 5
+  - $base: BaseStats.SmartGunSpiralRampDistanceStartModifier
+    value: 5
+  - $base: BaseStats.SmartGunSpiralRampDistanceEndModifier
+    value: 30
+  - $base: BaseStats.SmartGunMissRadiusModifier
+    modifierType: Multiplier
+    value: 0
+  - $base: BaseStats.SmartGunTrackHeadComponentsModifier
+    modifierType: Multiplier
+    value: 0
+  - $base: BaseStats.SmartGunTrackLegComponentsModifier
+    modifierType: Multiplier
+    value: 0
+  - $base: BaseStats.SmartGunTrackMechanicalComponentsModifier
+    modifierType: Multiplier
+    value: 0
+  - $base: BaseStats.SmartGunTrackVehicleComponentsModifier
+    modifierType: Multiplier
+    value: 0
+
+StatGroups.Misoru_BoomerangCommonStats:
+  $type: StatModifierGroup
+  statModifiers:
+  - $type: ConstantStatModifier
+    statType: BaseStats.ItemRequiresSmartLink
+    modifierType: Multiplier
+    value: 0
+  - $base: BaseStats.EffectiveRangeModifier
+    value: 10
+  - $base: BaseStats.SmartGunPlayerProjectileVelocityModifier
+    value: 20
+  - $base: BaseStats.SmartGunUseEvenDistributionTargetingModifier
+    value: 1
+  - $base: BaseStats.SmartGunTrackMultipleEntitiesInADSModifier
+    value: 0
+  - $base: BaseStats.SmartGunHitProbabilityModifier
+    value: 1
+  - $base: BaseStats.SmartGunAdsTimeToLockModifier
+    value: 0.75
+  - $base: BaseStats.SmartGunAdsTimeToUnlockModifier
+    value: 0.5
+  - $base: BaseStats.SmartGunAdsMaxLockedTargetsModifier
+    value: 1
+  - $base: BaseStats.SmartGunMaxLockedPointsPerTargetModifier
+    value: 1
+  - $base: BaseStats.SmartGunTrackHeadComponentsModifier
+    value: 1
+  - $base: BaseStats.SmartGunAdsLockingAnglePitchModifier
+    value: 10
+  - $base: BaseStats.SmartGunAdsLockingAngleYawModifier
+    value: 20
+  - $base: BaseStats.SmartGunAdsTargetableAnglePitchModifier
+    value: 10
+  - $base: BaseStats.SmartGunAdsTargetableAngleYawModifier
+    value: 20
+  - $base: BaseStats.SmartGunMissRadiusModifier
+    modifierType: Multiplier
+    value: 0
+  - $base: BaseStats.DPSModifier
+    modifierType: Multiplier
+    value: 0.7
+  - $type: ConstantStatModifier
+    statType: BaseStats.BaseMeleeAttackStaminaCost
+    modifierType: Additive
+    value: -4
+  - $type: ConstantStatModifier
+    statType: BaseStats.CanWeaponIgnoreArmor
+    modifierType: Additive
+    value: -0.25
+
+Items.SJ_GhostBladeWeaponMod:
+  $base: Items.IconicWeaponModBase
+  OnAttach: [Items.SJ_GhostBladeWeaponModAbility]
+  statModifiers:
+  - $type: ConstantStatModifier
+    statType: BaseStats.CanMeleeInfinitelyCombo
+    modifierType: Additive
+    value: 1.0
+  - $type: ConstantStatModifier
+    statType: BaseStats.CanWeaponInfinitlyCombo
+    modifierType: Additive
+    value: 1.0
+  - $type: CombinedStatModifier
+    statType: BaseStats.PhysicalDamage
+    modifierType: Additive
+    refStat: BaseStats.DamagePerHit
+    refObject: Root
+    opSymbol: "*"
+    value: -1.0
+  - $type: CombinedStatModifier
+    statType: BaseStats.ElectricDamage
+    modifierType: Additive
+    refStat: BaseStats.DamagePerHit
+    refObject: Root
+    opSymbol: "*"
+    value: 0.33
+  - $type: CombinedStatModifier
+    statType: BaseStats.ChemicalDamage
+    modifierType: Additive
+    refStat: BaseStats.DamagePerHit
+    refObject: Root
+    opSymbol: "*"
+    value: 0.34
+  - $type: CombinedStatModifier
+    statType: BaseStats.ThermalDamage
+    modifierType: Additive
+    refStat: BaseStats.DamagePerHit
+    refObject: Root
+    opSymbol: "*"
+    value: 0.33
+  - $type: ConstantStatModifier
+    statType: BaseStats.DealsThermalDamage
+    modifierType: Additive
+    value: 1.0
+  - $type: ConstantStatModifier
+    statType: BaseStats.DealsChemicalDamage
+    modifierType: Additive
+    value: 1.0
+  - $type: ConstantStatModifier
+    statType: BaseStats.DealsElectricDamage
+    modifierType: Additive
+    value: 1.0
+  - $type: ConstantStatModifier
+    statType: BaseStats.CanWeaponIgnoreArmor
+    modifierType: Additive
+    value: 0.0
+  - $type: ConstantStatModifier
+    statType: BaseStats.BlockFactor
+    modifierType: Multiplier
+    value: 0.0
+  - $type: ConstantStatModifier
+    statType: BaseStats.BlockReduction
+    modifierType: Multiplier
+    value: 0.0
+  - $type: ConstantStatModifier
+    statType: BaseStats.CanWeaponDeflect
+    modifierType: Multiplier
+    value: 0.0
+  - $type: ConstantStatModifier
+    statType: BaseStats.CannotBlockBullets
+    modifierType: Additive
+    value: 1.0
+  - $type: ConstantStatModifier
+    statType: BaseStats.HitDismembermentFactor
+    modifierType: Multiplier
+    value: 0.0
+
+Stats.GleipnirArmorPenetration:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+
+Stats.MjolnirArmorPenetration:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+
+Items.Preset_Boomerang_Wraith:
+  statModifiers:
+  - !append-once AttackModifier.WeaponArmorPenetrationLow
+

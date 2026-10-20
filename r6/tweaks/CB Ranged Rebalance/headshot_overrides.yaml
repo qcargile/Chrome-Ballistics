@@ -1,0 +1,405 @@
+Items.Base_Chao_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 1.15
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Nue_Arasaka_2020_Recoil_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 0.25
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Slaughtomatic_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 0.40
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Kenshin_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 0.10
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Yukimura_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.35
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Kappa_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 0.65
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Grit_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 0.35
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Silverhand_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.10
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Ticon_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.30
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Omaha_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.50
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Lexington_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.25
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Nue_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.75
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+#---------------------------------------------------------------
+# Revolvers
+#---------------------------------------------------------------
+
+Items.Base_Nova_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.80
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Metel_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.65
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Quasar_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.75
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Burya_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -1.00
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Overture_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -1.25
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+#---------------------------------------------------------------
+# SMGs
+#---------------------------------------------------------------
+
+Items.Base_Senkoh_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 0.90
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Pulsar_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 0.80
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Dian_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 1.20
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Saratoga_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 0.60
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Shingen_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 1.00
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Guillotine_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 0.30
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Warden_Constant_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 0.50
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+#---------------------------------------------------------------
+# Shotguns
+#---------------------------------------------------------------
+
+Items.Base_Crusher_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.50
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Carnage_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.05
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Palica_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 0.45
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Tactician_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.10
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Satara_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.20
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Testera_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.25
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Zhuo_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 0.20
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Igla_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.35
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Pozhar_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.35
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+#---------------------------------------------------------------
+# Assault Rifles
+#---------------------------------------------------------------
+
+Items.Base_Sidewinder_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 0.50
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Ajax_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.10
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Umbra_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.10
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Masamune_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.45
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Hercules_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 0.20
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+#---------------------------------------------------------------
+# MachineGuns
+#---------------------------------------------------------------
+
+Items.Base_Defender_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 0.35
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_HMG_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: 0.50
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+#---------------------------------------------------------------
+# Precision Rifles
+#---------------------------------------------------------------
+
+Items.Base_Achilles_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.60
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Sor22_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.80
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Kolac_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -1.60
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+#---------------------------------------------------------------
+# Sniper Rifles
+#---------------------------------------------------------------
+
+Items.Base_Rasetsu_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -2.25
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Ashura_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -0.90
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Nekomata_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -2.50
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Grad_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -2.50
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+
+Items.Base_Osprey_Damage_Stats:
+  statModifiers:
+    - !append
+      $type: gamedataConstantStatModifier_Record
+      value: -1.50
+      modifierType: Additive
+      statType: BaseStats.HeadshotDamageMultiplier
+

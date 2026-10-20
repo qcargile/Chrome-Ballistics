@@ -1,0 +1,119 @@
+Items.MR6:
+  $base: Items.Preset_Unity_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.mr6stats_damage
+    - !append-once Items.mr6stats_rof
+    - !append-once Items.mr6stats_mag
+    - !append-once Items.mr6stats_pierce
+  appearanceResourceName: mr6_app
+  quality: Quality.Common
+  displayName: mr6_name
+  audioName: wea_set_lexington
+  localizedDescription: mr6_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: mr6\icon\mr6_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: mr6\icon\mr6.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_mr6_inline2
+    - Items.Base_mr6_inline4
+    - Items.Base_mr6_inline6
+    - Items.Base_mr6_inline8
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+  slotPartListPreset:
+    - Items.Preset_mr6_inline0
+    - Items.Preset_mr6_inline1
+    - Items.Preset_mr6_inline2
+    - Items.Preset_mr6_inline3
+  
+Items.Base_mr6_inline2:
+  $base: Items.Base_Unity_inline2
+  itemPartList:
+    - Items.Base_mr6_inline3
+Items.Base_mr6_inline3:
+  $base: Items.Base_Unity_inline3
+  item: Items.mr6_rcv_prt
+Items.mr6_rcv_prt:
+  $base: Items.w_handgun__constitutional_unity__rcv1
+  appearanceResourceName: mr6_rcv
+#base
+Items.Base_mr6_inline4:
+  $base: Items.Base_Unity_inline4
+  itemPartList:
+    - Items.Base_mr6_inline5
+Items.Base_mr6_inline5:
+  $base: Items.Base_Unity_inline5
+  item: Items.mr6_base_prt
+Items.mr6_base_prt:
+  $base: Items.w_handgun__constitutional_unity__base1
+  appearanceResourceName: mr6_base
+#mag
+Items.Base_mr6_inline6:
+  $base: Items.Base_Unity_inline6
+  itemPartList:
+    - Items.Base_mr6_inline7
+Items.Base_mr6_inline7:
+  $base: Items.Base_Unity_inline7
+  item: Items.mr6_mag_std_prt
+Items.mr6_mag_std_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_std
+  appearanceResourceName: mr6_mag_std
+#reload
+Items.Base_mr6_inline8:
+  $base: Items.Base_Unity_inline8
+  itemPartList:
+    - Items.Base_mr6_inline9
+Items.Base_mr6_inline9:
+  $base: Items.Base_Unity_inline9
+  item: Items.mr6_mag_stdr_prt
+Items.mr6_mag_stdr_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_stdr
+  appearanceResourceName: mr6_mag_stdr
+#preset
+Items.Preset_mr6_inline0:
+  $base: Items.Preset_Unity_Default_inline0
+  itemPartPreset: Items.mr6_rcv_prt
+Items.Preset_mr6_inline1:
+  $base: Items.Preset_Unity_Default_inline1
+  itemPartPreset: Items.mr6_base_prt
+Items.Preset_mr6_inline2:
+  $base: Items.Preset_Unity_Default_inline2
+  itemPartPreset: Items.mr6_mag_std_prt
+Items.Preset_mr6_inline3:
+  $base: Items.Preset_Unity_Default_inline3
+  itemPartPreset: Items.mr6_mag_stdr_prt
+  
+Items.mr6stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 85
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.mr6stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.18
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.mr6stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 9
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.mr6stats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+    

@@ -1,0 +1,151 @@
+Items.Malorian_Arms_StunX:
+  $base: Items.Preset_Silverhand_3516
+  tags:
+    - !append-once IconicWeapon
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.pistolx3stats_mag
+    - !append-once Items.pistolx3stats_damage
+    - !append-once Items.pistolx3stats_rof
+    - !append-once Items.pistolx3stats_electric
+    - !append-once Items.pistolx3stats_electric2
+    - !append-once Items.pistolx3stats_electric3
+    - !append-once Items.pistolx3stats_stun
+  appearanceResourceName: pistolx3_app
+  hudIcon:
+    atlasResourcePath: pistolx3\icon\pistolx3_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: pistolx3\icon\pistolx3.inkatlas
+    atlasPartName: slot_01
+  quality: Quality.Legendary
+  displayName: pistolx3_name
+  localizedDescription: pistolx3_description
+  slotPartList:
+    - Items.Base_pistolx3_inline3
+    - Items.Base_pistolx3_inline5
+    - Items.Base_pistolx3_inline7
+    - Items.Base_pistolx3_inline9
+  slotPartListPreset:
+    - Items.Preset_pistolx3_inline3
+    - Items.Preset_pistolx3_inline4
+    - Items.Preset_pistolx3_inline5
+    - Items.Preset_pistolx3_inline6
+  visualTags:
+    - Default
+
+Items.Base_pistolx3_inline3:
+  $base: Items.Base_Silverhand_inline3
+  itemPartList:
+    - Items.Base_pistolx3_inline4
+Items.Base_pistolx3_inline4:
+  $base: Items.Base_Silverhand_inline4
+  item: Items.pistolx3_rcv_prt
+Items.pistolx3_rcv_prt:
+  $base: Items.w_handgun__malorian_silverhand__rcv1
+  appearanceResourceName: pistolx3_rcv
+#base
+Items.Base_pistolx3_inline5:
+  $base: Items.Base_Silverhand_inline5
+  itemPartList:
+    - Items.Base_pistolx3_inline6
+Items.Base_pistolx3_inline6:
+  $base: Items.Base_Silverhand_inline6
+  item: Items.pistolx3_base_prt
+Items.pistolx3_base_prt:
+  $base: Items.w_handgun__malorian_silverhand__base1
+  appearanceResourceName: pistolx3_base
+#mag
+Items.Base_pistolx3_inline7:
+  $base: Items.Base_Silverhand_inline7
+  itemPartList:
+    - Items.Base_pistolx3_inline8
+Items.Base_pistolx3_inline8:
+  $base: Items.Base_Silverhand_inline8
+  item: Items.pistolx3_std_prt
+Items.pistolx3_std_prt:
+  $base: Items.w_handgun__malorian_silverhand__mag_std
+  appearanceResourceName: pistolx3_mag_std
+#reload
+Items.Base_pistolx3_inline9:
+  $base: Items.Base_Silverhand_inline9
+  itemPartList:
+    - Items.Base_pistolx3_inline10
+Items.Base_pistolx3_inline10:
+  $base: Items.Base_Silverhand_inline10
+  item: Items.pistolx3_stdr_prt
+Items.pistolx3_stdr_prt:
+  $base: Items.w_handgun__malorian_silverhand__mag_stdr
+  appearanceResourceName: pistolx3_mag_stdr
+  
+Items.Base_pistolx3_inline11:
+  $base: Items.Base_Silverhand_inline11
+  itemPartList:
+    - Items.Base_pistolx3_inline12
+Items.Base_pistolx3_inline12:
+  $base: Items.Base_Silverhand_inline12
+  item: Items.pistolx3_base_prt
+Items.pistolx3_base_prt:
+  $base: Items.w_handgun__malorian_silverhand__base1
+  appearanceResourceName: pistolx3_base
+#preset
+Items.Preset_pistolx3_inline3:
+  $base: Items.Preset_Silverhand_3516_inline3
+  itemPartPreset: Items.pistolx3_rcv_prt
+Items.Preset_pistolx3_inline4:
+  $base: Items.Preset_Silverhand_3516_inline4
+  itemPartPreset: Items.pistolx3_base_prt
+Items.Preset_pistolx3_inline5:
+  $base: Items.Preset_Silverhand_3516_inline5
+  itemPartPreset: Items.pistolx3_std_prt
+Items.Preset_pistolx3_inline6:
+  $base: Items.Preset_Silverhand_3516_inline6
+  itemPartPreset: Items.pistolx3_stdr_prt
+Items.Preset_pistolx3_inline7:
+  $base: Items.Preset_Silverhand_3516_inline7
+  itemPartPreset: Items.pistolx3_base_prt
+  
+Items.pistolx3stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.pistolx3stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.pistolx3stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.pistolx3stats_electric:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.DealsElectricDamage
+  
+Items.pistolx3stats_electric2:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.ElectricDamage
+
+Items.pistolx3stats_electric3:
+  $type: gamedataConstantStatModifier_Record
+  value: 40
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.pistolx3stats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 40
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate 
+
+
+ 

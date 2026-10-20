@@ -1,0 +1,111 @@
+Items.M27S:
+  $base: Items.Preset_Unity_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.m27stats_damage
+    - !append-once Items.m27stats_rof
+    - !append-once Items.m27stats_mag
+  appearanceResourceName: m27_app
+  quality: Quality.Uncommon
+  displayName: m27_name
+  localizedDescription: m27_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: m27\icon\m27_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: m27\icon\m27.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_m27_inline2
+    - Items.Base_m27_inline4
+    - Items.Base_m27_inline6
+    - Items.Base_m27_inline8
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+  slotPartListPreset:
+    - Items.Preset_m27_inline0
+    - Items.Preset_m27_inline1
+    - Items.Preset_m27_inline2
+    - Items.Preset_m27_inline3
+  
+Items.Base_m27_inline2:
+  $base: Items.Base_Unity_inline2
+  itemPartList:
+    - Items.Base_m27_inline3
+Items.Base_m27_inline3:
+  $base: Items.Base_Unity_inline3
+  item: Items.m27_rcv_prt
+Items.m27_rcv_prt:
+  $base: Items.w_handgun__constitutional_unity__rcv1
+  appearanceResourceName: m27_rcv
+#base
+Items.Base_m27_inline4:
+  $base: Items.Base_Unity_inline4
+  itemPartList:
+    - Items.Base_m27_inline5
+Items.Base_m27_inline5:
+  $base: Items.Base_Unity_inline5
+  item: Items.m27_base_prt
+Items.m27_base_prt:
+  $base: Items.w_handgun__constitutional_unity__base1
+  appearanceResourceName: m27_base
+#mag
+Items.Base_m27_inline6:
+  $base: Items.Base_Unity_inline6
+  itemPartList:
+    - Items.Base_m27_inline7
+Items.Base_m27_inline7:
+  $base: Items.Base_Unity_inline7
+  item: Items.m27_mag_std_prt
+Items.m27_mag_std_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_std
+  appearanceResourceName: m27_mag_std
+#reload
+Items.Base_m27_inline8:
+  $base: Items.Base_Unity_inline8
+  itemPartList:
+    - Items.Base_m27_inline9
+Items.Base_m27_inline9:
+  $base: Items.Base_Unity_inline9
+  item: Items.m27_mag_stdr_prt
+Items.m27_mag_stdr_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_stdr
+  appearanceResourceName: m27_mag_stdr
+#preset
+Items.Preset_m27_inline0:
+  $base: Items.Preset_Unity_Default_inline0
+  itemPartPreset: Items.m27_rcv_prt
+Items.Preset_m27_inline1:
+  $base: Items.Preset_Unity_Default_inline1
+  itemPartPreset: Items.m27_base_prt
+Items.Preset_m27_inline2:
+  $base: Items.Preset_Unity_Default_inline2
+  itemPartPreset: Items.m27_mag_std_prt
+Items.Preset_m27_inline3:
+  $base: Items.Preset_Unity_Default_inline3
+  itemPartPreset: Items.m27_mag_stdr_prt
+  
+Items.m27stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 40
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.m27stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.15
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.m27stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+    

@@ -1,0 +1,174 @@
+Items.Scar_Jack_Short_Stock:
+  $base: Items.Preset_Saratoga_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.jackstats_damage
+    - !append-once Items.jackstats_rof
+    - !append-once Items.jackstats_mag
+    - !append-once Items.jackstats_reload1
+    - !append-once Items.jackstats_reload2
+  appearanceResourceName: jack_app
+  attacks:
+    - !append-once Attacks.jack_fullautomode
+  rangedAttacks: Attacks.jackattacks
+  fxPackage: WeaponFxPackage.PowerRifleAssault
+  ammo: Ammo.RifleAmmo
+  audioName: wea_set_copperhead
+  quality: Quality.Rare
+  displayName: jack_name
+  localizedDescription: jack_description
+  gameplayDescription: jack_iconic_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: jack\icon\jack_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: jack\icon\jack.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_jack_inline2
+    - Items.Base_jack_inline4
+    - Items.Base_jack_inline6
+    - Items.Base_jack_inline8
+  slotPartListPreset:
+    - Items.Preset_jack_inline0
+    - Items.Preset_jack_inline1
+    - Items.Preset_jack_inline2
+    - Items.Preset_jack_inline3
+  
+Items.Base_jack_inline2:
+  $base: Items.Base_Saratoga_inline2
+  itemPartList:
+    - Items.Base_jack_inline3
+Items.Base_jack_inline3:
+  $base: Items.Base_Saratoga_inline3
+  item: Items.jack_rcv_prt
+Items.jack_rcv_prt:
+  $base: Items.w_submachinegun__militech_saratoga__rcv1
+  appearanceResourceName: jack_rcv
+#base
+Items.Base_jack_inline4:
+  $base: Items.Base_Saratoga_inline4
+  itemPartList:
+    - Items.Base_jack_inline5
+Items.Base_jack_inline5:
+  $base: Items.Base_Saratoga_inline5
+  item: Items.jack_base_prt
+Items.jack_base_prt:
+  $base: Items.w_submachinegun__militech_saratoga__base1
+  appearanceResourceName: jack_base
+#mag
+Items.Base_jack_inline6:
+  $base: Items.Base_Saratoga_inline6
+  itemPartList:
+    - Items.Base_jack_inline7
+Items.Base_jack_inline7:
+  $base: Items.Base_Saratoga_inline7
+  item: Items.jack_mag_std_prt
+Items.jack_mag_std_prt:
+  $base: Items.w_submachinegun__militech_saratoga__mag_std
+  appearanceResourceName: jack_mag_std
+#reload
+Items.Base_jack_inline8:
+  $base: Items.Base_Saratoga_inline8
+  itemPartList:
+    - Items.Base_jack_inline9
+Items.Base_jack_inline9:
+  $base: Items.Base_Saratoga_inline9
+  item: Items.jack_mag_stdr_prt
+Items.jack_mag_stdr_prt:
+  $base: Items.w_submachinegun__militech_saratoga__mag_stdr
+  appearanceResourceName: jack_mag_stdr
+#preset
+Items.Preset_jack_inline0:
+  $base: Items.Preset_Saratoga_Default_inline0
+  itemPartPreset: Items.jack_rcv_prt
+Items.Preset_jack_inline1:
+  $base: Items.Preset_Saratoga_Default_inline1
+  itemPartPreset: Items.jack_base_prt
+Items.Preset_jack_inline2:
+  $base: Items.Preset_Saratoga_Default_inline2
+  itemPartPreset: Items.jack_mag_std_prt
+Items.Preset_jack_inline3:
+  $base: Items.Preset_Saratoga_Default_inline3
+  itemPartPreset: Items.jack_mag_stdr_prt
+  $type: SlotItemPartPreset
+  
+Items.jackstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 45
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.jackstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.jackstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -10
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.jackstats_reload1:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.4
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBase
+  
+Items.jackstats_reload2:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.4
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+  
+Attacks.jack_fullautomode:
+    $base: Attacks.Bullet_GameEffect
+    explosionAttack:
+        $base: Attacks.Bullet_GameEffect
+        playerIncomingDamageMultiplier: 0.20
+        effectName: weaponShoot
+        effectTag: player_ray
+        range: 20.0
+        statModifiers:
+        -   $type: CombinedStatModifier
+            refStat: BaseStats.DamagePerHit
+            statType: BaseStats.ElectricDamage
+            modifierType: Additive
+            refObject: Owner
+            value: 500.0
+        hitFlags:
+        -   !append-once Explosion
+        hitReactionSeverityMin: 2
+        explosionDamageVSVehicles: 5.0
+        statusEffects:
+        -   $type: StatusEffectAttackData
+            statusEffect: BaseStatusEffect.Stun
+            resistPool: BaseStatPools.StunTrigger
+            applyImmediately: true
+            
+
+Attacks.jackattack1:
+    $type: RangedAttack
+    playerAttack: Attacks.jack_fullautomode
+    playerTimeDilated: Attacks.jack_fullautomode
+
+Attacks.jackattacks:
+    $type: RangedAttackPackage
+    defaultFire: Attacks.jackattack1
+    
+Items.IconicDesc_inline0:
+  $type: GameplayLogicPackageUIData
+  localizedDescription: jack_iconic_desc
+  
+
+  
+  
+  
+  
+  

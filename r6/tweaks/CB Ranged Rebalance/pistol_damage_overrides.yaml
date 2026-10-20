@@ -1,0 +1,90 @@
+# A-22B Chao / Ogou
+Items.Base_Chao_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 50                # default value - 40
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# HJKE-11 Yukimura / Genjiroh, Skippy
+Items.Base_Yukimura_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 165               # default value - 53
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# JKE-X2 Kenshin / Apparition, Chaos, Ambition
+Items.Base_Kenshin_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 120               # default value - 48
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Kappa / Crimestopper, x-MOD2
+Items.Base_Kappa_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 175               # default value - 53
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Liberty / Kongou, Plan B, Pride, Seraph
+Items.Base_Liberty_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 120               # default value - 50
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# M-10AF Lexington / AR Raygun Supreme 9000, Dying Night, x-MOD2, Rook
+Items.Base_Lexington_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 150               # default value – 56
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Silverhand / (no special variants)
+Items.Base_Silverhand_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 155               # default value - 64
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# M-76e Omaha / Lizzie
+Items.Base_Omaha_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 140               # default value - 62
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Nue / Death & Taxes, La Chingona Dorada, Riskit
+Items.Base_Nue_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 175               # default value - 57
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Slaught-O-Matic / (no special variants)
+Items.Base_Slaughtomatic_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 100               # default value - 66
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Unity / Cheetah, Her Majesty
+Items.Base_Unity_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 130               # default value - 56
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# HA-4 Grit / Catahoula
+Items.Base_Grit_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 120               # default value - 53
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Ticon / Scorch, Pariah
+Items.Base_Ticon_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 140               # default value - 30
+  modifierType: Additive
+  statType: BaseStats.DPS

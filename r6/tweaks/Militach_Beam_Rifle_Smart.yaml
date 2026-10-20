@@ -1,0 +1,205 @@
+Items.Militech_Beam_Rifle_Smart:
+  $base: Items.Preset_Sidewinder_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.ajax3stats_smart_rof 
+    - !append-once Items.ajax3stats_smart_damage 
+    - !append-once Items.ajax3stats_smart_mag
+    - !append-once Items.ajax3stats_smart_aimfov
+    - !append-once Items.ajax3stats_smart_hiplock
+    - !append-once Items.ajax3stats_smart_adslock
+    - !append-once Items.ajax3stats_smart_hiptargets
+    - !append-once Items.ajax3stats_smart_adstargets
+    - !append-once Items.ajax3stats_smart_thermal
+    - !append-once Items.ajax3stats_smart_thermal2
+    - !append-once Items.ajax3stats_smart_thermal3
+    - !append-once Items.ajax3stats_smart_effectiverange
+    - !append-once Items.ajax3stats_smart_maxrange
+  appearanceResourceName: ajax3_app
+  audioName: wea_set_dian
+  evolution: WeaponEvolution.Smart
+  quality: Quality.Epic
+  displayName: ajax3_smart_name
+  localizedDescription: ajax3_description
+  gameplayDescription: ajax3_gameplay_description
+  friendlyName: w_rifle_assault_militech_ajax
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: ajax3\icon\ajax3_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: ajax3\icon\ajax3.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_ajax3_inline2
+    - Items.Base_ajax3_inline4
+    - Items.Base_ajax3_inline6
+    - Items.Base_ajax3_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+  slotPartListPreset:
+    - Items.Preset_ajax3_inline0
+    - Items.Preset_ajax3_inline1
+    - Items.Preset_ajax3_inline2
+    - Items.Preset_ajax3_inline3
+  
+Items.Base_ajax3_inline2:
+  $base: Items.Base_Ajax_inline2
+  itemPartList:
+    - Items.Base_ajax3_inline3
+Items.Base_ajax3_inline3:
+  $base: Items.Base_Ajax_inline3
+  item: Items.ajax3_rcv_prt
+Items.ajax3_rcv_prt:
+  $base: Items.w_rifle_assault__militech_ajax__rcv1
+  appearanceResourceName: ajax3_rcv
+#base
+Items.Base_ajax3_inline4:
+  $base: Items.Base_Ajax_inline4
+  itemPartList:
+    - Items.Base_ajax3_inline5
+Items.Base_ajax3_inline5:
+  $base: Items.Base_Ajax_inline5
+  item: Items.ajax3_base_prt
+Items.ajax3_base_prt:
+  $base: Items.w_rifle_assault__militech_ajax__base1
+  appearanceResourceName: ajax3_base
+#mag
+Items.Base_ajax3_inline6:
+  $base: Items.Base_Ajax_inline6
+  itemPartList:
+    - Items.Base_ajax3_inline7
+Items.Base_ajax3_inline7:
+  $base: Items.Base_Ajax_inline7
+  item: Items.ajax3_mag_std_prt
+Items.ajax3_mag_std_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_std
+  appearanceResourceName: ajax3_mag_std
+#reload
+Items.Base_ajax3_inline8:
+  $base: Items.Base_Ajax_inline8
+  itemPartList:
+    - Items.Base_ajax3_inline9
+Items.Base_ajax3_inline9:
+  $base: Items.Base_Ajax_inline9
+  item: Items.ajax3_mag_stdr_prt
+Items.ajax3_mag_stdr_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_stdr
+  appearanceResourceName: ajax3_mag_stdr
+#preset
+Items.Preset_ajax3_inline0:
+  $base: Items.Preset_Ajax_Default_inline0
+  itemPartPreset: Items.ajax3_rcv_prt
+Items.Preset_ajax3_inline1:
+  $base: Items.Preset_Ajax_Default_inline1
+  itemPartPreset: Items.ajax3_base_prt
+Items.Preset_ajax3_inline2:
+  $base: Items.Preset_Ajax_Default_inline2
+  itemPartPreset: Items.ajax3_mag_std_prt
+Items.Preset_ajax3_inline3:
+  $base: Items.Preset_Ajax_Default_inline3
+  itemPartPreset: Items.ajax3_mag_stdr_prt
+  
+Items.ajax3stats_smart_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.01
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.ajax3stats_smart_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 40
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.ajax3stats_smart_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.ajax3stats_smart_aimfov:
+  $type: gamedataConstantStatModifier_Record
+  value: -30
+  modifierType: Additive
+  statType: BaseStats.AimFOV
+
+Items.ajax3stats_smart_hiplock:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.7
+  modifierType: Additive
+  statType: BaseStats.SmartGunHipTimeToLock
+  
+Items.ajax3stats_smart_adslock:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.7
+  modifierType: Additive
+  statType: BaseStats.SmartGunAdsTimeToLock
+  
+Items.ajax3stats_smart_adstargets:
+  $type: gamedataConstantStatModifier_Record
+  value: 2
+  modifierType: Additive
+  statType: BaseStats.SmartGunAdsMaxLockedTargets
+  
+Items.ajax3stats_smart_hiptargets:
+  $type: gamedataConstantStatModifier_Record
+  value: 2
+  modifierType: Additive
+  statType: BaseStats.SmartGunHipMaxLockedTargets
+  
+Items.ajax3stats_smart_thermal:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.DealsThermalDamage
+  
+Items.ajax3stats_smart_thermal2:
+  $type: gamedataConstantStatModifier_Record
+  value: 5
+  modifierType: Additive
+  statType: BaseStats.ThermalDamage
+
+Items.ajax3stats_smart_thermal3:
+  $type: gamedataConstantStatModifier_Record
+  value: 5
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.ajax3stats_smart_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.ajax3stats_smart_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+
+   
+Items.Ajax_Smart_Beam_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.Ajax_Smart_Beam_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: ajax3_smart_name
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.Ajax_Smart_Beam_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.Ajax_Smart_Beam_Crafting_Recipe_Legendary
+    
+Items.Ajax_Smart_Beam_Crafting_Recipe_Legendary:
+  $base: Items.Militech_Beam_Rifle_Smart
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+  

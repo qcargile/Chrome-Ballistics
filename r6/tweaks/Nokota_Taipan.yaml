@@ -1,0 +1,200 @@
+Items.Nokota_Taipan:
+  $base: Items.Preset_Copperhead_Default
+  tags:
+    - !append-once IconicWeapon
+    - !append-once Silenced
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.taipanstats_rof 
+    - !append-once Items.taipanstats_mag
+    - !append-once Items.taipanstats_damage
+    - !append-once Items.taipanstats_effectiverange
+    - !append-once Items.taipanstats_maxrange 
+    - !append-once Items.taipanstats_silent
+    - !append-once Items.taipanstats_projectile
+    - !append-once Items.taipanstats_pierce
+    - !append-once Items.taipanstats_armor
+  appearanceResourceName: taipan_app
+  quality: Quality.Legendary
+  displayName: taipan_name
+  evolution: WeaponEvolution.Tech
+  audioName: wea_set_sidewinder
+  localizedDescription: taipan_description
+  attacks:
+    - !append-once Attacks.taipan_jammode
+  rangedAttacks: Attacks.taipan_attacks
+  fxPackage: WeaponFxPackage.TechRifle
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: taipan\icon\taipan_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: taipan\icon\taipan.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_taipan_inline2
+    - Items.Base_taipan_inline4
+    - Items.Base_taipan_inline6
+    - Items.Base_taipan_inline8
+    - Items.RiflePossibleScopesList
+    - Items.HandgunPossibleScopesList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_taipan_inline0
+    - Items.Preset_taipan_inline1
+    - Items.Preset_taipan_inline2
+    - Items.Preset_taipan_inline3
+  
+Items.Base_taipan_inline2:
+  $base: Items.Base_Copperhead_inline2
+  itemPartList:
+    - Items.Base_taipan_inline3
+Items.Base_taipan_inline3:
+  $base: Items.Base_Copperhead_inline3
+  item: Items.taipan_rcv_prt
+Items.taipan_rcv_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__rcv1
+  appearanceResourceName: taipan_rcv
+#base
+Items.Base_taipan_inline4:
+  $base: Items.Base_Copperhead_inline4
+  itemPartList:
+    - Items.Base_taipan_inline5
+Items.Base_taipan_inline5:
+  $base: Items.Base_Copperhead_inline5
+  item: Items.taipan_base_prt
+Items.taipan_base_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__base1
+  appearanceResourceName: taipan_base
+#mag
+Items.Base_taipan_inline6:
+  $base: Items.Base_Copperhead_inline6
+  itemPartList:
+    - Items.Base_taipan_inline7
+Items.Base_taipan_inline7:
+  $base: Items.Base_Copperhead_inline7
+  item: Items.taipan_mag_std_prt
+Items.taipan_mag_std_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__mag_std
+  appearanceResourceName: taipan_mag_std
+#reload
+Items.Base_taipan_inline8:
+  $base: Items.Base_Copperhead_inline8
+  itemPartList:
+    - Items.Base_taipan_inline9
+Items.Base_taipan_inline9:
+  $base: Items.Base_Copperhead_inline9
+  item: Items.taipan_mag_stdr_prt
+Items.taipan_mag_stdr_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__mag_stdr
+  appearanceResourceName: taipan_mag_stdr
+#preset
+Items.Preset_taipan_inline0:
+  $base: Items.Preset_Base_Copperhead_inline0
+  itemPartPreset: Items.taipan_rcv_prt
+Items.Preset_taipan_inline1:
+  $base: Items.Preset_Base_Copperhead_inline1
+  itemPartPreset: Items.taipan_base_prt
+Items.Preset_taipan_inline2:
+  $base: Items.Preset_Base_Copperhead_inline2
+  itemPartPreset: Items.taipan_mag_std_prt
+Items.Preset_taipan_inline3:
+  $base: Items.Preset_Base_Copperhead_inline3
+  itemPartPreset: Items.taipan_mag_stdr_prt
+  
+Items.taipanstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.02
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.taipanstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.taipanstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 40
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.taipanstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.taipanstats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 50
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.taipanstats_silent:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanSilentKill
+  
+Items.taipanstats_projectile:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.SmartGunPlayerProjectileVelocity
+  
+Items.taipanstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.taipanstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+Attacks.taipan_jammode:
+    $base: Attacks.Bullet_GameEffect
+    explosionAttack:
+        $base: Attacks.Bullet_GameEffect
+        playerIncomingDamageMultiplier: 0.00
+        effectName: weaponShoot
+        effectTag: player_ray
+        range: 0.5
+        statusEffects:
+        -   $type: StatusEffectAttackData
+            statusEffect: BaseStatusEffect.CommsNoiseLevel3
+            applyImmediately: true    
+        -   $type: StatusEffectAttackData
+            statusEffect: BaseStatusEffect.PingMarkStatusEffect
+            applyImmediately: true  
+
+BaseStatusEffect.PingMarkStatusEffect:
+  $type: gamedataStatusEffect_Record
+  SFX: []
+  
+BaseStatusEffect.CommsNoiseLevel3:
+  $type: gamedataStatusEffect_Record
+  SFX: []
+
+Attacks.taipan_attack1:
+    $type: RangedAttack
+    playerAttack: Attacks.taipan_jammode
+    secondaryPlayerAttack: Attacks.taipan_jammode
+    playerTimeDilated: Attacks.taipan_jammode
+    secondaryPlayerTimeDilated: Attacks.taipan_jammode
+
+Attacks.taipan_attacks:
+    $type: RangedAttackPackage
+    defaultFire: Attacks.taipan_attack1
+    chargeFire: Attacks.taipan_attack1
+
+
+    
+    
+  

@@ -1,0 +1,114 @@
+Items.glock_18_vspec:
+  $base: Items.Preset_Lexington_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.glockstatsh_damage
+    - !append-once Items.glockstatsh_rof
+    - !append-once Items.glockstatsh_mag
+  appearanceResourceName: glock_18_h_app
+  audioName: wea_set_osprey
+  quality: Quality.Epic
+  displayName: glock_18_h_gun_name
+  localizedDescription: glock_18_h_gun_description
+  hudIcon:
+    atlasResourcePath: glock_18\icon\glock_18_h_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: glock_18\Icon\glock_18_h.inkatlas
+    atlasPartName: slot_01
+  visualTags:
+    - Default
+  slotPartList:
+    - Items.Base_glockh_inline2
+    - Items.Base_glockh_inline4
+    - Items.Base_glockh_inline6
+    - Items.Base_glockh_inline8
+    - Items.HandgunPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_glockh_inline0
+    - Items.Preset_glockh_inline1
+    - Items.Preset_glockh_inline2
+    - Items.Preset_glockh_inline3
+    - Items.HandgunAndRevolverScopesPartList
+    - Items.Preset_Base_Lexington_inline4
+    - Items.Preset_Base_Lexington_inline5
+  
+Items.Base_glockh_inline2:
+  $base: Items.Base_Lexington_inline2
+  itemPartList:
+    - Items.Base_glockh_inline3
+Items.Base_glockh_inline3:
+  $base: Items.Base_Lexington_inline3
+  item: Items.glock_18_h_rcv_prt
+Items.glock_18_h_rcv_prt:
+  $base: Items.w_handgun_militech_lexington__rcv1
+  appearanceResourceName: glock_18_h_rcv
+#base
+Items.Base_glockh_inline4:
+  $base: Items.Base_Lexington_inline4
+  itemPartList:
+    - Items.Base_glockh_inline5
+Items.Base_glockh_inline5:
+  $base: Items.Base_Lexington_inline5
+  item: Items.glock_18_h_base_prt
+Items.glock_18_h_base_prt:
+  $base: Items.w_handgun_militech_lexington__base1
+  appearanceResourceName: glock_18_h_base
+#mag
+Items.Base_glockh_inline6:
+  $base: Items.Base_Lexington_inline6
+  itemPartList:
+    - Items.Base_glockh_inline7
+Items.Base_glockh_inline7:
+  $base: Items.Base_Lexington_inline7
+  item: Items.glock_18_h_mag_std_prt
+Items.glock_18_h_mag_std_prt:
+  $base: Items.w_handgun_militech_lexington__base1
+  appearanceResourceName: glock_18_h_mag_std
+#reload
+Items.Base_glockh_inline8:
+  $base: Items.Base_Lexington_inline8
+  itemPartList:
+    - Items.Base_glockh_inline9
+Items.Base_glockh_inline9:
+  $base: Items.Base_Lexington_inline9
+  item: Items.glock_18_h_mag_stdr_prt
+Items.glock_18_h_mag_stdr_prt:
+  $base: Items.w_handgun_militech_lexington__base1
+  appearanceResourceName: glock_18_h_mag_stdr
+#preset
+Items.Preset_glockh_inline0:
+  $base: Items.Preset_Base_Lexington_inline0
+  itemPartPreset: Items.glock_18_h_rcv_prt
+Items.Preset_glockh_inline1:
+  $base: Items.Preset_Base_Lexington_inline1
+  itemPartPreset: Items.glock_18_h_base_prt
+Items.Preset_glockh_inline2:
+  $base: Items.Preset_Base_Lexington_inline2
+  itemPartPreset: Items.glock_18_h_mag_std_prt
+Items.Preset_glockh_inline3:
+  $base: Items.Preset_Base_Lexington_inline3
+  itemPartPreset: Items.glock_18_h_mag_stdr_prt 
+
+Items.glockstatsh_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 100
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.glockstatsh_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.05
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.glockstatsh_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -3
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+
+

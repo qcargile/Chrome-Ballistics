@@ -1,0 +1,201 @@
+Items.Model680:
+  $base: Items.Preset_Tactician_Default
+  tags:
+    - !append ForceDismember
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.model680stats_damage
+    - !append-once Items.model680stats_rof
+    - !append-once Items.model680stats_spread
+    - !append-once Items.model680stats_mag
+    - !append-once Items.model680stats_pierce
+    - !append-once Items.model680stats_armor
+    - !append-once Items.model680stats_crit
+    - !append-once Items.model680stats_bleeding
+    - !append-once Items.model680stats_burning
+    - !append-once Items.model680stats_electrocute
+    - !append-once Items.model680stats_poison
+    - !append-once Items.model680stats_stun
+    - !append-once Items.model680stats_headshotmult
+    - !append-once Items.model680stats_effectiverange
+    - !append-once Items.model680stats_maxrange
+  statModifierGroups: 
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  ammo: Ammo.ShotgunAmmo
+  appearanceResourceName: model680_app
+  blueprint: Items.Base_Power_Shotgun_Blueprint
+  fxPackage: WeaponFxPackage.PowerLargeCaliber
+  hudIcon:
+    atlasResourcePath: model680\icon\model680_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: model680\icon\model680.inkatlas
+    atlasPartName: slot_01
+  quality: Quality.Epic
+  displayName: model680_name
+  localizedDescription: model680_description
+  slotPartList:
+    - Items.Base_model680_inline2
+    - Items.Base_model680_inline4
+    - Items.Base_model680_inline6
+    - Items.Base_model680_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.RiflePossibleScopesList
+    - Items.UniversalShotgunSuppressorList
+  slotPartListPreset:
+    - Items.Preset_model680_inline0
+    - Items.Preset_model680_inline1
+    - Items.Preset_model680_inline2
+    - Items.Preset_model680_inline3
+  visualTags:
+    - Default
+    
+Items.Base_model680_inline2:
+  $base: Items.Base_Tactician_inline2
+  itemPartList:
+    - Items.Base_model680_inline3
+Items.Base_model680_inline3:
+  $base: Items.Base_Tactician_inline3
+  item: Items.model680_rcv_prt
+Items.model680_rcv_prt:
+  $base: Items.w_shotgun_constitutional_tactician_rcv1
+  appearanceResourceName: model680_rcv
+Items.Base_model680_inline4:
+  $base: Items.Base_Tactician_inline4
+  itemPartList:
+    - Items.Base_model680_inline5
+Items.Base_model680_inline5:
+  $base: Items.Base_Tactician_inline5
+  item: Items.model680_base_prt
+Items.model680_base_prt:
+  $base: Items.w_shotgun_constitutional_tactician_base1
+  appearanceResourceName: model680_base
+Items.Base_model680_inline6:
+  $base: Items.Base_Tactician_inline6
+  itemPartList:
+    - Items.Base_model680_inline7
+Items.Base_model680_inline7:
+  $base: Items.Base_Tactician_inline7
+  item: Items.model680_mag_std_prt
+Items.model680_mag_std_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_std
+  appearanceResourceName: model680_mag_std
+Items.Base_model680_inline8:
+  $base: Items.Base_Tactician_inline8
+  itemPartList:
+    - Items.Base_model680_inline9
+Items.Base_model680_inline9:
+  $base: Items.Base_Tactician_inline9
+  item: Items.model680_mag_stdr_prt
+Items.model680_mag_stdr_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_stdr
+  appearanceResourceName: model680_mag_stdr
+Items.Preset_model680_inline0:
+  $base: Items.Preset_Tactician_Default_inline0
+  itemPartPreset: Items.model680_rcv_prt
+Items.Preset_model680_inline1:
+  $base: Items.Preset_Tactician_Default_inline1
+  itemPartPreset: Items.model680_base_prt
+Items.Preset_model680_inline2:
+  $base: Items.Preset_Tactician_Default_inline2
+  itemPartPreset: Items.model680_mag_std_prt
+Items.Preset_model680_inline3:
+  $base: Items.Preset_Tactician_Default_inline3
+  itemPartPreset: Items.model680_mag_stdr_prt
+  
+Items.model680stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 24
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.model680stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.model680stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -1
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.model680stats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.model680stats_crit:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Items.model680stats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Items.model680stats_poison:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.PoisonedApplicationRate
+  
+Items.model680stats_electrocute:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.model680stats_bleeding:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  
+Items.model680stats_burning:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.model680stats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.15
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+
+Items.model680stats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.model680stats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.model680stats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.model680stats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  

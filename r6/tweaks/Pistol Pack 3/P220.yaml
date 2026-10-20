@@ -1,0 +1,112 @@
+Items.P220:
+  $base: Items.Preset_Unity_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.p220stats_damage
+    - !append-once Items.p220stats_rof
+    - !append-once Items.p220stats_mag
+  appearanceResourceName: p220_app
+  quality: Quality.Common
+  displayName: p220_name
+  localizedDescription: p220_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: p220\icon\p220_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: p220\icon\p220.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_p220_inline2
+    - Items.Base_p220_inline4
+    - Items.Base_p220_inline6
+    - Items.Base_p220_inline8
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+  slotPartListPreset:
+    - Items.Preset_p220_inline0
+    - Items.Preset_p220_inline1
+    - Items.Preset_p220_inline2
+    - Items.Preset_p220_inline3
+  
+Items.Base_p220_inline2:
+  $base: Items.Base_Unity_inline2
+  itemPartList:
+    - Items.Base_p220_inline3
+Items.Base_p220_inline3:
+  $base: Items.Base_Unity_inline3
+  item: Items.p220_rcv_prt
+Items.p220_rcv_prt:
+  $base: Items.w_handgun__constitutional_unity__rcv1
+  appearanceResourceName: p220_rcv
+#base
+Items.Base_p220_inline4:
+  $base: Items.Base_Unity_inline4
+  itemPartList:
+    - Items.Base_p220_inline5
+Items.Base_p220_inline5:
+  $base: Items.Base_Unity_inline5
+  item: Items.p220_base_prt
+Items.p220_base_prt:
+  $base: Items.w_handgun__constitutional_unity__base1
+  appearanceResourceName: p220_base
+#mag
+Items.Base_p220_inline6:
+  $base: Items.Base_Unity_inline6
+  itemPartList:
+    - Items.Base_p220_inline7
+Items.Base_p220_inline7:
+  $base: Items.Base_Unity_inline7
+  item: Items.p220_mag_std_prt
+Items.p220_mag_std_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_std
+  appearanceResourceName: p220_mag_std
+#reload
+Items.Base_p220_inline8:
+  $base: Items.Base_Unity_inline8
+  itemPartList:
+    - Items.Base_p220_inline9
+Items.Base_p220_inline9:
+  $base: Items.Base_Unity_inline9
+  item: Items.p220_mag_stdr_prt
+Items.p220_mag_stdr_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_stdr
+  appearanceResourceName: p220_mag_stdr
+#preset
+Items.Preset_p220_inline0:
+  $base: Items.Preset_Unity_Default_inline0
+  itemPartPreset: Items.p220_rcv_prt
+Items.Preset_p220_inline1:
+  $base: Items.Preset_Unity_Default_inline1
+  itemPartPreset: Items.p220_base_prt
+Items.Preset_p220_inline2:
+  $base: Items.Preset_Unity_Default_inline2
+  itemPartPreset: Items.p220_mag_std_prt
+Items.Preset_p220_inline3:
+  $base: Items.Preset_Unity_Default_inline3
+  itemPartPreset: Items.p220_mag_stdr_prt
+  
+Items.p220stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 40
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.p220stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.15
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.p220stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+
+    

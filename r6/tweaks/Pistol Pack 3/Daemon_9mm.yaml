@@ -1,0 +1,111 @@
+Items.Daemon_9mm:
+  $base: Items.Preset_Unity_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.stac11stats_damage
+    - !append-once Items.stac11stats_rof
+    - !append-once Items.stac11stats_mag
+  appearanceResourceName: stac11_app
+  quality: Quality.Rare
+  displayName: stac11_name
+  localizedDescription: stac11_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: stac11\icon\stac11_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: stac11\icon\stac11.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_stac11_inline2
+    - Items.Base_stac11_inline4
+    - Items.Base_stac11_inline6
+    - Items.Base_stac11_inline8
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+  slotPartListPreset:
+    - Items.Preset_stac11_inline0
+    - Items.Preset_stac11_inline1
+    - Items.Preset_stac11_inline2
+    - Items.Preset_stac11_inline3
+  
+Items.Base_stac11_inline2:
+  $base: Items.Base_Unity_inline2
+  itemPartList:
+    - Items.Base_stac11_inline3
+Items.Base_stac11_inline3:
+  $base: Items.Base_Unity_inline3
+  item: Items.stac11_rcv_prt
+Items.stac11_rcv_prt:
+  $base: Items.w_handgun__constitutional_unity__rcv1
+  appearanceResourceName: stac11_rcv
+#base
+Items.Base_stac11_inline4:
+  $base: Items.Base_Unity_inline4
+  itemPartList:
+    - Items.Base_stac11_inline5
+Items.Base_stac11_inline5:
+  $base: Items.Base_Unity_inline5
+  item: Items.stac11_base_prt
+Items.stac11_base_prt:
+  $base: Items.w_handgun__constitutional_unity__base1
+  appearanceResourceName: stac11_base
+#mag
+Items.Base_stac11_inline6:
+  $base: Items.Base_Unity_inline6
+  itemPartList:
+    - Items.Base_stac11_inline7
+Items.Base_stac11_inline7:
+  $base: Items.Base_Unity_inline7
+  item: Items.stac11_mag_std_prt
+Items.stac11_mag_std_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_std
+  appearanceResourceName: stac11_mag_std
+#reload
+Items.Base_stac11_inline8:
+  $base: Items.Base_Unity_inline8
+  itemPartList:
+    - Items.Base_stac11_inline9
+Items.Base_stac11_inline9:
+  $base: Items.Base_Unity_inline9
+  item: Items.stac11_mag_stdr_prt
+Items.stac11_mag_stdr_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_stdr
+  appearanceResourceName: stac11_mag_stdr
+#preset
+Items.Preset_stac11_inline0:
+  $base: Items.Preset_Unity_Default_inline0
+  itemPartPreset: Items.stac11_rcv_prt
+Items.Preset_stac11_inline1:
+  $base: Items.Preset_Unity_Default_inline1
+  itemPartPreset: Items.stac11_base_prt
+Items.Preset_stac11_inline2:
+  $base: Items.Preset_Unity_Default_inline2
+  itemPartPreset: Items.stac11_mag_std_prt
+Items.Preset_stac11_inline3:
+  $base: Items.Preset_Unity_Default_inline3
+  itemPartPreset: Items.stac11_mag_stdr_prt
+  
+Items.stac11stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 85
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.stac11stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.15
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.stac11stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 3
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+    

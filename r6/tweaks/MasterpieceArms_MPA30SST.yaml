@@ -1,0 +1,230 @@
+Items.MasterpieceArms_MPA30SST:
+  $base: Items.Preset_Grit_Default
+  tags:
+    - !append-once IconicWeapon
+  statModifiers:
+    - !append-once Quality.IconicItem
+    - !append-once Items.mpa30stats_mag
+    - !append-once Items.mpa30stats_rof
+    - !append-once Items.mpa30stats_damage
+    - !append-once Items.mpa30stats_fullauto
+    - !append-once Items.mpa30stats_chargetime
+    - !append-once Items.mpa30stats_chargetime2
+    - !append-once Items.mpa30stats_chargetime3
+    - !append-once Items.mpa30stats_pierce
+    - !append-once Items.mpa30stats_charge
+    - !append-once Items.mpa30stats_knockdown
+    - !append-once Items.mpa30stats_knockdown2
+    - !append-once Items.mpa30stats_recoil
+    - !append-once Items.mpa30stats_recoil2
+  evolution: WeaponEvolution.Power
+  fxPackage: WeaponFxPackage.PowerHandgun
+  previewEffectTag: ricochet
+  primaryTriggerMode: TriggerMode.FullAuto
+  secondaryTriggerMode: TriggerMode.Charge
+  triggerEffectName: te_wea_aim_fast
+  itemType: ItemType.Wea_SubmachineGun
+  appearanceResourceName: mpa30_app
+  hudIcon:
+    atlasResourcePath: mpa30\icon\mpa30_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: mpa30\icon\mpa30.inkatlas
+    atlasPartName: slot_01
+  audioName: wea_set_pulsar
+  OnAttach:
+    - !append Items.mpa30_adsstats
+  quality: Quality.Common
+  triggerModes:
+    - TriggerMode.FullAuto
+    - TriggerMode.Charge 
+  displayName: mpa30_name
+  localizedDescription: mpa30_description
+  visualTags:
+    - Default
+ 
+  slotPartList:
+    - Items.Base_mpa30_inline0
+    - Items.Base_mpa30_inline2
+    - Items.Base_mpa30_inline4
+    - Items.Base_mpa30_inline6
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+    - Items.RiflePossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_mpa30_inline0
+    - Items.Preset_mpa30_inline1
+    - Items.Preset_mpa30_inline2
+    - Items.Preset_mpa30_inline3
+    - Items.Preset_Grit_Default_inline4
+    - Items.Preset_Grit_Default_inline5
+    
+Items.Base_mpa30_inline0:
+  $base: Items.Base_Grit_inline0
+  itemPartList:
+    - Items.Base_mpa30_inline1
+Items.Base_mpa30_inline1:
+  $base: Items.Base_Grit_inline1
+  item: Items.mpa30_rcv_prt
+Items.mpa30_rcv_prt:
+  $base: Items.w_handgun__krausser_grit__rcv1
+  appearanceResourceName: mpa30_rcv
+#base
+Items.Base_mpa30_inline2:
+  $base: Items.Base_Grit_inline2
+  itemPartList:
+    - Items.Base_mpa30_inline3
+Items.Base_mpa30_inline3:
+  $base: Items.Base_Grit_inline3
+  item: Items.mpa30_base_prt
+Items.mpa30_base_prt:
+  $base: Items.w_handgun__krausser_grit__base1
+  appearanceResourceName: mpa30_base
+#mag
+Items.Base_mpa30_inline4:
+  $base: Items.Base_Grit_inline4
+  itemPartList:
+    - Items.Base_mpa30_inline5
+Items.Base_mpa30_inline5:
+  $base: Items.Base_Grit_inline5
+  item: Items.mpa30_mag_std_prt
+Items.mpa30_mag_std_prt:
+  $base: Items.w_handgun__krausser_grit__mag_std
+  appearanceResourceName: mpa30_mag_std
+#reload
+Items.Base_mpa30_inline6:
+  $base: Items.Base_Grit_inline6
+  itemPartList:
+    - Items.Base_mpa30_inline7
+Items.Base_mpa30_inline7:
+  $base: Items.Base_Grit_inline7
+  item: Items.mpa30_mag_stdr_prt
+Items.mpa30_mag_stdr_prt:
+  $base: Items.w_handgun__krausser_grit__mag_stdr
+  appearanceResourceName: mpa30_mag_stdr
+#preset
+Items.Preset_mpa30_inline0:
+  $base: Items.Preset_Grit_Default_inline0
+  itemPartPreset: Items.mpa30_rcv_prt
+Items.Preset_mpa30_inline1:
+  $base: Items.Preset_Grit_Default_inline1
+  itemPartPreset: Items.mpa30_base_prt
+Items.Preset_mpa30_inline2:
+  $base: Items.Preset_Grit_Default_inline2
+  itemPartPreset: Items.mpa30_mag_std_prt
+Items.Preset_mpa30_inline3:
+  $base: Items.Preset_Grit_Default_inline3
+  itemPartPreset: Items.mpa30_mag_stdr_prt
+  
+Items.mpa30stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.135
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.mpa30stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.mpa30stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 145
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.mpa30stats_fullauto:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.FullAutoOnFullCharge
+  
+Items.mpa30stats_chargetime:
+  $type: gamedataConstantStatModifier_Record
+  value: -2.0
+  modifierType: Additive
+  statType: BaseStats.BaseChargeTime
+  
+Items.mpa30stats_chargetime2:
+  $type: gamedataConstantStatModifier_Record
+  value: -2.0
+  modifierType: Additive
+  statType: BaseStats.ChargeDischargeTime
+  
+Items.mpa30stats_chargetime3:
+  $type: gamedataConstantStatModifier_Record
+  value: -2
+  modifierType: Additive
+  statType: BaseStats.ChargeReadyPercentage
+  
+Items.mpa30stats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.mpa30stats_charge:
+  $type: gamedataConstantStatModifier_Record
+  value: -49
+  modifierType: Additive
+  statType: BaseStats.BaseMaxChargeThreshold 
+  
+Items.mpa30stats_knockdown:
+  $type: gamedataConstantStatModifier_Record
+  value: -20
+  modifierType: Additive
+  statType: BaseStats.BaseKnockdownImpulse
+  
+Items.mpa30stats_knockdown2:
+  $type: gamedataConstantStatModifier_Record
+  value: -20
+  modifierType: Additive
+  statType: BaseStats.KnockdownImpulse
+  
+Items.mpa30stats_recoil:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.5
+  modifierType: Additive
+  statType: BaseStats.RecoilKickMin
+  
+Items.mpa30stats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 1.0
+  modifierType: Additive
+  statType: BaseStats.RecoilKickMax
+  
+Items.mpa30_adsstats:
+  $type: GameplayLogicPackage
+  effectors:
+    - !append Items.mpa30_adsstats_inline0
+
+Items.mpa30_adsstats_inline0:
+  $type: ApplyStatGroupEffector
+  applicationTarget: Weapon
+  removeWithEffector: True
+  statGroup: Items.mpa30_adsstats_inline1
+  effectorClassName: ApplyStatGroupEffector
+  prereqRecord: Perks.PlayerIsAiming
+  reapplyOnWeaponChange: False
+
+
+Items.mpa30_adsstats_inline1:
+  $type: StatModifierGroup
+  statModsLimit: -1
+  statModifiers:
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.CycleTimeBase
+      modifierType: Additive
+      value: -0.005
+      
+Items.Base_Tech_Handgun_NoAttachments_Blueprint_inline3.childElements:
+  - Items.ScopeElement
+  - Items.PowerModuleElement
+  
+
+

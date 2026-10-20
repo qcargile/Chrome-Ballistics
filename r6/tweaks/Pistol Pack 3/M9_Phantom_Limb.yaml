@@ -1,0 +1,112 @@
+Items.M9_Phantom_Limb:
+  $base: Items.Preset_Unity_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.phantom9stats_damage
+    - !append-once Items.phantom9stats_rof
+    - !append-once Items.phantom9stats_mag
+  appearanceResourceName: phantom9_app
+  quality: Quality.Common
+  displayName: phantom9_name
+  localizedDescription: phantom9_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: phantom9\icon\phantom9_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: phantom9\icon\phantom9.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_phantom9_inline2
+    - Items.Base_phantom9_inline4
+    - Items.Base_phantom9_inline6
+    - Items.Base_phantom9_inline8
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+  slotPartListPreset:
+    - Items.Preset_phantom9_inline0
+    - Items.Preset_phantom9_inline1
+    - Items.Preset_phantom9_inline2
+    - Items.Preset_phantom9_inline3
+  
+Items.Base_phantom9_inline2:
+  $base: Items.Base_Unity_inline2
+  itemPartList:
+    - Items.Base_phantom9_inline3
+Items.Base_phantom9_inline3:
+  $base: Items.Base_Unity_inline3
+  item: Items.phantom9_rcv_prt
+Items.phantom9_rcv_prt:
+  $base: Items.w_handgun__constitutional_unity__rcv1
+  appearanceResourceName: phantom9_rcv
+#base
+Items.Base_phantom9_inline4:
+  $base: Items.Base_Unity_inline4
+  itemPartList:
+    - Items.Base_phantom9_inline5
+Items.Base_phantom9_inline5:
+  $base: Items.Base_Unity_inline5
+  item: Items.phantom9_base_prt
+Items.phantom9_base_prt:
+  $base: Items.w_handgun__constitutional_unity__base1
+  appearanceResourceName: phantom9_base
+#mag
+Items.Base_phantom9_inline6:
+  $base: Items.Base_Unity_inline6
+  itemPartList:
+    - Items.Base_phantom9_inline7
+Items.Base_phantom9_inline7:
+  $base: Items.Base_Unity_inline7
+  item: Items.phantom9_mag_std_prt
+Items.phantom9_mag_std_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_std
+  appearanceResourceName: phantom9_mag_std
+#reload
+Items.Base_phantom9_inline8:
+  $base: Items.Base_Unity_inline8
+  itemPartList:
+    - Items.Base_phantom9_inline9
+Items.Base_phantom9_inline9:
+  $base: Items.Base_Unity_inline9
+  item: Items.phantom9_mag_stdr_prt
+Items.phantom9_mag_stdr_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_stdr
+  appearanceResourceName: phantom9_mag_stdr
+#preset
+Items.Preset_phantom9_inline0:
+  $base: Items.Preset_Unity_Default_inline0
+  itemPartPreset: Items.phantom9_rcv_prt
+Items.Preset_phantom9_inline1:
+  $base: Items.Preset_Unity_Default_inline1
+  itemPartPreset: Items.phantom9_base_prt
+Items.Preset_phantom9_inline2:
+  $base: Items.Preset_Unity_Default_inline2
+  itemPartPreset: Items.phantom9_mag_std_prt
+Items.Preset_phantom9_inline3:
+  $base: Items.Preset_Unity_Default_inline3
+  itemPartPreset: Items.phantom9_mag_stdr_prt
+  
+Items.phantom9stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 60
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.phantom9stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.15
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.phantom9stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 3
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+
+    

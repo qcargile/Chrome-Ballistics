@@ -1,0 +1,116 @@
+Items.B23R:
+  $base: Items.Preset_Liberty_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.b23stats_damage
+    - !append-once Items.b23stats_rof
+    - !append-once Items.b23stats_mag
+  appearanceResourceName: b23_app
+  primaryTriggerMode: TriggerMode.FullAuto
+  audioName: wea_set_copperhead
+  triggerModes:
+    - TriggerMode.FullAuto
+  quality: Quality.Common
+  displayName: b23_name
+  localizedDescription: b23_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: b23\icon\b23_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: b23\icon\b23.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_b23_inline2
+    - Items.Base_b23_inline4
+    - Items.Base_b23_inline6
+    - Items.Base_b23_inline8
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+  slotPartListPreset:
+    - Items.Preset_b23_inline0
+    - Items.Preset_b23_inline1
+    - Items.Preset_b23_inline2
+    - Items.Preset_b23_inline3
+  
+Items.Base_b23_inline2:
+  $base: Items.Base_Liberty_inline2
+  itemPartList:
+    - Items.Base_b23_inline3
+Items.Base_b23_inline3:
+  $base: Items.Base_Liberty_inline3
+  item: Items.b23_rcv_prt
+Items.b23_rcv_prt:
+  $base: Items.w_handgun__constitutional_liberty__rcv1
+  appearanceResourceName: b23_rcv
+#base
+Items.Base_b23_inline4:
+  $base: Items.Base_Liberty_inline4
+  itemPartList:
+    - Items.Base_b23_inline5
+Items.Base_b23_inline5:
+  $base: Items.Base_Liberty_inline5
+  item: Items.b23_base_prt
+Items.b23_base_prt:
+  $base: Items.w_handgun__constitutional_liberty__base1
+  appearanceResourceName: b23_base
+#mag
+Items.Base_b23_inline6:
+  $base: Items.Base_Liberty_inline6
+  itemPartList:
+    - Items.Base_b23_inline7
+Items.Base_b23_inline7:
+  $base: Items.Base_Liberty_inline7
+  item: Items.b23_mag_std_prt
+Items.b23_mag_std_prt:
+  $base: Items.w_handgun__constitutional_liberty__mag_std
+  appearanceResourceName: b23_mag_std
+#reload
+Items.Base_b23_inline8:
+  $base: Items.Base_Liberty_inline8
+  itemPartList:
+    - Items.Base_b23_inline9
+Items.Base_b23_inline9:
+  $base: Items.Base_Liberty_inline9
+  item: Items.b23_mag_stdr_prt
+Items.b23_mag_stdr_prt:
+  $base: Items.w_handgun__constitutional_liberty__mag_stdr
+  appearanceResourceName: b23_mag_stdr
+#preset
+Items.Preset_b23_inline0:
+  $base: Items.Preset_Liberty_Default_inline0
+  itemPartPreset: Items.b23_rcv_prt
+Items.Preset_b23_inline1:
+  $base: Items.Preset_Liberty_Default_inline1
+  itemPartPreset: Items.b23_base_prt
+Items.Preset_b23_inline2:
+  $base: Items.Preset_Liberty_Default_inline2
+  itemPartPreset: Items.b23_mag_std_prt
+Items.Preset_b23_inline3:
+  $base: Items.Preset_Liberty_Default_inline3
+  itemPartPreset: Items.b23_mag_stdr_prt
+  
+Items.b23stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.22
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.b23stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 115
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+Items.b23stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 4
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+
+
+    

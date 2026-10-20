@@ -1,0 +1,67 @@
+Items.Fleshlight:
+  $base: Items.Preset_Dildo_Stout
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.fleshstats_damage
+    - !append-once Items.fleshstats_speed
+    - !append-once Items.fleshstats_stun
+    - !append-once Items.fleshstats_health
+  appearanceResourceName: flesh_app
+  forcedMinHitReaction: 200
+  quality: Quality.Legendary
+  displayName: flesh_name
+  hudIcon:
+    atlasResourcePath: flesh\icon\flesh_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: flesh\icon\flesh.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_flesh_inline1
+    - Items.Base_flesh_inline2
+  slotPartListPreset:
+    - Items.Preset_flesh_inline0
+    - Items.Preset_Dildo_Stout_inline5
+    
+Items.Base_flesh_inline1:
+  $base: Items.Base_One_Hand_Blunt_inline1
+  itemPartList:
+    - Items.Base_flesh_inline2
+Items.Base_flesh_inline2:
+  $base: Items.Base_One_Hand_Blunt_inline6
+  item: Items.flesh_grip_prt
+Items.flesh_grip_prt:
+  $base: Items.w_dildo_grip
+  appearanceResourceName: flesh_grip    
+  
+Items.Preset_flesh_inline0:
+  $base: Items.Preset_Dildo_Stout_inline4
+  itemPartPreset: Items.flesh_grip_prt
+  
+Items.fleshstats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 100
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate  
+  
+Items.fleshstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: -300
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.fleshstats_speed:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.AttackSpeed
+  
+Items.fleshstats_health:
+  $type: gamedataConstantStatModifier_Record
+  value: 1000
+  modifierType: Additive
+  statType: BaseStats.Health
+
+

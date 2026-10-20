@@ -1,0 +1,20 @@
+# Kolac / Hypercritical
+Items.Base_Kolac_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 200               # default value – 41
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# M-179e Achilles / Widow Maker, x-MOD2
+Items.Base_Achilles_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 140               # default value – 44
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# SOR-22 / (no variants)
+Items.Base_Sor22_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 150               # default value – 45
+  modifierType: Additive
+  statType: BaseStats.DPS

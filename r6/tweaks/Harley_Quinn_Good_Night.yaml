@@ -1,0 +1,71 @@
+Items.Harley_Quinn_Good_Night:
+  $base: Items.Preset_Baseball_Bat_Denny_Legendary
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.quinnstats_damage
+    - !append-once Items.quinnstats_speed
+    - !append-once Items.quinnstats_leap
+    - !append-once Items.DennysBatWeaponMod_inline1
+  appearanceResourceName: quinn_app
+  forcedMinHitReaction: 500
+  quality: Quality.Uncommon
+  displayName: quinn_name
+  localizedDescription: quinn_description
+  hudIcon:
+    atlasResourcePath: quinn\icon\quinn_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: quinn\icon\quinn.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_quinn_inline1
+    - Items.Base_quinn_inline2
+  slotPartListPreset:
+    - Items.Preset_quinn_inline0
+    - Items.Preset_Baseball_Bat_Default_inline1
+    - Items.Preset_Baseball_Bat_Default_inline2
+    - Items.Preset_Baseball_Bat_Denny_inline3
+    
+Items.Base_quinn_inline1:
+  $base: Items.Base_Two_Hand_Blunt_inline1
+  itemPartList:
+    - Items.Base_quinn_inline2
+Items.Base_quinn_inline2:
+  $base: Items.Base_Two_Hand_Blunt_inline2
+  item: Items.quinn_grip_prt
+Items.quinn_grip_prt:
+  $base: Items.w_baseball_bat_common_grip
+  appearanceResourceName: quinn_grip    
+  
+Items.Preset_quinn_inline0:
+  $base: Items.Preset_Baseball_Bat_Default_inline0
+  itemPartPreset: Items.quinn_grip_prt
+  
+Items.DennysBatWeaponMod_inline1:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate  
+  
+Items.quinnstats_leap:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanMeleeLeap
+  
+Items.quinnstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.quinnstats_speed:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.AttackSpeed
+
+
+ 

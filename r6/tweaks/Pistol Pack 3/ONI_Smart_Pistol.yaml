@@ -1,0 +1,91 @@
+Items.ONI_Smart_Pistol:
+  $base: Items.Preset_Kappa_Default
+  tags:
+    - !append-once IconicWeapon
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.onistats_damage
+    - !append-once Items.onistats_rof
+    - !append-once Items.onistats_mag
+    - !append-once Items.onistats_hiplock
+    - !append-once Items.onistats_hiptargets
+    - !append-once Items.onistats_adslock
+    - !append-once Items.onistats_adstargets
+    - !append-once Items.onistats_effectiverange
+    - !append-once Items.onistats_stun
+  appearanceResourceName: oni_app
+  quality: Quality.Rare
+  displayName: oni_name
+  audioName: wea_set_kappa
+  localizedDescription: oni_description
+  gameplayDescription: oni_gameplay_desc
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: oni\icon\oni_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: oni\icon\oni.inkatlas
+    atlasPartName: slot_01
+
+Items.onistats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 35
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.onistats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.0
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.onistats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.onistats_hiplock:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.7
+  modifierType: Additive
+  statType: BaseStats.SmartGunHipTimeToLock
+  
+Items.onistats_adslock:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.7
+  modifierType: Additive
+  statType: BaseStats.SmartGunAdsTimeToLock
+  
+Items.onistats_adstargets:
+  $type: gamedataConstantStatModifier_Record
+  value: 2
+  modifierType: Additive
+  statType: BaseStats.SmartGunAdsMaxLockedTargets
+  
+Items.onistats_hiptargets:
+  $type: gamedataConstantStatModifier_Record
+  value: 2
+  modifierType: Additive
+  statType: BaseStats.SmartGunHipMaxLockedTargets
+  
+Items.onistats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.onistats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Items.onistats_silent:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanSilentKill
+  
+    

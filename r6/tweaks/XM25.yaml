@@ -1,0 +1,186 @@
+Items.XM25:
+  $base: Items.Preset_Kolac_Tiny_Mike
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.xm25stats_aimfov
+    - !append-once Items.xm25stats_range1
+    - !append-once Items.xm25stats_range2
+    - !append-once Items.xm25stats_dismember
+    - !append-once Items.xm25stats_damage
+    - !append-once Items.xm25stats_mag
+    - !append-once Items.xm25stats_reload
+  appearanceResourceName: xm25_app
+  attacks:
+    - !append-once Attacks.xm25_explosive
+  rangedAttacks: Attacks.xm25attacks
+  quality: Quality.Legendary
+  displayName: xm25_name
+  localizedDescription: xm25_description
+  visualTags:
+    - default
+    - legendary
+  hudIcon:
+    atlasResourcePath: xm25\icon\xm25_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: xm25\icon\xm25.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_Kolac_inline2
+    - Items.Base_Kolac_inline4
+    - Items.Base_Kolac_inline6
+    - Items.Base_Kolac_inline8
+  slotPartListPreset:
+    - Items.Preset_Kolac_Tiny_Mike_inline3
+    - Items.Preset_Kolac_Tiny_Mike_inline5
+    - Items.Preset_Kolac_Tiny_Mike_inline7
+    - Items.Preset_Kolac_Tiny_Mike_inline9
+    - Items.Preset_Kolac_Tiny_Mike_inline11
+    
+Items.Base_xm25_inline2:
+  $base: Items.Base_Kolac_inline2
+  itemPartList:
+    - Items.Base_xm25_inline3
+Items.Base_xm25_inline3:
+  $base: Items.Base_Kolac_inline3
+  item: Items.xm25_rcv_prt
+Items.xm25_rcv_prt:
+  $base: Items.w_rifle_precision__rostovic_kolac__rcv1
+  appearanceResourceName: xm25_rcv
+#base
+Items.Base_xm25_inline4:
+  $base: Items.Base_Kolac_inline4
+  itemPartList:
+    - Items.Base_xm25_inline5
+Items.Base_xm25_inline5:
+  $base: Items.Base_Kolac_inline5
+  item: Items.xm25_base_prt
+Items.xm25_base_prt:
+  $base: Items.w_rifle_precision__rostovic_kolac__base1
+  appearanceResourceName: xm25_base
+#mag
+Items.Base_xm25_inline6:
+  $base: Items.Base_Kolac_inline6
+  itemPartList:
+    - Items.Base_xm25_inline7
+Items.Base_xm25_inline7:
+  $base: Items.Base_Kolac_inline7
+  item: Items.xm25_mag_std_prt
+Items.xm25_mag_std_prt:
+  $base: Items.w_rifle_precision__rostovic_kolac__mag_std
+  appearanceResourceName: xm25_mag_std
+#reload
+Items.Base_xm25_inline8:
+  $base: Items.Base_Kolac_inline8
+  itemPartList:
+    - Items.Base_xm25_inline9
+Items.Base_xm25_inline9:
+  $base: Items.Base_Kolac_inline9
+  item: Items.xm25_mag_stdr_prt
+Items.xm25_mag_stdr_prt:
+  $base: Items.w_rifle_precision__rostovic_kolac__mag_stdr
+  appearanceResourceName: xm25_mag_stdr
+ #preset
+Items.Preset_xm25_inline3:
+  $base: Items.Preset_Kolac_Tiny_Mike_inline3
+  itemPartPreset: Items.xm25_rcv_prt
+Items.Preset_xm25_inline5:
+  $base: Items.Preset_Kolac_Tiny_Mike_inline5
+  itemPartPreset: Items.xm25_base_prt
+Items.Preset_xm25_inline7:
+  $base: Items.Preset_Kolac_Tiny_Mike_inline7
+  itemPartPreset: Items.xm25_mag_std_prt
+Items.Preset_xm25_inline9:
+  $base: Items.Preset_Kolac_Tiny_Mike_inline9
+  itemPartPreset: Items.xm25_mag_stdr_prt
+Items.Preset_xm25_inline11:
+  $base: Items.Preset_Kolac_Tiny_Mike_inline11
+  itemPartPreset: Items.xm25_base_prt
+ 
+  
+Items.xm25stats_aimfov:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.42
+  modifierType: Additive
+  statType: BaseStats.AimOffset
+  
+Items.xm25stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -1
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase  
+  
+Items.xm25stats_range1:
+  $type: gamedataConstantStatModifier_Record
+  value: 500
+  modifierType: Additive
+  statType: BaseStats.MaximumRange  
+  
+Items.xm25stats_range2:
+  $type: gamedataConstantStatModifier_Record
+  value: 450
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange  
+  
+Items.xm25stats_dismember:
+  $type: gamedataConstantStatModifier_Record
+  value: 200
+  modifierType: Multiplier
+  statType: BaseStats.HitDismembermentFactor
+  
+Items.xm25stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.xm25stats_reload:
+  $type: gamedataConstantStatModifier_Record
+  value: -1
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+
+  
+  
+Attacks.xm25_explosive:
+    $base: Attacks.Bullet_GameEffect
+    explosionAttack:
+        $base: Attacks.ExplosionEnormous
+        playerIncomingDamageMultiplier: 0.20
+        effectName: weapon_explosions
+        effectTag: bullet_explosion_medium
+        range: 8.0
+        statModifiers:
+        -   $type: CombinedStatModifier
+            refStat: BaseStats.DamagePerHit
+            statType: BaseStats.ThermalDamage
+            modifierType: Additive
+            refObject: Owner
+            value: 3.0
+        hitFlags:
+        -   !append-once DeviceExplosionAttack
+        -   !append-once DetonateGrenades
+        -   !append-once BulletExplosion
+        hitReactionSeverityMin: 2
+        explosionDamageVSVehicles: 100.0
+        statusEffects:
+        -   $type: StatusEffectAttackData
+            statusEffect: BaseStatusEffect.EpicBurnGrenade
+            resistPool: BaseStatPools.BurningTrigger
+            applyImmediately: true
+            
+
+Attacks.xm25attack1:
+    $type: RangedAttack
+    playerAttack: Attacks.xm25_explosive
+    playerTimeDilated: Attacks.xm25_explosive
+    
+Attacks.xm25attacks:
+    $type: RangedAttackPackage
+    defaultFire: Attacks.xm25attack1
+  
+
+  
+  

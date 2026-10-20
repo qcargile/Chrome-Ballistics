@@ -1,0 +1,201 @@
+Items.FS12_Shotgun:
+  $base: Items.Preset_Tactician_Default
+  tags:
+    - !append ForceDismember
+    - !append-once IconicWeapon  
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.fs12stats_damage
+    - !append-once Items.fs12stats_rof
+    - !append-once Items.fs12stats_spread
+    - !append-once Items.fs12stats_mag
+    - !append-once Items.fs12stats_pierce
+    - !append-once Items.fs12stats_armor
+    - !append-once Items.fs12stats_crit
+    - !append-once Items.fs12stats_bleeding
+    - !append-once Items.fs12stats_burning
+    - !append-once Items.fs12stats_electrocute
+    - !append-once Items.fs12stats_poison
+    - !append-once Items.fs12stats_stun
+    - !append-once Items.fs12stats_headshotmult
+    - !append-once Items.fs12stats_effectiverange
+    - !append-once Items.fs12stats_maxrange
+  statModifierGroups: 
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  ammo: Ammo.ShotgunAmmo
+  appearanceResourceName: fs12_app
+  blueprint: Items.Base_Power_Shotgun_Blueprint
+  fxPackage: WeaponFxPackage.PowerLargeCaliber
+  hudIcon:
+    atlasResourcePath: fs12\icon\fs12_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: fs12\icon\fs12.inkatlas
+    atlasPartName: slot_01
+  quality: Quality.Rare
+  displayName: fs12_name
+  localizedDescription: fs12_description
+  slotPartList:
+    - Items.Base_fs12_inline2
+    - Items.Base_fs12_inline4
+    - Items.Base_fs12_inline6
+    - Items.Base_fs12_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.RiflePossibleScopesList
+    - Items.UniversalShotgunSuppressorList
+  slotPartListPreset:
+    - Items.Preset_fs12_inline0
+    - Items.Preset_fs12_inline1
+    - Items.Preset_fs12_inline2
+    - Items.Preset_fs12_inline3
+  visualTags:
+    - Default
+    
+Items.Base_fs12_inline2:
+  $base: Items.Base_Tactician_inline2
+  itemPartList:
+    - Items.Base_fs12_inline3
+Items.Base_fs12_inline3:
+  $base: Items.Base_Tactician_inline3
+  item: Items.fs12_rcv_prt
+Items.fs12_rcv_prt:
+  $base: Items.w_shotgun_constitutional_tactician_rcv1
+  appearanceResourceName: fs12_rcv
+Items.Base_fs12_inline4:
+  $base: Items.Base_Tactician_inline4
+  itemPartList:
+    - Items.Base_fs12_inline5
+Items.Base_fs12_inline5:
+  $base: Items.Base_Tactician_inline5
+  item: Items.fs12_base_prt
+Items.fs12_base_prt:
+  $base: Items.w_shotgun_constitutional_tactician_base1
+  appearanceResourceName: fs12_base
+Items.Base_fs12_inline6:
+  $base: Items.Base_Tactician_inline6
+  itemPartList:
+    - Items.Base_fs12_inline7
+Items.Base_fs12_inline7:
+  $base: Items.Base_Tactician_inline7
+  item: Items.fs12_mag_std_prt
+Items.fs12_mag_std_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_std
+  appearanceResourceName: fs12_mag_std
+Items.Base_fs12_inline8:
+  $base: Items.Base_Tactician_inline8
+  itemPartList:
+    - Items.Base_fs12_inline9
+Items.Base_fs12_inline9:
+  $base: Items.Base_Tactician_inline9
+  item: Items.fs12_mag_stdr_prt
+Items.fs12_mag_stdr_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_stdr
+  appearanceResourceName: fs12_mag_stdr
+Items.Preset_fs12_inline0:
+  $base: Items.Preset_Tactician_Default_inline0
+  itemPartPreset: Items.fs12_rcv_prt
+Items.Preset_fs12_inline1:
+  $base: Items.Preset_Tactician_Default_inline1
+  itemPartPreset: Items.fs12_base_prt
+Items.Preset_fs12_inline2:
+  $base: Items.Preset_Tactician_Default_inline2
+  itemPartPreset: Items.fs12_mag_std_prt
+Items.Preset_fs12_inline3:
+  $base: Items.Preset_Tactician_Default_inline3
+  itemPartPreset: Items.fs12_mag_stdr_prt
+  
+Items.fs12stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.fs12stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.fs12stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 2
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.fs12stats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.fs12stats_crit:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Items.fs12stats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Items.fs12stats_poison:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.PoisonedApplicationRate
+  
+Items.fs12stats_electrocute:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.fs12stats_bleeding:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  
+Items.fs12stats_burning:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.fs12stats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.15
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+
+Items.fs12stats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.fs12stats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.fs12stats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.fs12stats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  

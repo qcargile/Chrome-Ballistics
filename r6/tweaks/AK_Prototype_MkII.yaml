@@ -1,0 +1,178 @@
+Items.AK_Prototype_MkII:
+  $base: Items.Preset_Ajax_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.akprostats_rof 
+    - !append-once Items.akprostats_damage
+    - !append-once Items.akprostats_reload  
+    - !append-once Items.akprostats_recoil2
+    - !append-once Items.akprostats_reload2  
+    - !append-once Items.akprostats_equip
+    - !append-once Items.akprostats_mag
+    - !append-once Items.akprostats_thermal
+    - !append-once Items.akprostats_thermal2
+    - !append-once Items.akprostats_thermal3
+    - !append-once Items.akprostats_electric  
+    - !append-once Items.akprostats_electric2
+    - !append-once Items.akprostats_electric3
+  appearanceResourceName: akpro_app
+  audioName: wea_set_osprey
+  quality: Quality.Legendary
+  displayName: akpro_name
+  localizedDescription: akpro_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: akpro\icon\akpro_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: akpro\icon\akpro.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_akpro_inline2
+    - Items.Base_akpro_inline4
+    - Items.Base_akpro_inline6
+    - Items.Base_akpro_inline8
+  slotPartListPreset:
+    - Items.Preset_akpro_inline0
+    - Items.Preset_akpro_inline1
+    - Items.Preset_akpro_inline2
+    - Items.Preset_akpro_inline3
+  
+Items.Base_akpro_inline2:
+  $base: Items.Base_Ajax_inline2
+  itemPartList:
+    - Items.Base_akpro_inline3
+Items.Base_akpro_inline3:
+  $base: Items.Base_Ajax_inline3
+  item: Items.akpro_rcv_prt
+Items.akpro_rcv_prt:
+  $base: Items.w_rifle_assault__militech_ajax__rcv1
+  appearanceResourceName: akpro_rcv
+#base
+Items.Base_akpro_inline4:
+  $base: Items.Base_Ajax_inline4
+  itemPartList:
+    - Items.Base_akpro_inline5
+Items.Base_akpro_inline5:
+  $base: Items.Base_Ajax_inline5
+  item: Items.akpro_base_prt
+Items.akpro_base_prt:
+  $base: Items.w_rifle_assault__militech_ajax__base1
+  appearanceResourceName: akpro_base
+#mag
+Items.Base_akpro_inline6:
+  $base: Items.Base_Ajax_inline6
+  itemPartList:
+    - Items.Base_akpro_inline7
+Items.Base_akpro_inline7:
+  $base: Items.Base_Ajax_inline7
+  item: Items.akpro_mag_std_prt
+Items.akpro_mag_std_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_std
+  appearanceResourceName: akpro_mag_std
+#reload
+Items.Base_akpro_inline8:
+  $base: Items.Base_Ajax_inline8
+  itemPartList:
+    - Items.Base_akpro_inline9
+Items.Base_akpro_inline9:
+  $base: Items.Base_Ajax_inline9
+  item: Items.akpro_mag_stdr_prt
+Items.akpro_mag_stdr_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_stdr
+  appearanceResourceName: akpro_mag_stdr
+#preset
+Items.Preset_akpro_inline0:
+  $base: Items.Preset_Ajax_Default_inline0
+  itemPartPreset: Items.akpro_rcv_prt
+Items.Preset_akpro_inline1:
+  $base: Items.Preset_Ajax_Default_inline1
+  itemPartPreset: Items.akpro_base_prt
+Items.Preset_akpro_inline2:
+  $base: Items.Preset_Ajax_Default_inline2
+  itemPartPreset: Items.akpro_mag_std_prt
+Items.Preset_akpro_inline3:
+  $base: Items.Preset_Ajax_Default_inline3
+  itemPartPreset: Items.akpro_mag_stdr_prt
+  
+Items.akprostats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.05
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.akprostats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.akprostats_reload:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+  
+Items.akprostats_reload2:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBase
+  
+Items.akprostats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.35
+  modifierType: Additive
+  statType: BaseStats.RecoilRecoveryTime
+
+Items.akprostats_equip:
+  $type: gamedataConstantStatModifier_Record
+  value: -1.0
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.akprostats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.akprostats_thermal:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.DealsThermalDamage
+  
+Items.akprostats_thermal2:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.ThermalDamage
+
+Items.akprostats_thermal3:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.akprostats_electric:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.DealsElectricDamage
+  
+Items.akprostats_electric2:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.ElectricDamage
+
+Items.akprostats_electric3:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+

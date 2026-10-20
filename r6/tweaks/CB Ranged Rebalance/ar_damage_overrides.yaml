@@ -1,0 +1,48 @@
+# D5 Copperhead / Psalm 11:6
+Items.Base_Copperhead_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 139               # default value – 53
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# D5 Sidewinder / Divided We Stand
+Items.Base_Sidewinder_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 135               # default value – 65
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# HJSH-18 Masamune / Prejudice
+Items.Base_Masamune_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 170               # default value – 39
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Kyubi / Chinook, Hawk, x-MOD2
+Items.Base_Kyubi_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 135               # default value – 55
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# M251s Ajax / Moron Labe, Pit Bull
+Items.Base_Ajax_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 145               # default value – 58
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# DA8 Umbra / Carmen, x-MOD2
+Items.Base_Umbra_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 165               # default value – 57
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Hercules 3AX / (no special variants)
+Items.Base_Hercules_NPC_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 185               # default value – 40
+  modifierType: Additive
+  statType: BaseStats.DPS

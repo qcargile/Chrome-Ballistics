@@ -1,0 +1,245 @@
+Items.HCAR_Black:
+  $base: Items.Preset_Masamune_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.hcar4stats_damage
+    - !append-once Items.hcar4stats_rof
+    - !append-once Items.hcar4stats_spread
+    - !append-once Items.hcar4stats_mag
+    - !append-once Items.hcar4stats_pierce
+    - !append-once Items.hcar4stats_armor
+    - !append-once Items.hcar4stats_crit
+    - !append-once Items.hcar4stats_bleeding
+    - !append-once Items.hcar4stats_burning
+    - !append-once Items.hcar4stats_electrocute
+    - !append-once Items.hcar4stats_poison
+    - !append-once Items.hcar4stats_stun
+    - !append-once Items.hcar4stats_headshotmult
+    - !append-once Items.hcar4stats_effectiverange
+    - !append-once Items.hcar4stats_maxrange
+    - !append-once Items.hcar4stats_equip
+  statModifierGroups:
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+    - Items.ItemPlusRandomizer_MaxQuality
+    - Items.ItemPlusRandomizer_Below_MaxQuality
+    - Items.WeaponModsWeights_On_Tier2Plus
+    - Items.WeaponModsWeights_On_Tier3Plus
+    - Items.WeaponModsWeights_On_Tier4Plus
+    - Items.WeaponModsWeights_On_Tier5Plus
+    - Items.WeaponModsWeights_On_Tier5PlusPlus
+    - Items.Base_Assault_Rifle_RPG_Stats
+    - Items.Base_Assault_Rifle_Misc_Stats
+    - Items.Base_Assault_Rifle_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Assault_Rifle_Mult_Stats
+    - Items.Base_Power_Assault_Rifle_Stats
+    - Items.Base_Assault_Rifle_DeadReckoning_Stats
+    - Items.Base_Ajax_Technical_Stats
+    - Items.Base_Ajax_Handling_Stats
+    - Items.Base_Ajax_Recoil_Stats
+    - Items.Base_Ajax_Spread_Stats
+    - Items.Base_Ajax_Aim_Stats
+    - Items.Base_Ajax_Constant_Stats
+    - Items.Base_Ajax_Damage_Stats 
+  appearanceResourceName: hcar4_app
+  audioName: wea_set_copperhead
+  primaryTriggerMode: TriggerMode.FullAuto
+  secondaryTriggerMode: TriggerMode.FullAuto
+  triggerModes:
+    - TriggerMode.FullAuto
+  quality: Quality.Rare
+  displayName: hcar4_name
+  localizedDescription: hcar4_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: hcar4\icon\hcar4_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: hcar4\icon\hcar4.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_hcar4_inline2
+    - Items.Base_hcar4_inline4
+    - Items.Base_hcar4_inline6
+    - Items.Base_hcar4_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.RiflePossibleScopesList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_hcar4_inline0
+    - Items.Preset_hcar4_inline1
+    - Items.Preset_hcar4_inline2
+    - Items.Preset_hcar4_inline3
+  
+Items.Base_hcar4_inline2:
+  $base: Items.Base_Masamune_inline2
+  itemPartList:
+    - Items.Base_hcar4_inline3
+Items.Base_hcar4_inline3:
+  $base: Items.Base_Masamune_inline3
+  item: Items.hcar4_rcv_prt
+Items.hcar4_rcv_prt:
+  $base: Items.w_rifle_assault__arasaka_masamune__rvc1
+  appearanceResourceName: hcar4_rcv
+#base
+Items.Base_hcar4_inline4:
+  $base: Items.Base_Masamune_inline4
+  itemPartList:
+    - Items.Base_hcar4_inline5
+Items.Base_hcar4_inline5:
+  $base: Items.Base_Masamune_inline5
+  item: Items.hcar4_base_prt
+Items.hcar4_base_prt:
+  $base: Items.w_rifle_assault__arasaka_masamune__base1
+  appearanceResourceName: hcar4_base
+#mag
+Items.Base_hcar4_inline6:
+  $base: Items.Base_Masamune_inline6
+  itemPartList:
+    - Items.Base_hcar4_inline7
+Items.Base_hcar4_inline7:
+  $base: Items.Base_Masamune_inline7
+  item: Items.hcar4_mag_std_prt
+Items.hcar4_mag_std_prt:
+  $base: Items.w_rifle_assault__arasaka_masamune__mag_std
+  appearanceResourceName: hcar4_mag_std
+#reload
+Items.Base_hcar4_inline8:
+  $base: Items.Base_Masamune_inline8
+  itemPartList:
+    - Items.Base_hcar4_inline9
+Items.Base_hcar4_inline9:
+  $base: Items.Base_Masamune_inline9
+  item: Items.hcar4_mag_stdr_prt
+Items.hcar4_mag_stdr_prt:
+  $base: Items.w_rifle_assault__arasaka_masamune__mag_stdr
+  appearanceResourceName: hcar4_mag_stdr
+#preset
+Items.Preset_hcar4_inline0:
+  $base: Items.Preset_Base_Masamune_inline0
+  itemPartPreset: Items.hcar4_rcv_prt
+Items.Preset_hcar4_inline1:
+  $base: Items.Preset_Base_Masamune_inline1
+  itemPartPreset: Items.hcar4_base_prt
+Items.Preset_hcar4_inline2:
+  $base: Items.Preset_Base_Masamune_inline2
+  itemPartPreset: Items.hcar4_mag_std_prt
+Items.Preset_hcar4_inline3:
+  $base: Items.Preset_Base_Masamune_inline3
+  itemPartPreset: Items.hcar4_mag_stdr_prt
+  
+# Weapon stats
+Items.hcar4stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: -35                                           #CHANGE DAMAGE VALUE - LOWER NUMBER=LOWER DAMAGE, HIGHER NUMBER=HIGHER DAMAGE.
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.hcar4stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.01                                        #CHANGE RATE OF FIRE- HIGHER NUMBER=LOWER ROF, LOWER NUMBER=HIGHER ROF (TRY TO KEEP THIS VALUE BETWEEN "-0.10" AND "0.10")
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.hcar4stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -10                                            #CHANGE MAG CAPACITY - 0=DEFAULT (30 ROUNDS)  EXAMPLE: IF YOU WANT 45 ROUNDS YOU WOULD PUT "15" AS THE VALUE
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.hcar4stats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 0                                            #ENABLE/DISABLE WEAPON PIERCE - 0=DISABLED, 1=ENABLED
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.hcar4stats_crit:
+  $type: gamedataConstantStatModifier_Record
+  value: 0                                            #CHANGE CRIT CHANCE - THE NUMBER YOU INPUT WILL BE THE CRIT CHANCE PERCENTAGE
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Items.hcar4stats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 0                                            #CHANGE STUN CHANCE - THE NUMBER YOU INPUT WILL BE THE STUN CHANCE PERCENTAGE
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Items.hcar4stats_poison:
+  $type: gamedataConstantStatModifier_Record
+  value: 0                                            #CHANGE POISON CHANCE - THE NUMBER YOU INPUT WILL BE THE POISON CHANCE PERCENTAGE
+  modifierType: Additive
+  statType: BaseStats.PoisonedApplicationRate
+  
+Items.hcar4stats_electrocute:
+  $type: gamedataConstantStatModifier_Record
+  value: 0                                            #CHANGE ELECTROCUTE CHANCE - THE NUMBER YOU INPUT WILL BE THE ELECTROCUTE CHANCE PERCENTAGE
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.hcar4stats_bleeding:
+  $type: gamedataConstantStatModifier_Record
+  value: 0                                            #CHANGE BLEEDING CHANCE - THE NUMBER YOU INPUT WILL BE THE BLEEDING CHANCE PERCENTAGE
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  
+Items.hcar4stats_burning:
+  $type: gamedataConstantStatModifier_Record
+  value: 0                                            #CHANGE BURNING CHANCE - THE NUMBER YOU INPUT WILL BE THE BURNING CHANCE PERCENTAGE
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.hcar4stats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 0                                            #CHANGE HEADSHOT DAMAGE PERCENTAGE - 0=DEFAULT (125% Headshot Damage)  EXAMPLE: "-1.25=0%",  "-1=25%",  "-0.5=75%",  "0=125%",  "1=225%",  "2=325%",  "3=425%"
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+
+Items.hcar4stats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: -1                                            #ENABLE/DISABLE ADS BULLET SPREAD - "-1=DISABLED",  "0=ENABLED"  ONLY AFFECTS BULLET SPREAD WHILE AIMING
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.hcar4stats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 40
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.hcar4stats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 40
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.hcar4stats_equip:
+  $type: gamedataConstantStatModifier_Record
+  value: 1.40
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.hcar4stats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+ 
+
+
+
+Items.hcar4_stock:
+  $type: VendorItem
+  generationPrereqs:
+    - !append LootPrereqs.PlayerLevel_Tier_3_Start_Prereq
+  item: Items.HCAR_Black
+  quantity:
+    - !append Vendors.Always_Present

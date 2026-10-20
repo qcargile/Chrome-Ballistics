@@ -1,0 +1,140 @@
+Items.AK47_Black_Cat:
+  $base: Items.Preset_Ajax_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.bcatstats_rof 
+    - !append-once Items.bcatstats_damage
+    - !append-once Items.bcatstats_reload  
+    - !append-once Items.bcatstats_recoil2
+    - !append-once Items.bcatstats_reload2  
+    - !append-once Items.bcatstats_equip
+    - !append-once Items.bcatstats_mag
+  appearanceResourceName: bcat_app
+  audioName: wea_set_copperhead
+  quality: Quality.Rare
+  displayName: bcat_name
+  localizedDescription: bcat_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: bcat\icon\bcat_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: bcat\icon\bcat.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_bcat_inline2
+    - Items.Base_bcat_inline4
+    - Items.Base_bcat_inline6
+    - Items.Base_bcat_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_bcat_inline0
+    - Items.Preset_bcat_inline1
+    - Items.Preset_bcat_inline2
+    - Items.Preset_bcat_inline3
+  
+Items.Base_bcat_inline2:
+  $base: Items.Base_Ajax_inline2
+  itemPartList:
+    - Items.Base_bcat_inline3
+Items.Base_bcat_inline3:
+  $base: Items.Base_Ajax_inline3
+  item: Items.bcat_rcv_prt
+Items.bcat_rcv_prt:
+  $base: Items.w_rifle_assault__militech_ajax__rcv1
+  appearanceResourceName: bcat_rcv
+#base
+Items.Base_bcat_inline4:
+  $base: Items.Base_Ajax_inline4
+  itemPartList:
+    - Items.Base_bcat_inline5
+Items.Base_bcat_inline5:
+  $base: Items.Base_Ajax_inline5
+  item: Items.bcat_base_prt
+Items.bcat_base_prt:
+  $base: Items.w_rifle_assault__militech_ajax__base1
+  appearanceResourceName: bcat_base
+#mag
+Items.Base_bcat_inline6:
+  $base: Items.Base_Ajax_inline6
+  itemPartList:
+    - Items.Base_bcat_inline7
+Items.Base_bcat_inline7:
+  $base: Items.Base_Ajax_inline7
+  item: Items.bcat_mag_std_prt
+Items.bcat_mag_std_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_std
+  appearanceResourceName: bcat_mag_std
+#reload
+Items.Base_bcat_inline8:
+  $base: Items.Base_Ajax_inline8
+  itemPartList:
+    - Items.Base_bcat_inline9
+Items.Base_bcat_inline9:
+  $base: Items.Base_Ajax_inline9
+  item: Items.bcat_mag_stdr_prt
+Items.bcat_mag_stdr_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_stdr
+  appearanceResourceName: bcat_mag_stdr
+#preset
+Items.Preset_bcat_inline0:
+  $base: Items.Preset_Ajax_Default_inline0
+  itemPartPreset: Items.bcat_rcv_prt
+Items.Preset_bcat_inline1:
+  $base: Items.Preset_Ajax_Default_inline1
+  itemPartPreset: Items.bcat_base_prt
+Items.Preset_bcat_inline2:
+  $base: Items.Preset_Ajax_Default_inline2
+  itemPartPreset: Items.bcat_mag_std_prt
+Items.Preset_bcat_inline3:
+  $base: Items.Preset_Ajax_Default_inline3
+  itemPartPreset: Items.bcat_mag_stdr_prt
+  
+Items.bcatstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.07
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.bcatstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 38
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.bcatstats_reload:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+  
+Items.bcatstats_reload2:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBase
+  
+Items.bcatstats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.35
+  modifierType: Additive
+  statType: BaseStats.RecoilRecoveryTime
+
+Items.bcatstats_equip:
+  $type: gamedataConstantStatModifier_Record
+  value: -1.0
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.bcatstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+
+  

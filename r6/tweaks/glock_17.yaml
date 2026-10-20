@@ -1,0 +1,111 @@
+Items.glock_17:
+  $base: Items.Preset_Unity_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.glock17stats_damage
+    - !append-once Items.glock17stats_rof
+    - !append-once Items.glock17stats_mag
+  appearanceResourceName: glock_17_app
+  quality: Quality.Common
+  displayName: glock_17_gun_name
+  localizedDescription: glock_17_gun_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: glock_17\icon\glock_17_hud.inkatlas
+    atlasPartName: slot_01  
+  icon:  
+    atlasResourcePath: glock_17\icon\glock_17.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_glock17_inline2
+    - Items.Base_glock17_inline4
+    - Items.Base_glock17_inline6
+    - Items.Base_glock17_inline8
+  slotPartListPreset:
+    - Items.Preset_glock17_inline0
+    - Items.Preset_glock17_inline1
+    - Items.Preset_glock17_inline2
+    - Items.Preset_glock17_inline3
+  
+Items.Base_glock17_inline2:
+  $base: Items.Base_Unity_inline2
+  itemPartList:
+    - Items.Base_glock17_inline3
+Items.Base_glock17_inline3:
+  $base: Items.Base_Unity_inline3
+  item: Items.glock_17_rcv_prt
+Items.glock_17_rcv_prt:
+  $base: Items.w_handgun__constitutional_unity__rcv1
+  appearanceResourceName: glock_17_rcv
+#base
+Items.Base_glock17_inline4:
+  $base: Items.Base_Unity_inline4
+  itemPartList:
+    - Items.Base_glock17_inline5
+Items.Base_glock17_inline5:
+  $base: Items.Base_Unity_inline5
+  item: Items.glock_17_base_prt
+Items.glock_17_base_prt:
+  $base: Items.w_handgun__constitutional_unity__base1
+  appearanceResourceName: glock_17_base
+#mag
+Items.Base_glock17_inline6:
+  $base: Items.Base_Unity_inline6
+  itemPartList:
+    - Items.Base_glock17_inline7
+Items.Base_glock17_inline7:
+  $base: Items.Base_Unity_inline7
+  item: Items.glock_17_mag_std_prt
+Items.glock_17_mag_std_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_std
+  appearanceResourceName: glock_17_mag_std
+#reload
+Items.Base_glock17_inline8:
+  $base: Items.Base_Unity_inline8
+  itemPartList:
+    - Items.Base_glock17_inline9
+Items.Base_glock17_inline9:
+  $base: Items.Base_Unity_inline9
+  item: Items.glock_17_mag_stdr_prt
+Items.glock_17_mag_stdr_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_stdr
+  appearanceResourceName: glock_17_mag_stdr
+#preset
+Items.Preset_glock17_inline0:
+  $base: Items.Preset_Unity_Default_inline0
+  itemPartPreset: Items.glock_17_rcv_prt
+Items.Preset_glock17_inline1:
+  $base: Items.Preset_Unity_Default_inline1
+  itemPartPreset: Items.glock_17_base_prt
+Items.Preset_glock17_inline2:
+  $base: Items.Preset_Unity_Default_inline2
+  itemPartPreset: Items.glock_17_mag_std_prt
+Items.Preset_glock17_inline3:
+  $base: Items.Preset_Unity_Default_inline3
+  itemPartPreset: Items.glock_17_mag_stdr_prt
+  
+Items.glock17stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 275
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.glock17stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.25
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.glock17stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 5
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+
+
+
+    

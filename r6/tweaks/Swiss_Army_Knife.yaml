@@ -1,0 +1,52 @@
+Items.Swiss_Army_Knife:
+  $base: Items.Preset_Knife_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.swissstats_recovery
+    - !append-once Items.swissstats_damage
+  appearanceResourceName: swiss_app
+  quality: Quality.Common
+  displayName: swiss_name
+  hudIcon:
+    atlasResourcePath: swiss\icon\swiss_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: swiss\icon\swiss.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_swiss_inline0
+    - Items.Base_swiss_inline1
+  slotPartListPreset:
+    - Items.Preset_swiss_inline0
+  statPools:
+    - BaseStatPools.ThrowRecovery
+    
+Items.Base_swiss_inline0:
+  $base: Items.Base_Knife_inline0
+  itemPartList:
+    - Items.Base_swiss_inline1
+Items.Base_swiss_inline1:
+  $base: Items.Base_Knife_inline3
+  item: Items.swiss_grip_prt
+Items.swiss_grip_prt:
+  $base: Items.w_knife_combat_grip
+  appearanceResourceName: swiss_grip    
+  
+Items.Preset_swiss_inline0:
+  $base: Items.Preset_Knife_Default_inline0
+  itemPartPreset: Items.swiss_grip_prt
+  
+Items.swissstats_recovery:
+  $type: gamedataConstantStatModifier_Record
+  value: -2.5
+  modifierType: Additive
+  statType: BaseStats.ThrowRecovery
+  
+Items.swissstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.DPS
+

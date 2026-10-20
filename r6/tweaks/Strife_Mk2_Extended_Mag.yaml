@@ -1,0 +1,125 @@
+Items.Strife_Mk2_Extended_Mag:
+  $base: Items.Preset_Unity_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.strife2stats_damage
+    - !append-once Items.strife2stats_rof
+    - !append-once Items.strife2stats_mag
+    - !append-once Items.strife2stats_recoil
+    - !append-once Items.strife2stats_recoil2
+  appearanceResourceName: strife2_app
+  quality: Quality.Uncommon
+  displayName: strife2_name
+  localizedDescription: strife2_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: strife2\icon\strife2_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: strife2\icon\strife2.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_strife2_inline2
+    - Items.Base_strife2_inline4
+    - Items.Base_strife2_inline6
+    - Items.Base_strife2_inline8
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+  slotPartListPreset:
+    - Items.Preset_strife2_inline0
+    - Items.Preset_strife2_inline1
+    - Items.Preset_strife2_inline2
+    - Items.Preset_strife2_inline3
+  
+Items.Base_strife2_inline2:
+  $base: Items.Base_Unity_inline2
+  itemPartList:
+    - Items.Base_strife2_inline3
+Items.Base_strife2_inline3:
+  $base: Items.Base_Unity_inline3
+  item: Items.strife2_rcv_prt
+Items.strife2_rcv_prt:
+  $base: Items.w_handgun__constitutional_unity__rcv1
+  appearanceResourceName: strife2_rcv
+#base
+Items.Base_strife2_inline4:
+  $base: Items.Base_Unity_inline4
+  itemPartList:
+    - Items.Base_strife2_inline5
+Items.Base_strife2_inline5:
+  $base: Items.Base_Unity_inline5
+  item: Items.strife2_base_prt
+Items.strife2_base_prt:
+  $base: Items.w_handgun__constitutional_unity__base1
+  appearanceResourceName: strife2_base
+#mag
+Items.Base_strife2_inline6:
+  $base: Items.Base_Unity_inline6
+  itemPartList:
+    - Items.Base_strife2_inline7
+Items.Base_strife2_inline7:
+  $base: Items.Base_Unity_inline7
+  item: Items.strife2_mag_std_prt
+Items.strife2_mag_std_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_std
+  appearanceResourceName: strife2_mag_std
+#reload
+Items.Base_strife2_inline8:
+  $base: Items.Base_Unity_inline8
+  itemPartList:
+    - Items.Base_strife2_inline9
+Items.Base_strife2_inline9:
+  $base: Items.Base_Unity_inline9
+  item: Items.strife2_mag_stdr_prt
+Items.strife2_mag_stdr_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_stdr
+  appearanceResourceName: strife2_mag_stdr
+#preset
+Items.Preset_strife2_inline0:
+  $base: Items.Preset_Unity_Default_inline0
+  itemPartPreset: Items.strife2_rcv_prt
+Items.Preset_strife2_inline1:
+  $base: Items.Preset_Unity_Default_inline1
+  itemPartPreset: Items.strife2_base_prt
+Items.Preset_strife2_inline2:
+  $base: Items.Preset_Unity_Default_inline2
+  itemPartPreset: Items.strife2_mag_std_prt
+Items.Preset_strife2_inline3:
+  $base: Items.Preset_Unity_Default_inline3
+  itemPartPreset: Items.strife2_mag_stdr_prt
+  
+Items.strife2stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 500
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.strife2stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.30
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.strife2stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.strife2stats_recoil:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.0
+  modifierType: Additive
+  statType: BaseStats.RecoilKickMin
+  
+Items.strife2stats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.0
+  modifierType: Additive
+  statType: BaseStats.RecoilKickMax
+  
+

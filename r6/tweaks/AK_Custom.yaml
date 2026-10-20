@@ -1,0 +1,141 @@
+Items.AK_Custom:
+  $base: Items.Preset_Ajax_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.akcusstats_rof 
+    - !append-once Items.akcusstats_damage
+    - !append-once Items.akcusstats_reload  
+    - !append-once Items.akcusstats_recoil2
+    - !append-once Items.akcusstats_reload2  
+    - !append-once Items.akcusstats_equip
+    - !append-once Items.akcusstats_mag
+  appearanceResourceName: akcus_app
+  audioName: wea_set_copperhead
+  quality: Quality.Common
+  displayName: akcus_name
+  localizedDescription: akcus_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: akcus\icon\akcus_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: akcus\icon\akcus.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_akcus_inline2
+    - Items.Base_akcus_inline4
+    - Items.Base_akcus_inline6
+    - Items.Base_akcus_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_akcus_inline0
+    - Items.Preset_akcus_inline1
+    - Items.Preset_akcus_inline2
+    - Items.Preset_akcus_inline3
+  
+Items.Base_akcus_inline2:
+  $base: Items.Base_Ajax_inline2
+  itemPartList:
+    - Items.Base_akcus_inline3
+Items.Base_akcus_inline3:
+  $base: Items.Base_Ajax_inline3
+  item: Items.akcus_rcv_prt
+Items.akcus_rcv_prt:
+  $base: Items.w_rifle_assault__militech_ajax__rcv1
+  appearanceResourceName: akcus_rcv
+#base
+Items.Base_akcus_inline4:
+  $base: Items.Base_Ajax_inline4
+  itemPartList:
+    - Items.Base_akcus_inline5
+Items.Base_akcus_inline5:
+  $base: Items.Base_Ajax_inline5
+  item: Items.akcus_base_prt
+Items.akcus_base_prt:
+  $base: Items.w_rifle_assault__militech_ajax__base1
+  appearanceResourceName: akcus_base
+#mag
+Items.Base_akcus_inline6:
+  $base: Items.Base_Ajax_inline6
+  itemPartList:
+    - Items.Base_akcus_inline7
+Items.Base_akcus_inline7:
+  $base: Items.Base_Ajax_inline7
+  item: Items.akcus_mag_std_prt
+Items.akcus_mag_std_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_std
+  appearanceResourceName: akcus_mag_std
+#reload
+Items.Base_akcus_inline8:
+  $base: Items.Base_Ajax_inline8
+  itemPartList:
+    - Items.Base_akcus_inline9
+Items.Base_akcus_inline9:
+  $base: Items.Base_Ajax_inline9
+  item: Items.akcus_mag_stdr_prt
+Items.akcus_mag_stdr_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_stdr
+  appearanceResourceName: akcus_mag_stdr
+#preset
+Items.Preset_akcus_inline0:
+  $base: Items.Preset_Ajax_Default_inline0
+  itemPartPreset: Items.akcus_rcv_prt
+Items.Preset_akcus_inline1:
+  $base: Items.Preset_Ajax_Default_inline1
+  itemPartPreset: Items.akcus_base_prt
+Items.Preset_akcus_inline2:
+  $base: Items.Preset_Ajax_Default_inline2
+  itemPartPreset: Items.akcus_mag_std_prt
+Items.Preset_akcus_inline3:
+  $base: Items.Preset_Ajax_Default_inline3
+  itemPartPreset: Items.akcus_mag_stdr_prt
+  
+Items.akcusstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.06
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.akcusstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 27
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.akcusstats_reload:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+  
+Items.akcusstats_reload2:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBase
+  
+Items.akcusstats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.35
+  modifierType: Additive
+  statType: BaseStats.RecoilRecoveryTime
+
+Items.akcusstats_equip:
+  $type: gamedataConstantStatModifier_Record
+  value: -1.0
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.akcusstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+
+
+  

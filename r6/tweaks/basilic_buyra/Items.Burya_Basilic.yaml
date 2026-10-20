@@ -1,0 +1,141 @@
+Items.Iconic_Basilic_NoAttachments_Blueprint:
+  $base: Items.Iconic_Ranged_Weapon_NoAttachments_Blueprint
+  rootElement: 
+    $base: Items.Iconic_Ranged_Weapon_NoAttachments_Blueprint_inline0
+    childElements:
+      - !append Items.Tech_Handgun_WeaponMod1Element
+
+Items.Burya_Basilic:
+  $base: Items.Preset_Burya_Default
+  displayName: LocKey("basilic_name")
+  localizedDescription: LocKey("basilic_desc")
+  icon:
+    atlasResourcePath: base\weapons\firearms\revolver\burya_basilic\burya_basilic.inkatlas
+    atlasPartName: weapon_Preset_Burya_Default_None__Pimp
+  appearanceResourceName: burya_basilic_appfile
+  visualTags: [burya_basilic]
+  blueprint: Items.Iconic_Basilic_NoAttachments_Blueprint
+  quality: Quality.Legendary
+  slotPartListPreset: 
+  - !remove Items.Preset_Burya_Default_inline4
+  - !remove Items.Preset_Burya_Default_inline5
+  - !append-once
+    $type: SlotItemPartPreset
+    itemPartPreset: Items.BasilicWeaponModAbility_Mod
+    slot: AttachmentSlots.IconicWeaponModLegendary 
+  tags:
+    - !append-once IconicWeapon
+  statModifiers:
+    - !append-once Quality.IconicItem
+  statModifierGroups:  
+    - !append-once StatGroups.Burya_Basilic_Recoil_Stats
+    - !append-once StatGroups.Burya_Basilic_Technical_Stats
+    - !append-once StatGroups.Burya_Basilic_Handling_Stats
+    - !append-once StatGroups.Burya_Basilic_Damage_Stats
+    - !append-once StatGroups.Burya_Basilic_Constant_Stats
+    
+StatGroups.Burya_Basilic_Technical_Stats:
+  $base: Items.Base_Burya_Technical_Stats
+  statModifiers:
+  - $type: gamedataConstantStatModifier_Record
+    value: 2
+    modifierType: Additive
+    statType: BaseStats.MagazineCapacityBase
+  - $type: gamedataConstantStatModifier_Record
+    value: -0.33
+    modifierType: Additive
+    statType: BaseStats.BaseChargeTime
+  - $type: gamedataConstantStatModifier_Record
+    value: -0.315
+    modifierType: Additive
+    statType: BaseStats.CycleTimeBase
+    
+StatGroups.Burya_Basilic_Handling_Stats:
+  $base: Items.Base_Burya_Handling_Stats
+  statModifiers:
+  - $type: gamedataConstantStatModifier_Record
+    value: 0.5
+    modifierType: Multiplier
+    statType: BaseStats.ReloadTimeBase 
+  - $type: gamedataConstantStatModifier_Record
+    value: 0.5
+    modifierType: Multiplier
+    statType: BaseStats.EmptyReloadTime 
+    
+StatGroups.Burya_Basilic_Recoil_Stats:
+  $base: Items.Base_Burya_Recoil_Stats
+  statModifiers:
+  - $type: gamedataConstantStatModifier_Record
+    value: 0.5
+    modifierType: Multiplier
+    statType: BaseStats.RecoilAngle
+  - $type: gamedataConstantStatModifier_Record
+    value: 0.5
+    modifierType: Multiplier
+    statType: BaseStats.RecoilRecoveryTime
+  - $type: gamedataConstantStatModifier_Record
+    value: 0.8
+    modifierType: Multiplier
+    statType: BaseStats.RecoilDir
+    
+StatGroups.Burya_Basilic_Damage_Stats:
+  $base: Items.Base_Burya_Damage_Stats
+  statModifiers:
+  - $type: gamedataConstantStatModifier_Record
+    value: 1.4
+    modifierType: Multiplier
+    statType: BaseStats.DPS
+    
+StatGroups.Burya_Basilic_Constant_Stats:
+  $base: Items.Base_Burya_Constant_Stats
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      value: 0.5
+      modifierType: Multiplier
+      statType: BaseStats.RecoilKickMin
+    - $type: gamedataConstantStatModifier_Record
+      value: 0.5
+      modifierType: Multiplier
+      statType: BaseStats.RecoilKickMax
+    - $type: gamedataConstantStatModifier_Record
+      value: 0.5
+      modifierType: Multiplier
+      statType: BaseStats.SpreadDefaultX
+    - $type: gamedataConstantStatModifier_Record
+      value: 0.5
+      modifierType: Multiplier
+      statType: BaseStats.SpreadAdsDefaultX
+    - $type: gamedataConstantStatModifier_Record
+      value: 0.5
+      modifierType: Multiplier
+      statType: BaseStats.SpreadMaxX
+    - $type: gamedataConstantStatModifier_Record
+      value: 0.5
+      modifierType: Multiplier
+      statType: BaseStats.SpreadAdsMaxX
+    
+Items.BasilicWeaponModAbility:
+  $base: Items.FrankWeaponModAbility
+  UIData:
+      $type: GameplayLogicPackageUIData
+      localizedDescription: LocKey("ability_desc")
+
+Items.BasilicWeaponModAbility_Mod:
+  $base: Items.FrankWeaponMod
+  OnAttach: 
+    - Items.BasilicWeaponModAbility
+    
+Items.Recipe_Legendary_Basilic_inline0:
+  $base: Items.Recipe_Legendary_Burya_Comrade_inline0
+  amount: 1
+  item: Items.Burya_Basilic 
+
+Items.Recipe_Legendary_Basilic:
+  $base: Items.Recipe_Legendary_Burya_Comrade
+  craftingResult: Items.Recipe_Legendary_Basilic_inline0
+  
+Items.Burya_Basilic_Pickup:
+    $base: Items.Burya_Basilic
+    quality: Quality.Random
+    statModifierGroups:
+    -   !remove Items.QualityRandomization

@@ -1,0 +1,204 @@
+Items.M10Breacher_Wasteland:
+  $base: Items.Preset_Tactician_Default
+  tags:
+    - !append ForceDismember
+    - !append DriverCombatRangedWeapon
+    - !append DriverCombatBikeWeapon
+    - !append OneHandedRangedWeapon
+    - !append-once IconicWeapon  
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.m10stats_damage
+    - !append-once Items.m10stats_rof
+    - !append-once Items.m10stats_spread
+    - !append-once Items.m10stats_mag
+    - !append-once Items.m10stats_pierce
+    - !append-once Items.m10stats_armor
+    - !append-once Items.m10stats_crit
+    - !append-once Items.m10stats_bleeding
+    - !append-once Items.m10stats_burning
+    - !append-once Items.m10stats_electrocute
+    - !append-once Items.m10stats_poison
+    - !append-once Items.m10stats_stun
+    - !append-once Items.m10stats_headshotmult
+    - !append-once Items.m10stats_effectiverange
+    - !append-once Items.m10stats_maxrange
+  statModifierGroups: 
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  ammo: Ammo.ShotgunAmmo
+  appearanceResourceName: m10_app
+  blueprint: Items.Base_Power_Shotgun_Blueprint
+  fxPackage: WeaponFxPackage.PowerLargeCaliber
+  hudIcon:
+    atlasResourcePath: m10\icon\m10_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: m10\icon\m10.inkatlas
+    atlasPartName: slot_01
+  quality: Quality.Epic
+  displayName: m10_name
+  localizedDescription: m10_description
+  slotPartList:
+    - Items.Base_m10_inline2
+    - Items.Base_m10_inline4
+    - Items.Base_m10_inline6
+    - Items.Base_m10_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.RiflePossibleScopesList
+    - Items.UniversalShotgunSuppressorList
+  slotPartListPreset:
+    - Items.Preset_m10_inline0
+    - Items.Preset_m10_inline1
+    - Items.Preset_m10_inline2
+    - Items.Preset_m10_inline3
+  visualTags:
+    - Default
+    
+Items.Base_m10_inline2:
+  $base: Items.Base_Tactician_inline2
+  itemPartList:
+    - Items.Base_m10_inline3
+Items.Base_m10_inline3:
+  $base: Items.Base_Tactician_inline3
+  item: Items.m10_rcv_prt
+Items.m10_rcv_prt:
+  $base: Items.w_shotgun_constitutional_tactician_rcv1
+  appearanceResourceName: m10_rcv
+Items.Base_m10_inline4:
+  $base: Items.Base_Tactician_inline4
+  itemPartList:
+    - Items.Base_m10_inline5
+Items.Base_m10_inline5:
+  $base: Items.Base_Tactician_inline5
+  item: Items.m10_base_prt
+Items.m10_base_prt:
+  $base: Items.w_shotgun_constitutional_tactician_base1
+  appearanceResourceName: m10_base
+Items.Base_m10_inline6:
+  $base: Items.Base_Tactician_inline6
+  itemPartList:
+    - Items.Base_m10_inline7
+Items.Base_m10_inline7:
+  $base: Items.Base_Tactician_inline7
+  item: Items.m10_mag_std_prt
+Items.m10_mag_std_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_std
+  appearanceResourceName: m10_mag_std
+Items.Base_m10_inline8:
+  $base: Items.Base_Tactician_inline8
+  itemPartList:
+    - Items.Base_m10_inline9
+Items.Base_m10_inline9:
+  $base: Items.Base_Tactician_inline9
+  item: Items.m10_mag_stdr_prt
+Items.m10_mag_stdr_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_stdr
+  appearanceResourceName: m10_mag_stdr
+Items.Preset_m10_inline0:
+  $base: Items.Preset_Tactician_Default_inline0
+  itemPartPreset: Items.m10_rcv_prt
+Items.Preset_m10_inline1:
+  $base: Items.Preset_Tactician_Default_inline1
+  itemPartPreset: Items.m10_base_prt
+Items.Preset_m10_inline2:
+  $base: Items.Preset_Tactician_Default_inline2
+  itemPartPreset: Items.m10_mag_std_prt
+Items.Preset_m10_inline3:
+  $base: Items.Preset_Tactician_Default_inline3
+  itemPartPreset: Items.m10_mag_stdr_prt
+  
+Items.m10stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 23
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.m10stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.m10stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.m10stats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.m10stats_crit:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Items.m10stats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Items.m10stats_poison:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.PoisonedApplicationRate
+  
+Items.m10stats_electrocute:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.m10stats_bleeding:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  
+Items.m10stats_burning:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.m10stats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.15
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+
+Items.m10stats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.m10stats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.m10stats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.m10stats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  

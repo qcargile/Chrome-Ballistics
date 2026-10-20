@@ -1,0 +1,137 @@
+Items.Armatech_MK1_556:
+  $base: Items.Preset_Copperhead_Default
+  tags:
+    - !append-once IconicWeapon
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.armatech556stats_mag
+    - !append-once Items.armatech556stats_damage
+    - !append-once Items.armatech556stats_rof  
+    - !append-once Items.armatech556stats_effectiverange    
+    - !append-once Items.armatech556stats_armor
+  appearanceResourceName: armatech556_app
+  quality: Quality.Rare
+  displayName: armatech556_name
+  localizedDescription: armatech556_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: armatech556\icon\armatech556_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: armatech556\icon\armatech556.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_armatech556_inline2
+    - Items.Base_armatech556_inline4
+    - Items.Base_armatech556_inline6
+    - Items.Base_armatech556_inline8
+    - Items.RiflePossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_armatech556_inline0
+    - Items.Preset_armatech556_inline1
+    - Items.Preset_armatech556_inline2
+    - Items.Preset_armatech556_inline3
+  
+Items.Base_armatech556_inline2:
+  $base: Items.Base_Copperhead_inline2
+  itemPartList:
+    - Items.Base_armatech556_inline3
+Items.Base_armatech556_inline3:
+  $base: Items.Base_Copperhead_inline3
+  item: Items.armatech556_rcv_prt
+Items.armatech556_rcv_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__rcv1
+  appearanceResourceName: armatech556_rcv
+#base
+Items.Base_armatech556_inline4:
+  $base: Items.Base_Copperhead_inline4
+  itemPartList:
+    - Items.Base_armatech556_inline5
+Items.Base_armatech556_inline5:
+  $base: Items.Base_Copperhead_inline5
+  item: Items.armatech556_base_prt
+Items.armatech556_base_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__base1
+  appearanceResourceName: armatech556_base
+#mag
+Items.Base_armatech556_inline6:
+  $base: Items.Base_Copperhead_inline6
+  itemPartList:
+    - Items.Base_armatech556_inline7
+Items.Base_armatech556_inline7:
+  $base: Items.Base_Copperhead_inline7
+  item: Items.armatech556_mag_std_prt
+Items.armatech556_mag_std_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__mag_std
+  appearanceResourceName: armatech556_mag_std
+#reload
+Items.Base_armatech556_inline8:
+  $base: Items.Base_Copperhead_inline8
+  itemPartList:
+    - Items.Base_armatech556_inline9
+Items.Base_armatech556_inline9:
+  $base: Items.Base_Copperhead_inline9
+  item: Items.armatech556_mag_stdr_prt
+Items.armatech556_mag_stdr_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__mag_stdr
+  appearanceResourceName: armatech556_mag_stdr
+#preset stuff
+Items.Preset_armatech556_inline0:
+  $base: Items.Preset_Base_Copperhead_inline0
+  itemPartPreset: Items.armatech556_rcv_prt
+Items.Preset_armatech556_inline1:
+  $base: Items.Preset_Base_Copperhead_inline1
+  itemPartPreset: Items.armatech556_base_prt
+Items.Preset_armatech556_inline2:
+  $base: Items.Preset_Base_Copperhead_inline2
+  itemPartPreset: Items.armatech556_mag_std_prt
+Items.Preset_armatech556_inline3:
+  $base: Items.Preset_Base_Copperhead_inline3
+  itemPartPreset: Items.armatech556_mag_stdr_prt
+  
+Items.armatech556stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 60
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.armatech556stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.armatech556stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.02
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.armatech556stats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.armatech556stats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+
+
+
+Items.armatech556_stock:
+  $type: VendorItem
+  generationPrereqs:
+    - !append LootPrereqs.PlayerLevel_Tier_3_Start_Prereq
+  item: Items.Armatech_MK1_556
+  quantity:
+    - !append Vendors.Always_Present
+
+    

@@ -1,0 +1,130 @@
+Items.Malorian_Arms_X:
+  $base: Items.Preset_Silverhand_3516
+  tags:
+    - !append-once IconicWeapon
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.pistolxstats_mag
+    - !append-once Items.pistolxstats_damage
+    - !append-once Items.pistolxstats_rof
+    - !append-once Items.pistolxstats_pierce
+  appearanceResourceName: pistolx_app
+  hudIcon:
+    atlasResourcePath: pistolx\icon\pistolx_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: pistolx\icon\pistolx.inkatlas
+    atlasPartName: slot_01
+  quality: Quality.Legendary
+  displayName: pistolx_name
+  localizedDescription: pistolx_description
+  slotPartList:
+    - Items.Base_pistolx_inline3
+    - Items.Base_pistolx_inline5
+    - Items.Base_pistolx_inline7
+    - Items.Base_pistolx_inline9
+  slotPartListPreset:
+    - Items.Preset_pistolx_inline3
+    - Items.Preset_pistolx_inline4
+    - Items.Preset_pistolx_inline5
+    - Items.Preset_pistolx_inline6
+  visualTags:
+    - Default
+
+Items.Base_pistolx_inline3:
+  $base: Items.Base_Silverhand_inline3
+  itemPartList:
+    - Items.Base_pistolx_inline4
+Items.Base_pistolx_inline4:
+  $base: Items.Base_Silverhand_inline4
+  item: Items.pistolx_rcv_prt
+Items.pistolx_rcv_prt:
+  $base: Items.w_handgun__malorian_silverhand__rcv1
+  appearanceResourceName: pistolx_rcv
+#base
+Items.Base_pistolx_inline5:
+  $base: Items.Base_Silverhand_inline5
+  itemPartList:
+    - Items.Base_pistolx_inline6
+Items.Base_pistolx_inline6:
+  $base: Items.Base_Silverhand_inline6
+  item: Items.pistolx_base_prt
+Items.pistolx_base_prt:
+  $base: Items.w_handgun__malorian_silverhand__base1
+  appearanceResourceName: pistolx_base
+#mag
+Items.Base_pistolx_inline7:
+  $base: Items.Base_Silverhand_inline7
+  itemPartList:
+    - Items.Base_pistolx_inline8
+Items.Base_pistolx_inline8:
+  $base: Items.Base_Silverhand_inline8
+  item: Items.pistolx_std_prt
+Items.pistolx_std_prt:
+  $base: Items.w_handgun__malorian_silverhand__mag_std
+  appearanceResourceName: pistolx_mag_std
+#reload
+Items.Base_pistolx_inline9:
+  $base: Items.Base_Silverhand_inline9
+  itemPartList:
+    - Items.Base_pistolx_inline10
+Items.Base_pistolx_inline10:
+  $base: Items.Base_Silverhand_inline10
+  item: Items.pistolx_stdr_prt
+Items.pistolx_stdr_prt:
+  $base: Items.w_handgun__malorian_silverhand__mag_stdr
+  appearanceResourceName: pistolx_mag_stdr
+  
+Items.Base_pistolx_inline11:
+  $base: Items.Base_Silverhand_inline11
+  itemPartList:
+    - Items.Base_pistolx_inline12
+Items.Base_pistolx_inline12:
+  $base: Items.Base_Silverhand_inline12
+  item: Items.pistolx_base_prt
+Items.pistolx_base_prt:
+  $base: Items.w_handgun__malorian_silverhand__base1
+  appearanceResourceName: pistolx_base
+#preset
+Items.Preset_pistolx_inline3:
+  $base: Items.Preset_Silverhand_3516_inline3
+  itemPartPreset: Items.pistolx_rcv_prt
+Items.Preset_pistolx_inline4:
+  $base: Items.Preset_Silverhand_3516_inline4
+  itemPartPreset: Items.pistolx_base_prt
+Items.Preset_pistolx_inline5:
+  $base: Items.Preset_Silverhand_3516_inline5
+  itemPartPreset: Items.pistolx_std_prt
+Items.Preset_pistolx_inline6:
+  $base: Items.Preset_Silverhand_3516_inline6
+  itemPartPreset: Items.pistolx_stdr_prt
+Items.Preset_pistolx_inline7:
+  $base: Items.Preset_Silverhand_3516_inline7
+  itemPartPreset: Items.pistolx_base_prt
+  
+Items.pistolxstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.pistolxstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 45
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.pistolxstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.pistolxstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+
+
+ 

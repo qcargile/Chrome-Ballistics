@@ -1,0 +1,53 @@
+Items.Hatchet_No_Masters:
+  $base: Items.Preset_Tomahawk_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.maststats_recovery
+    - !append-once Items.maststats_damage
+  appearanceResourceName: mast_app
+  quality: Quality.Uncommon
+  displayName: mast_name
+  hudIcon:
+    atlasResourcePath: mast\icon\mast_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: mast\icon\mast.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_mast_inline0
+    - Items.Base_mast_inline1
+  slotPartListPreset:
+    - Items.Preset_mast_inline1
+  statPools:
+    - BaseStatPools.ThrowRecovery
+    
+Items.Base_mast_inline0:
+  $base: Items.Base_Axe_inline0
+  itemPartList:
+    - Items.Base_mast_inline1
+Items.Base_mast_inline1:
+  $base: Items.Base_Axe_inline1
+  item: Items.mast_grip_prt
+Items.mast_grip_prt:
+  $base: Items.w_tomahawk_common_grip
+  appearanceResourceName: mast_grip    
+  
+Items.Preset_mast_inline1:
+  $base: Items.Preset_Tomahawk_Default_inline1
+  itemPartPreset: Items.mast_grip_prt
+  
+Items.maststats_recovery:
+  $type: gamedataConstantStatModifier_Record
+  value: -5.4
+  modifierType: Additive
+  statType: BaseStats.ThrowRecovery
+  
+Items.maststats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+

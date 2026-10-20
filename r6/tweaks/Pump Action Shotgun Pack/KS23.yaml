@@ -1,0 +1,204 @@
+Items.KS23_Shotgun:
+  $base: Items.Preset_Tactician_Default
+  tags:
+    - !append ForceDismember
+    - !append DriverCombatRangedWeapon
+    - !append DriverCombatBikeWeapon
+    - !append OneHandedRangedWeapon
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.ks23stats_damage
+    - !append-once Items.ks23stats_rof
+    - !append-once Items.ks23stats_spread
+    - !append-once Items.ks23stats_mag
+    - !append-once Items.ks23stats_pierce
+    - !append-once Items.ks23stats_armor
+    - !append-once Items.ks23stats_crit
+    - !append-once Items.ks23stats_bleeding
+    - !append-once Items.ks23stats_burning
+    - !append-once Items.ks23stats_electrocute
+    - !append-once Items.ks23stats_poison
+    - !append-once Items.ks23stats_stun
+    - !append-once Items.ks23stats_headshotmult
+    - !append-once Items.ks23stats_effectiverange
+    - !append-once Items.ks23stats_maxrange
+  statModifierGroups: 
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  ammo: Ammo.ShotgunAmmo
+  appearanceResourceName: ks23_app
+  blueprint: Items.Base_Power_Shotgun_Blueprint
+  fxPackage: WeaponFxPackage.PowerLargeCaliber
+  hudIcon:
+    atlasResourcePath: ks23\icon\ks23_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: ks23\icon\ks23.inkatlas
+    atlasPartName: slot_01
+  quality: Quality.Legendary
+  displayName: ks23_name
+  localizedDescription: ks23_description
+  slotPartList:
+    - Items.Base_ks23_inline2
+    - Items.Base_ks23_inline4
+    - Items.Base_ks23_inline6
+    - Items.Base_ks23_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.RiflePossibleScopesList
+    - Items.UniversalShotgunSuppressorList
+  slotPartListPreset:
+    - Items.Preset_ks23_inline0
+    - Items.Preset_ks23_inline1
+    - Items.Preset_ks23_inline2
+    - Items.Preset_ks23_inline3
+  visualTags:
+    - Default
+    
+Items.Base_ks23_inline2:
+  $base: Items.Base_Tactician_inline2
+  itemPartList:
+    - Items.Base_ks23_inline3
+Items.Base_ks23_inline3:
+  $base: Items.Base_Tactician_inline3
+  item: Items.ks23_rcv_prt
+Items.ks23_rcv_prt:
+  $base: Items.w_shotgun_constitutional_tactician_rcv1
+  appearanceResourceName: ks23_rcv
+Items.Base_ks23_inline4:
+  $base: Items.Base_Tactician_inline4
+  itemPartList:
+    - Items.Base_ks23_inline5
+Items.Base_ks23_inline5:
+  $base: Items.Base_Tactician_inline5
+  item: Items.ks23_base_prt
+Items.ks23_base_prt:
+  $base: Items.w_shotgun_constitutional_tactician_base1
+  appearanceResourceName: ks23_base
+Items.Base_ks23_inline6:
+  $base: Items.Base_Tactician_inline6
+  itemPartList:
+    - Items.Base_ks23_inline7
+Items.Base_ks23_inline7:
+  $base: Items.Base_Tactician_inline7
+  item: Items.ks23_mag_std_prt
+Items.ks23_mag_std_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_std
+  appearanceResourceName: ks23_mag_std
+Items.Base_ks23_inline8:
+  $base: Items.Base_Tactician_inline8
+  itemPartList:
+    - Items.Base_ks23_inline9
+Items.Base_ks23_inline9:
+  $base: Items.Base_Tactician_inline9
+  item: Items.ks23_mag_stdr_prt
+Items.ks23_mag_stdr_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_stdr
+  appearanceResourceName: ks23_mag_stdr
+Items.Preset_ks23_inline0:
+  $base: Items.Preset_Tactician_Default_inline0
+  itemPartPreset: Items.ks23_rcv_prt
+Items.Preset_ks23_inline1:
+  $base: Items.Preset_Tactician_Default_inline1
+  itemPartPreset: Items.ks23_base_prt
+Items.Preset_ks23_inline2:
+  $base: Items.Preset_Tactician_Default_inline2
+  itemPartPreset: Items.ks23_mag_std_prt
+Items.Preset_ks23_inline3:
+  $base: Items.Preset_Tactician_Default_inline3
+  itemPartPreset: Items.ks23_mag_stdr_prt
+  
+Items.ks23stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.ks23stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.ks23stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -4
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.ks23stats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.ks23stats_crit:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Items.ks23stats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Items.ks23stats_poison:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.PoisonedApplicationRate
+  
+Items.ks23stats_electrocute:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.ks23stats_bleeding:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  
+Items.ks23stats_burning:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.ks23stats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.15
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+
+Items.ks23stats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.ks23stats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.ks23stats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.ks23stats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  

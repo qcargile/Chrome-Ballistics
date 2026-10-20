@@ -1,0 +1,231 @@
+Items.KVInhibitor:
+  $base: Items.Preset_Crusher_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.kvinhibitorstats_rof 
+    - !append-once Items.kvinhibitorstats_damage
+    - !append-once Items.kvinhibitorstats_effectiverange
+    - !append-once Items.kvinhibitorstats_maxrange   
+    - !append-once Items.kvinhibitorstats_mag
+    - !append-once Items.kvinhibitorstats_pierce
+    - !append-once Items.kvinhibitorstats_crit
+    - !append-once Items.kvinhibitorstats_bleeding
+    - !append-once Items.kvinhibitorstats_burning
+    - !append-once Items.kvinhibitorstats_electrocute
+    - !append-once Items.kvinhibitorstats_poison
+    - !append-once Items.kvinhibitorstats_stun
+    - !append-once Items.kvinhibitorstats_headshotmult
+    - !append-once Items.kvinhibitorstats_firstequip
+    - !append-once Items.kvinhibitorstats_burst
+    - !append-once Items.kvinhibitorstats_burst2
+    - !append-once Items.kvinhibitorstats_armor
+    - !append-once Items.kvinhibitorstats_spread
+  statModifierGroups:
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  appearanceResourceName: kvinhibitor_app
+  ammo: Ammo.SniperRifleAmmo
+  audioName: wea_set_kyubi
+  blueprint: Items.Base_Power_Precision_Sniper_Rifle_Blueprint
+  crosshair: Crosshairs.Basic
+  itemType: ItemType.Wea_SniperRifle
+  fxPackage: WeaponFxPackage.PowerLargeCaliber
+  quality: Quality.Epic
+  displayName: kvinhibitor_name
+  localizedDescription: kvinhibitor_description
+  primaryTriggerMode: TriggerMode.Burst
+  secondaryTriggerMode: TriggerMode.Burst
+  triggerModes:
+    - TriggerMode.Burst
+    - TriggerMode.Burst
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: kvinhibitor\icon\kvinhibitor_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: kvinhibitor\icon\kvinhibitor.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_kvinhibitor_inline1
+    - Items.Base_kvinhibitor_inline3
+    - Items.Base_kvinhibitor_inline5
+    - Items.Base_kvinhibitor_inline7
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.RiflePossibleScopesList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_kvinhibitor_inline0
+    - Items.Preset_kvinhibitor_inline1
+    - Items.Preset_kvinhibitor_inline2
+    - Items.Preset_kvinhibitor_inline3
+    
+Items.Base_kvinhibitor_inline1:
+  $base: Items.Base_Crusher_inline1
+  itemPartList:
+    - Items.Base_kvinhibitor_inline2
+Items.Base_kvinhibitor_inline2:
+  $base: Items.Base_Crusher_inline2
+  item: Items.kvinhibitor_rcv_prt
+Items.kvinhibitor_rcv_prt:
+  $base: Items.w_revolver__militech_crusher__rcv1
+  appearanceResourceName: kvinhibitor_rcv
+Items.Base_kvinhibitor_inline3:
+  $base: Items.Base_Crusher_inline3
+  itemPartList:
+    - Items.Base_kvinhibitor_inline4
+Items.Base_kvinhibitor_inline4:
+  $base: Items.Base_Crusher_inline4
+  item: Items.kvinhibitor_base_prt
+Items.kvinhibitor_base_prt:
+  $base: Items.w_revolver__militech_crusher__base1
+  appearanceResourceName: kvinhibitor_base
+Items.Base_kvinhibitor_inline5:
+  $base: Items.Base_Crusher_inline5
+  itemPartList:
+    - Items.Base_kvinhibitor_inline6
+Items.Base_kvinhibitor_inline6:
+  $base: Items.Base_Crusher_inline6
+  item: Items.kvinhibitor_mag_std_prt
+Items.kvinhibitor_mag_std_prt:
+  $base: Items.w_revolver__militech_crusher__mag_std
+  appearanceResourceName: kvinhibitor_mag_std
+Items.Base_kvinhibitor_inline7:
+  $base: Items.Base_Crusher_inline7
+  itemPartList:
+    - Items.Base_kvinhibitor_inline8
+Items.Base_kvinhibitor_inline8:
+  $base: Items.Base_Crusher_inline8
+  item: Items.kvinhibitor_mag_stdr_prt
+Items.kvinhibitor_mag_stdr_prt:
+  $base: Items.w_revolver__militech_crusher__mag_stdr
+  appearanceResourceName: kvinhibitor_mag_stdr
+Items.Preset_kvinhibitor_inline0:
+  $base: Items.Preset_Crusher_Default_inline0
+  itemPartPreset: Items.kvinhibitor_rcv_prt
+Items.Preset_kvinhibitor_inline1:
+  $base: Items.Preset_Crusher_Default_inline1
+  itemPartPreset: Items.kvinhibitor_base_prt
+Items.Preset_kvinhibitor_inline2:
+  $base: Items.Preset_Crusher_Default_inline2
+  itemPartPreset: Items.kvinhibitor_mag_std_prt
+Items.Preset_kvinhibitor_inline3:
+  $base: Items.Preset_Crusher_Default_inline3
+  itemPartPreset: Items.kvinhibitor_mag_stdr_prt
+  
+Items.kvinhibitorstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 175
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.kvinhibitorstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.0
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.kvinhibitorstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -10
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.kvinhibitorstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.kvinhibitorstats_crit:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Items.kvinhibitorstats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Items.kvinhibitorstats_poison:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.PoisonedApplicationRate
+  
+Items.kvinhibitorstats_electrocute:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.kvinhibitorstats_bleeding:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  
+Items.kvinhibitorstats_burning:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.kvinhibitorstats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+  
+Items.kvinhibitorstats_burst:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.NumShotsInBurstSecondary
+  
+Items.kvinhibitorstats_burst2:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.NumShotsInBurst
+  
+Items.kvinhibitorstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 100
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.kvinhibitorstats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 150
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.kvinhibitorstats_firstequip:
+  $type: gamedataConstantStatModifier_Record
+  value: 1.6
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.kvinhibitorstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+Items.kvinhibitorstats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: -1
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+  

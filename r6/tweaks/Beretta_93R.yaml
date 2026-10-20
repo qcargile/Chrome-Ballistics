@@ -1,0 +1,115 @@
+Items.Beretta_93R:
+  $base: Items.Preset_Liberty_Default
+  tags:
+    - !append-once IconicWeapon
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.93rstats_damage
+    - !append-once Items.93rstats_rof
+    - !append-once Items.93rstats_mag
+  appearanceResourceName: 93r_app
+  primaryTriggerMode: TriggerMode.FullAuto
+  audioName: wea_set_copperhead
+  triggerModes:
+    - TriggerMode.FullAuto
+  quality: Quality.Common
+  displayName: 93r_name
+  localizedDescription: 93r_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: 93r\icon\93r_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: 93r\icon\93r.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_93r_inline2
+    - Items.Base_93r_inline4
+    - Items.Base_93r_inline6
+    - Items.Base_93r_inline8
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+  slotPartListPreset:
+    - Items.Preset_93r_inline0
+    - Items.Preset_93r_inline1
+    - Items.Preset_93r_inline2
+    - Items.Preset_93r_inline3
+  
+Items.Base_93r_inline2:
+  $base: Items.Base_Liberty_inline2
+  itemPartList:
+    - Items.Base_93r_inline3
+Items.Base_93r_inline3:
+  $base: Items.Base_Liberty_inline3
+  item: Items.93r_rcv_prt
+Items.93r_rcv_prt:
+  $base: Items.w_handgun__constitutional_liberty__rcv1
+  appearanceResourceName: 93r_rcv
+#base
+Items.Base_93r_inline4:
+  $base: Items.Base_Liberty_inline4
+  itemPartList:
+    - Items.Base_93r_inline5
+Items.Base_93r_inline5:
+  $base: Items.Base_Liberty_inline5
+  item: Items.93r_base_prt
+Items.93r_base_prt:
+  $base: Items.w_handgun__constitutional_liberty__base1
+  appearanceResourceName: 93r_base
+#mag
+Items.Base_93r_inline6:
+  $base: Items.Base_Liberty_inline6
+  itemPartList:
+    - Items.Base_93r_inline7
+Items.Base_93r_inline7:
+  $base: Items.Base_Liberty_inline7
+  item: Items.93r_mag_std_prt
+Items.93r_mag_std_prt:
+  $base: Items.w_handgun__constitutional_liberty__mag_std
+  appearanceResourceName: 93r_mag_std
+#reload
+Items.Base_93r_inline8:
+  $base: Items.Base_Liberty_inline8
+  itemPartList:
+    - Items.Base_93r_inline9
+Items.Base_93r_inline9:
+  $base: Items.Base_Liberty_inline9
+  item: Items.93r_mag_stdr_prt
+Items.93r_mag_stdr_prt:
+  $base: Items.w_handgun__constitutional_liberty__mag_stdr
+  appearanceResourceName: 93r_mag_stdr
+#preset
+Items.Preset_93r_inline0:
+  $base: Items.Preset_Liberty_Default_inline0
+  itemPartPreset: Items.93r_rcv_prt
+Items.Preset_93r_inline1:
+  $base: Items.Preset_Liberty_Default_inline1
+  itemPartPreset: Items.93r_base_prt
+Items.Preset_93r_inline2:
+  $base: Items.Preset_Liberty_Default_inline2
+  itemPartPreset: Items.93r_mag_std_prt
+Items.Preset_93r_inline3:
+  $base: Items.Preset_Liberty_Default_inline3
+  itemPartPreset: Items.93r_mag_stdr_prt
+  
+Items.93rstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.22
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.93rstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 95
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+Items.93rstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 7
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+
+    

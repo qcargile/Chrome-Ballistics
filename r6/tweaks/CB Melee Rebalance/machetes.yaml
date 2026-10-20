@@ -1,0 +1,20 @@
+# Kukri
+Items.Kukri_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 250.0              # default value – 72
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Machete
+Items.Machete_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 275.0              # default value – 72
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Borg Machete
+Items.Borg_Machete_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 290.5             # default value – 86
+  modifierType: Additive
+  statType: BaseStats.DPS

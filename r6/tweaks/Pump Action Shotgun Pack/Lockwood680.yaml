@@ -1,0 +1,207 @@
+Items.Lockwood680:
+  $base: Items.Preset_Tactician_Default
+  tags:
+    - !append ForceDismember
+    - !append-once IconicWeapon  
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.lockwoodstats_damage
+    - !append-once Items.lockwoodstats_rof
+    - !append-once Items.lockwoodstats_spread
+    - !append-once Items.lockwoodstats_mag
+    - !append-once Items.lockwoodstats_pierce
+    - !append-once Items.lockwoodstats_armor
+    - !append-once Items.lockwoodstats_crit
+    - !append-once Items.lockwoodstats_bleeding
+    - !append-once Items.lockwoodstats_burning
+    - !append-once Items.lockwoodstats_electrocute
+    - !append-once Items.lockwoodstats_poison
+    - !append-once Items.lockwoodstats_stun
+    - !append-once Items.lockwoodstats_headshotmult
+    - !append-once Items.lockwoodstats_effectiverange
+    - !append-once Items.lockwoodstats_maxrange
+  statModifierGroups: 
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  ammo: Ammo.ShotgunAmmo
+  appearanceResourceName: lockwood_app
+  blueprint: Items.Base_Power_Shotgun_Blueprint
+  fxPackage: WeaponFxPackage.PowerLargeCaliber
+  hudIcon:
+    atlasResourcePath: lockwood\icon\lockwood_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: lockwood\icon\lockwood.inkatlas
+    atlasPartName: slot_01
+  quality: Quality.Rare
+  displayName: lockwood_name
+  localizedDescription: lockwood_description
+  slotPartList:
+    - Items.Base_lockwood_inline2
+    - Items.Base_lockwood_inline4
+    - Items.Base_lockwood_inline6
+    - Items.Base_lockwood_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.RiflePossibleScopesList
+    - Items.UniversalShotgunSuppressorList
+  slotPartListPreset:
+    - Items.Preset_lockwood_inline0
+    - Items.Preset_lockwood_inline1
+    - Items.Preset_lockwood_inline2
+    - Items.Preset_lockwood_inline3
+  visualTags:
+    - Default
+    
+Items.Base_lockwood_inline2:
+  $base: Items.Base_Tactician_inline2
+  itemPartList:
+    - Items.Base_lockwood_inline3
+Items.Base_lockwood_inline3:
+  $base: Items.Base_Tactician_inline3
+  item: Items.lockwood_rcv_prt
+Items.lockwood_rcv_prt:
+  $base: Items.w_shotgun_constitutional_tactician_rcv1
+  appearanceResourceName: lockwood_rcv
+Items.Base_lockwood_inline4:
+  $base: Items.Base_Tactician_inline4
+  itemPartList:
+    - Items.Base_lockwood_inline5
+Items.Base_lockwood_inline5:
+  $base: Items.Base_Tactician_inline5
+  item: Items.lockwood_base_prt
+Items.lockwood_base_prt:
+  $base: Items.w_shotgun_constitutional_tactician_base1
+  appearanceResourceName: lockwood_base
+Items.Base_lockwood_inline6:
+  $base: Items.Base_Tactician_inline6
+  itemPartList:
+    - Items.Base_lockwood_inline7
+Items.Base_lockwood_inline7:
+  $base: Items.Base_Tactician_inline7
+  item: Items.lockwood_mag_std_prt
+Items.lockwood_mag_std_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_std
+  appearanceResourceName: lockwood_mag_std
+Items.Base_lockwood_inline8:
+  $base: Items.Base_Tactician_inline8
+  itemPartList:
+    - Items.Base_lockwood_inline9
+Items.Base_lockwood_inline9:
+  $base: Items.Base_Tactician_inline9
+  item: Items.lockwood_mag_stdr_prt
+Items.lockwood_mag_stdr_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_stdr
+  appearanceResourceName: lockwood_mag_stdr
+Items.Preset_lockwood_inline0:
+  $base: Items.Preset_Tactician_Default_inline0
+  itemPartPreset: Items.lockwood_rcv_prt
+Items.Preset_lockwood_inline1:
+  $base: Items.Preset_Tactician_Default_inline1
+  itemPartPreset: Items.lockwood_base_prt
+Items.Preset_lockwood_inline2:
+  $base: Items.Preset_Tactician_Default_inline2
+  itemPartPreset: Items.lockwood_mag_std_prt
+Items.Preset_lockwood_inline3:
+  $base: Items.Preset_Tactician_Default_inline3
+  itemPartPreset: Items.lockwood_mag_stdr_prt
+  
+Items.lockwoodstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.lockwoodstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.lockwoodstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 2
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.lockwoodstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.lockwoodstats_crit:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Items.lockwoodstats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Items.lockwoodstats_poison:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.PoisonedApplicationRate
+  
+Items.lockwoodstats_electrocute:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.lockwoodstats_bleeding:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  
+Items.lockwoodstats_burning:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.lockwoodstats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.15
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+
+Items.lockwoodstats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.lockwoodstats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.lockwoodstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.lockwoodstats_equip:
+  $type: gamedataConstantStatModifier_Record
+  value: 1.40
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.lockwoodstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  

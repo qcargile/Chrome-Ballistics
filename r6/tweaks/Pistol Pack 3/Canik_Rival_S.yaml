@@ -1,0 +1,120 @@
+Items.Canik_Rival_S:
+  $base: Items.Preset_Liberty_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.rivalstats_damage
+    - !append-once Items.rivalstats_rof
+    - !append-once Items.rivalstats_mag
+    - !append-once Items.rivalstats_armor
+  appearanceResourceName: rival_app
+  audioName: wea_set_unity
+  quality: Quality.Uncommon
+  displayName: rival_name
+  localizedDescription: rival_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: rival\icon\rival_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: rival\icon\rival.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_rival_inline2
+    - Items.Base_rival_inline4
+    - Items.Base_rival_inline6
+    - Items.Base_rival_inline8
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+  slotPartListPreset:
+    - Items.Preset_rival_inline0
+    - Items.Preset_rival_inline1
+    - Items.Preset_rival_inline2
+    - Items.Preset_rival_inline3
+  
+Items.Base_rival_inline2:
+  $base: Items.Base_Liberty_inline2
+  itemPartList:
+    - Items.Base_rival_inline3
+Items.Base_rival_inline3:
+  $base: Items.Base_Liberty_inline3
+  item: Items.rival_rcv_prt
+Items.rival_rcv_prt:
+  $base: Items.w_handgun__constitutional_liberty__rcv1
+  appearanceResourceName: rival_rcv
+#base
+Items.Base_rival_inline4:
+  $base: Items.Base_Liberty_inline4
+  itemPartList:
+    - Items.Base_rival_inline5
+Items.Base_rival_inline5:
+  $base: Items.Base_Liberty_inline5
+  item: Items.rival_base_prt
+Items.rival_base_prt:
+  $base: Items.w_handgun__constitutional_liberty__base1
+  appearanceResourceName: rival_base
+#mag
+Items.Base_rival_inline6:
+  $base: Items.Base_Liberty_inline6
+  itemPartList:
+    - Items.Base_rival_inline7
+Items.Base_rival_inline7:
+  $base: Items.Base_Liberty_inline7
+  item: Items.rival_mag_std_prt
+Items.rival_mag_std_prt:
+  $base: Items.w_handgun__constitutional_liberty__mag_std
+  appearanceResourceName: rival_mag_std
+#reload
+Items.Base_rival_inline8:
+  $base: Items.Base_Liberty_inline8
+  itemPartList:
+    - Items.Base_rival_inline9
+Items.Base_rival_inline9:
+  $base: Items.Base_Liberty_inline9
+  item: Items.rival_mag_stdr_prt
+Items.rival_mag_stdr_prt:
+  $base: Items.w_handgun__constitutional_liberty__mag_stdr
+  appearanceResourceName: rival_mag_stdr
+#preset
+Items.Preset_rival_inline0:
+  $base: Items.Preset_Liberty_Default_inline0
+  itemPartPreset: Items.rival_rcv_prt
+Items.Preset_rival_inline1:
+  $base: Items.Preset_Liberty_Default_inline1
+  itemPartPreset: Items.rival_base_prt
+Items.Preset_rival_inline2:
+  $base: Items.Preset_Liberty_Default_inline2
+  itemPartPreset: Items.rival_mag_std_prt
+Items.Preset_rival_inline3:
+  $base: Items.Preset_Liberty_Default_inline3
+  itemPartPreset: Items.rival_mag_stdr_prt
+  
+Items.rivalstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 130
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.rivalstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.15
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.rivalstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.rivalstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+
+
+    

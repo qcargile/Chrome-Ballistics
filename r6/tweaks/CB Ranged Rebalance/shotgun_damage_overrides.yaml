@@ -1,0 +1,62 @@
+# Carnage / Mox, Guts
+Items.Base_Carnage_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 136                 # default value – 73
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Crusher / Amstaff
+Items.Base_Crusher_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 185               # default value – 94
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# DB-2 Satara / Order
+Items.Base_Satara_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 170.0               # default value – 91
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# DB-2 Testera / Dezerter
+Items.Base_Testera_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 176.8               # default value – 107
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# DB-4 Igla / Sovereign
+Items.Base_Igla_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 190.4               # default value – 85
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# DB-4 Palica / (no variants)
+Items.Base_Palica_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 175.0               # default value – 150
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# L-69 Zhuo / Ba Xing Chong
+Items.Base_Zhuo_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 183.6               # default value – 66
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# M2038 Tactician / Bloody Maria, The Headsman
+Items.Base_Tactician_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 256               # default value – 81
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# VST-37 Pozhar / Alabai, x-MOD2
+Items.Base_Pozhar_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 240               # default value – 90
+  modifierType: Additive
+  statType: BaseStats.DPS

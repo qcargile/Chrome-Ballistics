@@ -1,0 +1,205 @@
+Items.Shotgun_LastRites:
+  $base: Items.Preset_Tactician_Default
+  tags:
+    - !append ForceDismember
+    - !append DriverCombatRangedWeapon
+    - !append DriverCombatBikeWeapon
+    - !append OneHandedRangedWeapon
+    - !append-once IconicWeapon  
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.lastritesstats_damage
+    - !append-once Items.lastritesstats_rof
+    - !append-once Items.lastritesstats_spread
+    - !append-once Items.lastritesstats_mag
+    - !append-once Items.lastritesstats_pierce
+    - !append-once Items.lastritesstats_armor
+    - !append-once Items.lastritesstats_crit
+    - !append-once Items.lastritesstats_bleeding
+    - !append-once Items.lastritesstats_burning
+    - !append-once Items.lastritesstats_electrocute
+    - !append-once Items.lastritesstats_poison
+    - !append-once Items.lastritesstats_stun
+    - !append-once Items.lastritesstats_headshotmult
+    - !append-once Items.lastritesstats_effectiverange
+    - !append-once Items.lastritesstats_maxrange
+  statModifierGroups: 
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  ammo: Ammo.ShotgunAmmo
+  appearanceResourceName: lastrites_app
+  blueprint: Items.Base_Power_Shotgun_NoScope_Blueprint
+  fxPackage: WeaponFxPackage.PowerLargeCaliber
+  ikOffset: {x: 0, y: 0, z: 0.1}
+  hudIcon:
+    atlasResourcePath: lastrites\icon\lastrites_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: lastrites\icon\lastrites.inkatlas
+    atlasPartName: slot_01
+  quality: Quality.Legendary
+  displayName: lastrites_name
+  localizedDescription: lastrites_description
+  slotPartList:
+    - Items.Base_lastrites_inline2
+    - Items.Base_lastrites_inline4
+    - Items.Base_lastrites_inline6
+    - Items.Base_lastrites_inline8
+    - Items.HandgunPossibleScopesList
+    - Items.RiflePossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.UniversalShotgunSuppressorList
+  slotPartListPreset:
+    - Items.Preset_lastrites_inline0
+    - Items.Preset_lastrites_inline1
+    - Items.Preset_lastrites_inline2
+    - Items.Preset_lastrites_inline3
+  visualTags:
+    - Default
+    
+Items.Base_lastrites_inline2:
+  $base: Items.Base_Tactician_inline2
+  itemPartList:
+    - Items.Base_lastrites_inline3
+Items.Base_lastrites_inline3:
+  $base: Items.Base_Tactician_inline3
+  item: Items.lastrites_rcv_prt
+Items.lastrites_rcv_prt:
+  $base: Items.w_shotgun_constitutional_tactician_rcv1
+  appearanceResourceName: lastrites_rcv
+Items.Base_lastrites_inline4:
+  $base: Items.Base_Tactician_inline4
+  itemPartList:
+    - Items.Base_lastrites_inline5
+Items.Base_lastrites_inline5:
+  $base: Items.Base_Tactician_inline5
+  item: Items.lastrites_base_prt
+Items.lastrites_base_prt:
+  $base: Items.w_shotgun_constitutional_tactician_base1
+  appearanceResourceName: lastrites_base
+Items.Base_lastrites_inline6:
+  $base: Items.Base_Tactician_inline6
+  itemPartList:
+    - Items.Base_lastrites_inline7
+Items.Base_lastrites_inline7:
+  $base: Items.Base_Tactician_inline7
+  item: Items.lastrites_mag_std_prt
+Items.lastrites_mag_std_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_std
+  appearanceResourceName: lastrites_mag_std
+Items.Base_lastrites_inline8:
+  $base: Items.Base_Tactician_inline8
+  itemPartList:
+    - Items.Base_lastrites_inline9
+Items.Base_lastrites_inline9:
+  $base: Items.Base_Tactician_inline9
+  item: Items.lastrites_mag_stdr_prt
+Items.lastrites_mag_stdr_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_stdr
+  appearanceResourceName: lastrites_mag_stdr
+Items.Preset_lastrites_inline0:
+  $base: Items.Preset_Tactician_Default_inline0
+  itemPartPreset: Items.lastrites_rcv_prt
+Items.Preset_lastrites_inline1:
+  $base: Items.Preset_Tactician_Default_inline1
+  itemPartPreset: Items.lastrites_base_prt
+Items.Preset_lastrites_inline2:
+  $base: Items.Preset_Tactician_Default_inline2
+  itemPartPreset: Items.lastrites_mag_std_prt
+Items.Preset_lastrites_inline3:
+  $base: Items.Preset_Tactician_Default_inline3
+  itemPartPreset: Items.lastrites_mag_stdr_prt
+  
+Items.lastritesstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 21
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.lastritesstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.lastritesstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -3
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.lastritesstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.lastritesstats_crit:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Items.lastritesstats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Items.lastritesstats_poison:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.PoisonedApplicationRate
+  
+Items.lastritesstats_electrocute:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.lastritesstats_bleeding:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  
+Items.lastritesstats_burning:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.lastritesstats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.15
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+
+Items.lastritesstats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.lastritesstats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.lastritesstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.lastritesstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  

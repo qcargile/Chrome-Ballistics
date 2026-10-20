@@ -1,0 +1,141 @@
+Items.AK_117:
+  $base: Items.Preset_Ajax_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.ak117stats_rof 
+    - !append-once Items.ak117stats_damage
+    - !append-once Items.ak117stats_reload  
+    - !append-once Items.ak117stats_recoil2
+    - !append-once Items.ak117stats_reload2  
+    - !append-once Items.ak117stats_equip
+    - !append-once Items.ak117stats_mag
+  appearanceResourceName: ak117_app
+  audioName: wea_set_copperhead
+  quality: Quality.Uncommon
+  displayName: ak117_name
+  localizedDescription: ak117_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: ak117\icon\ak117_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: ak117\icon\ak117.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_ak117_inline2
+    - Items.Base_ak117_inline4
+    - Items.Base_ak117_inline6
+    - Items.Base_ak117_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_ak117_inline0
+    - Items.Preset_ak117_inline1
+    - Items.Preset_ak117_inline2
+    - Items.Preset_ak117_inline3
+  
+Items.Base_ak117_inline2:
+  $base: Items.Base_Ajax_inline2
+  itemPartList:
+    - Items.Base_ak117_inline3
+Items.Base_ak117_inline3:
+  $base: Items.Base_Ajax_inline3
+  item: Items.ak117_rcv_prt
+Items.ak117_rcv_prt:
+  $base: Items.w_rifle_assault__militech_ajax__rcv1
+  appearanceResourceName: ak117_rcv
+#base
+Items.Base_ak117_inline4:
+  $base: Items.Base_Ajax_inline4
+  itemPartList:
+    - Items.Base_ak117_inline5
+Items.Base_ak117_inline5:
+  $base: Items.Base_Ajax_inline5
+  item: Items.ak117_base_prt
+Items.ak117_base_prt:
+  $base: Items.w_rifle_assault__militech_ajax__base1
+  appearanceResourceName: ak117_base
+#mag
+Items.Base_ak117_inline6:
+  $base: Items.Base_Ajax_inline6
+  itemPartList:
+    - Items.Base_ak117_inline7
+Items.Base_ak117_inline7:
+  $base: Items.Base_Ajax_inline7
+  item: Items.ak117_mag_std_prt
+Items.ak117_mag_std_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_std
+  appearanceResourceName: ak117_mag_std
+#reload
+Items.Base_ak117_inline8:
+  $base: Items.Base_Ajax_inline8
+  itemPartList:
+    - Items.Base_ak117_inline9
+Items.Base_ak117_inline9:
+  $base: Items.Base_Ajax_inline9
+  item: Items.ak117_mag_stdr_prt
+Items.ak117_mag_stdr_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_stdr
+  appearanceResourceName: ak117_mag_stdr
+#preset
+Items.Preset_ak117_inline0:
+  $base: Items.Preset_Ajax_Default_inline0
+  itemPartPreset: Items.ak117_rcv_prt
+Items.Preset_ak117_inline1:
+  $base: Items.Preset_Ajax_Default_inline1
+  itemPartPreset: Items.ak117_base_prt
+Items.Preset_ak117_inline2:
+  $base: Items.Preset_Ajax_Default_inline2
+  itemPartPreset: Items.ak117_mag_std_prt
+Items.Preset_ak117_inline3:
+  $base: Items.Preset_Ajax_Default_inline3
+  itemPartPreset: Items.ak117_mag_stdr_prt
+  
+Items.ak117stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.07
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.ak117stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 40
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.ak117stats_reload:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+  
+Items.ak117stats_reload2:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBase
+  
+Items.ak117stats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.35
+  modifierType: Additive
+  statType: BaseStats.RecoilRecoveryTime
+
+Items.ak117stats_equip:
+  $type: gamedataConstantStatModifier_Record
+  value: -1.0
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.ak117stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+
+
+  

@@ -1,0 +1,132 @@
+Items.Colt_M4_Carbine:
+  $base: Items.Preset_Copperhead_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.tacm4stats_rof 
+    - !append-once Items.tacm4stats_damage
+    - !append-once Items.tacm4stats_firstequip
+    - !append-once Items.tacm4stats_mag 
+    - !append-once Items.tacm4stats_effectiverange
+    - !append-once Items.tacm4stats_maxrange    
+  statModifierGroups:
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  appearanceResourceName: tacm4_app
+  quality: Quality.Rare
+  displayName: tacm4_name
+  localizedDescription: tacm4_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: tacm4\icon\tacm4_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: tacm4\icon\tacm4.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_tacm4_inline2
+    - Items.Base_tacm4_inline4
+    - Items.Base_tacm4_inline6
+    - Items.Base_tacm4_inline8
+    - Items.RiflePossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_tacm4_inline0
+    - Items.Preset_tacm4_inline1
+    - Items.Preset_tacm4_inline2
+    - Items.Preset_tacm4_inline3
+  
+Items.Base_tacm4_inline2:
+  $base: Items.Base_Copperhead_inline2
+  itemPartList:
+    - Items.Base_tacm4_inline3
+Items.Base_tacm4_inline3:
+  $base: Items.Base_Copperhead_inline3
+  item: Items.tacm4_rcv_prt
+Items.tacm4_rcv_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__rcv1
+  appearanceResourceName: tacm4_rcv
+Items.Base_tacm4_inline4:
+  $base: Items.Base_Copperhead_inline4
+  itemPartList:
+    - Items.Base_tacm4_inline5
+Items.Base_tacm4_inline5:
+  $base: Items.Base_Copperhead_inline5
+  item: Items.tacm4_base_prt
+Items.tacm4_base_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__base1
+  appearanceResourceName: tacm4_base
+Items.Base_tacm4_inline6:
+  $base: Items.Base_Copperhead_inline6
+  itemPartList:
+    - Items.Base_tacm4_inline7
+Items.Base_tacm4_inline7:
+  $base: Items.Base_Copperhead_inline7
+  item: Items.tacm4_mag_std_prt
+Items.tacm4_mag_std_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__mag_std
+  appearanceResourceName: tacm4_mag_std
+Items.Base_tacm4_inline8:
+  $base: Items.Base_Copperhead_inline8
+  itemPartList:
+    - Items.Base_tacm4_inline9
+Items.Base_tacm4_inline9:
+  $base: Items.Base_Copperhead_inline9
+  item: Items.tacm4_mag_stdr_prt
+Items.tacm4_mag_stdr_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__mag_stdr
+  appearanceResourceName: tacm4_mag_stdr
+Items.Preset_tacm4_inline0:
+  $base: Items.Preset_Base_Copperhead_inline0
+  itemPartPreset: Items.tacm4_rcv_prt
+Items.Preset_tacm4_inline1:
+  $base: Items.Preset_Base_Copperhead_inline1
+  itemPartPreset: Items.tacm4_base_prt
+Items.Preset_tacm4_inline2:
+  $base: Items.Preset_Base_Copperhead_inline2
+  itemPartPreset: Items.tacm4_mag_std_prt
+Items.Preset_tacm4_inline3:
+  $base: Items.Preset_Base_Copperhead_inline3
+  itemPartPreset: Items.tacm4_mag_stdr_prt
+  
+Items.tacm4stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.02
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.tacm4stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 45
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.tacm4stats_firstequip:
+  $type: gamedataConstantStatModifier_Record
+  value: -4.9
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.tacm4stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase 
+  
+Items.tacm4stats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 50
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.tacm4stats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 60
+  modifierType: Additive
+  statType: BaseStats.MaximumRange

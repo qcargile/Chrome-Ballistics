@@ -1,0 +1,103 @@
+Items.HF_Murasama:
+  $base: Items.Preset_Katana_Wakako
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.samstats_speed
+    - !append-once Items.samstats_damage
+    - !append-once Items.samstats_combo
+    - !append-once Items.samstats_dismember
+    - !append-once Items.samstats_meleetime
+    - !append-once Items.samstats_meleecombotime
+    - !append-once Items.samstats_meleeleap2
+    - !append-once Items.samstats_meleedash
+    - !append-once Items.samstats_meleetakedown
+  appearanceResourceName: sam_app
+  quality: Quality.Legendary
+  displayName: sam_name
+  localizedDescription: sam_description
+  hudIcon:
+    atlasResourcePath: sam\icon\sam_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: sam\icon\sam.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_sam_inline1
+    - Items.Base_sam_inline2
+  slotPartListPreset:
+    - Items.Preset_sam_inline3
+    - Items.Preset_Katana_Wakako_inline4
+    
+Items.Base_sam_inline1:
+  $base: Items.Base_Katana_inline1
+  itemPartList:
+    - Items.Base_sam_inline2
+Items.Base_sam_inline2:
+  $base: Items.Base_Katana_inline2
+  item: Items.sam_grip_prt
+Items.sam_grip_prt:
+  $base: Items.w_katana_grip
+  appearanceResourceName: sam_grip    
+  
+Items.Preset_sam_inline3:
+  $base: Items.Preset_Katana_Wakako_inline3
+  itemPartPreset: Items.sam_grip_prt
+  
+Items.samstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.samstats_speed:
+  $type: gamedataConstantStatModifier_Record
+  value: 150
+  modifierType: Additive
+  statType: BaseStats.AttackSpeed
+  
+Items.samstats_combo:
+  $type: gamedataConstantStatModifier_Record
+  value: 3
+  modifierType: Additive
+  statType: BaseStats.AttacksNumber
+  
+Items.samstats_dismember:
+  $type: gamedataConstantStatModifier_Record
+  value: 200
+  modifierType: Multiplier
+  statType: BaseStats.HitDismembermentFactor
+  
+Items.samstats_meleetime:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.2
+  modifierType: Additive
+  statType: BaseStats.MeleeAttackDuration
+  
+Items.samstats_meleecombotime:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.2
+  modifierType: Additive
+  statType: BaseStats.MeleeAttackComboDuration
+  
+Items.samstats_meleeleap2:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanMeleeLeapInAir
+  
+Items.samstats_meleetakedown:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanMeleeLeapTakedown
+  
+Items.samstats_meleedash:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanMeleeDash
+
+
+ 

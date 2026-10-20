@@ -1,0 +1,399 @@
+Items.Base_BuffsSmartLMG_inline1:
+  $type: gamedataSlotItemPartListElement_Record
+  optionalProbabilityCurveName: ''
+  slot: AttachmentSlots.Receiver
+  itemPartList:
+    - Items.Base_BuffsSmartLMG_inline2
+Items.Base_BuffsSmartLMG_inline2:
+  $type: gamedataItemPartListElement_Record
+  item: Items.w_lmg__buffssmartlmg__rcv1
+  weight: 1
+  statModifierWeight: []
+Items.Base_BuffsSmartLMG_inline3:
+  $type: gamedataSlotItemPartListElement_Record
+  optionalProbabilityCurveName: ''
+  slot: AttachmentSlots.Barrel
+  itemPartList:
+    - Items.Base_BuffsSmartLMG_inline4
+Items.Base_BuffsSmartLMG_inline4:
+  $type: gamedataItemPartListElement_Record
+  item: Items.w_lmg__buffssmartlmg__base1
+  weight: 1
+  statModifierWeight: []
+Items.Base_BuffsSmartLMG_inline5:
+  $type: gamedataSlotItemPartListElement_Record
+  optionalProbabilityCurveName: ''
+  slot: AttachmentSlots.Magazine
+  itemPartList:
+    - Items.Base_BuffsSmartLMG_inline6
+Items.Base_BuffsSmartLMG_inline6:
+  $type: gamedataItemPartListElement_Record
+  item: Items.w_lmg__buffssmartlmg__mag_std_01
+  weight: 1
+  statModifierWeight: []
+Items.Base_BuffsSmartLMG_inline7:
+  $type: gamedataSlotItemPartListElement_Record
+  optionalProbabilityCurveName: ''
+  slot: AttachmentSlots.MagazineEmpty
+  itemPartList:
+    - Items.Base_BuffsSmartLMG_inline8
+Items.Base_BuffsSmartLMG_inline8:
+  $type: gamedataItemPartListElement_Record
+  item: Items.w_lmg__buffssmartlmg__mag_stdr
+  weight: 1
+  statModifierWeight: []
+
+Items.Preset_BuffsSmartLMG_Default_inline0:
+  $type: gamedataSlotItemPartPreset_Record
+  itemPartPreset: Items.w_lmg__buffssmartlmg__rcv1
+  slot: AttachmentSlots.Receiver
+  itemPartList: []
+Items.Preset_BuffsSmartLMG_Default_inline1:
+  $type: gamedataSlotItemPartPreset_Record
+  itemPartPreset: Items.w_lmg__buffssmartlmg__base1
+  slot: AttachmentSlots.Barrel
+  itemPartList: []
+Items.Preset_BuffsSmartLMG_Default_inline2:
+  $type: gamedataSlotItemPartPreset_Record
+  itemPartPreset: Items.w_lmg__buffssmartlmg__mag_std_01
+  slot: AttachmentSlots.Magazine
+  itemPartList: []
+Items.Preset_BuffsSmartLMG_Default_inline3:
+  $type: gamedataSlotItemPartPreset_Record
+  itemPartPreset: Items.w_lmg__buffssmartlmg__mag_stdr
+  slot: AttachmentSlots.MagazineEmpty
+  itemPartList: []
+
+
+
+
+
+
+#general inlines
+Items.Base_BuffsSmartLMG_Technical_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 2
+  modifierType: Additive
+  statType: BaseStats.NumShotsToFire
+
+Items.Base_BuffsSmartLMG_Technical_Stats_inline1:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.210000
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+
+Items.Base_BuffsSmartLMG_Technical_Stats_inline2:
+  $type: gamedataConstantStatModifier_Record
+  value: 110
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+
+
+Items.Base_BuffsSmartLMG_Technical_Stats_inline3:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.ProjectilesPerShotBase
+
+
+Items.Base_BuffsSmartLMG_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 140
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+
+Items.Base_BuffsSmartLMG_Aim_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 70
+  modifierType: Additive
+  statType: BaseStats.AimFOV
+
+
+Items.Base_BuffsSmartLMG_Aim_Stats_inline1:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.100000
+  modifierType: Additive
+  statType: BaseStats.AimOffset
+
+
+Items.Base_BuffsSmartLMG_Mult_Stats_inline0:
+  $type: gamedataCurveStatModifier_Record
+  column: amount_of_possible_mods_for_smart_arsmglmg_to_quality
+  id: weapon_mods_generation
+  refObject: Self
+  refStat: BaseStats.Quality
+  modifierType: Additive
+  statType: BaseStats.ModsAmountInGenerationPool
+
+Items.Base_BuffsSmartLMG_Mult_Stats_inline1:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.ItemRequiresSmartLink
+
+
+#handling
+Items.Base_BuffsSmartLMG_Handling_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 3
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBase
+
+
+Items.Base_BuffsSmartLMG_Handling_Stats_inline1:
+  $type: gamedataConstantStatModifier_Record
+  value: 3
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+
+
+Items.Base_BuffsSmartLMG_Handling_Stats_inline2:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.800000012
+  modifierType: Additive
+  statType: BaseStats.ReloadEndTimeBase
+
+
+Items.Base_BuffsSmartLMG_Handling_Stats_inline3:
+  $type: gamedataConstantStatModifier_Record
+  value: 2.29999995
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadEndTime
+
+
+Items.Base_BuffsSmartLMG_Handling_Stats_inline4:
+  $type: gamedataConstantStatModifier_Record
+  value: 1.20000005
+  modifierType: Additive
+  statType: BaseStats.ZoomLevel
+
+
+Items.Base_BuffsSmartLMG_Handling_Stats_inline5:
+  $type: gamedataConstantStatModifier_Record
+  value: 3.5
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+
+
+Items.Base_BuffsSmartLMG_Smart_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 1.25
+  modifierType: Multiplier
+  statType: BaseStats.WeaponEvolutionToStaminaCost
+
+
+
+
+Items.Base_BuffsSmartLMG_Technical_Stats:
+  $type: gamedataStatModifierGroup_Record
+  drawBasedOnStatType: False
+  optimiseCombinedModifiers: False
+  saveBasedOnStatType: False
+  statModsLimit: -1
+  relatedModifierGroups: []
+  statModifiers:
+    - Items.Base_BuffsSmartLMG_Technical_Stats_inline0
+    - Items.Base_BuffsSmartLMG_Technical_Stats_inline1
+    - Items.Base_BuffsSmartLMG_Technical_Stats_inline2
+    - Items.Base_BuffsSmartLMG_Technical_Stats_inline3
+    - BaseStats.ProjectilesPerShotCombinedModifier
+
+
+Items.Base_BuffsSmartLMG_Smart_Stats:
+  $type: gamedataStatModifierGroup_Record
+  drawBasedOnStatType: False
+  optimiseCombinedModifiers: False
+  saveBasedOnStatType: False
+  statModsLimit: -1
+  relatedModifierGroups: []
+  statModifiers:
+    - Items.Base_BuffsSmartLMG_Smart_Stats_inline0
+    - Items.Base_Smart_Stats_inline1
+    - Items.Base_Smart_Stats_inline2
+    - Items.Base_Smart_Stats_inline3
+    - Items.Base_Smart_Stats_inline4
+    - Items.Base_Smart_Stats_inline5
+    - Items.Base_Smart_Stats_inline6
+    - Items.Base_Smart_Stats_inline7
+    - Items.Base_Smart_Stats_inline8
+    - Items.Base_Smart_Stats_inline9
+
+
+Items.Base_BuffsSmartLMG_Aim_Stats:
+  $type: gamedataStatModifierGroup_Record
+  drawBasedOnStatType: False
+  optimiseCombinedModifiers: False
+  saveBasedOnStatType: False
+  statModsLimit: -1
+  relatedModifierGroups: []
+  statModifiers:
+    - Items.Base_BuffsSmartLMG_Aim_Stats_inline0
+    - Items.Base_BuffsSmartLMG_Aim_Stats_inline1
+
+
+Items.Base_BuffsSmartLMG_Damage_Stats:
+  $type: gamedataStatModifierGroup_Record
+  drawBasedOnStatType: False
+  optimiseCombinedModifiers: False
+  saveBasedOnStatType: False
+  statModsLimit: -1
+  relatedModifierGroups: []
+  statModifiers:
+    - Items.Base_BuffsSmartLMG_Damage_Stats_inline0
+
+Items.Base_BuffsSmartLMG_Mult_Stats:
+  $type: gamedataStatModifierGroup_Record
+  drawBasedOnStatType: False
+  optimiseCombinedModifiers: False
+  saveBasedOnStatType: False
+  statModsLimit: -1
+  relatedModifierGroups: []
+  statModifiers:
+    - AttackModifier.SmartWeaponDPSReduction
+    - Items.Base_BuffsSmartLMG_Mult_Stats_inline0
+    - Items.Base_BuffsSmartLMG_Mult_Stats_inline1
+
+Items.Base_BuffsSmartLMG_Handling_Stats:
+  $type: gamedataStatModifierGroup_Record
+  drawBasedOnStatType: False
+  optimiseCombinedModifiers: False
+  saveBasedOnStatType: False
+  statModsLimit: -1
+  relatedModifierGroups: []
+  statModifiers:
+    - Items.Base_BuffsSmartLMG_Handling_Stats_inline0
+    - Items.Base_BuffsSmartLMG_Handling_Stats_inline1
+    - Items.Base_BuffsSmartLMG_Handling_Stats_inline2
+    - Items.Base_BuffsSmartLMG_Handling_Stats_inline3
+    - Items.Base_BuffsSmartLMG_Handling_Stats_inline4
+    - Items.Base_BuffsSmartLMG_Handling_Stats_inline5
+  #OR: NPCRarity.Normal unkown property
+
+
+
+
+Items.Preset_BuffsSmartLMG_Attachmentslots_Weaponmod1:
+  $type: gamedataSlotItemPartPreset_Record
+  slot: AttachmentSlots.Smart_AR_SMG_LMG_WeaponMod1
+  itemPartList:
+    - Items.GenericRangedModList_Base_inline0
+    - Items.GenericRangedModList_Base_inline3
+    - Items.GenericRangedModList_Base_inline6
+    - Items.GenericRangedModList_Base_inline9
+    - Items.GenericRangedModList_Base_inline12
+    - Items.GenericRangedModList_Base_inline15
+    - Items.GenericRangedModList_Base_inline18
+    - Items.GenericRangedModList_Base_inline21
+    - Items.GenericRangedModList_Base_inline24
+    - Items.GenericRangedModList_Base_inline25
+    - Items.GenericRangedModList_Base_inline26
+    - Items.GenericRangedModList_Base_inline27
+    - Items.GenericRangedModList_Base_inline28
+    - Items.GenericRangedModList_Base_inline29
+    - Items.GenericRangedModList_Base_inline30
+    - Items.GenericRangedModList_Base_inline31
+    - Items.GenericRangedModList_Base_inline32
+    - Items.GenericRangedModList_Base_inline33
+    - Items.GenericRangedModList_Base_inline34
+    - Items.GenericRangedModList_Base_inline35
+    - Items.GenericRangedModList_Base_inline36
+    - Items.GenericRangedModList_Base_inline37
+    - Items.GenericRangedModList_Base_inline38
+    - Items.GenericRangedModList_Base_inline39
+    - Items.GenericRangedModList_Base_inline40
+    - Items.GenericRangedModList_Base_inline41
+    - Items.GenericRangedModList_Slot1_inline0
+    - Items.GenericSmartModList_Slot1_inline0
+    - Items.GenericSmartModList_Slot1_inline1
+    - Items.GenericSmartModList_Slot1_inline2
+    - Items.GenericSmartModList_Slot1_inline3
+    - Items.GenericSmartModList_Slot1_inline4
+    - Items.GenericSmartModList_Slot1_inline5
+    - Items.GenericSmartModList_Slot1_inline6
+    - Items.GenericSmartModList_Slot1_inline7
+    - Items.GenericSmartModList_Slot1_inline8
+    - Items.GenericSmartModList_Slot1_inline9
+    - Items.GenericSmartModList_Slot1_inline10
+    - Items.GenericSmartModList_Slot1_inline11
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline0
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline1
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline2
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline3
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline4
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline5
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline6
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline7
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline8
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline9
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline10
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline11
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline12
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline13
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline14
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline15
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline16
+    - Items.Smart_AR_SMG_LMG_ModList_Slot1_inline17
+
+Items.Preset_BuffsSmartLMG_Attachmentslots_Weaponmod2:
+  $type: gamedataSlotItemPartPreset_Record
+  slot: AttachmentSlots.Smart_AR_SMG_LMG_WeaponMod2
+  itemPartList:
+    - Items.GenericRangedModList_Base_inline0
+    - Items.GenericRangedModList_Base_inline3
+    - Items.GenericRangedModList_Base_inline6
+    - Items.GenericRangedModList_Base_inline9
+    - Items.GenericRangedModList_Base_inline12
+    - Items.GenericRangedModList_Base_inline15
+    - Items.GenericRangedModList_Base_inline18
+    - Items.GenericRangedModList_Base_inline21
+    - Items.GenericRangedModList_Base_inline24
+    - Items.GenericRangedModList_Base_inline25
+    - Items.GenericRangedModList_Base_inline26
+    - Items.GenericRangedModList_Base_inline27
+    - Items.GenericRangedModList_Base_inline28
+    - Items.GenericRangedModList_Base_inline29
+    - Items.GenericRangedModList_Base_inline30
+    - Items.GenericRangedModList_Base_inline31
+    - Items.GenericRangedModList_Base_inline32
+    - Items.GenericRangedModList_Base_inline33
+    - Items.GenericRangedModList_Base_inline34
+    - Items.GenericRangedModList_Base_inline35
+    - Items.GenericRangedModList_Base_inline36
+    - Items.GenericRangedModList_Base_inline37
+    - Items.GenericRangedModList_Base_inline38
+    - Items.GenericRangedModList_Base_inline39
+    - Items.GenericRangedModList_Base_inline40
+    - Items.GenericRangedModList_Base_inline41
+    - Items.GenericRangedModList_Slot2_inline0
+    - Items.GenericSmartModList_Slot2_inline0
+    - Items.GenericSmartModList_Slot2_inline1
+    - Items.GenericSmartModList_Slot2_inline2
+    - Items.GenericSmartModList_Slot2_inline3
+    - Items.GenericSmartModList_Slot2_inline4
+    - Items.GenericSmartModList_Slot2_inline5
+    - Items.GenericSmartModList_Slot2_inline6
+    - Items.GenericSmartModList_Slot2_inline7
+    - Items.GenericSmartModList_Slot2_inline8
+    - Items.GenericSmartModList_Slot2_inline9
+    - Items.GenericSmartModList_Slot2_inline10
+    - Items.GenericSmartModList_Slot2_inline11
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline0
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline1
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline2
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline3
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline4
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline5
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline6
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline7
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline8
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline9
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline10
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline11
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline12
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline13
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline14
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline15
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline16
+    - Items.Smart_AR_SMG_LMG_ModList_Slot2_inline17

@@ -1,0 +1,128 @@
+Items.RSh12:
+  $base: Items.Preset_Overture_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.rsh12stats_damage
+    - !append-once Items.rsh12stats_rof
+    - !append-once Items.rsh12stats_mag
+    - !append-once Items.rsh12stats_armor
+  appearanceResourceName: rsh12_app
+  quality: Quality.Rare
+  displayName: rsh12_name
+  audioName: wea_set_nue
+  localizedDescription: rsh12_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: rsh12\icon\rsh12_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: rsh12\icon\rsh12.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_rsh12_inline1
+    - Items.Base_rsh12_inline3
+    - Items.Base_rsh12_inline5
+    - Items.Base_rsh12_inline7
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+    - Items.RiflePossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_rsh12_inline0
+    - Items.Preset_rsh12_inline1
+    - Items.Preset_rsh12_inline2
+    - Items.Preset_rsh12_inline3
+
+Items.Base_Power_Handgun_NoMuzzle_Blueprint_inline3.childElements:
+  - Items.ScopeElement
+  - Items.PowerModuleElement
+  
+Items.Base_rsh12_inline1:
+  $base: Items.Base_Overture_inline1
+  itemPartList:
+    - Items.Base_rsh12_inline2
+Items.Base_rsh12_inline2:
+  $base: Items.Base_Overture_inline2
+  item: Items.rsh12_rcv_prt
+Items.rsh12_rcv_prt:
+  $base: Items.w_revolver__malorian_overture__rcv1
+  appearanceResourceName: rsh12_rcv
+#base
+Items.Base_rsh12_inline3:
+  $base: Items.Base_Overture_inline3
+  itemPartList:
+    - Items.Base_rsh12_inline4
+Items.Base_rsh12_inline4:
+  $base: Items.Base_Overture_inline4
+  item: Items.rsh12_base_prt
+Items.rsh12_base_prt:
+  $base: Items.w_revolver__malorian_overture__base1
+  appearanceResourceName: rsh12_base
+#mag
+Items.Base_rsh12_inline5:
+  $base: Items.Base_Overture_inline5
+  itemPartList:
+    - Items.Base_rsh12_inline6
+Items.Base_rsh12_inline6:
+  $base: Items.Base_Overture_inline6
+  item: Items.rsh12_mag_std_prt
+Items.rsh12_mag_std_prt:
+  $base: Items.w_revolver__malorian_overture__mag_std
+  appearanceResourceName: rsh12_mag_std
+#reload
+Items.Base_rsh12_inline7:
+  $base: Items.Base_Overture_inline7
+  itemPartList:
+    - Items.Base_rsh12_inline8
+Items.Base_rsh12_inline8:
+  $base: Items.Base_Overture_inline8
+  item: Items.rsh12_mag_stdr_prt
+Items.rsh12_mag_stdr_prt:
+  $base: Items.w_revolver__malorian_overture__mag_stdr
+  appearanceResourceName: rsh12_mag_stdr
+#preset stuff
+Items.Preset_rsh12_inline0:
+  $base: Items.Preset_Overture_Default_inline0
+  itemPartPreset: Items.rsh12_rcv_prt
+Items.Preset_rsh12_inline1:
+  $base: Items.Preset_Overture_Default_inline1
+  itemPartPreset: Items.rsh12_base_prt
+Items.Preset_rsh12_inline2:
+  $base: Items.Preset_Overture_Default_inline2
+  itemPartPreset: Items.rsh12_mag_std_prt
+Items.Preset_rsh12_inline3:
+  $base: Items.Preset_Overture_Default_inline3
+  itemPartPreset: Items.rsh12_mag_stdr_prt
+  
+Items.rsh12stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 13
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.rsh12stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.rsh12stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.rsh12stats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+
+    
+    

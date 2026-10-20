@@ -1,0 +1,141 @@
+Items.AKS_74U:
+  $base: Items.Preset_Ajax_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.74ustats_rof 
+    - !append-once Items.74ustats_damage
+    - !append-once Items.74ustats_reload  
+    - !append-once Items.74ustats_recoil2
+    - !append-once Items.74ustats_reload2  
+    - !append-once Items.74ustats_equip
+    - !append-once Items.74ustats_mag
+  appearanceResourceName: 74u_app
+  audioName: wea_set_copperhead
+  quality: Quality.Common
+  displayName: 74u_name
+  localizedDescription: 74u_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: 74u\icon\74u_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: 74u\icon\74u.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_74u_inline2
+    - Items.Base_74u_inline4
+    - Items.Base_74u_inline6
+    - Items.Base_74u_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_74u_inline0
+    - Items.Preset_74u_inline1
+    - Items.Preset_74u_inline2
+    - Items.Preset_74u_inline3
+  
+Items.Base_74u_inline2:
+  $base: Items.Base_Ajax_inline2
+  itemPartList:
+    - Items.Base_74u_inline3
+Items.Base_74u_inline3:
+  $base: Items.Base_Ajax_inline3
+  item: Items.74u_rcv_prt
+Items.74u_rcv_prt:
+  $base: Items.w_rifle_assault__militech_ajax__rcv1
+  appearanceResourceName: 74u_rcv
+#base
+Items.Base_74u_inline4:
+  $base: Items.Base_Ajax_inline4
+  itemPartList:
+    - Items.Base_74u_inline5
+Items.Base_74u_inline5:
+  $base: Items.Base_Ajax_inline5
+  item: Items.74u_base_prt
+Items.74u_base_prt:
+  $base: Items.w_rifle_assault__militech_ajax__base1
+  appearanceResourceName: 74u_base
+#mag
+Items.Base_74u_inline6:
+  $base: Items.Base_Ajax_inline6
+  itemPartList:
+    - Items.Base_74u_inline7
+Items.Base_74u_inline7:
+  $base: Items.Base_Ajax_inline7
+  item: Items.74u_mag_std_prt
+Items.74u_mag_std_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_std
+  appearanceResourceName: 74u_mag_std
+#reload
+Items.Base_74u_inline8:
+  $base: Items.Base_Ajax_inline8
+  itemPartList:
+    - Items.Base_74u_inline9
+Items.Base_74u_inline9:
+  $base: Items.Base_Ajax_inline9
+  item: Items.74u_mag_stdr_prt
+Items.74u_mag_stdr_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_stdr
+  appearanceResourceName: 74u_mag_stdr
+#preset
+Items.Preset_74u_inline0:
+  $base: Items.Preset_Ajax_Default_inline0
+  itemPartPreset: Items.74u_rcv_prt
+Items.Preset_74u_inline1:
+  $base: Items.Preset_Ajax_Default_inline1
+  itemPartPreset: Items.74u_base_prt
+Items.Preset_74u_inline2:
+  $base: Items.Preset_Ajax_Default_inline2
+  itemPartPreset: Items.74u_mag_std_prt
+Items.Preset_74u_inline3:
+  $base: Items.Preset_Ajax_Default_inline3
+  itemPartPreset: Items.74u_mag_stdr_prt
+  
+Items.74ustats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.05
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.74ustats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 34
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.74ustats_reload:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+  
+Items.74ustats_reload2:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBase
+  
+Items.74ustats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.35
+  modifierType: Additive
+  statType: BaseStats.RecoilRecoveryTime
+
+Items.74ustats_equip:
+  $type: gamedataConstantStatModifier_Record
+  value: -1.0
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.74ustats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+
+
+  

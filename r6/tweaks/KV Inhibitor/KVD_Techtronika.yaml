@@ -1,0 +1,245 @@
+Items.KVD_Techtronika:
+  $base: Items.Preset_Crusher_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.kvsilentstats_rof 
+    - !append-once Items.kvsilentstats_damage
+    - !append-once Items.kvsilentstats_effectiverange
+    - !append-once Items.kvsilentstats_maxrange   
+    - !append-once Items.kvsilentstats_mag
+    - !append-once Items.kvsilentstats_pierce
+    - !append-once Items.kvsilentstats_crit
+    - !append-once Items.kvsilentstats_bleeding
+    - !append-once Items.kvsilentstats_burning
+    - !append-once Items.kvsilentstats_electrocute
+    - !append-once Items.kvsilentstats_poison
+    - !append-once Items.kvsilentstats_stun
+    - !append-once Items.kvsilentstats_headshotmult
+    - !append-once Items.kvsilentstats_firstequip
+    - !append-once Items.kvsilentstats_burst
+    - !append-once Items.kvsilentstats_burst2
+    - !append-once Items.kvsilentstats_armor
+    - !append-once Items.kvsilentstats_silent
+    - !append-once Items.kvsilentstats_noise
+    - !append-once Items.kvsilentstats_spread
+  statModifierGroups:
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  appearanceResourceName: kvsilent_app
+  ammo: Ammo.RifleAmmo
+  audioName: wea_set_unity_dex
+  blueprint: Items.Base_Power_Precision_Sniper_Rifle_NoMuzzle_Blueprint
+  crosshair: Crosshairs.Basic
+  itemType: ItemType.Wea_PrecisionRifle
+  fxPackage: WeaponFxPackage.PowerLargeCaliber
+  quality: Quality.Rare
+  displayName: kvsilent_name
+  localizedDescription: kvsilent_description
+  primaryTriggerMode: TriggerMode.Burst
+  secondaryTriggerMode: TriggerMode.Burst
+  triggerModes:
+    - TriggerMode.Burst
+    - TriggerMode.Burst
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: kvsilent\icon\kvsilent_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: kvsilent\icon\kvsilent.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_kvsilent_inline1
+    - Items.Base_kvsilent_inline3
+    - Items.Base_kvsilent_inline5
+    - Items.Base_kvsilent_inline7
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.RiflePossibleScopesList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_kvsilent_inline0
+    - Items.Preset_kvsilent_inline1
+    - Items.Preset_kvsilent_inline2
+    - Items.Preset_kvsilent_inline3
+    
+Items.Base_kvsilent_inline1:
+  $base: Items.Base_Crusher_inline1
+  itemPartList:
+    - Items.Base_kvsilent_inline2
+Items.Base_kvsilent_inline2:
+  $base: Items.Base_Crusher_inline2
+  item: Items.kvsilent_rcv_prt
+Items.kvsilent_rcv_prt:
+  $base: Items.w_revolver__militech_crusher__rcv1
+  appearanceResourceName: kvsilent_rcv
+Items.Base_kvsilent_inline3:
+  $base: Items.Base_Crusher_inline3
+  itemPartList:
+    - Items.Base_kvsilent_inline4
+Items.Base_kvsilent_inline4:
+  $base: Items.Base_Crusher_inline4
+  item: Items.kvsilent_base_prt
+Items.kvsilent_base_prt:
+  $base: Items.w_revolver__militech_crusher__base1
+  appearanceResourceName: kvsilent_base
+Items.Base_kvsilent_inline5:
+  $base: Items.Base_Crusher_inline5
+  itemPartList:
+    - Items.Base_kvsilent_inline6
+Items.Base_kvsilent_inline6:
+  $base: Items.Base_Crusher_inline6
+  item: Items.kvsilent_mag_std_prt
+Items.kvsilent_mag_std_prt:
+  $base: Items.w_revolver__militech_crusher__mag_std
+  appearanceResourceName: kvsilent_mag_std
+Items.Base_kvsilent_inline7:
+  $base: Items.Base_Crusher_inline7
+  itemPartList:
+    - Items.Base_kvsilent_inline8
+Items.Base_kvsilent_inline8:
+  $base: Items.Base_Crusher_inline8
+  item: Items.kvsilent_mag_stdr_prt
+Items.kvsilent_mag_stdr_prt:
+  $base: Items.w_revolver__militech_crusher__mag_stdr
+  appearanceResourceName: kvsilent_mag_stdr
+Items.Preset_kvsilent_inline0:
+  $base: Items.Preset_Crusher_Default_inline0
+  itemPartPreset: Items.kvsilent_rcv_prt
+Items.Preset_kvsilent_inline1:
+  $base: Items.Preset_Crusher_Default_inline1
+  itemPartPreset: Items.kvsilent_base_prt
+Items.Preset_kvsilent_inline2:
+  $base: Items.Preset_Crusher_Default_inline2
+  itemPartPreset: Items.kvsilent_mag_std_prt
+Items.Preset_kvsilent_inline3:
+  $base: Items.Preset_Crusher_Default_inline3
+  itemPartPreset: Items.kvsilent_mag_stdr_prt
+  
+Items.kvsilentstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 130
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.kvsilentstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.02
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.kvsilentstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -5
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.kvsilentstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.kvsilentstats_crit:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Items.kvsilentstats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Items.kvsilentstats_poison:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.PoisonedApplicationRate
+  
+Items.kvsilentstats_electrocute:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.kvsilentstats_bleeding:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  
+Items.kvsilentstats_burning:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.kvsilentstats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+  
+Items.kvsilentstats_burst:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.NumShotsInBurstSecondary
+  
+Items.kvsilentstats_burst2:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.NumShotsInBurst
+  
+Items.kvsilentstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.kvsilentstats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.kvsilentstats_firstequip:
+  $type: gamedataConstantStatModifier_Record
+  value: 1.6
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.kvsilentstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+Items.kvsilentstats_silent:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanSilentKill
+  
+Items.kvsilentstats_noise:
+  $type: gamedataConstantStatModifier_Record
+  value: -10
+  modifierType: Additive
+  statType: BaseStats.WeaponNoise
+  
+Items.kvsilentstats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: -1
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+  

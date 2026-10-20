@@ -1,0 +1,282 @@
+Items.Nokota_Stingray:
+  $base: Items.Preset_Pulsar_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.stingraystats_damage
+    - !append-once Items.stingraystats_mag
+    - !append-once Items.stingraystats_rof
+    - !append-once Items.stingraystats_armor
+    - !append-once Items.stingraystats_recoil
+    - !append-once Items.stingraystats_fov
+    - !append-once Items.stingraystats_spread
+    - !append-once Items.stingraystats_pierce
+  appearanceResourceName: stingray_app
+  ammo: Ammo.RifleAmmo
+  audioName: wea_set_pulsar
+  attacks:
+    - !append-once Attacks.stingray_ads
+    - !append-once Attacks.stingray_hip
+  rangedAttacks: Attacks.stingrayattacks
+  OnAttach:
+    - !append Items.stingray_hipstats
+  quality: Quality.Legendary
+  displayName: stingray_name
+  ammo: Ammo.RifleAmmo
+  localizedDescription: stingray_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: stingray\icon\stingray_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: stingray\icon\stingray.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_stingray_inline1
+    - Items.Base_stingray_inline3
+    - Items.Base_stingray_inline5
+    - Items.Base_stingray_inline7
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+    - Items.RiflePossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_stingray_inline0
+    - Items.Preset_stingray_inline1
+    - Items.Preset_stingray_inline2
+    - Items.Preset_stingray_inline3
+    
+Items.Base_stingray_inline1:
+  $base: Items.Base_Pulsar_inline1
+  itemPartList:
+    - Items.Base_stingray_inline2
+Items.Base_stingray_inline2:
+  $base: Items.Base_Pulsar_inline2
+  item: Items.stingray_rcv_prt
+Items.stingray_rcv_prt:
+  $base: Items.w_submachinegun__darra_pulsar__rcv1
+  appearanceResourceName: stingray_rcv
+#base
+Items.Base_stingray_inline3:
+  $base: Items.Base_Pulsar_inline3
+  itemPartList:
+    - Items.Base_stingray_inline4
+Items.Base_stingray_inline4:
+  $base: Items.Base_Pulsar_inline4
+  item: Items.stingray_base_prt
+Items.stingray_base_prt:
+  $base: Items.w_submachinegun__darra_pulsar__base1
+  appearanceResourceName: stingray_base
+#mag
+Items.Base_stingray_inline5:
+  $base: Items.Base_Pulsar_inline5
+  itemPartList:
+    - Items.Base_stingray_inline6
+Items.Base_stingray_inline6:
+  $base: Items.Base_Pulsar_inline6
+  item: Items.stingray_mag_std_prt
+Items.stingray_mag_std_prt:
+  $base: Items.w_submachinegun__darra_pulsar__mag_std
+  appearanceResourceName: stingray_mag_std
+#reload
+Items.Base_stingray_inline7:
+  $base: Items.Base_Pulsar_inline7
+  itemPartList:
+    - Items.Base_stingray_inline8
+Items.Base_stingray_inline8:
+  $base: Items.Base_Pulsar_inline8
+  item: Items.stingray_mag_stdr_prt
+Items.stingray_mag_stdr_prt:
+  $base: Items.w_submachinegun__darra_pulsar__mag_stdr
+  appearanceResourceName: stingray_mag_stdr
+#preset
+Items.Preset_stingray_inline0:
+  $base: Items.Preset_Pulsar_Default_inline0
+  itemPartPreset: Items.stingray_rcv_prt
+Items.Preset_stingray_inline1:
+  $base: Items.Preset_Pulsar_Default_inline1
+  itemPartPreset: Items.stingray_base_prt
+Items.Preset_stingray_inline2:
+  $base: Items.Preset_Pulsar_Default_inline2
+  itemPartPreset: Items.stingray_mag_std_prt
+Items.Preset_stingray_inline3:
+  $base: Items.Preset_Pulsar_Default_inline3
+  itemPartPreset: Items.stingray_mag_stdr_prt
+
+#ADS STATS
+Items.stingraystats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 35
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.stingraystats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.stingraystats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.03
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.stingraystats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+Items.stingraystats_recoil:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.04
+  modifierType: Additive
+  statType: BaseStats.RecoilHoldDuration
+  
+Items.stingraystats_fov:
+  $type: gamedataConstantStatModifier_Record
+  value: 15
+  modifierType: Additive
+  statType: BaseStats.AimFOV
+  
+Items.stingraystats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: -1.8
+  modifierType: Additive
+  statType: BaseStats.SpreadAdsMaxX
+  
+Items.stingraystats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Attacks.stingray_ads:
+    $base: Attacks.Bullet_GameEffect
+    statusEffects:
+    -   $type: StatusEffectAttackData
+        statusEffect:
+            $base: BaseStatusEffect.Vulnerable
+            maxStacks:
+                statModifiers:
+                -   $type: ConstantStatModifier
+                    statType: BaseStats.MaxStacks
+                    modifierType: Additive
+                    value: 0.0
+            reapplyPackagesOnMaxStacks: false
+            removeAllStacksWhenDurationEnds: false
+            packages:
+            -   $base: BaseStatusEffect.Vulnerable_inline2
+                stackable: true
+        resistPool: BaseStatPools.BurningTrigger
+        applyImmediately: true
+
+Attacks.stingray_hip:
+    $base: Attacks.Bullet_GameEffect
+    statusEffects:
+    -   $type: StatusEffectAttackData
+        statusEffect:
+            $base: BaseStatusEffect.Vulnerable
+            maxStacks:
+                statModifiers:
+                -   $type: ConstantStatModifier
+                    statType: BaseStats.MaxStacks
+                    modifierType: Additive
+                    value: 0.0
+            reapplyPackagesOnMaxStacks: false
+            removeAllStacksWhenDurationEnds: false
+            packages:
+            -   $base: BaseStatusEffect.Vulnerable_inline2
+                stackable: true
+        resistPool: BaseStatPools.BurningTrigger
+        applyImmediately: true
+        
+Attacks.stingrayattack1:
+    $type: RangedAttack
+    playerAttack: Attacks.stingray_ads
+    secondaryPlayerAttack: Attacks.stingray_hip
+    playerTimeDilated: Attacks.stingray_ads
+    secondaryPlayerTimeDilated: Attacks.stingray_hip
+    
+Attacks.stingrayattacks:
+    $type: RangedAttackPackage
+    defaultFire: Attacks.stingrayattack1
+    chargeFire: Attacks.stingrayattack1
+
+Items.stingray_hipstats:
+  $type: GameplayLogicPackage
+  effectors:
+    - !append Items.stingray_hipstats_inline0
+
+Items.stingray_hipstats_inline0:
+  $type: ApplyStatGroupEffector
+  applicationTarget: Weapon
+  removeWithEffector: True
+  statGroup: Items.stingray_hipstats_inline1
+  effectorClassName: ApplyStatGroupEffector
+  prereqRecord: Perks.PlayerIsNotAiming
+  reapplyOnWeaponChange: False
+
+# HIP FIRE STATS
+Items.stingray_hipstats_inline1:
+  $type: StatModifierGroup
+  statModsLimit: -1
+  statModifiers:
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.CycleTimeBonus
+      modifierType: Additive
+      value: 0.7  
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.DPS
+      modifierType: Additive
+      value: 30
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.HitDismembermentFactor
+      modifierType: Multiplier
+      value: 0
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.EffectiveRange
+      modifierType: Additive
+      value: 30
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.SpreadMaxX
+      modifierType: Additive
+      value: 2.9
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.StunApplicationRate
+      modifierType: Additive
+      value: 50
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.ElectrocutedApplicationRate
+      modifierType: Additive
+      value: 10
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.ElectricDamage
+      modifierType: Additive
+      value: 2
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.DealsElectricDamage
+      modifierType: Additive
+      value: 1
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.TechPierceEnabled
+      modifierType: Additive
+      value: 0
+      
+    
+    

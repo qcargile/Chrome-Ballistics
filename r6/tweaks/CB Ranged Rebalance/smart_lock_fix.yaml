@@ -1,0 +1,13 @@
+# Restores smart-link target acquisition range on the Smart shotgun (Palica)
+# and Smart precision rifle (Ashura). The core rebalance's full statModifiers
+# list-replacement on Base_<W>_Constant_Stats drops the vanilla
+# SmartGunTargetAcquisitionRangeModifier, collapsing lock-on to point blank.
+# !append-once is idempotent: restores it without double-stacking.
+
+Items.Preset_Palica_Default:
+  statModifiers:
+    - !append-once BaseStats.SmartGunTargetAcquisitionRangeModifier
+
+Items.Preset_Ashura_Default:
+  statModifiers:
+    - !append-once BaseStats.SmartGunTargetAcquisitionRangeModifier

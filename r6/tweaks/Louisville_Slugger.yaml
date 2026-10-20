@@ -1,0 +1,54 @@
+Items.Louisville_Slugger:
+  $base: Items.Preset_Baseball_Bat_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.sluggerstats_damage
+    - !append-once Items.sluggerstats_speed
+  appearanceResourceName: slugger_app
+  forcedMinHitReaction: 500
+  quality: Quality.Common
+  displayName: slugger_name
+  hudIcon:
+    atlasResourcePath: slugger\icon\slugger_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: slugger\icon\slugger.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_slugger_inline1
+    - Items.Base_slugger_inline2
+  slotPartListPreset:
+    - Items.Preset_slugger_inline0
+    
+Items.Base_slugger_inline1:
+  $base: Items.Base_Two_Hand_Blunt_inline1
+  itemPartList:
+    - Items.Base_slugger_inline2
+Items.Base_slugger_inline2:
+  $base: Items.Base_Two_Hand_Blunt_inline2
+  item: Items.slugger_grip_prt
+Items.slugger_grip_prt:
+  $base: Items.w_baseball_bat_common_grip
+  appearanceResourceName: slugger_grip    
+  
+Items.Preset_slugger_inline0:
+  $base: Items.Preset_Baseball_Bat_Default_inline0
+  itemPartPreset: Items.slugger_grip_prt
+  
+  
+Items.sluggerstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.sluggerstats_speed:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.AttackSpeed
+
+
+ 

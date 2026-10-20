@@ -1,0 +1,598 @@
+Items.Arasaka_Masayuki:
+  $base: Items.Preset_Yukimura_Default
+  tags:
+    - !append-once IconicWeapon
+  statModifiers:
+    - !append-once Quality.IconicItem
+    - !append-once Items.masayukistats_mag
+    - !append-once Items.masayukistats_rof
+    - !append-once Items.masayukistats_damage
+    - !append-once Items.masayukistats_hiplock
+    - !append-once Items.masayukistats_adslock
+    - !append-once Items.masayukistats_hiptargets
+    - !append-once Items.masayukistats_adstargets
+    - !append-once Items.masayukistats_headshotmult
+    - !append-once Items.masayukistats_effectiverange
+  appearanceResourceName: masayuki_app
+  attacks:
+    - !append-once Attacks.yuki_ping_inline2
+  rangedAttacks: Attacks.yuki_ping_inline0
+  hudIcon:
+    atlasResourcePath: masayuki\icon\masayuki_hud.inkatlas
+    atlasPartName: s12_hud
+  icon:  
+    atlasResourcePath: masayuki\icon\masayuki.inkatlas
+    atlasPartName: slot_01
+  quality: Quality.Common
+  displayName: masayuki_name
+  localizedDescription: masayuki_description
+  visualTags:
+    - Default
+  slotPartList:
+    - Items.Base_masayuki_inline1
+    - Items.Base_masayuki_inline3
+    - Items.Base_masayuki_inline5
+    - Items.Base_masayuki_inline7
+  slotPartListPreset:
+    - Items.Preset_masayuki_inline0
+    - Items.Preset_masayuki_inline1
+    - Items.Preset_masayuki_inline2
+    - Items.Preset_masayuki_inline3
+    - Items.HandgunAndRevolverScopesPartList
+    - Items.Preset_Yukimura_Default_inline4
+    - Items.Preset_Yukimura_Default_inline5
+    
+Items.Base_masayuki_inline1:
+  $base: Items.Base_Yukimura_inline1
+  itemPartList:
+    - Items.Base_masayuki_inline2
+Items.Base_masayuki_inline2:
+  $base: Items.Base_Yukimura_inline2
+  item: Items.masayuki_rcv_prt
+Items.masayuki_rcv_prt:
+  $base: Items.w_handgun__arasaka_yukimura__rcv1
+  appearanceResourceName: masayuki_rcv
+#base
+Items.Base_masayuki_inline3:
+  $base: Items.Base_Yukimura_inline3
+  itemPartList:
+    - Items.Base_masayuki_inline4
+Items.Base_masayuki_inline4:
+  $base: Items.Base_Yukimura_inline4
+  item: Items.masayuki_base_prt
+Items.masayuki_base_prt:
+  $base: Items.w_handgun__arasaka_yukimura__base1
+  appearanceResourceName: masayuki_base
+#mag
+Items.Base_masayuki_inline5:
+  $base: Items.Base_Yukimura_inline5
+  itemPartList:
+    - Items.Base_masayuki_inline6
+Items.Base_masayuki_inline6:
+  $base: Items.Base_Yukimura_inline6
+  item: Items.masayuki_mag_std_prt
+Items.masayuki_mag_std_prt:
+  $base: Items.w_handgun__arasaka_yukimura__mag_std
+  appearanceResourceName: masayuki_mag_std
+#reload
+Items.Base_masayuki_inline7:
+  $base: Items.Base_Yukimura_inline7
+  itemPartList:
+    - Items.Base_masayuki_inline8
+Items.Base_masayuki_inline8:
+  $base: Items.Base_Yukimura_inline8
+  item: Items.masayuki_mag_stdr_prt
+Items.masayuki_mag_stdr_prt:
+  $base: Items.w_handgun__arasaka_yukimura__mag_stdr
+  appearanceResourceName: masayuki_mag_stdr
+#preset
+Items.Preset_masayuki_inline0:
+  $base: Items.Preset_Yukimura_Default_inline0
+  itemPartPreset: Items.masayuki_rcv_prt
+Items.Preset_masayuki_inline1:
+  $base: Items.Preset_Yukimura_Default_inline1
+  itemPartPreset: Items.masayuki_base_prt
+Items.Preset_masayuki_inline2:
+  $base: Items.Preset_Yukimura_Default_inline2
+  itemPartPreset: Items.masayuki_mag_std_prt
+Items.Preset_masayuki_inline3:
+  $base: Items.Preset_Yukimura_Default_inline3
+  itemPartPreset: Items.masayuki_mag_stdr_prt
+  
+Items.masayukistats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.masayukistats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.masayukistats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.masayukistats_hiplock:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.7
+  modifierType: Additive
+  statType: BaseStats.SmartGunHipTimeToLock
+  
+Items.masayukistats_adslock:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.7
+  modifierType: Additive
+  statType: BaseStats.SmartGunAdsTimeToLock
+  
+Items.masayukistats_adstargets:
+  $type: gamedataConstantStatModifier_Record
+  value: 2
+  modifierType: Additive
+  statType: BaseStats.SmartGunAdsMaxLockedTargets
+  
+Items.masayukistats_hiptargets:
+  $type: gamedataConstantStatModifier_Record
+  value: 2
+  modifierType: Additive
+  statType: BaseStats.SmartGunHipMaxLockedTargets
+  
+Items.masayukistats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.15
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+  
+Items.masayukistats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+  
+Attacks.yuki_ping_inline0:
+  $type: gamedataRangedAttackPackage_Record
+  chargeFire: Attacks.yuki_ping_inline1
+  defaultFire: Attacks.yuki_ping_inline1
+  
+Attacks.yuki_ping_inline1:
+  $type: gamedataRangedAttack_Record
+  NPCAttack: Attacks.NPCSmartBullet
+  NPCTimeDilated: Attacks.NPCSmartBullet
+  playerAttack: Attacks.yuki_ping_inline2
+  playerTimeDilated: Attacks.yuki_ping_inline2
+
+Attacks.yuki_ping_inline2:
+  $type: gamedataAttack_Projectile_Record
+  projectileTemplateName: smart_bullet_high
+  attackType: AttackType.Ranged
+  className: Attack_Projectile
+  explosionDamageVSVehicles: -1
+  hitReactionSeverityMax: -1
+  hitReactionSeverityMin: -1
+  playerIncomingDamageMultiplier: 1
+  range: 200
+  useDefaultAimData: False
+  userDataPath: Attacks.SmartBullet
+  velocity: 0
+  hitFlags: []
+  staminaCost:
+    - Attacks.Bullet_Projectile_inline0
+    - Attacks.Bullet_Projectile_inline1
+    - Attacks.Bullet_Projectile_inline2
+    - Attacks.Bullet_Projectile_inline3
+    - Attacks.Bullet_Projectile_inline4
+  statModifiers:
+    - AttackModifier.BaseAlliedDamage
+    - AttackModifier.PhysicalAlliedDamage
+    - AttackModifier.ElectricAlliedDamage
+    - AttackModifier.ThermalAlliedDamage
+    - AttackModifier.ChemicalAlliedDamage
+  statusEffects:   
+  -   $type: StatusEffectAttackData
+      statusEffect: BaseStatusEffect.PingMarkStatusEffect
+      applyImmediately: true  
+  hitCooldown: 0.100000001
+  gravitySimulation: 0
+
+
+BaseStatusEffect.PingMarkStatusEffect:
+  $type: gamedataStatusEffect_Record
+  SFX: []
+  
+
+# NO TRESPASSING!!!!!! TURN BACK NOW!!!!!!
+Items.Arasaka_Masayuki_Red:
+  $base: Items.Arasaka_Masayuki
+  displayName: masayuki_name_red
+  icon:  
+    atlasResourcePath: masayuki\icon\masayuki_red.inkatlas
+    atlasPartName: slot_01
+  visualTags:
+    - red
+  appearanceResourceName: masayuki_app_red
+  slotPartList:
+    - Items.Base_masayuki_inline9
+    - Items.Base_masayuki_inline11
+  slotPartListPreset:
+    - Items.Preset_masayuki_inline0
+    - Items.Preset_masayuki_inline1
+    - Items.Preset_masayuki_inline4
+    - Items.Preset_masayuki_inline5
+    - Items.HandgunAndRevolverScopesPartList
+    - Items.Preset_Yukimura_Default_inline4
+    - Items.Preset_Yukimura_Default_inline5
+  OnAttach:
+    - !append Items.Base_masayuki_inline9
+    - !append Items.Base_masayuki_inline11
+    - !append Items.Base_masayuki_inline12
+    - !append Items.Base_masayuki_inline13
+    - !append Items.Preset_masayuki_inline4
+    - !append Items.Preset_masayuki_inline5
+    - !remove Items.Base_masayuki_inline5
+    - !remove Items.Base_masayuki_inline7
+    - !remove Items.Base_masayuki_inline13
+    - !remove Items.Base_masayuki_inline15
+    - !remove Items.Base_masayuki_inline17
+    - !remove Items.Base_masayuki_inline19
+    - !remove Items.Base_masayuki_inline21
+    - !remove Items.Base_masayuki_inline23
+    - !remove Items.Base_masayuki_inline25
+    - !remove Items.Base_masayuki_inline27
+    - !remove Items.Preset_masayuki_inline2
+    - !remove Items.Preset_masayuki_inline3
+    - !remove Items.Preset_masayuki_inline6
+    - !remove Items.Preset_masayuki_inline7
+    - !remove Items.Preset_masayuki_inline8
+    - !remove Items.Preset_masayuki_inline9
+    - !remove Items.Preset_masayuki_inline10
+    - !remove Items.Preset_masayuki_inline11
+    - !remove Items.Preset_masayuki_inline12
+    - !remove Items.Preset_masayuki_inline13
+#mag
+Items.Base_masayuki_inline9:
+  $base: Items.Base_Yukimura_inline5
+  itemPartList:
+    - Items.Base_masayuki_inline10
+Items.Base_masayuki_inline10:
+  $base: Items.Base_Yukimura_inline6
+  item: Items.masayuki_mag_std_prt_red
+Items.masayuki_mag_std_prt_red:
+  $base: Items.w_handgun__arasaka_yukimura__mag_std
+  appearanceResourceName: masayuki_mag_std_red
+#reload
+Items.Base_masayuki_inline11:
+  $base: Items.Base_Yukimura_inline7
+  itemPartList:
+    - Items.Base_masayuki_inline12
+Items.Base_masayuki_inline12:
+  $base: Items.Base_Yukimura_inline8
+  item: Items.masayuki_mag_stdr_prt_red
+Items.masayuki_mag_stdr_prt_red:
+  $base: Items.w_handgun__arasaka_yukimura__mag_stdr
+  appearanceResourceName: masayuki_mag_stdr_red
+#preset
+Items.Preset_masayuki_inline4:
+  $base: Items.Preset_Yukimura_Default_inline2
+  itemPartPreset: Items.masayuki_mag_std_prt_red
+Items.Preset_masayuki_inline5:
+  $base: Items.Preset_Yukimura_Default_inline3
+  itemPartPreset: Items.masayuki_mag_stdr_prt_red
+  
+
+
+Items.Arasaka_Masayuki_Blue:
+  $base: Items.Arasaka_Masayuki
+  displayName: masayuki_name_blue
+  icon:  
+    atlasResourcePath: masayuki\icon\masayuki_blue.inkatlas
+    atlasPartName: slot_01
+  visualTags:
+    - blue
+  appearanceResourceName: masayuki_app_blue
+  slotPartList:
+    - Items.Base_masayuki_inline13
+    - Items.Base_masayuki_inline15
+  slotPartListPreset:
+    - Items.Preset_masayuki_inline0
+    - Items.Preset_masayuki_inline1
+    - Items.Preset_masayuki_inline6
+    - Items.Preset_masayuki_inline7
+    - Items.HandgunAndRevolverScopesPartList
+    - Items.Preset_Yukimura_Default_inline4
+    - Items.Preset_Yukimura_Default_inline5
+  OnAttach:
+    - !append Items.Base_masayuki_inline13
+    - !append Items.Base_masayuki_inline14
+    - !append Items.Base_masayuki_inline15
+    - !append Items.Base_masayuki_inline16
+    - !append Items.Preset_masayuki_inline6
+    - !append Items.Preset_masayuki_inline7
+    - !remove Items.Base_masayuki_inline5
+    - !remove Items.Base_masayuki_inline7
+    - !remove Items.Base_masayuki_inline9
+    - !remove Items.Base_masayuki_inline11
+    - !remove Items.Base_masayuki_inline17
+    - !remove Items.Base_masayuki_inline19
+    - !remove Items.Base_masayuki_inline21
+    - !remove Items.Base_masayuki_inline23
+    - !remove Items.Base_masayuki_inline25
+    - !remove Items.Base_masayuki_inline27
+    - !remove Items.Preset_masayuki_inline2
+    - !remove Items.Preset_masayuki_inline3
+    - !remove Items.Preset_masayuki_inline4
+    - !remove Items.Preset_masayuki_inline5
+    - !remove Items.Preset_masayuki_inline8
+    - !remove Items.Preset_masayuki_inline9
+    - !remove Items.Preset_masayuki_inline10
+    - !remove Items.Preset_masayuki_inline11
+    - !remove Items.Preset_masayuki_inline12
+    - !remove Items.Preset_masayuki_inline13
+#mag
+Items.Base_masayuki_inline13:
+  $base: Items.Base_Yukimura_inline5
+  itemPartList:
+    - Items.Base_masayuki_inline14
+Items.Base_masayuki_inline14:
+  $base: Items.Base_Yukimura_inline6
+  item: Items.masayuki_mag_std_prt_blue
+Items.masayuki_mag_std_prt_blue:
+  $base: Items.w_handgun__arasaka_yukimura__mag_std
+  appearanceResourceName: masayuki_mag_std_blue
+#reload
+Items.Base_masayuki_inline15:
+  $base: Items.Base_Yukimura_inline7
+  itemPartList:
+    - Items.Base_masayuki_inline16
+Items.Base_masayuki_inline16:
+  $base: Items.Base_Yukimura_inline8
+  item: Items.masayuki_mag_stdr_prt_blue
+Items.masayuki_mag_stdr_prt_blue:
+  $base: Items.w_handgun__arasaka_yukimura__mag_stdr
+  appearanceResourceName: masayuki_mag_stdr_blue
+#preset
+Items.Preset_masayuki_inline6:
+  $base: Items.Preset_Yukimura_Default_inline2
+  itemPartPreset: Items.masayuki_mag_std_prt_blue
+Items.Preset_masayuki_inline7:
+  $base: Items.Preset_Yukimura_Default_inline3
+  itemPartPreset: Items.masayuki_mag_stdr_prt_blue
+  
+
+Items.Arasaka_Masayuki_Gold:
+  $base: Items.Arasaka_Masayuki
+  displayName: masayuki_name_gold
+  icon:  
+    atlasResourcePath: masayuki\icon\masayuki_gold.inkatlas
+    atlasPartName: slot_01
+  visualTags:
+    - gold
+  appearanceResourceName: masayuki_app_gold
+  slotPartList:
+    - Items.Base_masayuki_inline17
+    - Items.Base_masayuki_inline19
+  slotPartListPreset:
+    - Items.Preset_masayuki_inline0
+    - Items.Preset_masayuki_inline1
+    - Items.Preset_masayuki_inline8
+    - Items.Preset_masayuki_inline9
+    - Items.HandgunAndRevolverScopesPartList
+    - Items.Preset_Yukimura_Default_inline4
+    - Items.Preset_Yukimura_Default_inline5
+  OnAttach:
+    - !append Items.Base_masayuki_inline17
+    - !append Items.Base_masayuki_inline18
+    - !append Items.Base_masayuki_inline19
+    - !append Items.Base_masayuki_inline20
+    - !append Items.Preset_masayuki_inline8
+    - !append Items.Preset_masayuki_inline9
+    - !remove Items.Base_masayuki_inline5
+    - !remove Items.Base_masayuki_inline7
+    - !remove Items.Base_masayuki_inline9
+    - !remove Items.Base_masayuki_inline11
+    - !remove Items.Base_masayuki_inline13
+    - !remove Items.Base_masayuki_inline15
+    - !remove Items.Base_masayuki_inline21
+    - !remove Items.Base_masayuki_inline23
+    - !remove Items.Base_masayuki_inline25
+    - !remove Items.Base_masayuki_inline27
+    - !remove Items.Preset_masayuki_inline2
+    - !remove Items.Preset_masayuki_inline3
+    - !remove Items.Preset_masayuki_inline4
+    - !remove Items.Preset_masayuki_inline5
+    - !remove Items.Preset_masayuki_inline6
+    - !remove Items.Preset_masayuki_inline7
+    - !remove Items.Preset_masayuki_inline10
+    - !remove Items.Preset_masayuki_inline11
+    - !remove Items.Preset_masayuki_inline12
+    - !remove Items.Preset_masayuki_inline13
+#mag
+Items.Base_masayuki_inline17:
+  $base: Items.Base_Yukimura_inline5
+  itemPartList:
+    - Items.Base_masayuki_inline18
+Items.Base_masayuki_inline18:
+  $base: Items.Base_Yukimura_inline6
+  item: Items.masayuki_mag_std_prt_gold
+Items.masayuki_mag_std_prt_gold:
+  $base: Items.w_handgun__arasaka_yukimura__mag_std
+  appearanceResourceName: masayuki_mag_std_gold
+#reload
+Items.Base_masayuki_inline19:
+  $base: Items.Base_Yukimura_inline7
+  itemPartList:
+    - Items.Base_masayuki_inline20
+Items.Base_masayuki_inline20:
+  $base: Items.Base_Yukimura_inline8
+  item: Items.masayuki_mag_stdr_prt_gold
+Items.masayuki_mag_stdr_prt_gold:
+  $base: Items.w_handgun__arasaka_yukimura__mag_stdr
+  appearanceResourceName: masayuki_mag_stdr_gold
+#preset
+Items.Preset_masayuki_inline8:
+  $base: Items.Preset_Yukimura_Default_inline2
+  itemPartPreset: Items.masayuki_mag_std_prt_gold
+Items.Preset_masayuki_inline9:
+  $base: Items.Preset_Yukimura_Default_inline3
+  itemPartPreset: Items.masayuki_mag_stdr_prt_gold
+ 
+ 
+Items.Arasaka_Masayuki_Green:
+  $base: Items.Arasaka_Masayuki
+  displayName: masayuki_name_green
+  icon:  
+    atlasResourcePath: masayuki\icon\masayuki_green.inkatlas
+    atlasPartName: slot_01
+  visualTags:
+    - green
+  appearanceResourceName: masayuki_app_green
+  slotPartList:
+    - Items.Base_masayuki_inline21
+    - Items.Base_masayuki_inline23
+  slotPartListPreset:
+    - Items.Preset_masayuki_inline0
+    - Items.Preset_masayuki_inline1
+    - Items.Preset_masayuki_inline10
+    - Items.Preset_masayuki_inline11
+    - Items.HandgunAndRevolverScopesPartList
+    - Items.Preset_Yukimura_Default_inline4
+    - Items.Preset_Yukimura_Default_inline5
+  OnAttach:
+    - !append Items.Base_masayuki_inline21
+    - !append Items.Base_masayuki_inline22
+    - !append Items.Base_masayuki_inline23
+    - !append Items.Base_masayuki_inline24
+    - !append Items.Preset_masayuki_inline10
+    - !append Items.Preset_masayuki_inline11
+    - !remove Items.Base_masayuki_inline5
+    - !remove Items.Base_masayuki_inline7
+    - !remove Items.Base_masayuki_inline9
+    - !remove Items.Base_masayuki_inline11
+    - !remove Items.Base_masayuki_inline17
+    - !remove Items.Base_masayuki_inline19
+    - !remove Items.Base_masayuki_inline13
+    - !remove Items.Base_masayuki_inline15
+    - !remove Items.Base_masayuki_inline25
+    - !remove Items.Base_masayuki_inline27
+    - !remove Items.Preset_masayuki_inline2
+    - !remove Items.Preset_masayuki_inline3
+    - !remove Items.Preset_masayuki_inline4
+    - !remove Items.Preset_masayuki_inline5
+    - !remove Items.Preset_masayuki_inline8
+    - !remove Items.Preset_masayuki_inline9
+    - !remove Items.Preset_masayuki_inline6
+    - !remove Items.Preset_masayuki_inline7
+    - !remove Items.Preset_masayuki_inline12
+    - !remove Items.Preset_masayuki_inline13
+#mag
+Items.Base_masayuki_inline21:
+  $base: Items.Base_Yukimura_inline5
+  itemPartList:
+    - Items.Base_masayuki_inline22
+Items.Base_masayuki_inline22:
+  $base: Items.Base_Yukimura_inline6
+  item: Items.masayuki_mag_std_prt_green
+Items.masayuki_mag_std_prt_green:
+  $base: Items.w_handgun__arasaka_yukimura__mag_std
+  appearanceResourceName: masayuki_mag_std_green
+#reload
+Items.Base_masayuki_inline23:
+  $base: Items.Base_Yukimura_inline7
+  itemPartList:
+    - Items.Base_masayuki_inline24
+Items.Base_masayuki_inline24:
+  $base: Items.Base_Yukimura_inline8
+  item: Items.masayuki_mag_stdr_prt_green
+Items.masayuki_mag_stdr_prt_green:
+  $base: Items.w_handgun__arasaka_yukimura__mag_stdr
+  appearanceResourceName: masayuki_mag_stdr_green
+#preset
+Items.Preset_masayuki_inline10:
+  $base: Items.Preset_Yukimura_Default_inline2
+  itemPartPreset: Items.masayuki_mag_std_prt_green
+Items.Preset_masayuki_inline11:
+  $base: Items.Preset_Yukimura_Default_inline3
+  itemPartPreset: Items.masayuki_mag_stdr_prt_green
+  
+Items.Arasaka_Masayuki_Silver:
+  $base: Items.Arasaka_Masayuki
+  displayName: masayuki_name_silver
+  icon:  
+    atlasResourcePath: masayuki\icon\masayuki_silver.inkatlas
+    atlasPartName: slot_01
+  visualTags:
+    - silver
+  appearanceResourceName: masayuki_app_silver
+  slotPartList:
+    - Items.Base_masayuki_inline25
+    - Items.Base_masayuki_inline27
+  slotPartListPreset:
+    - Items.Preset_masayuki_inline0
+    - Items.Preset_masayuki_inline1
+    - Items.Preset_masayuki_inline12
+    - Items.Preset_masayuki_inline13
+    - Items.HandgunAndRevolverScopesPartList
+    - Items.Preset_Yukimura_Default_inline4
+    - Items.Preset_Yukimura_Default_inline5
+  OnAttach:
+    - !append Items.Base_masayuki_inline25
+    - !append Items.Base_masayuki_inline26
+    - !append Items.Base_masayuki_inline27
+    - !append Items.Base_masayuki_inline28
+    - !append Items.Preset_masayuki_inline12
+    - !append Items.Preset_masayuki_inline13
+    - !remove Items.Base_masayuki_inline5
+    - !remove Items.Base_masayuki_inline7
+    - !remove Items.Base_masayuki_inline9
+    - !remove Items.Base_masayuki_inline11
+    - !remove Items.Base_masayuki_inline17
+    - !remove Items.Base_masayuki_inline19
+    - !remove Items.Base_masayuki_inline21
+    - !remove Items.Base_masayuki_inline23
+    - !remove Items.Base_masayuki_inline13
+    - !remove Items.Base_masayuki_inline15
+    - !remove Items.Preset_masayuki_inline2
+    - !remove Items.Preset_masayuki_inline3
+    - !remove Items.Preset_masayuki_inline4
+    - !remove Items.Preset_masayuki_inline5
+    - !remove Items.Preset_masayuki_inline8
+    - !remove Items.Preset_masayuki_inline9
+    - !remove Items.Preset_masayuki_inline10
+    - !remove Items.Preset_masayuki_inline11
+    - !remove Items.Preset_masayuki_inline6
+    - !remove Items.Preset_masayuki_inline7
+#mag
+Items.Base_masayuki_inline25:
+  $base: Items.Base_Yukimura_inline5
+  itemPartList:
+    - Items.Base_masayuki_inline26
+Items.Base_masayuki_inline26:
+  $base: Items.Base_Yukimura_inline6
+  item: Items.masayuki_mag_std_prt_silver
+Items.masayuki_mag_std_prt_silver:
+  $base: Items.w_handgun__arasaka_yukimura__mag_std
+  appearanceResourceName: masayuki_mag_std_silver
+#reload
+Items.Base_masayuki_inline27:
+  $base: Items.Base_Yukimura_inline7
+  itemPartList:
+    - Items.Base_masayuki_inline28
+Items.Base_masayuki_inline28:
+  $base: Items.Base_Yukimura_inline8
+  item: Items.masayuki_mag_stdr_prt_silver
+Items.masayuki_mag_stdr_prt_silver:
+  $base: Items.w_handgun__arasaka_yukimura__mag_stdr
+  appearanceResourceName: masayuki_mag_stdr_silver
+#preset
+Items.Preset_masayuki_inline12:
+  $base: Items.Preset_Yukimura_Default_inline2
+  itemPartPreset: Items.masayuki_mag_std_prt_silver
+Items.Preset_masayuki_inline13:
+  $base: Items.Preset_Yukimura_Default_inline3
+  itemPartPreset: Items.masayuki_mag_stdr_prt_silver
+  
+  

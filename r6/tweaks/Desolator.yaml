@@ -1,0 +1,127 @@
+Items.Desolator:
+  $base: Items.Preset_Nue_Default
+  tags:
+    - !append-once IconicWeapon
+    - !append-once Silenced
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.des50stats_damage
+    - !append-once Items.des50stats_rof
+    - !append-once Items.des50stats_mag
+    - !append-once Items.des50stats_armor
+    - !append-once Items.des50stats_dismember
+  appearanceResourceName: des50_app
+  forcedMinHitReaction: 50
+  quality: Quality.Epic
+  displayName: des50_name
+  localizedDescription: des50_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: des50\icon\des50_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: des50\icon\des50.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_des50_inline3
+    - Items.Base_des50_inline5
+    - Items.Base_des50_inline7
+    - Items.Base_des50_inline9
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+  slotPartListPreset:
+    - Items.Preset_des50_inline0
+    - Items.Preset_des50_inline1
+    - Items.Preset_des50_inline2
+    - Items.Preset_des50_inline3
+  
+Items.Base_des50_inline3:
+  $base: Items.Base_Nue_inline3
+  itemPartList:
+    - Items.Base_des50_inline4
+Items.Base_des50_inline4:
+  $base: Items.Base_Nue_inline4
+  item: Items.des50_rcv_prt
+Items.des50_rcv_prt:
+  $base: Items.w_handgun__tsunami_nue__rcv1
+  appearanceResourceName: des50_rcv
+#base
+Items.Base_des50_inline5:
+  $base: Items.Base_Nue_inline5
+  itemPartList:
+    - Items.Base_des50_inline6
+Items.Base_des50_inline6:
+  $base: Items.Base_Nue_inline6
+  item: Items.des50_base_prt
+Items.des50_base_prt:
+  $base: Items.w_handgun__tsunami_nue__base1
+  appearanceResourceName: des50_base
+#mag
+Items.Base_des50_inline7:
+  $base: Items.Base_Nue_inline7
+  itemPartList:
+    - Items.Base_des50_inline8
+Items.Base_des50_inline8:
+  $base: Items.Base_Nue_inline8
+  item: Items.des50_mag_std_prt
+Items.des50_mag_std_prt:
+  $base: Items.w_handgun__tsunami_nue__mag_std
+  appearanceResourceName: des50_mag_std
+#reload
+Items.Base_des50_inline9:
+  $base: Items.Base_Nue_inline9
+  itemPartList:
+    - Items.Base_des50_inline10
+Items.Base_des50_inline10:
+  $base: Items.Base_Nue_inline10
+  item: Items.des50_mag_stdr_prt
+Items.des50_mag_stdr_prt:
+  $base: Items.w_handgun__tsunami_nue__mag_stdr
+  appearanceResourceName: des50_mag_stdr
+#preset stuff
+Items.Preset_des50_inline0:
+  $base: Items.Preset_Nue_Default_inline0
+  itemPartPreset: Items.des50_rcv_prt
+Items.Preset_des50_inline1:
+  $base: Items.Preset_Nue_Default_inline1
+  itemPartPreset: Items.des50_base_prt
+Items.Preset_des50_inline2:
+  $base: Items.Preset_Nue_Default_inline2
+  itemPartPreset: Items.des50_mag_std_prt
+Items.Preset_des50_inline3:
+  $base: Items.Preset_Nue_Default_inline3
+  itemPartPreset: Items.des50_mag_stdr_prt
+  
+Items.des50stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 25
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.des50stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.03
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.des50stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.des50stats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+Items.des50stats_dismember:
+  $type: gamedataConstantStatModifier_Record
+  value: 200
+  modifierType: Multiplier
+  statType: BaseStats.HitDismembermentFactor
+  
+  

@@ -1,0 +1,132 @@
+Items.USP_45_Fate_Maker:
+  $base: Items.Preset_Nue_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.t800stats_damage
+    - !append-once Items.t800stats_rof
+    - !append-once Items.t800stats_mag
+    - !append-once Items.t800stats_effectiverange
+    - !append-once Items.t800stats_maxrange
+    - !append-once Items.t800stats_armor
+  appearanceResourceName: t800_app
+  quality: Quality.Legendary
+  displayName: t800_name
+  localizedDescription: t800_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: t800\icon\t800_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: t800\icon\t800.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_t800_inline3
+    - Items.Base_t800_inline5
+    - Items.Base_t800_inline7
+    - Items.Base_t800_inline9
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+  slotPartListPreset:
+    - Items.Preset_t800_inline0
+    - Items.Preset_t800_inline1
+    - Items.Preset_t800_inline2
+    - Items.Preset_t800_inline3
+  
+Items.Base_t800_inline3:
+  $base: Items.Base_Nue_inline3
+  itemPartList:
+    - Items.Base_t800_inline4
+Items.Base_t800_inline4:
+  $base: Items.Base_Nue_inline4
+  item: Items.t800_rcv_prt
+Items.t800_rcv_prt:
+  $base: Items.w_handgun__tsunami_nue__rcv1
+  appearanceResourceName: t800_rcv
+#base
+Items.Base_t800_inline5:
+  $base: Items.Base_Nue_inline5
+  itemPartList:
+    - Items.Base_t800_inline6
+Items.Base_t800_inline6:
+  $base: Items.Base_Nue_inline6
+  item: Items.t800_base_prt
+Items.t800_base_prt:
+  $base: Items.w_handgun__tsunami_nue__base1
+  appearanceResourceName: t800_base
+#mag
+Items.Base_t800_inline7:
+  $base: Items.Base_Nue_inline7
+  itemPartList:
+    - Items.Base_t800_inline8
+Items.Base_t800_inline8:
+  $base: Items.Base_Nue_inline8
+  item: Items.t800_mag_std_prt
+Items.t800_mag_std_prt:
+  $base: Items.w_handgun__tsunami_nue__mag_std
+  appearanceResourceName: t800_mag_std
+#reload
+Items.Base_t800_inline9:
+  $base: Items.Base_Nue_inline9
+  itemPartList:
+    - Items.Base_t800_inline10
+Items.Base_t800_inline10:
+  $base: Items.Base_Nue_inline10
+  item: Items.t800_mag_stdr_prt
+Items.t800_mag_stdr_prt:
+  $base: Items.w_handgun__tsunami_nue__mag_stdr
+  appearanceResourceName: t800_mag_stdr
+#preset stuff
+Items.Preset_t800_inline0:
+  $base: Items.Preset_Nue_Default_inline0
+  itemPartPreset: Items.t800_rcv_prt
+Items.Preset_t800_inline1:
+  $base: Items.Preset_Nue_Default_inline1
+  itemPartPreset: Items.t800_base_prt
+Items.Preset_t800_inline2:
+  $base: Items.Preset_Nue_Default_inline2
+  itemPartPreset: Items.t800_mag_std_prt
+Items.Preset_t800_inline3:
+  $base: Items.Preset_Nue_Default_inline3
+  itemPartPreset: Items.t800_mag_stdr_prt
+  
+  
+Items.t800stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.t800stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.02
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.t800stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 2
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.t800stats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.t800stats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.t800stats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  

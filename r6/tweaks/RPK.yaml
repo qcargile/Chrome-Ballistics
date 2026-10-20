@@ -1,0 +1,176 @@
+Items.RPK:
+  $base: Items.Preset_Ajax_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.rpkstats_rof 
+    - !append-once Items.rpkstats_damage
+    - !append-once Items.rpkstats_reload  
+    - !append-once Items.rpkstats_recoil 
+    - !append-once Items.rpkstats_recoil2
+    - !append-once Items.rpkstats_recoil3
+    - !append-once Items.rpkstats_reload2  
+    - !append-once Items.rpkstats_equip
+    - !append-once Items.rpkstats_mag
+    - !append-once Items.rpkstats_effectiverange
+    - !append-once Items.rpkstats_maxrange
+    - !append-once Items.rpkstats_armor
+  appearanceResourceName: rpk_app
+  audioName: wea_set_copperhead
+  quality: Quality.Epic
+  displayName: rpk_name
+  localizedDescription: rpk_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: rpk\icon\rpk_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: rpk\icon\rpk.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_rpk_inline2
+    - Items.Base_rpk_inline4
+    - Items.Base_rpk_inline6
+    - Items.Base_rpk_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_rpk_inline0
+    - Items.Preset_rpk_inline1
+    - Items.Preset_rpk_inline2
+    - Items.Preset_rpk_inline3
+  
+Items.Base_rpk_inline2:
+  $base: Items.Base_Ajax_inline2
+  itemPartList:
+    - Items.Base_rpk_inline3
+Items.Base_rpk_inline3:
+  $base: Items.Base_Ajax_inline3
+  item: Items.rpk_rcv_prt
+Items.rpk_rcv_prt:
+  $base: Items.w_rifle_assault__militech_ajax__rcv1
+  appearanceResourceName: rpk_rcv
+#base
+Items.Base_rpk_inline4:
+  $base: Items.Base_Ajax_inline4
+  itemPartList:
+    - Items.Base_rpk_inline5
+Items.Base_rpk_inline5:
+  $base: Items.Base_Ajax_inline5
+  item: Items.rpk_base_prt
+Items.rpk_base_prt:
+  $base: Items.w_rifle_assault__militech_ajax__base1
+  appearanceResourceName: rpk_base
+#mag
+Items.Base_rpk_inline6:
+  $base: Items.Base_Ajax_inline6
+  itemPartList:
+    - Items.Base_rpk_inline7
+Items.Base_rpk_inline7:
+  $base: Items.Base_Ajax_inline7
+  item: Items.rpk_mag_std_prt
+Items.rpk_mag_std_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_std
+  appearanceResourceName: rpk_mag_std
+#reload
+Items.Base_rpk_inline8:
+  $base: Items.Base_Ajax_inline8
+  itemPartList:
+    - Items.Base_rpk_inline9
+Items.Base_rpk_inline9:
+  $base: Items.Base_Ajax_inline9
+  item: Items.rpk_mag_stdr_prt
+Items.rpk_mag_stdr_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_stdr
+  appearanceResourceName: rpk_mag_stdr
+#preset
+Items.Preset_rpk_inline0:
+  $base: Items.Preset_Ajax_Default_inline0
+  itemPartPreset: Items.rpk_rcv_prt
+Items.Preset_rpk_inline1:
+  $base: Items.Preset_Ajax_Default_inline1
+  itemPartPreset: Items.rpk_base_prt
+Items.Preset_rpk_inline2:
+  $base: Items.Preset_Ajax_Default_inline2
+  itemPartPreset: Items.rpk_mag_std_prt
+Items.Preset_rpk_inline3:
+  $base: Items.Preset_Ajax_Default_inline3
+  itemPartPreset: Items.rpk_mag_stdr_prt
+  
+Items.rpkstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.05
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.rpkstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.rpkstats_reload:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+  
+Items.rpkstats_reload2:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBase
+  
+Items.rpkstats_recoil:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.35
+  modifierType: Additive
+  statType: BaseStats.RecoilRecoveryTime
+  
+Items.rpkstats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.5
+  modifierType: Additive
+  statType: BaseStats.RecoilKickMin
+  
+Items.rpkstats_recoil3:
+  $type: gamedataConstantStatModifier_Record
+  value: 1.0
+  modifierType: Additive
+  statType: BaseStats.RecoilKickMax
+
+Items.rpkstats_equip:
+  $type: gamedataConstantStatModifier_Record
+  value: -1.0
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.rpkstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.rpkstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 70
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.rpkstats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 80
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.rpkstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+
+
+  

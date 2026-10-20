@@ -1,0 +1,273 @@
+Items.Arasaka_Nobunaga:
+  $base: Items.Preset_Nekomata_Default
+  tags:
+    - !append-once IconicWeapon
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.nobunagastats_reload
+    - !append-once Items.nobunagastats_reload2
+    - !append-once Items.nobunagastats_reload3
+    - !append-once Items.nobunagastats_reload4
+    - !append-once Items.nobunagastats_rof
+    - !append-once Items.nobunagastats_charge
+    - !append-once Items.nobunagastats_damage
+    - !append-once Items.nobunagastats_mag
+    - !append-once Items.nobunagastats_burst
+    - !append-once Items.nobunagastats_pierce
+    - !append-once Items.nobunagastats_armor
+  statModifierGroups:
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+    - Items.ItemPlusRandomizer_MaxQuality
+    - Items.ItemPlusRandomizer_Below_MaxQuality
+    - Items.WeaponModsWeights_On_Tier2Plus
+    - Items.WeaponModsWeights_On_Tier3Plus
+    - Items.WeaponModsWeights_On_Tier4Plus
+    - Items.WeaponModsWeights_On_Tier5Plus
+    - Items.WeaponModsWeights_On_Tier5PlusPlus
+    - Items.Base_Sniper_Rifle_RPG_Stats
+    - Items.Base_Sniper_Rifle_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Sniper_Rifle_Mult_Stats
+    - Items.Base_Power_Sniper_Rifle_Stats
+    - Items.Base_Sniper_Rifle_Sway_Stats
+    - Items.Base_Sniper_Rifle_DeadReckoning_Stats
+    - Items.Base_Grad_Technical_Stats
+    - Items.Base_Grad_Handling_Stats
+    - Items.Base_Grad_Recoil_Stats
+    - Items.Base_Grad_Spread_Stats
+    - Items.Base_Grad_Aim_Stats
+    - Items.Base_Grad_Constant_Stats
+    - Items.Base_Grad_Damage_Stats
+  evolution: WeaponEvolution.Power
+  fxPackage: Items.Base_Grad_inline10
+  fxPackageQuickMelee: WeaponFxPackage.QuickMeleeFxPackage
+  primaryTriggerMode: TriggerMode.Charge
+  rangedAttacks: Attacks.PowerRoundsBulletPackage
+  secondaryTriggerMode: TriggerMode.Charge
+  triggerEffectName: te_wea_aim_slow
+  appearanceResourceName: nobunaga_app
+  audioName: wea_set_grad
+  blueprint: Items.Base_Power_Precision_Sniper_Rifle_Blueprint
+  crosshair: Crosshairs.Simple
+  quality: Quality.Legendary
+  triggerModes:
+    - TriggerMode.Charge
+    - TriggerMode.Charge
+  displayName: nobunaga_name
+  localizedDescription: nobunaga_description
+  gameplayDescription: ''
+  hudIcon:
+    atlasResourcePath: nobunaga\icon\nobunaga_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: nobunaga\icon\nobunaga.inkatlas
+    atlasPartName: slot_01
+  OnAttach:
+    - !remove Items.Preset_Nekomata_Default.statModifierGroups
+  slotPartList:
+    - Items.Base_nobunaga_inline1
+    - Items.Base_nobunaga_inline3
+    - Items.Base_nobunaga_inline5
+    - Items.Base_nobunaga_inline7
+    - Items.RiflePossibleScopesList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_nobunaga_inline0
+    - Items.Preset_nobunaga_inline1
+    - Items.Preset_nobunaga_inline2
+    - Items.Preset_nobunaga_inline3
+    - Items.Preset_nobunaga_inline4
+    
+Items.Base_nobunaga_inline1:
+  $base: Items.Base_Nekomata_inline1
+  itemPartList:
+    - Items.Base_nobunaga_inline2
+Items.Base_nobunaga_inline2:
+  $base: Items.Base_Nekomata_inline2
+  item: Items.nobunaga_rcv_prt
+Items.nobunaga_rcv_prt:
+  $base: Items.w_rifle_sniper__tsunami_nekomata__rcv1
+  appearanceResourceName: nobunaga_rcv
+#base
+Items.Base_nobunaga_inline3:
+  $base: Items.Base_Nekomata_inline3
+  itemPartList:
+    - Items.Base_nobunaga_inline4
+Items.Base_nobunaga_inline4:
+  $base: Items.Base_Nekomata_inline4
+  item: Items.nobunaga_base_prt
+Items.nobunaga_base_prt:
+  $base: Items.w_rifle_sniper__tsunami_nekomata__base1
+  appearanceResourceName: nobunaga_base
+#mag
+Items.Base_nobunaga_inline5:
+  $base: Items.Base_Nekomata_inline5
+  itemPartList:
+    - Items.Base_nobunaga_inline6
+Items.Base_nobunaga_inline6:
+  $base: Items.Base_Nekomata_inline6
+  item: Items.nobunaga_mag_std_prt
+Items.nobunaga_mag_std_prt:
+  $base: Items.w_rifle_sniper__tsunami_nekomata__mag_std
+  appearanceResourceName: nobunaga_mag_std
+#reload
+Items.Base_nobunaga_inline7:
+  $base: Items.Base_Nekomata_inline7
+  itemPartList:
+    - Items.Base_nobunaga_inline8
+Items.Base_nobunaga_inline8:
+  $base: Items.Base_Nekomata_inline8
+  item: Items.nobunaga_mag_stdr_prt
+Items.nobunaga_mag_stdr_prt:
+  $base: Items.w_rifle_sniper__tsunami_nekomata__mag_stdr
+  appearanceResourceName: nobunaga_mag_stdr
+#preset
+Items.Preset_nobunaga_inline0:
+  $base: Items.Preset_Nekomata_Default_inline0
+  itemPartPreset: Items.nobunaga_rcv_prt
+Items.Preset_nobunaga_inline1:
+  $base: Items.Preset_Nekomata_Default_inline1
+  itemPartPreset: Items.nobunaga_base_prt
+Items.Preset_nobunaga_inline2:
+  $base: Items.Preset_Nekomata_Default_inline2
+  itemPartPreset: Items.nobunaga_mag_std_prt
+Items.Preset_nobunaga_inline3:
+  $base: Items.Preset_Nekomata_Default_inline3
+  itemPartPreset: Items.nobunaga_mag_stdr_prt
+  
+Items.nobunagastats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 80
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.nobunagastats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 2
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.nobunagastats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -2.1
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.nobunagastats_reload:
+  $type: gamedataConstantStatModifier_Record
+  value: -1
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBase
+  
+Items.nobunagastats_reload2:
+  $type: gamedataConstantStatModifier_Record
+  value: -2.1
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+  
+Items.nobunagastats_reload3:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.2
+  modifierType: Additive
+  statType: BaseStats.ReloadEndTimeBase
+  
+Items.nobunagastats_reload4:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.3
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadEndTime
+  
+Items.nobunagastats_charge:
+  $type: gamedataConstantStatModifier_Record
+  value: -2.5
+  modifierType: Additive
+  statType: BaseStats.BaseChargeTime
+  
+Items.nobunagastats_burst:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.NumShotsInBurst
+  
+Items.nobunagastats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.nobunagastats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.50
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+
+Items.Preset_Grad_Default.statModifierGroups:
+  - Items.Base_Weapon_Damage_Type_Min_Max
+  - Items.Base_Weapon_Damage_Type_Physical
+  - Items.QualityRandomization
+  - Items.ItemPlusRandomizer_MaxQuality
+  - Items.ItemPlusRandomizer_Below_MaxQuality
+  - Items.WeaponModsWeights_On_Tier2Plus
+  - Items.WeaponModsWeights_On_Tier3Plus
+  - Items.WeaponModsWeights_On_Tier4Plus
+  - Items.WeaponModsWeights_On_Tier5Plus
+  - Items.WeaponModsWeights_On_Tier5PlusPlus
+  - Items.Base_Sniper_Rifle_RPG_Stats
+  - Items.Base_Sniper_Rifle_Misc_Stats
+  - Items.Base_PlayerState_Spread_Stats
+  - Items.Base_Power_Stats
+  - Items.Base_Power_Sniper_Rifle_Mult_Stats
+  - Items.Base_Power_Sniper_Rifle_Stats
+  - Items.Base_Sniper_Rifle_Sway_Stats
+  - Items.Base_Sniper_Rifle_DeadReckoning_Stats
+  - Items.Base_Grad_Technical_Stats
+  - Items.Base_Grad_Handling_Stats
+  - Items.Base_Grad_Recoil_Stats
+  - Items.Base_Grad_Spread_Stats
+  - Items.Base_Grad_Aim_Stats
+  - Items.Base_Grad_Constant_Stats
+  - Items.Base_Grad_Damage_Stats
+
+Items.Preset_nobunaga_inline4:
+  $type: gamedataSlotItemPartPreset_Record
+  itemPartPreset: Items.Arasaka_Nobunaga_Scope
+  slot: AttachmentSlots.Scope
+  itemPartList: []
+
+  
+Items.Nobunaga_Recipe_Legendary:
+  $type: gamedataItemRecipe_Record
+  craftingResult: Items.Nobunaga_Recipe_Legendary_inline0
+  itemType: ItemType.Gen_Misc
+  quality: Quality.Legendary
+  displayName: nobunaga_name
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+    - Legendary
+
+Items.Nobunaga_Recipe_Legendary_inline0:
+  $type: gamedataCraftingResult_Record
+  amount: 1
+  item: Items.Nobunaga_Crafting_Recipe_Legendary
+    
+Items.Nobunaga_Crafting_Recipe_Legendary:
+  $base: Items.Arasaka_Nobunaga
+  quality: Quality.Legendary
+  CraftingData: Items.Big_Legendary_Crafting_Materials_Weapon
+  
+Vendors.hey_rey_gunsmith_01:
+  itemStock:
+    - !append Items.Nobunaga_recipe_Legendary_stock
+    
+Items.Nobunaga_recipe_Legendary_stock:
+  $type: VendorItem
+  item: Items.Nobunaga_Recipe_Legendary
+  generationPrereqs:
+    - !append LootPrereqs.PlayerLevel_Tier_5_Start_Prereq
+  quantity:
+    - !append Vendors.Always_Present 

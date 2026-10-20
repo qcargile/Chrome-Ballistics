@@ -1,0 +1,158 @@
+Items.Militech_M77_Viper:
+  $base: Items.Preset_Saratoga_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.vipstats_damage
+    - !append-once Items.vipstats_rof
+    - !append-once Items.vipstats_mag
+    - !append-once Items.vipstats_recoil
+    - !append-once Items.vipstats_recoil2
+    - !append-once Items.vipstats_armor
+    - !append-once Items.vipstats_pierce
+    - !append-once Items.vipstats_maxrange
+    - !append-once Items.vipstats_effectiverange
+  appearanceResourceName: vip_app
+  ammo: Ammo.RifleAmmo
+  audioName: wea_set_copperhead
+  quality: Quality.Uncommon
+  displayName: vip_name
+  localizedDescription: vip_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: vip\icon\vip_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: vip\icon\vip.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_vip_inline2
+    - Items.Base_vip_inline4
+    - Items.Base_vip_inline6
+    - Items.Base_vip_inline8
+    - Items.RiflePossibleScopesList
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_vip_inline0
+    - Items.Preset_vip_inline1
+    - Items.Preset_vip_inline2
+    - Items.Preset_vip_inline3
+  
+Items.Base_vip_inline2:
+  $base: Items.Base_Saratoga_inline2
+  itemPartList:
+    - Items.Base_vip_inline3
+Items.Base_vip_inline3:
+  $base: Items.Base_Saratoga_inline3
+  item: Items.vip_rcv_prt
+Items.vip_rcv_prt:
+  $base: Items.w_submachinegun__militech_saratoga__rcv1
+  appearanceResourceName: vip_rcv
+#base
+Items.Base_vip_inline4:
+  $base: Items.Base_Saratoga_inline4
+  itemPartList:
+    - Items.Base_vip_inline5
+Items.Base_vip_inline5:
+  $base: Items.Base_Saratoga_inline5
+  item: Items.vip_base_prt
+Items.vip_base_prt:
+  $base: Items.w_submachinegun__militech_saratoga__base1
+  appearanceResourceName: vip_base
+#mag
+Items.Base_vip_inline6:
+  $base: Items.Base_Saratoga_inline6
+  itemPartList:
+    - Items.Base_vip_inline7
+Items.Base_vip_inline7:
+  $base: Items.Base_Saratoga_inline7
+  item: Items.vip_mag_std_prt
+Items.vip_mag_std_prt:
+  $base: Items.w_submachinegun__militech_saratoga__mag_std
+  appearanceResourceName: vip_mag_std
+#reload
+Items.Base_vip_inline8:
+  $base: Items.Base_Saratoga_inline8
+  itemPartList:
+    - Items.Base_vip_inline9
+Items.Base_vip_inline9:
+  $base: Items.Base_Saratoga_inline9
+  item: Items.vip_mag_stdr_prt
+Items.vip_mag_stdr_prt:
+  $base: Items.w_submachinegun__militech_saratoga__mag_stdr
+  appearanceResourceName: vip_mag_stdr
+#preset
+Items.Preset_vip_inline0:
+  $base: Items.Preset_Saratoga_Default_inline0
+  itemPartPreset: Items.vip_rcv_prt
+Items.Preset_vip_inline1:
+  $base: Items.Preset_Saratoga_Default_inline1
+  itemPartPreset: Items.vip_base_prt
+Items.Preset_vip_inline2:
+  $base: Items.Preset_Saratoga_Default_inline2
+  itemPartPreset: Items.vip_mag_std_prt
+Items.Preset_vip_inline3:
+  $base: Items.Preset_Saratoga_Default_inline3
+  itemPartPreset: Items.vip_mag_stdr_prt
+  
+Items.vipstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: -13
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.vipstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.04
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.vipstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -15
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.vipstats_recoil:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.15
+  modifierType: Additive
+  statType: BaseStats.RecoilHoldDuration
+  
+Items.vipstats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.15
+  modifierType: Additive
+  statType: BaseStats.RecoilRecoveryTime
+  
+Items.vipstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+Items.vipstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.vipstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.vipstats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 40
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+ 

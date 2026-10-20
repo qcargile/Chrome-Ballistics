@@ -1,0 +1,215 @@
+Items.AR15_SLR:
+  $base: Items.Preset_Copperhead_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.ar15stats_rof 
+    - !append-once Items.ar15stats_damage
+    - !append-once Items.ar15stats_firstequip 
+    - !append-once Items.ar15stats_mag
+    - !append-once Items.ar15stats_effectiverange
+    - !append-once Items.ar15stats_maxrange 
+    - !append-once Items.ar15stats_recoil
+    - !append-once Items.ar15stats_recoil2
+    - !append-once Items.ar15stats_recoil3   
+    - !append-once Items.ar15stats_recoil4     
+    - !append-once Items.ar15stats_recoil5     
+    - !append-once Items.ar15stats_recoil6  
+    - !append-once Items.ar15stats_reload     
+    - !append-once Items.ar15stats_reload2  
+    - !append-once Items.ar15stats_spread   
+    - !append-once Items.ar15stats_burst 
+  appearanceResourceName: ar15_app
+  friendlyName: w_rifle_assault_arasaka_masamune
+  audioName: wea_set_kyubi
+  primaryTriggerMode: TriggerMode.Burst
+  secondaryTriggerMode: TriggerMode.Burst
+  triggerModes:
+    - TriggerMode.Burst
+    - TriggerMode.Burst
+  quality: Quality.Rare
+  displayName: ar15_name
+  localizedDescription: ar15_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: ar15\icon\ar15_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: ar15\icon\ar15.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_ar15_inline2
+    - Items.Base_ar15_inline4
+    - Items.Base_ar15_inline6
+    - Items.Base_ar15_inline8
+    - Items.RiflePossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_ar15_inline0
+    - Items.Preset_ar15_inline1
+    - Items.Preset_ar15_inline2
+    - Items.Preset_ar15_inline3
+  
+Items.Base_ar15_inline2:
+  $base: Items.Base_Copperhead_inline2
+  itemPartList:
+    - Items.Base_ar15_inline3
+Items.Base_ar15_inline3:
+  $base: Items.Base_Copperhead_inline3
+  item: Items.ar15_rcv_prt
+Items.ar15_rcv_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__rcv1
+  appearanceResourceName: ar15_rcv
+#base
+Items.Base_ar15_inline4:
+  $base: Items.Base_Copperhead_inline4
+  itemPartList:
+    - Items.Base_ar15_inline5
+Items.Base_ar15_inline5:
+  $base: Items.Base_Copperhead_inline5
+  item: Items.ar15_base_prt
+Items.ar15_base_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__base1
+  appearanceResourceName: ar15_base
+#mag
+Items.Base_ar15_inline6:
+  $base: Items.Base_Copperhead_inline6
+  itemPartList:
+    - Items.Base_ar15_inline7
+Items.Base_ar15_inline7:
+  $base: Items.Base_Copperhead_inline7
+  item: Items.ar15_mag_std_prt
+Items.ar15_mag_std_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__mag_std
+  appearanceResourceName: ar15_mag_std
+#reload
+Items.Base_ar15_inline8:
+  $base: Items.Base_Copperhead_inline8
+  itemPartList:
+    - Items.Base_ar15_inline9
+Items.Base_ar15_inline9:
+  $base: Items.Base_Copperhead_inline9
+  item: Items.ar15_mag_stdr_prt
+Items.ar15_mag_stdr_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__mag_stdr
+  appearanceResourceName: ar15_mag_stdr
+#preset
+Items.Preset_ar15_inline0:
+  $base: Items.Preset_Base_Copperhead_inline0
+  itemPartPreset: Items.ar15_rcv_prt
+Items.Preset_ar15_inline1:
+  $base: Items.Preset_Base_Copperhead_inline1
+  itemPartPreset: Items.ar15_base_prt
+Items.Preset_ar15_inline2:
+  $base: Items.Preset_Base_Copperhead_inline2
+  itemPartPreset: Items.ar15_mag_std_prt
+Items.Preset_ar15_inline3:
+  $base: Items.Preset_Base_Copperhead_inline3
+  itemPartPreset: Items.ar15_mag_stdr_prt
+  
+Items.ar15stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.0
+  modifierType: Additive
+  statType: BaseStats.CycleTime
+  
+Items.ar15stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 250
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.ar15stats_firstequip:
+  $type: gamedataConstantStatModifier_Record
+  value: -4.9
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.ar15stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase 
+  
+Items.ar15stats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 60
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.ar15stats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 70
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.ar15stats_recoil:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.RecoilHoldDuration
+  
+Items.ar15stats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 2.0
+  modifierType: Additive
+  statType: BaseStats.RecoilKickMin
+  
+Items.ar15stats_recoil3:
+  $type: gamedataConstantStatModifier_Record
+  value: 3.0
+  modifierType: Additive
+  statType: BaseStats.RecoilKickMax
+  
+Items.ar15stats_recoil4:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.02
+  modifierType: Additive
+  statType: BaseStats.RecoilTime
+  
+Items.ar15stats_recoil5:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.02
+  modifierType: Additive
+  statType: BaseStats.RecoilRecoveryTime
+  
+Items.ar15stats_recoil6:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.5
+  modifierType: Additive
+  statType: BaseStats.RecoilSpeed
+  
+Items.ar15stats_reload:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.4
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBase
+  
+Items.ar15stats_reload2:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.4
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+  
+Items.ar15stats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.ar15stats_burst:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.NumShotsInBurstMaxCharge
+  
+
+    
+    
+  

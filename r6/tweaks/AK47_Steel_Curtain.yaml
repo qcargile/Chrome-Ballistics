@@ -1,0 +1,141 @@
+Items.AK47_Steel_Curtain:
+  $base: Items.Preset_Ajax_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.steelstats_rof 
+    - !append-once Items.steelstats_damage
+    - !append-once Items.steelstats_reload  
+    - !append-once Items.steelstats_recoil2
+    - !append-once Items.steelstats_reload2  
+    - !append-once Items.steelstats_equip
+    - !append-once Items.steelstats_mag
+  appearanceResourceName: steel_app
+  audioName: wea_set_copperhead
+  quality: Quality.Rare
+  displayName: steel_name
+  localizedDescription: steel_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: steel\icon\steel_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: steel\icon\steel.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_steel_inline2
+    - Items.Base_steel_inline4
+    - Items.Base_steel_inline6
+    - Items.Base_steel_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_steel_inline0
+    - Items.Preset_steel_inline1
+    - Items.Preset_steel_inline2
+    - Items.Preset_steel_inline3
+  
+Items.Base_steel_inline2:
+  $base: Items.Base_Ajax_inline2
+  itemPartList:
+    - Items.Base_steel_inline3
+Items.Base_steel_inline3:
+  $base: Items.Base_Ajax_inline3
+  item: Items.steel_rcv_prt
+Items.steel_rcv_prt:
+  $base: Items.w_rifle_assault__militech_ajax__rcv1
+  appearanceResourceName: steel_rcv
+#base
+Items.Base_steel_inline4:
+  $base: Items.Base_Ajax_inline4
+  itemPartList:
+    - Items.Base_steel_inline5
+Items.Base_steel_inline5:
+  $base: Items.Base_Ajax_inline5
+  item: Items.steel_base_prt
+Items.steel_base_prt:
+  $base: Items.w_rifle_assault__militech_ajax__base1
+  appearanceResourceName: steel_base
+#mag
+Items.Base_steel_inline6:
+  $base: Items.Base_Ajax_inline6
+  itemPartList:
+    - Items.Base_steel_inline7
+Items.Base_steel_inline7:
+  $base: Items.Base_Ajax_inline7
+  item: Items.steel_mag_std_prt
+Items.steel_mag_std_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_std
+  appearanceResourceName: steel_mag_std
+#reload
+Items.Base_steel_inline8:
+  $base: Items.Base_Ajax_inline8
+  itemPartList:
+    - Items.Base_steel_inline9
+Items.Base_steel_inline9:
+  $base: Items.Base_Ajax_inline9
+  item: Items.steel_mag_stdr_prt
+Items.steel_mag_stdr_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_stdr
+  appearanceResourceName: steel_mag_stdr
+#preset
+Items.Preset_steel_inline0:
+  $base: Items.Preset_Ajax_Default_inline0
+  itemPartPreset: Items.steel_rcv_prt
+Items.Preset_steel_inline1:
+  $base: Items.Preset_Ajax_Default_inline1
+  itemPartPreset: Items.steel_base_prt
+Items.Preset_steel_inline2:
+  $base: Items.Preset_Ajax_Default_inline2
+  itemPartPreset: Items.steel_mag_std_prt
+Items.Preset_steel_inline3:
+  $base: Items.Preset_Ajax_Default_inline3
+  itemPartPreset: Items.steel_mag_stdr_prt
+  
+Items.steelstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.07
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.steelstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 55
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.steelstats_reload:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+  
+Items.steelstats_reload2:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBase
+  
+Items.steelstats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.35
+  modifierType: Additive
+  statType: BaseStats.RecoilRecoveryTime
+
+Items.steelstats_equip:
+  $type: gamedataConstantStatModifier_Record
+  value: -1.0
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.steelstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+
+
+  

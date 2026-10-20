@@ -1,0 +1,110 @@
+Items.Base_Lightmachinegun_Misc_Stats_inline4:
+  $type: gamedataConstantStatModifier_Record
+  value: 30.0
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+
+Items.Base_Lightmachinegun_Misc_Stats_inline14:
+  $type: gamedataConstantStatModifier_Record
+  value: 150.0
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+
+Items.Base_Assault_Rifle_Misc_Stats_inline4:
+  $type: gamedataConstantStatModifier_Record
+  value: 35.0
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+
+Items.Base_Assault_Rifle_Misc_Stats_inline14:
+  $type: gamedataConstantStatModifier_Record
+  value: 175.0
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+
+Items.Base_Submachinegun_Misc_Stats_inline4:
+  $type: gamedataConstantStatModifier_Record
+  value: 25.0
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+
+Items.Base_Submachinegun_Misc_Stats_inline15:
+  $type: gamedataConstantStatModifier_Record
+  value: 100.0
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+
+Items.Base_Precision_Rifle_Misc_Stats_inline4:
+  $type: gamedataConstantStatModifier_Record
+  value: 40.0
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+
+Items.Base_Precision_Rifle_Misc_Stats_inline13:
+  $type: gamedataConstantStatModifier_Record
+  value: 200.0
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+
+Items.Base_Sniper_Rifle_Misc_Stats_inline6:
+  $type: gamedataConstantStatModifier_Record
+  value: 45.0
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+
+Items.Base_Sniper_Rifle_Misc_Stats_inline14:
+  $type: gamedataConstantStatModifier_Record
+  value: 300.0
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+
+Items.Base_Revolver_Misc_Stats_inline4:
+  $type: gamedataConstantStatModifier_Record
+  value: 20.0
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+
+Items.Base_Revolver_Misc_Stats_inline15:
+  $type: gamedataConstantStatModifier_Record
+  value: 75.0
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+
+Items.Base_Handgun_Misc_Stats_inline4:
+  $type: gamedataConstantStatModifier_Record
+  value: 15.0
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+
+Items.Base_Handgun_Misc_Stats_inline5:
+  $type: gamedataConstantStatModifier_Record
+  value: 50.0
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+
+Items.Base_Shotgun_Misc_Stats_inline4:
+  $type: gamedataConstantStatModifier_Record
+  value: 10.0
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+
+Items.Base_Shotgun_Misc_Stats_inline13:
+  $type: gamedataConstantStatModifier_Record
+  value: 20.0
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+
+Items.Base_Dual_Shotgun_Misc_Stats_inline4:
+  $type: gamedataConstantStatModifier_Record
+  value: 10.0
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+
+Items.Base_Dual_Shotgun_Misc_Stats_inline16:
+  $type: gamedataConstantStatModifier_Record
+  value: 20.0
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+
+
+

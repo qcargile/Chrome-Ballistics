@@ -1,0 +1,50 @@
+Items.Sledgehammer_Doom_Hammer:
+  $base: Items.Preset_Hammer_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.dhamstats_damage
+    - !append-once Items.dhamstats_speed
+  appearanceResourceName: dham_app
+  quality: Quality.Rare
+  displayName: dham_name
+  hudIcon:
+    atlasResourcePath: dham\icon\dham_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: dham\icon\dham.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_dham_inline1
+    - Items.Base_dham_inline2
+  slotPartListPreset:
+    - Items.Preset_dham_inline0
+    
+Items.Base_dham_inline1:
+  $base: Items.Base_Two_Hand_Hammer_inline1
+  itemPartList:
+    - Items.Base_dham_inline2
+Items.Base_dham_inline2:
+  $type: gamedataItemPartListElement_Record
+  item: Items.dham_grip_prt
+Items.dham_grip_prt:
+  $base: Items.w_hammer_common_grip
+  appearanceResourceName: dham_grip    
+  
+Items.Preset_dham_inline0:
+  $base: Items.Preset_Hammer_Default_inline0
+  itemPartPreset: Items.dham_grip_prt
+  
+  
+Items.dhamstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.dhamstats_speed:
+  $type: gamedataConstantStatModifier_Record
+  value: 20
+  modifierType: Additive
+  statType: BaseStats.AttackSpeed

@@ -1,0 +1,164 @@
+Items.B23R_Suppressor:
+  $base: Items.WeaponMuzzleBase
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  appearanceResourceName: b23_supp_app
+  displayName: b23_supp_name
+  animSetResource: ''
+  canDrop: True
+  crosshair: Crosshairs.None
+  deprecated: False
+  dropObject: defaultItemDrop
+  enableNpcRPGData: False
+  friendlyName: ''
+  garmentOffset: 0
+  icon:
+    atlasResourcePath: b23_supp\icon\b23_supp.inkatlas
+    atlasPartName: ItemPart
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: True
+  isSingleInstance: False
+  itemType: ItemType.Gen_Misc
+  localizedName: ''
+  localizedDescription: b23_supp_description
+  mass: 1
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  parentAttachmentType: ParentAttachmentType.Animated
+  powerLevelDeterminedByParent: True
+  quality: Quality.Random
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  savable: False
+  animationParameters: []
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.Muzzle
+    - Price.ItemQualityMultiplier
+    - Price.BuyPrice_StreetCred_Discount
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  connections: []
+  equipAreas: []
+  equipPrereqs: []
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  hairSkinnedMeshComponents: []
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots:
+    - AttachmentSlots.PowerModule
+  previewBBoxOverride: []
+  requiredSlots: []
+  sellPrice:
+    - Price.Muzzle
+    - Price.ItemQualityMultiplier
+    - Price.SellMultiplier
+  slotPartList: []
+  slotPartListPreset: []
+  tags:
+    - itemPart
+    - WeaponMod
+    - Silenced
+  variants: []
+  visualTags: []
+  effectors: []
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+  statModifierGroups:
+    - Items.QualityRandomization_Attachments
+  statModifiers:
+    - !append-once Items.b23suppstats_silent
+    - !append-once Items.b23suppstats_stealthdamage
+    - !append-once Items.b23suppstats_crit
+  statPools: []
+  weakspots: []
+
+Items.b23suppstats_silent:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanSilentKill
+  
+Items.b23suppstats_stealthdamage:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.AdditionalStealthDamage
+  
+Items.b23suppstats_crit:
+  $type: gamedataConstantStatModifier_Record
+  value: 15
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Vendors.pac_wwd_gunsmith_01:
+  itemStock:
+    - !append Items.b23_supp_stock
+
+Vendors.pac_wwd_gunsmith_01:
+  itemStock:
+    - !append Items.b23_supp_stock
+    
+Vendors.hey_rey_gunsmith_01:
+  itemStock:
+    - !append Items.b23_supp_stock
+
+Vendors.wbr_jpn_gunsmith_01:
+  itemStock:
+    - !append Items.b23_supp_stock
+    
+Vendors.wat_nid_gunsmith_01:
+  itemStock:
+    - !append Items.b23_supp_stock
+    
+Vendors.wat_lch_gunsmith_01:
+  itemStock:
+    - !append Items.b23_supp_stock
+    
+Vendors.wat_kab_gunsmith_02:
+  itemStock:
+    - !append Items.b23_supp_stock
+    
+Vendors.wat_kab_gunsmith_01:
+  itemStock:
+    - !append Items.b23_supp_stock
+    
+Vendors.hey_gle_gunsmith_01:
+  itemStock:
+    - !append Items.b23_supp_stock
+    
+Vendors.hey_spr_gunsmith_01:
+  itemStock:
+    - !append Items.b23_supp_stock
+    
+Vendors.std_arr_gunsmith_01:
+  itemStock:
+    - !append Items.b23_supp_stock
+    
+Vendors.std_rcr_gunsmith_01:
+  itemStock:
+    - !append Items.b23_supp_stock
+    
+Vendors.cct_dtn_guns_01:
+  itemStock:
+    - !append Items.b23_supp_stock
+
+Items.b23_supp_stock:
+  $type: VendorItem
+  generationPrereqs:
+    - !append LootPrereqs.PlayerLevel_Tier_3_Start_Prereq
+  item: Items.B23R_Suppressor
+  quantity:
+    - !append Vendors.Always_Present

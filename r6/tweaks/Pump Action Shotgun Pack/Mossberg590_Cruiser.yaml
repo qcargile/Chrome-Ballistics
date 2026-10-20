@@ -1,0 +1,205 @@
+Items.Mossberg590_Cruiser:
+  $base: Items.Preset_Tactician_Default
+  tags:
+    - !append ForceDismember
+    - !append DriverCombatRangedWeapon
+    - !append DriverCombatBikeWeapon
+    - !append OneHandedRangedWeapon
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.cruiserstats_damage
+    - !append-once Items.cruiserstats_rof
+    - !append-once Items.cruiserstats_spread
+    - !append-once Items.cruiserstats_mag
+    - !append-once Items.cruiserstats_pierce
+    - !append-once Items.cruiserstats_armor
+    - !append-once Items.cruiserstats_crit
+    - !append-once Items.cruiserstats_bleeding
+    - !append-once Items.cruiserstats_burning
+    - !append-once Items.cruiserstats_electrocute
+    - !append-once Items.cruiserstats_poison
+    - !append-once Items.cruiserstats_stun
+    - !append-once Items.cruiserstats_headshotmult
+    - !append-once Items.cruiserstats_effectiverange
+    - !append-once Items.cruiserstats_maxrange
+  statModifierGroups: 
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  ammo: Ammo.ShotgunAmmo
+  appearanceResourceName: cruiser_app
+  blueprint: Items.Base_Power_Shotgun_Blueprint
+  fxPackage: WeaponFxPackage.PowerLargeCaliber
+  hudIcon:
+    atlasResourcePath: cruiser\icon\cruiser_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: cruiser\icon\cruiser.inkatlas
+    atlasPartName: slot_01
+  quality: Quality.Uncommon
+  displayName: cruiser_name
+  localizedDescription: cruiser_description
+  slotPartList:
+    - Items.Base_cruiser_inline2
+    - Items.Base_cruiser_inline4
+    - Items.Base_cruiser_inline6
+    - Items.Base_cruiser_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.RiflePossibleScopesList
+    - Items.UniversalShotgunSuppressorList
+  slotPartListPreset:
+    - Items.Preset_cruiser_inline0
+    - Items.Preset_cruiser_inline1
+    - Items.Preset_cruiser_inline2
+    - Items.Preset_cruiser_inline3
+  visualTags:
+    - Default
+    
+Items.Base_cruiser_inline2:
+  $base: Items.Base_Tactician_inline2
+  itemPartList:
+    - Items.Base_cruiser_inline3
+Items.Base_cruiser_inline3:
+  $base: Items.Base_Tactician_inline3
+  item: Items.cruiser_rcv_prt
+Items.cruiser_rcv_prt:
+  $base: Items.w_shotgun_constitutional_tactician_rcv1
+  appearanceResourceName: cruiser_rcv
+Items.Base_cruiser_inline4:
+  $base: Items.Base_Tactician_inline4
+  itemPartList:
+    - Items.Base_cruiser_inline5
+Items.Base_cruiser_inline5:
+  $base: Items.Base_Tactician_inline5
+  item: Items.cruiser_base_prt
+Items.cruiser_base_prt:
+  $base: Items.w_shotgun_constitutional_tactician_base1
+  appearanceResourceName: cruiser_base
+Items.Base_cruiser_inline6:
+  $base: Items.Base_Tactician_inline6
+  itemPartList:
+    - Items.Base_cruiser_inline7
+Items.Base_cruiser_inline7:
+  $base: Items.Base_Tactician_inline7
+  item: Items.cruiser_mag_std_prt
+Items.cruiser_mag_std_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_std
+  appearanceResourceName: cruiser_mag_std
+Items.Base_cruiser_inline8:
+  $base: Items.Base_Tactician_inline8
+  itemPartList:
+    - Items.Base_cruiser_inline9
+Items.Base_cruiser_inline9:
+  $base: Items.Base_Tactician_inline9
+  item: Items.cruiser_mag_stdr_prt
+Items.cruiser_mag_stdr_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_stdr
+  appearanceResourceName: cruiser_mag_stdr
+Items.Preset_cruiser_inline0:
+  $base: Items.Preset_Tactician_Default_inline0
+  itemPartPreset: Items.cruiser_rcv_prt
+Items.Preset_cruiser_inline1:
+  $base: Items.Preset_Tactician_Default_inline1
+  itemPartPreset: Items.cruiser_base_prt
+Items.Preset_cruiser_inline2:
+  $base: Items.Preset_Tactician_Default_inline2
+  itemPartPreset: Items.cruiser_mag_std_prt
+Items.Preset_cruiser_inline3:
+  $base: Items.Preset_Tactician_Default_inline3
+  itemPartPreset: Items.cruiser_mag_stdr_prt
+  
+Items.cruiserstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 21
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.cruiserstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.cruiserstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -3
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.cruiserstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.cruiserstats_crit:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Items.cruiserstats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Items.cruiserstats_poison:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.PoisonedApplicationRate
+  
+Items.cruiserstats_electrocute:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.cruiserstats_bleeding:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  
+Items.cruiserstats_burning:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.cruiserstats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.15
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+
+Items.cruiserstats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.cruiserstats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.cruiserstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.cruiserstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+
+  

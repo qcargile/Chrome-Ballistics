@@ -1,0 +1,20 @@
+# Defender / Wild Dog
+Items.Base_Defender_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 300               # default value – 65
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# MA70 HB / x-MOD2
+Items.Base_MA70_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 225               # default value – 60
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Mk.31 HMG / (no variants)
+Items.Base_HMG_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 275               # default value – 133
+  modifierType: Additive
+  statType: BaseStats.DPS

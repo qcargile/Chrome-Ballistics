@@ -1,0 +1,297 @@
+Items.Scar_Night_City_Special:
+  $base: Items.Preset_Copperhead_Default
+  tags:
+    - !append-once IconicWeapon 
+    - !append-once ManualTriggerSwap 
+    - !append-once TriggerBoundAttacks
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.ncs2stats_rof
+    - !append-once Items.ncs2stats_damage
+    - !append-once Items.ncs2stats_firstequip    
+    - !append-once Items.ncs2stats_effectiverange
+    - !append-once Items.ncs2stats_maxrange
+    - !append-once Items.Base_Tech_Stats
+    - !append-once Items.ncs2_Tech_Stats
+  statPools:
+    - !append-once BaseStatPools.WeaponCharge
+  appearanceResourceName: ncs2_app
+  audioName: wea_set_osprey
+  forcedMinHitReaction: 50
+  OnAttach:
+    - !append Items.ncs2_semiautostats
+  primaryTriggerMode: TriggerMode.Charge
+  secondaryTriggerMode: TriggerMode.FullAuto
+  triggerModes:
+    - TriggerMode.Charge
+    - TriggerMode.FullAuto
+  attacks:
+    - !append-once Attacks.ncs2_fullautomode
+    - !append-once Attacks.ncs2_semiautomode
+  rangedAttacks: Attacks.ncs2attacks
+  fxPackage: WeaponFxPackage.ncs2effects
+  quality: Quality.Legendary
+  displayName: ncs2_name
+  localizedDescription: ncs2_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: ncs2\icon\ncs2_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: ncs2\icon\ncs2.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_ncs2_inline2
+    - Items.Base_ncs2_inline4
+    - Items.Base_ncs2_inline6
+    - Items.Base_ncs2_inline8
+    - Items.RiflePossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_ncs2_inline0
+    - Items.Preset_ncs2_inline1
+    - Items.Preset_ncs2_inline2
+    - Items.Preset_ncs2_inline3
+  
+Items.Base_ncs2_inline2:
+  $base: Items.Base_Copperhead_inline2
+  itemPartList:
+    - Items.Base_ncs2_inline3
+Items.Base_ncs2_inline3:
+  $base: Items.Base_Copperhead_inline3
+  item: Items.ncs2_rcv_prt
+Items.ncs2_rcv_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__rcv1
+  appearanceResourceName: ncs2_rcv
+#base
+Items.Base_ncs2_inline4:
+  $base: Items.Base_Copperhead_inline4
+  itemPartList:
+    - Items.Base_ncs2_inline5
+Items.Base_ncs2_inline5:
+  $base: Items.Base_Copperhead_inline5
+  item: Items.ncs2_base_prt
+Items.ncs2_base_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__base1
+  appearanceResourceName: ncs2_base
+#mag
+Items.Base_ncs2_inline6:
+  $base: Items.Base_Copperhead_inline6
+  itemPartList:
+    - Items.Base_ncs2_inline7
+Items.Base_ncs2_inline7:
+  $base: Items.Base_Copperhead_inline7
+  item: Items.ncs2_mag_std_prt
+Items.ncs2_mag_std_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__mag_std
+  appearanceResourceName: ncs2_mag_std
+#reload
+Items.Base_ncs2_inline8:
+  $base: Items.Base_Copperhead_inline8
+  itemPartList:
+    - Items.Base_ncs2_inline9
+Items.Base_ncs2_inline9:
+  $base: Items.Base_Copperhead_inline9
+  item: Items.ncs2_mag_stdr_prt
+Items.ncs2_mag_stdr_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__mag_stdr
+  appearanceResourceName: ncs2_mag_stdr
+#preset
+Items.Preset_ncs2_inline0:
+  $base: Items.Preset_Base_Copperhead_inline0
+  itemPartPreset: Items.ncs2_rcv_prt
+Items.Preset_ncs2_inline1:
+  $base: Items.Preset_Base_Copperhead_inline1
+  itemPartPreset: Items.ncs2_base_prt
+Items.Preset_ncs2_inline2:
+  $base: Items.Preset_Base_Copperhead_inline2
+  itemPartPreset: Items.ncs2_mag_std_prt
+Items.Preset_ncs2_inline3:
+  $base: Items.Preset_Base_Copperhead_inline3
+  itemPartPreset: Items.ncs2_mag_stdr_prt
+  
+Items.ncs2stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.03
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.ncs2stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 300
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.ncs2stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase 
+  
+Items.ncs2stats_firstequip:
+  $type: gamedataConstantStatModifier_Record
+  value: -4.9
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.ncs2stats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.ncs2stats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Attacks.ncs2_fullautomode:
+    $base: Attacks.Bullet_GameEffect
+    statusEffects:
+    -   $type: StatusEffectAttackData
+        statusEffect:
+            $base: BaseStatusEffect.Vulnerable
+            maxStacks:
+                statModifiers:
+                -   $type: ConstantStatModifier
+                    statType: BaseStats.MaxStacks
+                    modifierType: Additive
+                    value: 5.0
+            reapplyPackagesOnMaxStacks: false
+            removeAllStacksWhenDurationEnds: false
+            packages:
+            -   $base: BaseStatusEffect.Vulnerable_inline2
+                stackable: true
+        resistPool: BaseStatPools.BurningTrigger
+        applyImmediately: true
+
+Attacks.ncs2_semiautomode:
+    $base: Attacks.SmasherShotgunBulletEffect
+    explosionAttack:
+        $base: Attacks.SmasherSplashExplosion
+        playerIncomingDamageMultiplier: 0.20
+        effectName: weaponShoot
+        effectTag: player_ray
+        range: 3.0
+        statModifiers:
+        -   $type: CombinedStatModifier
+            refStat: BaseStats.DamagePerHit
+            statType: BaseStats.ThermalDamage
+            modifierType: Additive
+            refObject: Owner
+            value: 3.0
+        hitReactionSeverityMin: 2
+        explosionDamageVSVehicles: 50.0
+        statusEffects:
+        -   $type: StatusEffectAttackData
+            statusEffect: BaseStatusEffect.EpicBurnGrenade
+            resistPool: BaseStatPools.BurningTrigger
+            applyImmediately: true
+            
+
+Attacks.ncs2attack1:
+    $type: RangedAttack
+    playerAttack: Attacks.ncs2_fullautomode
+    secondaryPlayerAttack: Attacks.ncs2_fullautomode
+    playerTimeDilated: Attacks.ncs2_fullautomode
+    secondaryPlayerTimeDilated: Attacks.ncs2_fullautomode
+
+Attacks.chargedncs2attack1:
+    $type: RangedAttack
+    playerAttack: Attacks.ncs2_semiautomode
+    secondaryPlayerAttack: Attacks.ncs2_semiautomode
+    playerTimeDilated: Attacks.ncs2_semiautomode
+    secondaryPlayerTimeDilated: Attacks.ncs2_semiautomode
+
+Attacks.ncs2attacks:
+    $type: RangedAttackPackage
+    defaultFire: Attacks.ncs2attack1
+    chargeFire: Attacks.chargedncs2attack1
+   
+   
+WeaponFxPackage.ncs2effects:
+    $base: WeaponFxPackage.PowerRifleAssault
+    vfx_hitscan_trail: base\fx\weapons\trails\power\thermal\w_trail_thermal_power_hmg.effect
+    NPC_vfx_hitscan_trail: base\fx\weapons\trails\power\thermal\w_trail_thermal_power_hmg.effect
+    vfx_hitscan_trail_slowmo: base\fx\weapons\trails\power\thermal\w_trail_thermal_power_hmg.effect
+    vfx_hitscan_trail_ricochet: base\fx\weapons\trails\power\thermal\w_trail_thermal_power_hmg.effect
+    vfx_impact_damage_thermal: base\fx\weapons\impacts\_elemental\thermal\imp_add_on_thermal.effect
+    
+Items.ncs2_Tech_Stats:
+    $type: StatModifierGroup
+    statModifiers:
+    -   $base: BaseStats.ChargeDischargeTimeModifier
+        value: 1.0
+    -   $base: BaseStats.ChargeMaxTimeInChargedStateModifier
+        value: 0.0
+    -   $base: BaseStats.ChargeReadyPercentageModifier
+        value: 0.0
+    -   $base: BaseStats.ChargeTimeModifier
+        value: 0.6
+    -   $base: BaseStats.ChargeModifier
+        value: 100.0
+        
+Items.ncs2_semiautostats:
+  $type: GameplayLogicPackage
+  effectors:
+    - !append Items.ncs2_semiautostats_inline0
+    
+Items.ncs2_semiautostats_inline0:
+  $type: ApplyStatGroupEffector
+  applicationTarget: Weapon
+  removeWithEffector: True
+  statGroup: Items.ncs2_semiautostats_inline1
+  effectorClassName: ApplyStatGroupEffector
+  prereqRecord: Perks.PlayerIsNotAiming
+  reapplyOnWeaponChange: False
+  
+Items.ncs2_semiautostats_inline1:
+  $type: StatModifierGroup
+  statModsLimit: -1
+  statModifiers:
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.CycleTimeBonus
+      modifierType: Additive
+      value: 0.09  
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.DPS
+      modifierType: Additive
+      value: 250
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.HitDismembermentFactor
+      modifierType: Multiplier
+      value: 200
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.EffectiveRange
+      modifierType: Additive
+      value: 30
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.RecoilKickMin
+      modifierType: Multiplier
+      value: 6
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.RecoilKickMax
+      modifierType: Multiplier
+      value: 6
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.ProjectilesPerShotBase
+      modifierType: Additive
+      value: 6
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.SpreadMinX
+      modifierType: Additive
+      value: 2.2
+    - !append
+      $type: ConstantStatModifier
+      statType: BaseStats.SpreadMinY
+      modifierType: Additive
+      value: 1.25

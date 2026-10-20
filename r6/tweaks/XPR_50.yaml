@@ -1,0 +1,268 @@
+Items.XPR_50:
+  $base: Items.Preset_Nekomata_Breakthrough_Legendary
+  tags:
+    - !append-once IconicWeapon
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.xrpstats_rof 
+    - !append-once Items.xrpstats_damage
+    - !append-once Items.xrpstats_firstequip 
+    - !append-once Items.xrpstats_mag
+    - !append-once Items.xrpstats_effectiverange
+    - !append-once Items.xrpstats_maxrange 
+    - !append-once Items.xrpstats_recoil
+    - !append-once Items.xrpstats_recoil2
+    - !append-once Items.xrpstats_recoil3   
+    - !append-once Items.xrpstats_recoil4     
+    - !append-once Items.xrpstats_recoil5     
+    - !append-once Items.xrpstats_recoil6  
+    - !append-once Items.xrpstats_reload     
+    - !append-once Items.xrpstats_reload2  
+    - !append-once Items.xrpstats_spread
+    - !append-once Items.xrpstats_spread2
+    - !append-once Items.xrpstats_spread3  
+    - !append-once Items.xrpstats_spread4
+    - !append-once Items.xrpstats_spread5      
+    - !append-once Items.xrpstats_fov
+    - !append-once Items.xrpstats_pierce
+    - !append-once Items.xrpstats_armor
+  appearanceResourceName: xrp_app
+  audioName: wea_set_kyubi
+  effectiveRangeFalloffCurve: SniperRifleFalloff
+  evolution: WeaponEvolution.Power
+  fxPackage: WeaponFxPackage.PowerRifleSniper
+  primaryTriggerMode: TriggerMode.Charge
+  projectileEaseOutCurveName: ProjectileEaseOut
+  rangedAttacks: Attacks.PhysicalBulletPackage
+  secondaryTriggerMode: TriggerMode.Charge
+  triggerEffectName: te_wea_aim_slow
+  crosshair: Crosshairs.Basic
+  triggerModes:
+    - TriggerMode.Charge
+  quality: Quality.Legendary
+  displayName: xrp_name
+  localizedDescription: xrp_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: xrp\icon\xrp_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: xrp\icon\xrp.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_xrp_inline1
+    - Items.Base_xrp_inline3
+    - Items.Base_xrp_inline5
+    - Items.Base_xrp_inline7
+    - Items.RiflePossibleScopesList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+  slotPartListPreset:
+    - Items.Preset_xrp_inline0
+    - Items.Preset_xrp_inline1
+    - Items.Preset_xrp_inline2
+    - Items.Preset_xrp_inline3
+    - Items.Preset_Nekomata_Breakthrough_inline7
+    
+Items.Iconic_Ranged_Weapon_NoMuzzle_Blueprint_inline3.childElements:
+  - Items.ScopeElement
+  - Items.PowerModuleElement
+    
+Items.Base_xrp_inline1:
+  $base: Items.Base_Nekomata_inline1
+  itemPartList:
+    - Items.Base_xrp_inline2
+Items.Base_xrp_inline2:
+  $base: Items.Base_Nekomata_inline2
+  item: Items.xrp_rcv_prt
+Items.xrp_rcv_prt:
+  $base: Items.w_rifle_sniper__tsunami_nekomata__rcv1
+  appearanceResourceName: xrp_rcv
+#base
+Items.Base_xrp_inline3:
+  $base: Items.Base_Nekomata_inline3
+  itemPartList:
+    - Items.Base_xrp_inline4
+Items.Base_xrp_inline4:
+  $base: Items.Base_Nekomata_inline4
+  item: Items.xrp_base_prt
+Items.xrp_base_prt:
+  $base: Items.w_rifle_sniper__tsunami_nekomata__base1
+  appearanceResourceName: xrp_base
+#mag
+Items.Base_xrp_inline5:
+  $base: Items.Base_Nekomata_inline5
+  itemPartList:
+    - Items.Base_xrp_inline6
+Items.Base_xrp_inline6:
+  $base: Items.Base_Nekomata_inline6
+  item: Items.xrp_mag_std_prt
+Items.xrp_mag_std_prt:
+  $base: Items.w_rifle_sniper__tsunami_nekomata__mag_std
+  appearanceResourceName: xrp_mag_std
+#reload
+Items.Base_xrp_inline7:
+  $base: Items.Base_Nekomata_inline7
+  itemPartList:
+    - Items.Base_xrp_inline8
+Items.Base_xrp_inline8:
+  $base: Items.Base_Nekomata_inline8
+  item: Items.xrp_mag_stdr_prt
+Items.xrp_mag_stdr_prt:
+  $base: Items.w_rifle_sniper__tsunami_nekomata__mag_stdr
+  appearanceResourceName: xrp_mag_stdr
+#preset
+Items.Preset_xrp_inline0:
+  $base: Items.Preset_Nekomata_Default_inline0
+  itemPartPreset: Items.xrp_rcv_prt
+Items.Preset_xrp_inline1:
+  $base: Items.Preset_Nekomata_Default_inline1
+  itemPartPreset: Items.xrp_base_prt
+Items.Preset_xrp_inline2:
+  $base: Items.Preset_Nekomata_Default_inline2
+  itemPartPreset: Items.xrp_mag_std_prt
+Items.Preset_xrp_inline3:
+  $base: Items.Preset_Nekomata_Default_inline3
+  itemPartPreset: Items.xrp_mag_stdr_prt
+  
+Items.xrpstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.6
+  modifierType: Additive
+  statType: BaseStats.CycleTime
+  
+Items.xrpstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 100
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.xrpstats_firstequip:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.0
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.xrpstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 6
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase 
+  
+Items.xrpstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 60
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.xrpstats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 70
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.xrpstats_recoil:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.RecoilHoldDuration
+  
+Items.xrpstats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 2.0
+  modifierType: Additive
+  statType: BaseStats.RecoilKickMin
+  
+Items.xrpstats_recoil3:
+  $type: gamedataConstantStatModifier_Record
+  value: 3.0
+  modifierType: Additive
+  statType: BaseStats.RecoilKickMax
+  
+Items.xrpstats_recoil4:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.02
+  modifierType: Additive
+  statType: BaseStats.RecoilTime
+  
+Items.xrpstats_recoil5:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.02
+  modifierType: Additive
+  statType: BaseStats.RecoilRecoveryTime
+  
+Items.xrpstats_recoil6:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.5
+  modifierType: Additive
+  statType: BaseStats.RecoilSpeed
+  
+Items.xrpstats_reload:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.4
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBase
+  
+Items.xrpstats_reload2:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.4
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+  
+Items.xrpstats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.xrpstats_charge:
+  $type: gamedataConstantStatModifier_Record
+  value: -2.5
+  modifierType: Additive
+  statType: BaseStats.BaseChargeTime
+  
+Items.xrpstats_spread2:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseCircularSpread
+  
+Items.xrpstats_spread3:
+  $type: gamedataConstantStatModifier_Record
+  value: -5.4
+  modifierType: Additive
+  statType: BaseStats.SpreadMaxX
+  
+Items.xrpstats_spread4:
+  $type: gamedataConstantStatModifier_Record
+  value: -1.34
+  modifierType: Additive
+  statType: BaseStats.SpreadDefaultX
+  
+Items.xrpstats_spread5:
+  $type: gamedataConstantStatModifier_Record
+  value: -1.5
+  modifierType: Additive
+  statType: BaseStats.SpreadResetSpeed
+  
+Items.xrpstats_fov:
+  $type: gamedataConstantStatModifier_Record
+  value: 2
+  modifierType: Additive
+  statType: BaseStats.ScopeFOV
+  
+Items.xrpstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.xrpstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  

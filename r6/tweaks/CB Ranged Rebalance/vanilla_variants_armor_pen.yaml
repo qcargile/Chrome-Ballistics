@@ -1,0 +1,483 @@
+Items.Base_Buck_Technical_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+
+Items.Base_HMG_RPG_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+
+Items.Satara_Brick_Technical_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+
+Items.Base_Borg4a_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Carnage_Edgerunners_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Carnage_Mox_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Chao_VooDoo_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Grit_Krausser_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Lexington_Wilson_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Pozhar_AirDrop_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Pozhar_Legendary_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Sovereign_Igla_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Tactician_Headsman_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Tactician_Krausser_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Testera_Nicolas_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Zhuo_Eight_Star_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Ajax_Krausser_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Ajax_Moron_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Copperhead_Krausser_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Kenshin_Spy_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Kyubi_Krausser_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Kyubi_Legendary_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Masamune_Arasaka_2020_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Masamune_Rogue_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Nova_Doom_Doom_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Nova_Hitman_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Nue_Arasaka_2020_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Nue_Bree_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Omaha_Krausser_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Satara_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Ticon_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Umbra_Collectible_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Tinker_Bell_RPG_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Achilles_Constant_Collectible_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh
+
+Items.Base_Achilles_Nash_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh
+
+Items.Base_Ashura_Twitch_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Burya_AirDrop_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh
+
+Items.Base_Burya_Comrade_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh
+
+Items.Base_Defender_Kurt_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Grad_AirDrop_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh
+
+Items.Base_Grad_Panam_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh
+
+Items.Base_Grad_Scav_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh
+
+Items.Base_MA70_Collectible_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh
+
+Items.Base_Metel_AirDrop_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh
+
+Items.Base_Metel_Kurt_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Nekomata_Krausser_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Overture_Dante_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Overture_Dodger_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Overture_Kerry_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Quasar_Baron_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Rasetsu_Prototype_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh
+
+Items.Base_RocketLauncher_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh
+
+Items.Base_Silverhand_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh
+
+Items.Base_Nekomata_Breakthrough_Constant_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium

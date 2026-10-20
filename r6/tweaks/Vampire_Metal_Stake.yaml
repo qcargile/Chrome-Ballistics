@@ -1,0 +1,80 @@
+Items.Vampire_Metal_Stake:
+  $base: Items.Preset_Knife_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.vampstats_recovery
+    - !append-once Items.vampstats_damage
+    - !append-once Items.vampstats_thermal
+    - !append-once Items.vampstats_thermal2
+    - !append-once Items.vampstats_thermal3
+    - !append-once Items.vampstats_leap
+  appearanceResourceName: vamp_app
+  quality: Quality.Uncommon
+  displayName: vamp_name
+  hudIcon:
+    atlasResourcePath: vamp\icon\vamp_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: vamp\icon\vamp.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_vamp_inline0
+    - Items.Base_vamp_inline1
+  slotPartListPreset:
+    - Items.Preset_vamp_inline0
+  statPools:
+    - BaseStatPools.ThrowRecovery
+    
+Items.Base_vamp_inline0:
+  $base: Items.Base_Knife_inline0
+  itemPartList:
+    - Items.Base_vamp_inline1
+Items.Base_vamp_inline1:
+  $base: Items.Base_Knife_inline3
+  item: Items.vamp_grip_prt
+Items.vamp_grip_prt:
+  $base: Items.w_knife_combat_grip
+  appearanceResourceName: vamp_grip   
+  
+Items.Preset_vamp_inline0:
+  $base: Items.Preset_Knife_Default_inline0
+  itemPartPreset: Items.vamp_grip_prt
+  
+Items.vampstats_recovery:
+  $type: gamedataConstantStatModifier_Record
+  value: -2.5
+  modifierType: Additive
+  statType: BaseStats.ThrowRecovery
+  
+Items.vampstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.vampstats_thermal:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.DealsThermalDamage
+  
+Items.vampstats_thermal2:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.ThermalDamage
+
+Items.vampstats_thermal3:
+  $type: gamedataConstantStatModifier_Record
+  value: 100
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.vampstats_leap:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CanMeleeLeap
+  

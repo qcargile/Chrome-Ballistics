@@ -1,0 +1,141 @@
+Items.KN44:
+  $base: Items.Preset_Ajax_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.kn44stats_rof 
+    - !append-once Items.kn44stats_damage
+    - !append-once Items.kn44stats_reload  
+    - !append-once Items.kn44stats_recoil2
+    - !append-once Items.kn44stats_reload2  
+    - !append-once Items.kn44stats_equip
+    - !append-once Items.kn44stats_mag
+  appearanceResourceName: kn44_app
+  audioName: wea_set_copperhead
+  quality: Quality.Uncommon
+  displayName: kn44_name
+  localizedDescription: kn44_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: kn44\icon\kn44_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: kn44\icon\kn44.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_kn44_inline2
+    - Items.Base_kn44_inline4
+    - Items.Base_kn44_inline6
+    - Items.Base_kn44_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_kn44_inline0
+    - Items.Preset_kn44_inline1
+    - Items.Preset_kn44_inline2
+    - Items.Preset_kn44_inline3
+  
+Items.Base_kn44_inline2:
+  $base: Items.Base_Ajax_inline2
+  itemPartList:
+    - Items.Base_kn44_inline3
+Items.Base_kn44_inline3:
+  $base: Items.Base_Ajax_inline3
+  item: Items.kn44_rcv_prt
+Items.kn44_rcv_prt:
+  $base: Items.w_rifle_assault__militech_ajax__rcv1
+  appearanceResourceName: kn44_rcv
+#base
+Items.Base_kn44_inline4:
+  $base: Items.Base_Ajax_inline4
+  itemPartList:
+    - Items.Base_kn44_inline5
+Items.Base_kn44_inline5:
+  $base: Items.Base_Ajax_inline5
+  item: Items.kn44_base_prt
+Items.kn44_base_prt:
+  $base: Items.w_rifle_assault__militech_ajax__base1
+  appearanceResourceName: kn44_base
+#mag
+Items.Base_kn44_inline6:
+  $base: Items.Base_Ajax_inline6
+  itemPartList:
+    - Items.Base_kn44_inline7
+Items.Base_kn44_inline7:
+  $base: Items.Base_Ajax_inline7
+  item: Items.kn44_mag_std_prt
+Items.kn44_mag_std_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_std
+  appearanceResourceName: kn44_mag_std
+#reload
+Items.Base_kn44_inline8:
+  $base: Items.Base_Ajax_inline8
+  itemPartList:
+    - Items.Base_kn44_inline9
+Items.Base_kn44_inline9:
+  $base: Items.Base_Ajax_inline9
+  item: Items.kn44_mag_stdr_prt
+Items.kn44_mag_stdr_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_stdr
+  appearanceResourceName: kn44_mag_stdr
+#preset
+Items.Preset_kn44_inline0:
+  $base: Items.Preset_Ajax_Default_inline0
+  itemPartPreset: Items.kn44_rcv_prt
+Items.Preset_kn44_inline1:
+  $base: Items.Preset_Ajax_Default_inline1
+  itemPartPreset: Items.kn44_base_prt
+Items.Preset_kn44_inline2:
+  $base: Items.Preset_Ajax_Default_inline2
+  itemPartPreset: Items.kn44_mag_std_prt
+Items.Preset_kn44_inline3:
+  $base: Items.Preset_Ajax_Default_inline3
+  itemPartPreset: Items.kn44_mag_stdr_prt
+  
+Items.kn44stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.07
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.kn44stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.kn44stats_reload:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+  
+Items.kn44stats_reload2:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBase
+  
+Items.kn44stats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.35
+  modifierType: Additive
+  statType: BaseStats.RecoilRecoveryTime
+
+Items.kn44stats_equip:
+  $type: gamedataConstantStatModifier_Record
+  value: -1.0
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.kn44stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+
+
+  

@@ -1,0 +1,201 @@
+Items.HardReboot_Shotgun:
+  $base: Items.Preset_Tactician_Default
+  tags:
+    - !append ForceDismember
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.rebootstats_damage
+    - !append-once Items.rebootstats_rof
+    - !append-once Items.rebootstats_spread
+    - !append-once Items.rebootstats_mag
+    - !append-once Items.rebootstats_pierce
+    - !append-once Items.rebootstats_armor
+    - !append-once Items.rebootstats_crit
+    - !append-once Items.rebootstats_bleeding
+    - !append-once Items.rebootstats_burning
+    - !append-once Items.rebootstats_electrocute
+    - !append-once Items.rebootstats_poison
+    - !append-once Items.rebootstats_stun
+    - !append-once Items.rebootstats_headshotmult
+    - !append-once Items.rebootstats_effectiverange
+    - !append-once Items.rebootstats_maxrange
+  statModifierGroups: 
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  ammo: Ammo.ShotgunAmmo
+  appearanceResourceName: reboot_app
+  blueprint: Items.Base_Power_Shotgun_Blueprint
+  fxPackage: WeaponFxPackage.PowerLargeCaliber
+  hudIcon:
+    atlasResourcePath: reboot\icon\reboot_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: reboot\icon\reboot.inkatlas
+    atlasPartName: slot_01
+  quality: Quality.Legendary
+  displayName: reboot_name
+  localizedDescription: reboot_description
+  slotPartList:
+    - Items.Base_reboot_inline2
+    - Items.Base_reboot_inline4
+    - Items.Base_reboot_inline6
+    - Items.Base_reboot_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.RiflePossibleScopesList
+    - Items.UniversalShotgunSuppressorList
+  slotPartListPreset:
+    - Items.Preset_reboot_inline0
+    - Items.Preset_reboot_inline1
+    - Items.Preset_reboot_inline2
+    - Items.Preset_reboot_inline3
+  visualTags:
+    - Default
+    
+Items.Base_reboot_inline2:
+  $base: Items.Base_Tactician_inline2
+  itemPartList:
+    - Items.Base_reboot_inline3
+Items.Base_reboot_inline3:
+  $base: Items.Base_Tactician_inline3
+  item: Items.reboot_rcv_prt
+Items.reboot_rcv_prt:
+  $base: Items.w_shotgun_constitutional_tactician_rcv1
+  appearanceResourceName: reboot_rcv
+Items.Base_reboot_inline4:
+  $base: Items.Base_Tactician_inline4
+  itemPartList:
+    - Items.Base_reboot_inline5
+Items.Base_reboot_inline5:
+  $base: Items.Base_Tactician_inline5
+  item: Items.reboot_base_prt
+Items.reboot_base_prt:
+  $base: Items.w_shotgun_constitutional_tactician_base1
+  appearanceResourceName: reboot_base
+Items.Base_reboot_inline6:
+  $base: Items.Base_Tactician_inline6
+  itemPartList:
+    - Items.Base_reboot_inline7
+Items.Base_reboot_inline7:
+  $base: Items.Base_Tactician_inline7
+  item: Items.reboot_mag_std_prt
+Items.reboot_mag_std_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_std
+  appearanceResourceName: reboot_mag_std
+Items.Base_reboot_inline8:
+  $base: Items.Base_Tactician_inline8
+  itemPartList:
+    - Items.Base_reboot_inline9
+Items.Base_reboot_inline9:
+  $base: Items.Base_Tactician_inline9
+  item: Items.reboot_mag_stdr_prt
+Items.reboot_mag_stdr_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_stdr
+  appearanceResourceName: reboot_mag_stdr
+Items.Preset_reboot_inline0:
+  $base: Items.Preset_Tactician_Default_inline0
+  itemPartPreset: Items.reboot_rcv_prt
+Items.Preset_reboot_inline1:
+  $base: Items.Preset_Tactician_Default_inline1
+  itemPartPreset: Items.reboot_base_prt
+Items.Preset_reboot_inline2:
+  $base: Items.Preset_Tactician_Default_inline2
+  itemPartPreset: Items.reboot_mag_std_prt
+Items.Preset_reboot_inline3:
+  $base: Items.Preset_Tactician_Default_inline3
+  itemPartPreset: Items.reboot_mag_stdr_prt
+  
+Items.rebootstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 23
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.rebootstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.rebootstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.rebootstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.rebootstats_crit:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Items.rebootstats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Items.rebootstats_poison:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.PoisonedApplicationRate
+  
+Items.rebootstats_electrocute:
+  $type: gamedataConstantStatModifier_Record
+  value: 50
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.rebootstats_bleeding:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  
+Items.rebootstats_burning:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.rebootstats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.15
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+
+Items.rebootstats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.rebootstats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.rebootstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.rebootstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  

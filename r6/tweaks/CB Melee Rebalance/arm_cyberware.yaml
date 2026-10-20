@@ -1,0 +1,22 @@
+
+# Mantis Blades
+Items.MantisBlades_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 300              # default value – 70
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Mono Wire
+Items.Nano_Wires_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 250                   # default value – 70
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+
+Items.Strong_Arms_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 275             # default value – 70
+  modifierType: Additive
+  statType: BaseStats.DPS
+

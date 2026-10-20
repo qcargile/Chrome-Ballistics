@@ -1,0 +1,230 @@
+Items.KVInhibitor_GRAU:
+  $base: Items.Preset_Crusher_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.kvwoodstats_rof 
+    - !append-once Items.kvwoodstats_damage
+    - !append-once Items.kvwoodstats_effectiverange
+    - !append-once Items.kvwoodstats_maxrange   
+    - !append-once Items.kvwoodstats_mag
+    - !append-once Items.kvwoodstats_pierce
+    - !append-once Items.kvwoodstats_crit
+    - !append-once Items.kvwoodstats_bleeding
+    - !append-once Items.kvwoodstats_burning
+    - !append-once Items.kvwoodstats_electrocute
+    - !append-once Items.kvwoodstats_poison
+    - !append-once Items.kvwoodstats_stun
+    - !append-once Items.kvwoodstats_headshotmult
+    - !append-once Items.kvwoodstats_firstequip
+    - !append-once Items.kvwoodstats_burst
+    - !append-once Items.kvwoodstats_burst2
+    - !append-once Items.kvwoodstats_armor
+    - !append-once Items.kvwoodstats_spread
+  statModifierGroups:
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  appearanceResourceName: kvwood_app
+  ammo: Ammo.SniperRifleAmmo
+  audioName: wea_set_kyubi
+  blueprint: Items.Base_Power_Precision_Sniper_Rifle_Blueprint
+  crosshair: Crosshairs.Basic
+  itemType: ItemType.Wea_SniperRifle
+  fxPackage: WeaponFxPackage.PowerLargeCaliber
+  quality: Quality.Epic
+  displayName: kvwood_name
+  localizedDescription: kvwood_description
+  primaryTriggerMode: TriggerMode.Burst
+  secondaryTriggerMode: TriggerMode.Burst
+  triggerModes:
+    - TriggerMode.Burst
+    - TriggerMode.Burst
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: kvwood\icon\kvwood_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: kvwood\icon\kvwood.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_kvwood_inline1
+    - Items.Base_kvwood_inline3
+    - Items.Base_kvwood_inline5
+    - Items.Base_kvwood_inline7
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.RiflePossibleScopesList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_kvwood_inline0
+    - Items.Preset_kvwood_inline1
+    - Items.Preset_kvwood_inline2
+    - Items.Preset_kvwood_inline3
+    
+Items.Base_kvwood_inline1:
+  $base: Items.Base_Crusher_inline1
+  itemPartList:
+    - Items.Base_kvwood_inline2
+Items.Base_kvwood_inline2:
+  $base: Items.Base_Crusher_inline2
+  item: Items.kvwood_rcv_prt
+Items.kvwood_rcv_prt:
+  $base: Items.w_revolver__militech_crusher__rcv1
+  appearanceResourceName: kvwood_rcv
+Items.Base_kvwood_inline3:
+  $base: Items.Base_Crusher_inline3
+  itemPartList:
+    - Items.Base_kvwood_inline4
+Items.Base_kvwood_inline4:
+  $base: Items.Base_Crusher_inline4
+  item: Items.kvwood_base_prt
+Items.kvwood_base_prt:
+  $base: Items.w_revolver__militech_crusher__base1
+  appearanceResourceName: kvwood_base
+Items.Base_kvwood_inline5:
+  $base: Items.Base_Crusher_inline5
+  itemPartList:
+    - Items.Base_kvwood_inline6
+Items.Base_kvwood_inline6:
+  $base: Items.Base_Crusher_inline6
+  item: Items.kvwood_mag_std_prt
+Items.kvwood_mag_std_prt:
+  $base: Items.w_revolver__militech_crusher__mag_std
+  appearanceResourceName: kvwood_mag_std
+Items.Base_kvwood_inline7:
+  $base: Items.Base_Crusher_inline7
+  itemPartList:
+    - Items.Base_kvwood_inline8
+Items.Base_kvwood_inline8:
+  $base: Items.Base_Crusher_inline8
+  item: Items.kvwood_mag_stdr_prt
+Items.kvwood_mag_stdr_prt:
+  $base: Items.w_revolver__militech_crusher__mag_stdr
+  appearanceResourceName: kvwood_mag_stdr
+Items.Preset_kvwood_inline0:
+  $base: Items.Preset_Crusher_Default_inline0
+  itemPartPreset: Items.kvwood_rcv_prt
+Items.Preset_kvwood_inline1:
+  $base: Items.Preset_Crusher_Default_inline1
+  itemPartPreset: Items.kvwood_base_prt
+Items.Preset_kvwood_inline2:
+  $base: Items.Preset_Crusher_Default_inline2
+  itemPartPreset: Items.kvwood_mag_std_prt
+Items.Preset_kvwood_inline3:
+  $base: Items.Preset_Crusher_Default_inline3
+  itemPartPreset: Items.kvwood_mag_stdr_prt
+  
+Items.kvwoodstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 175
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.kvwoodstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.0
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.kvwoodstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -10
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.kvwoodstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.kvwoodstats_crit:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Items.kvwoodstats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Items.kvwoodstats_poison:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.PoisonedApplicationRate
+  
+Items.kvwoodstats_electrocute:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.kvwoodstats_bleeding:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  
+Items.kvwoodstats_burning:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.kvwoodstats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+  
+Items.kvwoodstats_burst:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.NumShotsInBurstSecondary
+  
+Items.kvwoodstats_burst2:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.NumShotsInBurst
+  
+Items.kvwoodstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 100
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.kvwoodstats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 150
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.kvwoodstats_firstequip:
+  $type: gamedataConstantStatModifier_Record
+  value: 1.6
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.kvwoodstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+Items.kvwoodstats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: -1
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  

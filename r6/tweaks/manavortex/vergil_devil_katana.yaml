@@ -1,0 +1,371 @@
+#STATS
+Items.ScaleToPlayerLevel:
+  $base: Character.ScaleToPlayerLevel
+  refStat: BaseStats.Level
+#END
+
+#CONSTANT VALUES
+Items.mana_vergil_devil_katana_mod_base_damage:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.BaseDamage
+  value: -1300.0
+Items.mana_vergil_devil_katana_mod_attacks_per_second:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.AttacksPerSecond
+  value: 3.0
+Items.mana_vergil_devil_katana_mod_electric_damage:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.ElectricDamage
+  value: 200.0
+Items.mana_vergil_devil_katana_mod_bleeding:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  value: 30.0
+Items.mana_vergil_devil_katana_mod_crit_chance:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  value: 50.0
+Items.mana_vergil_devil_katana_mod_crit_damage:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.CritDamage
+  value: 150.0
+Items.mana_vergil_devil_katana_mod_electrocution:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  value: 50.0
+Items.mana_vergil_devil_katana_mod_damage_per_hit:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Multiplier
+  statType: BaseStats.DamagePerHit
+  value: 1.10
+  
+#END CONSTANT 
+
+
+# Preset_Katana_Wakako
+
+#VALUES PER LEVEL
+Items.mana_vergil_devil_katana_mod_modifier_008:
+  $base: Items.Base_Weapon_inline4
+  refObject: Player
+  refStat: BaseStats.Level
+  statType: BaseStats.DamagePerHit
+  value: 0.009
+Items.mana_vergil_devil_katana_mod_modifier_009:
+  $base: Items.Base_Weapon_inline4
+  refObject: Player
+  refStat: BaseStats.Level
+  statType: BaseStats.CritDamage
+  value: 0.50
+Items.mana_vergil_devil_katana_mod_modifier_010:
+  $base: Items.Base_Weapon_inline4
+  refObject: Player
+  refStat: BaseStats.Level
+  statType: BaseStats.ElectricDamage
+  value: 7.0
+Items.mana_vergil_devil_katana_mod_modifier_011:
+  $base: Items.Base_Weapon_inline4
+  refObject: Player
+  refStat: BaseStats.Level
+  statType: BaseStats.AttackSpeed
+  value: 0.10
+Items.mana_vergil_devil_katana_mod_modifier_012:
+  $base: Items.Base_Weapon_inline4
+  refObject: Player
+  refStat: BaseStats.Level
+  statType: BaseStats.BaseDamage
+  value: 2.0
+Items.mana_vergil_devil_katana_mod_modifier_013:
+  $base: Items.Base_Weapon_inline4
+  refObject: Player
+  refStat: BaseStats.Level
+  statType: BaseStats.ElectrocutedApplicationRate
+  value: 0.5
+Items.mana_vergil_devil_katana_mod_modifier_014:
+  $base: Items.Base_Weapon_inline4
+  refObject: Player
+  refStat: BaseStats.Level
+  statType: BaseStats.BleedingApplicationRate
+  value: 0.7
+Items.mana_vergil_devil_katana_mod_modifier_015:
+  $base: Items.Base_Weapon_inline4
+  refObject: Player
+  refStat: BaseStats.Level
+  statType: BaseStats.CritChance
+  value: 0.5
+#END VALUES PER LEVEL
+
+#PEM EXPLOSION
+Items.mana_vergil_devil_katana_mod_modifier_016:
+  $base: Items.AdvancedElectroshockMechanismLegendary_inline3
+  floatValues: [15.0, 1000.0]
+  intValues: [15, 1000]
+  localizedDescription: LocKey#yamato_explosioneffect_UI
+
+Items.mana_vergil_devil_katana_mod_modifier_017:
+  $base: Items.AdvancedElectroshockMechanismLegendary_inline0
+  UIData: Items.mana_vergil_devil_katana_mod_modifier_016
+  effectors: [Items.mana_vergil_devil_katana_mod_modifier_018]
+  stats: [Items.mana_vergil_devil_katana_mod_modifier_019]
+
+Items.mana_vergil_devil_katana_mod_modifier_018:
+  $base: Items.AdvancedElectroshockMechanismLegendary_inline2
+  attackRecord: Attacks.ElectroshockMechanismExplosionLegendaryEX
+  prereqRecord: Items.mana_vergil_devil_katana_mod_modifier_020
+  chance: 100.0
+
+Items.mana_vergil_devil_katana_mod_modifier_019:  
+  $base: Items.AdvancedElectroshockMechanismLegendary_inline1
+  value: 0.15
+
+Attacks.ElectroshockMechanismExplosionLegendaryEX:
+  $base: Attacks.ElectroshockMechanismExplosionLegendary
+  range: 9999.0
+  explosionDamageVSVehicles: 2.0
+  hitFlags: [Explosion]
+  playerIncomingDamageMultiplier: 0.0
+  statModifiers: [Attacks.ElectroshockMechanismExplosionLegendary_inline0EX]
+
+Attacks.ElectroshockMechanismExplosionLegendaryEX.attackRadius: 50.0
+Attacks.ElectroshockMechanismExplosionLegendaryEX.detonationStimRadius: 50.0
+
+Attacks.ElectroshockMechanismExplosionLegendary_inline0EX:
+  $base: Attacks.ElectroshockMechanismExplosionLegendary_inline0
+  value: 999999999.0
+
+Items.mana_vergil_devil_katana_mod_modifier_020:
+  $base: Items.ElectroshockMechanismEffector2_inline0
+  nestedPrereqs: [Items.ElectroshockMechanismEffector2_inline4]
+
+#END PEM EXPLOSION
+
+#ELETRIC RESIST (HIROMI KATANA)
+Items.HiromiKatanaWeaponMod_inline0EX:
+  $base: Items.HiromiKatanaWeaponMod_inline0
+  statType: BaseStats.ElectricResistance
+  value: 100.0
+#END ELETRIC RESIST
+
+#SABURO HEALING & BLEEDING EFFECT PER HIT
+Items.SaburoKatanaWeaponModAbility_inline0EX:
+  $base: Items.SaburoKatanaWeaponModAbility_inline0
+  floatValues: [500.0, 30.0]
+  intValues: [500, 30]
+  localizedDescription: LocKey#yamato_regenerationeffect_UI
+
+Items.SaburoKatanaWeaponModAbility_inline0X:
+  $base: BaseStatusEffect.HealthBooster_inline2
+  description: LocKey#yamato_regeneration_status_UI_desc
+  displayName: LocKey#yamato_regeneration_status_UI_name
+  floatValues: [500.0]
+  intValues: []
+  iconPath: health_booster_icon
+  priority: -8
+  
+BaseStatusEffect.Saburo_HemorrhageEX:
+  $base: BaseStatusEffect.Saburo_Hemorrhage
+  immunityStats: [BaseStats.BleedingImmunity]
+  duration: BaseStatusEffect.Saburo_Healing_inline0EX
+  replicated: True
+  reapplyPackagesOnMaxStacks: True
+
+Items.mana_vergil_devil_katana_mod_modifier_023:
+  $base: Items.SaburoKatanaWeaponModAbility_inline5
+  prereqRecord: Items.mana_vergil_devil_katana_mod_modifier_024
+  statusEffect: BaseStatusEffect.Saburo_HealingEX
+#  statModifierGroups: [Items.ModGroupQualityLegendary]
+
+Items.mana_vergil_devil_katana_mod_modifier_023X:
+  $base: Items.SaburoKatanaWeaponModAbility_inline5
+  prereqRecord: Items.mana_vergil_devil_katana_mod_modifier_024X
+  statusEffect: BaseStatusEffect.Saburo_HealingEX
+  
+Items.SaburoKatanaWeaponModAbility_inline1EX:
+  $base: Items.SaburoKatanaWeaponModAbility_inline1
+  applicationChance: [Items.SaburoKatanaWeaponModAbility_inline15EX]
+  prereqRecord: Items.SaburoKatanaWeaponModAbility_inline2EX
+  statusEffect: BaseStatusEffect.Saburo_HemorrhageEX
+
+Items.SaburoKatanaWeaponModAbility_inline1EXX:
+  $base: Items.SaburoKatanaWeaponModAbility_inline1
+  applicationChance: [Items.SaburoKatanaWeaponModAbility_inline15EX]
+  prereqRecord: Items.SaburoKatanaWeaponModAbility_inline2EXX
+  statusEffect: BaseStatusEffect.Saburo_HemorrhageEX
+  
+Items.mana_vergil_devil_katana_mod_modifier_022:  
+  $base: Items.SaburoKatanaWeaponModAbility
+  UIData: Items.SaburoKatanaWeaponModAbility_inline0EX
+  effectors: [Items.mana_vergil_devil_katana_mod_modifier_023, Items.mana_vergil_devil_katana_mod_modifier_023X, Items.SaburoKatanaWeaponModAbility_inline1EX, Items.SaburoKatanaWeaponModAbility_inline1EXX]
+  stats: []
+  
+BaseStatusEffect.Saburo_HealingEX:
+  $base: BaseStatusEffect.Saburo_Healing
+  duration: BaseStatusEffect.Saburo_Healing_inline0EX
+  packages: [BaseStatusEffect.Saburo_Healing_inline2EX]
+  uiData: Items.SaburoKatanaWeaponModAbility_inline0X
+  replicated: True
+  reapplyPackagesOnMaxStacks: True
+
+BaseStatusEffect.Saburo_Healing_inline0EX:
+  $base: BaseStatusEffect.Saburo_Healing_inline0
+  statModifiers: [BaseStatusEffect.Saburo_Healing_inline1EX]
+
+BaseStatusEffect.Saburo_Healing_inline1EX:
+  $base: BaseStatusEffect.Saburo_Healing_inline1
+  value: 10.0
+
+BaseStatusEffect.Saburo_Healing_inline2EX:
+  $base: BaseStatusEffect.Saburo_Healing_inline2
+  effectors: [BaseStatusEffect.Saburo_Healing_inline3EX]
+
+BaseStatusEffect.Saburo_Healing_inline3EX:
+  $base: BaseStatusEffect.Saburo_Healing_inline3
+  poolModifier: BaseStatusEffect.Saburo_Healing_inline6EX
+
+BaseStatusEffect.Saburo_Healing_inline6EX:
+  $base: BaseStatusEffect.Saburo_Healing_inline6
+  rangeEnd: 999999.0
+  valuePerSec: 50.0
+  
+Items.SaburoKatanaWeaponModAbility_inline15EX:
+  $base: Items.SaburoKatanaWeaponModAbility_inline15
+  value: 1.0
+  
+Items.SaburoKatanaWeaponModAbility_inline2EX:
+  $base: Items.SaburoKatanaWeaponModAbility_inline2
+  conditions: [Perks.IsHitTargetAlive_inline0, Perks.IsHitTargetAlive_inline1, Perks.IsHitTargetAlive_inline2, Perks.IsWeaponMelee_inline0, Perks.HitIsTargetHuman_inline0]
+  
+Items.SaburoKatanaWeaponModAbility_inline2EXX:
+  $base: Items.SaburoKatanaWeaponModAbility_inline2
+  conditions: [Perks.IsHitTargetAlive_inline0, Perks.IsHitTargetAlive_inline1, Perks.IsHitTargetAlive_inline2, Perks.IsWeaponMelee_inline0, Perks.HitIsTargetMechanical_inline0]
+  
+Items.mana_vergil_devil_katana_mod_modifier_024:
+  $base: Items.SaburoKatanaWeaponModAbility_inline6
+  conditions: [Perks.IsHitTargetAlive_inline0, Perks.IsHitTargetAlive_inline1, Perks.IsHitTargetAlive_inline2, Perks.IsWeaponMelee_inline0, Perks.HitIsTargetHuman_inline0]
+  
+Items.mana_vergil_devil_katana_mod_modifier_024X:
+  $base: Items.SaburoKatanaWeaponModAbility_inline6
+  conditions: [Perks.IsHitTargetAlive_inline0, Perks.IsHitTargetAlive_inline1, Perks.IsHitTargetAlive_inline2, Perks.IsWeaponMelee_inline0, Perks.HitIsTargetMechanical_inline0]
+  
+#END SABURO HEALING & BLEEDING EFFECT PER HIT
+
+#WAKAKO EFFECT
+
+#DURATION
+BaseStatusEffect.Yamato_attackspeed_Buff_inline2:
+  $base: BaseStatusEffect.Wakako_Tiger_Buff_inline2
+  value: 10.0
+
+#ATTACK SPEED (25% attack speed)
+BaseStatusEffect.Yamato_attackspeed_Buff_inline8:
+  $base: BaseStatusEffect.Wakako_Tiger_Buff_inline8
+  value: 1.25
+
+BaseStatusEffect.Yamato_attackspeed_Buff_inline5:
+  $base: BaseStatusEffect.Wakako_Tiger_Buff_inline5
+  statModifiers: [BaseStatusEffect.Wakako_Tiger_Buff_inline6, BaseStatusEffect.Wakako_Tiger_Buff_inline7, BaseStatusEffect.Yamato_attackspeed_Buff_inline8]
+
+BaseStatusEffect.Yamato_attackspeed_Buff_inline4:
+  $base: BaseStatusEffect.Wakako_Tiger_Buff_inline4
+  statGroup: BaseStatusEffect.Yamato_attackspeed_Buff_inline5
+
+BaseStatusEffect.Yamato_attackspeed_Buff_inline3:
+  $base: BaseStatusEffect.Wakako_Tiger_Buff_inline3
+  effectors: [BaseStatusEffect.Yamato_attackspeed_Buff_inline4]
+
+BaseStatusEffect.Yamato_attackspeed_Buff_inline0:
+  $base: BaseStatusEffect.Wakako_Tiger_Buff_inline0
+  description: LocKey#yamato_attackspeedeffect_UI_desc
+  displayName: LocKey#yamato_attackspeedeffect_UI_name
+  iconPath: stamina_booster_icon
+
+BaseStatusEffect.Yamato_attackspeed_Buff_inline1:
+  $base: BaseStatusEffect.Wakako_Tiger_Buff_inline1
+  statModifiers: [BaseStatusEffect.Yamato_attackspeed_Buff_inline2]
+
+BaseStatusEffect.Yamato_attackspeed_Buff:
+  $base: BaseStatusEffect.Wakako_Tiger_Buff
+  duration: BaseStatusEffect.Yamato_attackspeed_Buff_inline1
+  uiData: BaseStatusEffect.Yamato_attackspeed_Buff_inline0
+  packages: [BaseStatusEffect.Yamato_attackspeed_Buff_inline3]
+
+Items.YamatoKatanaWeaponModAbility_inline0:
+  $base: Items.WakakoKatanaWeaponModAbility_inline0
+  localizedDescription: LocKey#yamato_attackspeedeffect_UI
+
+Items.YamatoKatanaWeaponModAbility_inline1:
+  $base: Items.WakakoKatanaWeaponModAbility_inline1
+  statusEffect: BaseStatusEffect.Yamato_attackspeed_Buff
+
+Items.YamatoKatanaWeaponModAbility:
+  $base: Items.WakakoKatanaWeaponModAbility
+  UIData: Items.YamatoKatanaWeaponModAbility_inline0
+  effectors: [Items.YamatoKatanaWeaponModAbility_inline1]
+
+#END WAKAKO EFFECT
+
+Items.manavortex_vergil_devil_katana:
+  $base: Items.Preset_Katana_Default
+  OnAttach:
+  - !append Items.HiromiKatanaWeaponModAbility
+  - !append Items.YamatoKatanaWeaponModAbility
+  - !append Items.mana_vergil_devil_katana_mod_modifier_022
+  - !append Items.mana_vergil_devil_katana_mod_modifier_017
+  appearanceResourceName: manavortex_vergil_devil_katana_appfile
+  visualTags: [vergil_devil_katana]
+  displayName: LocKey#vergil_devil_katana_i18n
+  localizedDescription: LocKey#vergil_devil_katana_desc_i18n
+  quality: Quality.LegendaryPlusPlus
+  hudIcon:
+    atlasResourcePath: manavortex\weapons\melee\vergil_devil_katana\textures\_vergil_devil_katana_preview_icons.inkatlas
+    atlasPartName: vergil_devil_katana_hudicon
+  icon:
+    atlasResourcePath: manavortex\weapons\melee\vergil_devil_katana\textures\_vergil_devil_katana_preview_icons.inkatlas
+    atlasPartName: vergil_devil_katana
+  statModifiers:
+   - !append Quality.IconicItem
+   - !append Items.ScaleToPlayerLevel
+   - !append Items.mana_vergil_devil_katana_mod_base_damage
+   - !append Items.mana_vergil_devil_katana_mod_attacks_per_second
+   - !append Items.mana_vergil_devil_katana_mod_electric_damage
+   - !append Items.mana_vergil_devil_katana_mod_bleeding
+   - !append Items.mana_vergil_devil_katana_mod_crit_chance
+   - !append Items.mana_vergil_devil_katana_mod_crit_damage
+   - !append Items.mana_vergil_devil_katana_mod_electrocution
+   - !append Items.mana_vergil_devil_katana_mod_damage_per_hit
+   - !append Items.mana_vergil_devil_katana_mod_modifier_008
+   - !append Items.mana_vergil_devil_katana_mod_modifier_009
+   - !append Items.mana_vergil_devil_katana_mod_modifier_010
+   - !append Items.mana_vergil_devil_katana_mod_modifier_011
+   - !append Items.mana_vergil_devil_katana_mod_modifier_012
+   - !append Items.mana_vergil_devil_katana_mod_modifier_013
+   - !append Items.mana_vergil_devil_katana_mod_modifier_014
+   - !append Items.mana_vergil_devil_katana_mod_modifier_015
+   - !append Items.HiromiKatanaWeaponMod_inline0EX
+   - !append Items.HiromiKatanaWeaponMod_inline1
+   - !append Items.HiromiKatanaWeaponMod_inline2
+   - !append Items.WakakoKatanaWeaponMod_inline0
+   - !append Items.WakakoKatanaWeaponMod_inline1
+  tags:
+   - !append yamato_katana
+Items.manavortex_vergil_devil_katana_no_glow:
+  $base: Items.manavortex_vergil_devil_katana
+  visualTags: [vergil_devil_katana_no_glow]
+  displayName: LocKey#vergil_devil_katana_no_glow_i18n
+  icon:
+    atlasResourcePath: manavortex\weapons\melee\vergil_devil_katana\textures\_vergil_devil_katana_preview_icons.inkatlas
+    atlasPartName: vergil_devil_katana_no_glow
+Items.manavortex_vergil_devil_katana_sheathed:
+  $base: Items.manavortex_vergil_devil_katana
+  visualTags: [vergil_devil_katana_sheathed]
+  displayName: LocKey#vergil_devil_katana_sheathed_i18n
+  icon:
+    atlasResourcePath: manavortex\weapons\melee\vergil_devil_katana\textures\_vergil_devil_katana_preview_icons.inkatlas
+    atlasPartName: vergil_devil_katana_sheathed

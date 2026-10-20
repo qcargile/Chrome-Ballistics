@@ -1,0 +1,283 @@
+Items.Longbow_DMR:
+  $base: Items.Preset_Nekomata_Default
+  tags:
+    - !append-once IconicWeapon 
+    - !remove TechWeapon
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.longbowstats_rof 
+    - !append-once Items.longbowstats_damage
+    - !append-once Items.longbowstats_firstequip 
+    - !append-once Items.longbowstats_mag
+    - !append-once Items.longbowstats_effectiverange
+    - !append-once Items.longbowstats_maxrange 
+    - !append-once Items.longbowstats_recoil
+    - !append-once Items.longbowstats_recoil2
+    - !append-once Items.longbowstats_recoil3   
+    - !append-once Items.longbowstats_recoil4     
+    - !append-once Items.longbowstats_recoil5     
+    - !append-once Items.longbowstats_recoil6  
+    - !append-once Items.longbowstats_reload     
+    - !append-once Items.longbowstats_reload2  
+    - !append-once Items.longbowstats_spread
+    - !append-once Items.longbowstats_spread2
+    - !append-once Items.longbowstats_spread3  
+    - !append-once Items.longbowstats_spread4
+    - !append-once Items.longbowstats_spread5      
+    - !append-once Items.longbowstats_charge
+    - !append-once Items.longbowstats_fov
+    - !append-once Items.longbowstats_dismember
+    - !append-once Items.longbowstats_pierce
+    - !append-once Items.longbowstats_pierce2
+  appearanceResourceName: longbow_app
+  audioName: wea_set_kyubi
+  effectiveRangeFalloffCurve: SniperRifleFalloff
+  evolution: WeaponEvolution.Power
+  fxPackage: WeaponFxPackage.PowerRifleSniper
+  primaryTriggerMode: TriggerMode.Charge
+  projectileEaseOutCurveName: ProjectileEaseOut
+  rangedAttacks: Attacks.PowerRoundsBulletPackage
+  secondaryTriggerMode: TriggerMode.Charge
+  triggerEffectName: te_wea_aim_slow
+  crosshair: Crosshairs.Basic
+  triggerModes:
+    - TriggerMode.Charge
+  OnAttach:
+    - !remove EquipmentGLP.HeavyWeapon
+  statPools:
+    - !remove BaseStatPools.WeaponCharge
+  quality: Quality.Epic
+  displayName: longbow_name
+  localizedDescription: longbow_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: longbow\icon\longbow_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: longbow\icon\longbow.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_longbow_inline1
+    - Items.Base_longbow_inline3
+    - Items.Base_longbow_inline5
+    - Items.Base_longbow_inline7
+    - Items.RiflePossibleScopesList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+  slotPartListPreset:
+    - Items.Preset_longbow_inline0
+    - Items.Preset_longbow_inline1
+    - Items.Preset_longbow_inline2
+    - Items.Preset_longbow_inline3
+    - Items.Preset_Nekomata_Default_inline4
+    - Items.Preset_Nekomata_Default_inline5
+    - Items.Preset_Nekomata_Default_inline6
+    
+Items.Base_Tech_Precision_Sniper_Rifle_NoMuzzle_Blueprint_inline3.childElements:
+  - Items.ScopeElement
+  - Items.PowerModuleElement
+    
+Items.Base_longbow_inline1:
+  $base: Items.Base_Nekomata_inline1
+  itemPartList:
+    - Items.Base_longbow_inline2
+Items.Base_longbow_inline2:
+  $base: Items.Base_Nekomata_inline2
+  item: Items.longbow_rcv_prt
+Items.longbow_rcv_prt:
+  $base: Items.w_rifle_sniper__tsunami_nekomata__rcv1
+  appearanceResourceName: longbow_rcv
+#base
+Items.Base_longbow_inline3:
+  $base: Items.Base_Nekomata_inline3
+  itemPartList:
+    - Items.Base_longbow_inline4
+Items.Base_longbow_inline4:
+  $base: Items.Base_Nekomata_inline4
+  item: Items.longbow_base_prt
+Items.longbow_base_prt:
+  $base: Items.w_rifle_sniper__tsunami_nekomata__base1
+  appearanceResourceName: longbow_base
+#mag
+Items.Base_longbow_inline5:
+  $base: Items.Base_Nekomata_inline5
+  itemPartList:
+    - Items.Base_longbow_inline6
+Items.Base_longbow_inline6:
+  $base: Items.Base_Nekomata_inline6
+  item: Items.longbow_mag_std_prt
+Items.longbow_mag_std_prt:
+  $base: Items.w_rifle_sniper__tsunami_nekomata__mag_std
+  appearanceResourceName: longbow_mag_std
+#reload
+Items.Base_longbow_inline7:
+  $base: Items.Base_Nekomata_inline7
+  itemPartList:
+    - Items.Base_longbow_inline8
+Items.Base_longbow_inline8:
+  $base: Items.Base_Nekomata_inline8
+  item: Items.longbow_mag_stdr_prt
+Items.longbow_mag_stdr_prt:
+  $base: Items.w_rifle_sniper__tsunami_nekomata__mag_stdr
+  appearanceResourceName: longbow_mag_stdr
+#preset
+Items.Preset_longbow_inline0:
+  $base: Items.Preset_Nekomata_Default_inline0
+  itemPartPreset: Items.longbow_rcv_prt
+Items.Preset_longbow_inline1:
+  $base: Items.Preset_Nekomata_Default_inline1
+  itemPartPreset: Items.longbow_base_prt
+Items.Preset_longbow_inline2:
+  $base: Items.Preset_Nekomata_Default_inline2
+  itemPartPreset: Items.longbow_mag_std_prt
+Items.Preset_longbow_inline3:
+  $base: Items.Preset_Nekomata_Default_inline3
+  itemPartPreset: Items.longbow_mag_stdr_prt
+  
+Items.longbowstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.8
+  modifierType: Additive
+  statType: BaseStats.CycleTime
+  
+Items.longbowstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 85
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.longbowstats_firstequip:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.0
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.longbowstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 4
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase 
+  
+Items.longbowstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 60
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.longbowstats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 70
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.longbowstats_recoil:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.RecoilHoldDuration
+  
+Items.longbowstats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 1.0
+  modifierType: Additive
+  statType: BaseStats.RecoilKickMin
+  
+Items.longbowstats_recoil3:
+  $type: gamedataConstantStatModifier_Record
+  value: 2.0
+  modifierType: Additive
+  statType: BaseStats.RecoilKickMax
+  
+Items.longbowstats_recoil4:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.02
+  modifierType: Additive
+  statType: BaseStats.RecoilTime
+  
+Items.longbowstats_recoil5:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.02
+  modifierType: Additive
+  statType: BaseStats.RecoilRecoveryTime
+  
+Items.longbowstats_recoil6:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.5
+  modifierType: Additive
+  statType: BaseStats.RecoilSpeed
+  
+Items.longbowstats_reload:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.4
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBase
+  
+Items.longbowstats_reload2:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.4
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+  
+Items.longbowstats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.longbowstats_charge:
+  $type: gamedataConstantStatModifier_Record
+  value: -2.5
+  modifierType: Additive
+  statType: BaseStats.BaseChargeTime
+  
+Items.longbowstats_spread2:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseCircularSpread
+  
+Items.longbowstats_spread3:
+  $type: gamedataConstantStatModifier_Record
+  value: -5.4
+  modifierType: Additive
+  statType: BaseStats.SpreadMaxX
+  
+Items.longbowstats_spread4:
+  $type: gamedataConstantStatModifier_Record
+  value: -1.34
+  modifierType: Additive
+  statType: BaseStats.SpreadDefaultX
+  
+Items.longbowstats_spread5:
+  $type: gamedataConstantStatModifier_Record
+  value: -1.5
+  modifierType: Additive
+  statType: BaseStats.SpreadResetSpeed
+  
+Items.longbowstats_fov:
+  $type: gamedataConstantStatModifier_Record
+  value: 2
+  modifierType: Additive
+  statType: BaseStats.ScopeFOV
+  
+Items.longbowstats_dismember:
+  $type: gamedataConstantStatModifier_Record
+  value: -2.5
+  modifierType: Additive
+  statType: BaseStats.HitDismembermentFactor
+  
+Items.longbowstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.longbowstats_pierce2:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.9
+  modifierType: Additive
+  statType: BaseStats.TechPierceChargeLevel
+  

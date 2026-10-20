@@ -1,0 +1,204 @@
+Items.Model680_Showstopper:
+  $base: Items.Preset_Tactician_Default
+  tags:
+    - !append ForceDismember
+    - !append DriverCombatRangedWeapon
+    - !append DriverCombatBikeWeapon
+    - !append OneHandedRangedWeapon
+    - !append-once IconicWeapon  
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.showstopperstats_damage
+    - !append-once Items.showstopperstats_rof
+    - !append-once Items.showstopperstats_spread
+    - !append-once Items.showstopperstats_mag
+    - !append-once Items.showstopperstats_pierce
+    - !append-once Items.showstopperstats_armor
+    - !append-once Items.showstopperstats_crit
+    - !append-once Items.showstopperstats_bleeding
+    - !append-once Items.showstopperstats_burning
+    - !append-once Items.showstopperstats_electrocute
+    - !append-once Items.showstopperstats_poison
+    - !append-once Items.showstopperstats_stun
+    - !append-once Items.showstopperstats_headshotmult
+    - !append-once Items.showstopperstats_effectiverange
+    - !append-once Items.showstopperstats_maxrange
+  statModifierGroups: 
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  ammo: Ammo.ShotgunAmmo
+  appearanceResourceName: showstopper_app
+  blueprint: Items.Base_Power_Shotgun_Blueprint
+  fxPackage: WeaponFxPackage.PowerLargeCaliber
+  hudIcon:
+    atlasResourcePath: showstopper\icon\showstopper_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: showstopper\icon\showstopper.inkatlas
+    atlasPartName: slot_01
+  quality: Quality.Epic
+  displayName: showstopper_name
+  localizedDescription: showstopper_description
+  slotPartList:
+    - Items.Base_showstopper_inline2
+    - Items.Base_showstopper_inline4
+    - Items.Base_showstopper_inline6
+    - Items.Base_showstopper_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.RiflePossibleScopesList
+    - Items.UniversalShotgunSuppressorList
+  slotPartListPreset:
+    - Items.Preset_showstopper_inline0
+    - Items.Preset_showstopper_inline1
+    - Items.Preset_showstopper_inline2
+    - Items.Preset_showstopper_inline3
+  visualTags:
+    - Default
+    
+Items.Base_showstopper_inline2:
+  $base: Items.Base_Tactician_inline2
+  itemPartList:
+    - Items.Base_showstopper_inline3
+Items.Base_showstopper_inline3:
+  $base: Items.Base_Tactician_inline3
+  item: Items.showstopper_rcv_prt
+Items.showstopper_rcv_prt:
+  $base: Items.w_shotgun_constitutional_tactician_rcv1
+  appearanceResourceName: showstopper_rcv
+Items.Base_showstopper_inline4:
+  $base: Items.Base_Tactician_inline4
+  itemPartList:
+    - Items.Base_showstopper_inline5
+Items.Base_showstopper_inline5:
+  $base: Items.Base_Tactician_inline5
+  item: Items.showstopper_base_prt
+Items.showstopper_base_prt:
+  $base: Items.w_shotgun_constitutional_tactician_base1
+  appearanceResourceName: showstopper_base
+Items.Base_showstopper_inline6:
+  $base: Items.Base_Tactician_inline6
+  itemPartList:
+    - Items.Base_showstopper_inline7
+Items.Base_showstopper_inline7:
+  $base: Items.Base_Tactician_inline7
+  item: Items.showstopper_mag_std_prt
+Items.showstopper_mag_std_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_std
+  appearanceResourceName: showstopper_mag_std
+Items.Base_showstopper_inline8:
+  $base: Items.Base_Tactician_inline8
+  itemPartList:
+    - Items.Base_showstopper_inline9
+Items.Base_showstopper_inline9:
+  $base: Items.Base_Tactician_inline9
+  item: Items.showstopper_mag_stdr_prt
+Items.showstopper_mag_stdr_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_stdr
+  appearanceResourceName: showstopper_mag_stdr
+Items.Preset_showstopper_inline0:
+  $base: Items.Preset_Tactician_Default_inline0
+  itemPartPreset: Items.showstopper_rcv_prt
+Items.Preset_showstopper_inline1:
+  $base: Items.Preset_Tactician_Default_inline1
+  itemPartPreset: Items.showstopper_base_prt
+Items.Preset_showstopper_inline2:
+  $base: Items.Preset_Tactician_Default_inline2
+  itemPartPreset: Items.showstopper_mag_std_prt
+Items.Preset_showstopper_inline3:
+  $base: Items.Preset_Tactician_Default_inline3
+  itemPartPreset: Items.showstopper_mag_stdr_prt
+  
+Items.showstopperstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 21
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.showstopperstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.showstopperstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -3
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.showstopperstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.showstopperstats_crit:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Items.showstopperstats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Items.showstopperstats_poison:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.PoisonedApplicationRate
+  
+Items.showstopperstats_electrocute:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.showstopperstats_bleeding:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  
+Items.showstopperstats_burning:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.showstopperstats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.15
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+
+Items.showstopperstats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.showstopperstats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.showstopperstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.showstopperstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  

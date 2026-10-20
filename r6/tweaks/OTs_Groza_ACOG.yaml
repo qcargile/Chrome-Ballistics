@@ -1,0 +1,97 @@
+Items.OTs_Groza_ACOG:
+  $base: Items.WeaponScopeBase
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  animSetResource: ''
+  appearanceResourceName: ots_acog_app
+  canDrop: True
+  crosshair: Crosshairs.None
+  deprecated: False
+  dropObject: defaultItemDrop
+  enableNpcRPGData: False
+  friendlyName: ''
+  garmentOffset: 0
+  icon:
+    atlasResourcePath: ots_acog\icon\ots_acog.inkatlas
+    atlasPartName: ItemPart
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: True
+  isSingleInstance: False
+  itemType: ItemType.Gen_Misc
+  localizedName: ''
+  mass: 1
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  parentAttachmentType: ParentAttachmentType.Animated
+  powerLevelDeterminedByParent: True
+  quality: Quality.Legendary
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  savable: False
+  animationParameters: []
+  displayName: ots_acog_name
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.Scope
+    - Price.ItemQualityMultiplier
+    - Price.BuyPrice_StreetCred_Discount
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  connections: []
+  equipAreas: []
+  equipPrereqs: []
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  hairSkinnedMeshComponents: []
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots:
+    - AttachmentSlots.Scope
+  previewBBoxOverride: []
+  requiredSlots: []
+  sellPrice:
+    - Price.Scope
+    - Price.ItemQualityMultiplier
+    - Price.SellMultiplier
+  slotPartList: []
+  slotPartListPreset: []
+  tags:
+    - itemPart
+    - WeaponMod
+  variants: []
+  visualTags: []
+  effectors: []
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+  statModifierGroups:
+    - Items.QualityRandomization_Attachments
+  statModifiers:
+    - !append-once Items.ots_acogstats_zoom
+    - !append-once Items.ots_acogstats_fov
+  statPools: []
+  weakspots: []
+  
+Items.ots_acogstats_zoom:
+  $type: gamedataConstantStatModifier_Record
+  value: 3.0
+  modifierType: Additive
+  statType: BaseStats.ZoomLevel
+  
+Items.ots_acogstats_fov:
+  $type: gamedataConstantStatModifier_Record
+  value: 15
+  modifierType: Additive
+  statType: BaseStats.ScopeFOV
+  
+

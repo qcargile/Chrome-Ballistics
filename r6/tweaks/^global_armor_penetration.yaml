@@ -1,0 +1,385 @@
+ChromeBallistics.ArmorPenetrationPlus25:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  value: 0.25
+
+ChromeBallistics.ArmorPenetrationPlus50:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  value: 0.50
+
+ChromeBallistics.ArmorPenetrationMinus25:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  value: -0.25
+
+ChromeBallistics.ArmorPenetrationMinus50:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  value: -0.50
+
+ChromeBallistics.ArmorPenetrationMinus75:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  value: -0.75
+
+Items.Arasaka_Nobunaga:
+  statModifiers:
+    - !remove Items.nobunagastats_armor
+Items.AK47_Black_Cat:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.AK47_Steel_Curtain:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.AKM:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Armatech_458_SOCOM:
+  statModifiers:
+    - !remove Items.armasocomstats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Armatech_MK1_556:
+  statModifiers:
+    - !remove Items.armatech556stats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Canik_Rival_S:
+  statModifiers:
+    - !remove Items.rivalstats_armor
+
+Items.DTIR_HCAR_Black:
+  statModifiers:
+    - !remove Items.hcar3stats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Desert_Eagle:
+  statModifiers:
+    - !remove Items.deaglestats_armor
+Items.Desolator:
+  statModifiers:
+    - !remove Items.des50stats_armor
+Items.FS12_Shotgun:
+  statModifiers:
+    - !remove Items.fs12stats_armor
+
+Items.Fabarm_SDASS:
+  statModifiers:
+    - !remove Items.sdassstats_armor
+
+Items.Flatline:
+  statModifiers:
+    - !remove Items.flatlinestats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Fleshlight:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationMinus50
+
+Items.Franchi_PA3:
+  statModifiers:
+    - !remove Items.pa3stats_armor
+
+Items.Gravitazer:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationMinus25
+
+Items.HCAR_Black:
+  statModifiers:
+    - !remove Items.hcar4stats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.HardReboot_Shotgun:
+  statModifiers:
+    - !remove Items.rebootstats_armor
+
+Items.KS23_Shotgun:
+  statModifiers:
+    - !remove Items.ks23stats_armor
+
+Items.KVD_Enforcer:
+  statModifiers:
+    - !remove Items.kvdstats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.KVD_Techtronika:
+  statModifiers:
+    - !remove Items.kvsilentstats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.KVInhibitor:
+  statModifiers:
+    - !remove Items.kvinhibitorstats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus50
+
+Items.KVInhibitor_GRAU:
+  statModifiers:
+    - !remove Items.kvwoodstats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus50
+
+Items.Kendall44:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.L85A3_Black:
+  statModifiers:
+    - !remove Items.l85blackstats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.L85A3_Black_Olive:
+  statModifiers:
+    - !remove Items.l85stats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.L85A3_Black_Tan:
+  statModifiers:
+    - !remove Items.l85blacktanstats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.L85A3_Tan_Olive:
+  statModifiers:
+    - !remove Items.l85tanolivestats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Lawgiver_MKIII:
+  statModifiers:
+    - !remove Items.lawgiverstats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Lockwood680:
+  statModifiers:
+    - !remove Items.lockwoodstats_armor
+
+Items.M10Breacher_Wasteland:
+  statModifiers:
+    - !remove Items.m10stats_armor
+
+Items.M79:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationMinus25
+
+Items.MCS880:
+  statModifiers:
+    - !remove Items.mcs880stats_armor
+
+Items.MK78_SAW:
+  statModifiers:
+    - !remove Items.mk78stats_armor
+
+Items.Mateba_6_Unica:
+  statModifiers:
+    - !remove Items.unica6stats_armor
+Items.Mateba_6_Unica_Comp:
+  statModifiers:
+    - !remove Items.matebastats_armor
+Items.Militech_Ajax_Raptor:
+  statModifiers:
+    - !remove Items.ajaxraptorstats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Militech_Beam_Rifle:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Militech_M77_Viper:
+  statModifiers:
+    - !remove Items.vipstats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Model680:
+  statModifiers:
+    - !remove Items.model680stats_armor
+
+Items.Model680_Showstopper:
+  statModifiers:
+    - !remove Items.showstopperstats_armor
+
+Items.Mossberg590_Cruiser:
+  statModifiers:
+    - !remove Items.cruiserstats_armor
+
+Items.Nokota_Stingray:
+  statModifiers:
+    - !remove Items.stingraystats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Nokota_Taipan:
+  statModifiers:
+    - !remove Items.taipanstats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.OSP_18:
+  statModifiers:
+    - !remove Items.ospstats_armor
+
+Items.OTs14_Groza:
+  statModifiers:
+    - !remove Items.otsstats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.RPK:
+  statModifiers:
+    - !remove Items.rpkstats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.RSh12:
+  statModifiers:
+    - !remove Items.rsh12stats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Scar_Black_Default_Stock:
+  statModifiers:
+    - !remove Items.mack4stats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus50
+
+Items.Scar_Black_Short_Stock:
+  statModifiers:
+    - !remove Items.mack3stats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus50
+
+Items.Scar_Jack_Default_Stock:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Scar_Jack_Short_Stock:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Scar_Mack_Default_Stock:
+  statModifiers:
+    - !remove Items.mack2stats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus50
+
+Items.Scar_Mack_Short_Stock:
+  statModifiers:
+    - !remove Items.mackstats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus50
+
+Items.Scar_Night_City_Special:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Scar_Sludge_Default_Stock:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Scar_Sludge_Short_Stock:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Shotgun_LastRites:
+  statModifiers:
+    - !remove Items.lastritesstats_armor
+
+Items.Sig_Sauer_XM7:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus50
+
+Items.USP_45_Fate_Maker:
+  statModifiers:
+    - !remove Items.t800stats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationMinus25
+
+Items.VHS_D2_Tactical:
+  statModifiers:
+    - !remove Items.vhs2stats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.XM25:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationMinus75
+
+Items.XPR_50:
+  statModifiers:
+    - !remove Items.xrpstats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationMinus25
+
+Items.Zastava_M76:
+  statModifiers:
+    - !remove Items.m76stats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Zenith_CA40:
+  statModifiers:
+    - !remove Items.zenithstats_armor
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.manavortex_vergil_devil_katana:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+Items.glock_valentinos:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationMinus25
+
+Items.Longbow_DMR:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationMinus25
+
+Items.AKS_74U:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.AK_117:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.AK_205:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.AK_Custom:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.AK_Prototype_MkII:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.AR15_SLR:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Colt_M4_Carbine:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.HK416:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.KN44:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Militech_Beam_Rifle_Smart:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.MR6:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus25
+
+Items.Hatchet_No_Masters:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationMinus25
+
+Items.Hatchet_Riddle_Of_Steel:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationMinus25
+
+Items.Louisville_Slugger:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationMinus50
+
+Items.HF_Murasama:
+  statModifiers:
+    - !append-once ChromeBallistics.ArmorPenetrationPlus50

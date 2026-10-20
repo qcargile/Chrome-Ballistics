@@ -1,0 +1,76 @@
+Items.Leviathan_Axe:
+  $base: Items.Preset_Tomahawk_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.levstats_recovery
+    - !append-once Items.levstats_damage
+    - !append-once Items.levstats_thermal
+    - !append-once Items.levstats_thermal2
+    - !append-once Items.levstats_thermal3
+  appearanceResourceName: lev_app
+  damageType: DamageTypes.Physical
+  quality: Quality.Epic
+  displayName: lev_name
+  hudIcon:
+    atlasResourcePath: lev\icon\lev_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: lev\icon\lev.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_lev_inline0
+    - Items.Base_lev_inline1
+  slotPartListPreset:
+    - Items.Preset_lev_inline1
+  statPools:
+    - BaseStatPools.ThrowRecovery
+    
+Items.Base_lev_inline0:
+  $base: Items.Base_Axe_inline0
+  itemPartList:
+    - Items.Base_lev_inline1
+Items.Base_lev_inline1:
+  $base: Items.Base_Axe_inline1
+  item: Items.lev_grip_prt
+Items.lev_grip_prt:
+  $base: Items.w_tomahawk_common_grip
+  appearanceResourceName: lev_grip    
+  
+Items.Preset_lev_inline1:
+  $base: Items.Preset_Tomahawk_Default_inline1
+  itemPartPreset: Items.lev_grip_prt
+  
+Items.levstats_recovery:
+  $type: gamedataConstantStatModifier_Record
+  value: -5.4
+  modifierType: Additive
+  statType: BaseStats.ThrowRecovery
+  
+Items.levstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.levstats_thermal:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.DealsElectricDamage
+  
+Items.levstats_thermal2:
+  $type: gamedataConstantStatModifier_Record
+  value: 50
+  modifierType: Additive
+  statType: BaseStats.ElectricDamage
+
+Items.levstats_thermal3:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+
+
+

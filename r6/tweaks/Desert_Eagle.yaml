@@ -1,0 +1,114 @@
+Items.Desert_Eagle:
+  $base: Items.Preset_Nue_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.deaglestats_damage
+    - !append-once Items.deaglestats_rof
+    - !append-once Items.deaglestats_mag
+    - !append-once Items.deaglestats_armor
+  appearanceResourceName: deagle_app
+  quality: Quality.Common
+  displayName: deagle_name
+  localizedDescription: deagle_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: deagle\icon\deagle_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: deagle\icon\deagle.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_deagle_inline3
+    - Items.Base_deagle_inline5
+    - Items.Base_deagle_inline7
+    - Items.Base_deagle_inline9
+  slotPartListPreset:
+    - Items.Preset_deagle_inline0
+    - Items.Preset_deagle_inline1
+    - Items.Preset_deagle_inline2
+    - Items.Preset_deagle_inline3
+  
+Items.Base_deagle_inline3:
+  $base: Items.Base_Nue_inline3
+  itemPartList:
+    - Items.Base_deagle_inline4
+Items.Base_deagle_inline4:
+  $base: Items.Base_Nue_inline4
+  item: Items.deagle_rcv_prt
+Items.deagle_rcv_prt:
+  $base: Items.w_handgun__tsunami_nue__rcv1
+  appearanceResourceName: deagle_rcv
+#base
+Items.Base_deagle_inline5:
+  $base: Items.Base_Nue_inline5
+  itemPartList:
+    - Items.Base_deagle_inline6
+Items.Base_deagle_inline6:
+  $base: Items.Base_Nue_inline6
+  item: Items.deagle_base_prt
+Items.deagle_base_prt:
+  $base: Items.w_handgun__tsunami_nue__base1
+  appearanceResourceName: deagle_base
+#mag
+Items.Base_deagle_inline7:
+  $base: Items.Base_Nue_inline7
+  itemPartList:
+    - Items.Base_deagle_inline8
+Items.Base_deagle_inline8:
+  $base: Items.Base_Nue_inline8
+  item: Items.deagle_mag_std_prt
+Items.deagle_mag_std_prt:
+  $base: Items.w_handgun__tsunami_nue__mag_std
+  appearanceResourceName: deagle_mag_std
+#reload
+Items.Base_deagle_inline9:
+  $base: Items.Base_Nue_inline9
+  itemPartList:
+    - Items.Base_deagle_inline10
+Items.Base_deagle_inline10:
+  $base: Items.Base_Nue_inline10
+  item: Items.deagle_mag_stdr_prt
+Items.deagle_mag_stdr_prt:
+  $base: Items.w_handgun__tsunami_nue__mag_stdr
+  appearanceResourceName: deagle_mag_stdr
+#preset stuff
+Items.Preset_deagle_inline0:
+  $base: Items.Preset_Nue_Default_inline0
+  itemPartPreset: Items.deagle_rcv_prt
+Items.Preset_deagle_inline1:
+  $base: Items.Preset_Nue_Default_inline1
+  itemPartPreset: Items.deagle_base_prt
+Items.Preset_deagle_inline2:
+  $base: Items.Preset_Nue_Default_inline2
+  itemPartPreset: Items.deagle_mag_std_prt
+Items.Preset_deagle_inline3:
+  $base: Items.Preset_Nue_Default_inline3
+  itemPartPreset: Items.deagle_mag_stdr_prt
+  
+Items.deaglestats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 25
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.deaglestats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.02
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.deaglestats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -3
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.deaglestats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  

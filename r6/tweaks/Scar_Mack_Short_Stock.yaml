@@ -1,0 +1,173 @@
+Items.Scar_Mack_Short_Stock:
+  $base: Items.Preset_Saratoga_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.mackstats_damage
+    - !append-once Items.mackstats_rof
+    - !append-once Items.mackstats_mag
+    - !append-once Items.mackstats_maxrange
+    - !append-once Items.mackstats_effectiverange
+    - !append-once Items.mackstats_pierce
+    - !append-once Items.mackstats_recoil
+    - !append-once Items.mackstats_recoil2
+    - !append-once Items.mackstats_recoil3
+    - !append-once Items.mackstats_headshotmult
+    - !append-once Items.mackstats_armor
+  appearanceResourceName: mack_app
+  fxPackage: WeaponFxPackage.PowerRifleAssault
+  ammo: Ammo.RifleAmmo
+  audioName: wea_set_copperhead
+  quality: Quality.Epic
+  displayName: mack_name
+  localizedDescription: mack_description
+  gameplayDescription: mack_iconic_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: mack\icon\mack_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: mack\icon\mack.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_mack_inline2
+    - Items.Base_mack_inline4
+    - Items.Base_mack_inline6
+    - Items.Base_mack_inline8
+  slotPartListPreset:
+    - Items.Preset_mack_inline0
+    - Items.Preset_mack_inline1
+    - Items.Preset_mack_inline2
+    - Items.Preset_mack_inline3
+  
+Items.Base_mack_inline2:
+  $base: Items.Base_Saratoga_inline2
+  itemPartList:
+    - Items.Base_mack_inline3
+Items.Base_mack_inline3:
+  $base: Items.Base_Saratoga_inline3
+  item: Items.mack_rcv_prt
+Items.mack_rcv_prt:
+  $base: Items.w_submachinegun__militech_saratoga__rcv1
+  appearanceResourceName: mack_rcv
+#base
+Items.Base_mack_inline4:
+  $base: Items.Base_Saratoga_inline4
+  itemPartList:
+    - Items.Base_mack_inline5
+Items.Base_mack_inline5:
+  $base: Items.Base_Saratoga_inline5
+  item: Items.mack_base_prt
+Items.mack_base_prt:
+  $base: Items.w_submachinegun__militech_saratoga__base1
+  appearanceResourceName: mack_base
+#mag
+Items.Base_mack_inline6:
+  $base: Items.Base_Saratoga_inline6
+  itemPartList:
+    - Items.Base_mack_inline7
+Items.Base_mack_inline7:
+  $base: Items.Base_Saratoga_inline7
+  item: Items.mack_mag_std_prt
+Items.mack_mag_std_prt:
+  $base: Items.w_submachinegun__militech_saratoga__mag_std
+  appearanceResourceName: mack_mag_std
+#reload
+Items.Base_mack_inline8:
+  $base: Items.Base_Saratoga_inline8
+  itemPartList:
+    - Items.Base_mack_inline9
+Items.Base_mack_inline9:
+  $base: Items.Base_Saratoga_inline9
+  item: Items.mack_mag_stdr_prt
+Items.mack_mag_stdr_prt:
+  $base: Items.w_submachinegun__militech_saratoga__mag_stdr
+  appearanceResourceName: mack_mag_stdr
+#preset
+Items.Preset_mack_inline0:
+  $base: Items.Preset_Saratoga_Default_inline0
+  itemPartPreset: Items.mack_rcv_prt
+Items.Preset_mack_inline1:
+  $base: Items.Preset_Saratoga_Default_inline1
+  itemPartPreset: Items.mack_base_prt
+Items.Preset_mack_inline2:
+  $base: Items.Preset_Saratoga_Default_inline2
+  itemPartPreset: Items.mack_mag_std_prt
+Items.Preset_mack_inline3:
+  $base: Items.Preset_Saratoga_Default_inline3
+  itemPartPreset: Items.mack_mag_stdr_prt
+  
+Items.mackstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 75
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.mackstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.05
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.mackstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -20
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.mackstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 70
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.mackstats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 100
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.mackstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.mackstats_recoil:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.0
+  modifierType: Additive
+  statType: BaseStats.RecoilHoldDuration
+  
+Items.mackstats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 1.0
+  modifierType: Additive
+  statType: BaseStats.RecoilKickMin
+  
+Items.mackstats_recoil3:
+  $type: gamedataConstantStatModifier_Record
+  value: 2.0
+  modifierType: Additive
+  statType: BaseStats.RecoilKickMax
+  
+Items.mackstats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.75
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+  
+Items.mackstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+
+  
+  
+  
+  
+  

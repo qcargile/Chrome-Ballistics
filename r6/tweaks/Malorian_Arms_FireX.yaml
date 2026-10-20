@@ -1,0 +1,145 @@
+Items.Malorian_Arms_FireX:
+  $base: Items.Preset_Silverhand_3516
+  tags:
+    - !append-once IconicWeapon
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.pistolx2stats_mag
+    - !append-once Items.pistolx2stats_damage
+    - !append-once Items.pistolx2stats_rof
+    - !append-once Items.pistolx2stats_thermal
+    - !append-once Items.pistolx2stats_thermal2
+    - !append-once Items.pistolx2stats_thermal3
+  appearanceResourceName: pistolx2_app
+  hudIcon:
+    atlasResourcePath: pistolx2\icon\pistolx2_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: pistolx2\icon\pistolx2.inkatlas
+    atlasPartName: slot_01
+  quality: Quality.Legendary
+  displayName: pistolx2_name
+  localizedDescription: pistolx2_description
+  slotPartList:
+    - Items.Base_pistolx2_inline3
+    - Items.Base_pistolx2_inline5
+    - Items.Base_pistolx2_inline7
+    - Items.Base_pistolx2_inline9
+  slotPartListPreset:
+    - Items.Preset_pistolx2_inline3
+    - Items.Preset_pistolx2_inline4
+    - Items.Preset_pistolx2_inline5
+    - Items.Preset_pistolx2_inline6
+  visualTags:
+    - Default
+
+Items.Base_pistolx2_inline3:
+  $base: Items.Base_Silverhand_inline3
+  itemPartList:
+    - Items.Base_pistolx2_inline4
+Items.Base_pistolx2_inline4:
+  $base: Items.Base_Silverhand_inline4
+  item: Items.pistolx2_rcv_prt
+Items.pistolx2_rcv_prt:
+  $base: Items.w_handgun__malorian_silverhand__rcv1
+  appearanceResourceName: pistolx2_rcv
+#base
+Items.Base_pistolx2_inline5:
+  $base: Items.Base_Silverhand_inline5
+  itemPartList:
+    - Items.Base_pistolx2_inline6
+Items.Base_pistolx2_inline6:
+  $base: Items.Base_Silverhand_inline6
+  item: Items.pistolx2_base_prt
+Items.pistolx2_base_prt:
+  $base: Items.w_handgun__malorian_silverhand__base1
+  appearanceResourceName: pistolx2_base
+#mag
+Items.Base_pistolx2_inline7:
+  $base: Items.Base_Silverhand_inline7
+  itemPartList:
+    - Items.Base_pistolx2_inline8
+Items.Base_pistolx2_inline8:
+  $base: Items.Base_Silverhand_inline8
+  item: Items.pistolx2_std_prt
+Items.pistolx2_std_prt:
+  $base: Items.w_handgun__malorian_silverhand__mag_std
+  appearanceResourceName: pistolx2_mag_std
+#reload
+Items.Base_pistolx2_inline9:
+  $base: Items.Base_Silverhand_inline9
+  itemPartList:
+    - Items.Base_pistolx2_inline10
+Items.Base_pistolx2_inline10:
+  $base: Items.Base_Silverhand_inline10
+  item: Items.pistolx2_stdr_prt
+Items.pistolx2_stdr_prt:
+  $base: Items.w_handgun__malorian_silverhand__mag_stdr
+  appearanceResourceName: pistolx2_mag_stdr
+  
+Items.Base_pistolx2_inline11:
+  $base: Items.Base_Silverhand_inline11
+  itemPartList:
+    - Items.Base_pistolx2_inline12
+Items.Base_pistolx2_inline12:
+  $base: Items.Base_Silverhand_inline12
+  item: Items.pistolx2_base_prt
+Items.pistolx2_base_prt:
+  $base: Items.w_handgun__malorian_silverhand__base1
+  appearanceResourceName: pistolx2_base
+#preset
+Items.Preset_pistolx2_inline3:
+  $base: Items.Preset_Silverhand_3516_inline3
+  itemPartPreset: Items.pistolx2_rcv_prt
+Items.Preset_pistolx2_inline4:
+  $base: Items.Preset_Silverhand_3516_inline4
+  itemPartPreset: Items.pistolx2_base_prt
+Items.Preset_pistolx2_inline5:
+  $base: Items.Preset_Silverhand_3516_inline5
+  itemPartPreset: Items.pistolx2_std_prt
+Items.Preset_pistolx2_inline6:
+  $base: Items.Preset_Silverhand_3516_inline6
+  itemPartPreset: Items.pistolx2_stdr_prt
+Items.Preset_pistolx2_inline7:
+  $base: Items.Preset_Silverhand_3516_inline7
+  itemPartPreset: Items.pistolx2_base_prt
+  
+Items.pistolx2stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.pistolx2stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 35
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.pistolx2stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.pistolx2stats_thermal:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.DealsThermalDamage
+  
+Items.pistolx2stats_thermal2:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.ThermalDamage
+
+Items.pistolx2stats_thermal3:
+  $type: gamedataConstantStatModifier_Record
+  value: 50
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+
+
+
+ 

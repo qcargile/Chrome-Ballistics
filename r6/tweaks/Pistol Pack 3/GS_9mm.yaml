@@ -1,0 +1,113 @@
+Items.GS_9mm:
+  $base: Items.Preset_Lexington_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.gs9stats_damage
+    - !append-once Items.gs9stats_rof
+    - !append-once Items.gs9stats_mag
+  appearanceResourceName: gs9_app
+  audioName: wea_set_lexington
+  quality: Quality.Epic
+  displayName: gs9_name
+  localizedDescription: gs9_description
+  blueprint: Items.Base_Power_Handgun_NoMuzzle_Blueprint
+  hudIcon:
+    atlasResourcePath: gs9\icon\gs9_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: gs9\Icon\gs9.inkatlas
+    atlasPartName: slot_01
+  visualTags:
+    - Default
+  slotPartList:
+    - Items.Base_gs9_inline2
+    - Items.Base_gs9_inline4
+    - Items.Base_gs9_inline6
+    - Items.Base_gs9_inline8
+    - Items.HandgunPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_gs9_inline0
+    - Items.Preset_gs9_inline1
+    - Items.Preset_gs9_inline2
+    - Items.Preset_gs9_inline3
+    - Items.HandgunAndRevolverScopesPartList
+    - Items.Preset_Base_Lexington_inline4
+    - Items.Preset_Base_Lexington_inline5
+  
+Items.Base_gs9_inline2:
+  $base: Items.Base_Lexington_inline2
+  itemPartList:
+    - Items.Base_gs9_inline3
+Items.Base_gs9_inline3:
+  $base: Items.Base_Lexington_inline3
+  item: Items.gs9_rcv_prt
+Items.gs9_rcv_prt:
+  $base: Items.w_handgun_militech_lexington__rcv1
+  appearanceResourceName: gs9_rcv
+#base
+Items.Base_gs9_inline4:
+  $base: Items.Base_Lexington_inline4
+  itemPartList:
+    - Items.Base_gs9_inline5
+Items.Base_gs9_inline5:
+  $base: Items.Base_Lexington_inline5
+  item: Items.gs9_base_prt
+Items.gs9_base_prt:
+  $base: Items.w_handgun_militech_lexington__base1
+  appearanceResourceName: gs9_base
+#mag
+Items.Base_gs9_inline6:
+  $base: Items.Base_Lexington_inline6
+  itemPartList:
+    - Items.Base_gs9_inline7
+Items.Base_gs9_inline7:
+  $base: Items.Base_Lexington_inline7
+  item: Items.gs9_mag_std_prt
+Items.gs9_mag_std_prt:
+  $base: Items.w_handgun_militech_lexington__base1
+  appearanceResourceName: gs9_mag_std
+#reload
+Items.Base_gs9_inline8:
+  $base: Items.Base_Lexington_inline8
+  itemPartList:
+    - Items.Base_gs9_inline9
+Items.Base_gs9_inline9:
+  $base: Items.Base_Lexington_inline9
+  item: Items.gs9_mag_stdr_prt
+Items.gs9_mag_stdr_prt:
+  $base: Items.w_handgun_militech_lexington__base1
+  appearanceResourceName: gs9_mag_stdr
+#preset
+Items.Preset_gs9_inline0:
+  $base: Items.Preset_Base_Lexington_inline0
+  itemPartPreset: Items.gs9_rcv_prt
+Items.Preset_gs9_inline1:
+  $base: Items.Preset_Base_Lexington_inline1
+  itemPartPreset: Items.gs9_base_prt
+Items.Preset_gs9_inline2:
+  $base: Items.Preset_Base_Lexington_inline2
+  itemPartPreset: Items.gs9_mag_std_prt
+Items.Preset_gs9_inline3:
+  $base: Items.Preset_Base_Lexington_inline3
+  itemPartPreset: Items.gs9_mag_stdr_prt 
+
+Items.gs9stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 55
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.gs9stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.02
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.gs9stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  

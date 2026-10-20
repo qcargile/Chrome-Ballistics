@@ -1,0 +1,148 @@
+Items.Armatech_458_SOCOM:
+  $base: Items.Preset_Copperhead_Default
+  tags:
+    - !append-once IconicWeapon
+  statModifiers:
+    - !append-once Quality.IconicItem
+    - !append-once Items.armasocomstats_mag
+    - !append-once Items.armasocomstats_damage
+    - !append-once Items.armasocomstats_rof  
+    - !append-once Items.armasocomstats_effectiverange    
+    - !append-once Items.armasocomstats_armor
+  appearanceResourceName: armasocom_app
+  quality: Quality.Epic
+  displayName: armasocom_name
+  localizedDescription: armasocom_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: armasocom\icon\armasocom_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: armasocom\icon\armasocom.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_armasocom_inline2
+    - Items.Base_armasocom_inline4
+    - Items.Base_armasocom_inline6
+    - Items.Base_armasocom_inline8
+    - Items.RiflePossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_armasocom_inline0
+    - Items.Preset_armasocom_inline1
+    - Items.Preset_armasocom_inline2
+    - Items.Preset_armasocom_inline3
+  
+Items.Base_armasocom_inline2:
+  $base: Items.Base_Copperhead_inline2
+  itemPartList:
+    - Items.Base_armasocom_inline3
+Items.Base_armasocom_inline3:
+  $base: Items.Base_Copperhead_inline3
+  item: Items.armasocom_rcv_prt
+Items.armasocom_rcv_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__rcv1
+  appearanceResourceName: armasocom_rcv
+#base
+Items.Base_armasocom_inline4:
+  $base: Items.Base_Copperhead_inline4
+  itemPartList:
+    - Items.Base_armasocom_inline5
+Items.Base_armasocom_inline5:
+  $base: Items.Base_Copperhead_inline5
+  item: Items.armasocom_base_prt
+Items.armasocom_base_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__base1
+  appearanceResourceName: armasocom_base
+#mag
+Items.Base_armasocom_inline6:
+  $base: Items.Base_Copperhead_inline6
+  itemPartList:
+    - Items.Base_armasocom_inline7
+Items.Base_armasocom_inline7:
+  $base: Items.Base_Copperhead_inline7
+  item: Items.armasocom_mag_std_prt
+Items.armasocom_mag_std_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__mag_std
+  appearanceResourceName: armasocom_mag_std
+#reload
+Items.Base_armasocom_inline8:
+  $base: Items.Base_Copperhead_inline8
+  itemPartList:
+    - Items.Base_armasocom_inline9
+Items.Base_armasocom_inline9:
+  $base: Items.Base_Copperhead_inline9
+  item: Items.armasocom_mag_stdr_prt
+Items.armasocom_mag_stdr_prt:
+  $base: Items.w_rifle_assault__nokota_copperhead__mag_stdr
+  appearanceResourceName: armasocom_mag_stdr
+#preset
+Items.Preset_armasocom_inline0:
+  $base: Items.Preset_Base_Copperhead_inline0
+  itemPartPreset: Items.armasocom_rcv_prt
+Items.Preset_armasocom_inline1:
+  $base: Items.Preset_Base_Copperhead_inline1
+  itemPartPreset: Items.armasocom_base_prt
+Items.Preset_armasocom_inline2:
+  $base: Items.Preset_Base_Copperhead_inline2
+  itemPartPreset: Items.armasocom_mag_std_prt
+Items.Preset_armasocom_inline3:
+  $base: Items.Preset_Base_Copperhead_inline3
+  itemPartPreset: Items.armasocom_mag_stdr_prt
+  
+Items.armasocomstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 50
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.armasocomstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -20
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.armasocomstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.02
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.armasocomstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: -17
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.armasocomstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+
+
+Items.armasocom_stock:
+  $type: VendorItem
+  generationPrereqs:
+    - !append LootPrereqs.PlayerLevel_Tier_3_Start_Prereq
+  item: Items.Armatech_458_SOCOM
+  quantity:
+    - !append Vendors.Always_Present
+
+Items.armasocom_stock_uncommon:
+  $type: VendorItem
+  generationPrereqs:
+    - !append LootPrereqs.PlayerLevel_Tier_2_Start_Prereq
+  item: Items.Armatech_458_SOCOM_Uncommon
+  quantity:
+    - !append Vendors.Always_Present
+    
+Items.armasocom_stock_common:
+  $type: VendorItem
+  item: Items.Armatech_458_SOCOM_Common
+  quantity:
+    - !append Vendors.Always_Present

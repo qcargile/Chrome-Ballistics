@@ -1,0 +1,176 @@
+Items.M79:
+  $base: Items.Preset_Testera_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.m79stats_mag
+    - !append-once Items.m79stats_range1
+    - !append-once Items.m79stats_range2
+    - !append-once Items.m79stats_dismember
+    - !append-once Items.m79stats_damage
+  appearanceResourceName: m79_app
+  attacks:
+    - !append-once Attacks.m79_explosive
+  rangedAttacks: Attacks.m79attacks
+  audioName: wea_set_kolac
+  quality: Quality.Legendary
+  displayName: m79_name
+  localizedDescription: m79_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: m79\icon\m79_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: m79\icon\m79.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_m79_inline1
+    - Items.Base_m79_inline3
+    - Items.Base_m79_inline5
+    - Items.Base_m79_inline7
+  slotPartListPreset:
+    - Items.Preset_m79_inline0
+    - Items.Preset_m79_inline1
+    - Items.Preset_m79_inline2
+    - Items.Preset_m79_inline3
+    - Items.ShotgunScopesPartList
+    
+Items.Base_m79_inline1:
+  $base: Items.Base_Testera_inline1
+  itemPartList:
+    - Items.Base_m79_inline2
+Items.Base_m79_inline2:
+  $base: Items.Base_Testera_inline2
+  item: Items.m79_rcv_prt
+Items.m79_rcv_prt:
+  $base: Items.w_shotgun_dual__rostovic_testera__rcv1
+  appearanceResourceName: m79_rcv
+#base
+Items.Base_m79_inline3:
+  $base: Items.Base_Testera_inline3
+  itemPartList:
+    - Items.Base_m79_inline4
+Items.Base_m79_inline4:
+  $base: Items.Base_Testera_inline4
+  item: Items.m79_base_prt
+Items.m79_base_prt:
+  $base: Items.w_shotgun_dual__rostovic_testera__base1
+  appearanceResourceName: m79_base
+#mag
+Items.Base_m79_inline5:
+  $base: Items.Base_Testera_inline5
+  itemPartList:
+    - Items.Base_m79_inline6
+Items.Base_m79_inline6:
+  $base: Items.Base_Testera_inline6
+  item: Items.m79_mag_std_prt
+Items.m79_mag_std_prt:
+  $base: Items.w_shotgun_dual__rostovic_testera__mag_std
+  appearanceResourceName: m79_mag_std
+#reload
+Items.Base_m79_inline7:
+  $base: Items.Base_Testera_inline7
+  itemPartList:
+    - Items.Base_m79_inline8
+Items.Base_m79_inline8:
+  $base: Items.Base_Testera_inline8
+  item: Items.m79_mag_stdr_prt
+Items.m79_mag_stdr_prt:
+  $base: Items.w_shotgun_dual__rostovic_testera__mag_stdr
+  appearanceResourceName: m79_mag_stdr
+#preset
+Items.Preset_m79_inline0:
+  $base: Items.Preset_Testera_Default_inline0
+  itemPartPreset: Items.m79_rcv_prt
+Items.Preset_m79_inline1:
+  $base: Items.Preset_Testera_Default_inline1
+  itemPartPreset: Items.m79_base_prt
+Items.Preset_m79_inline2:
+  $base: Items.Preset_Testera_Default_inline2
+  itemPartPreset: Items.m79_mag_std_prt
+Items.Preset_m79_inline3:
+  $base: Items.Preset_Testera_Default_inline3
+  itemPartPreset: Items.m79_mag_stdr_prt
+  
+  
+Items.m79stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -1
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase  
+  
+Items.m79stats_range1:
+  $type: gamedataConstantStatModifier_Record
+  value: 200
+  modifierType: Additive
+  statType: BaseStats.MaximumRange  
+  
+Items.m79stats_range2:
+  $type: gamedataConstantStatModifier_Record
+  value: 150
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange  
+  
+Items.m79stats_dismember:
+  $type: gamedataConstantStatModifier_Record
+  value: 200
+  modifierType: Multiplier
+  statType: BaseStats.HitDismembermentFactor
+  
+Items.m79stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: -60
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Attacks.m79_explosive:
+    $base: Attacks.Bullet_GameEffect
+    explosionAttack:
+        $base: Attacks.ExplosionEnormous
+        playerIncomingDamageMultiplier: 0.20
+        effectName: weapon_explosions
+        effectTag: bullet_explosion_medium
+        range: 5.0
+        statModifiers:
+        -   $type: CombinedStatModifier
+            refStat: BaseStats.DamagePerHit
+            statType: BaseStats.ThermalDamage
+            modifierType: Additive
+            refObject: Owner
+            value: 3.0
+        hitFlags:
+        -   !append-once DeviceExplosionAttack
+        -   !append-once DetonateGrenades
+        -   !append-once BulletExplosion
+        hitReactionSeverityMin: 2
+        explosionDamageVSVehicles: 80.0
+        statusEffects:
+        -   $type: StatusEffectAttackData
+            statusEffect: BaseStatusEffect.EpicBurnGrenade
+            resistPool: BaseStatPools.BurningTrigger
+            applyImmediately: true
+            
+
+Attacks.m79attack1:
+    $type: RangedAttack
+    playerAttack: Attacks.m79_explosive
+    playerTimeDilated: Attacks.m79_explosive
+    
+Attacks.m79attacks:
+    $type: RangedAttackPackage
+    defaultFire: Attacks.m79attack1
+  
+Vendors.pac_wwd_gunsmith_01:
+  itemStock:
+    - !append Items.m79_stock
+
+Items.m79_stock:
+  $type: VendorItem
+  generationPrereqs:
+    - !append LootPrereqs.PlayerLevel_Tier_3_Start_Prereq
+  item: Items.M79
+  quantity:
+    - !append Vendors.Always_Present  
+  

@@ -1,0 +1,41 @@
+# Knife
+Items.Knife_Default_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 165              # default value – 76
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Tanto
+Items.Tanto_Default_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 190              # default value – 76
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Neurotoxin Knife
+Items.Neurotoxin_Knife_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 155              # default value – 67
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Punk Knife
+Items.Punk_Knife_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 185              # default value – 76
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Chef Knife
+Items.Chef_Knife_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 210              # default value – 76
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Butcher's Knife
+Items.Butchers_Knife_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 215              # default value – 76
+  modifierType: Additive
+  statType: BaseStats.DPS

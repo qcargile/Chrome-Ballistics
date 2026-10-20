@@ -1,0 +1,74 @@
+Items.Hatchet_Heat_Hawk:
+  $base: Items.Preset_Tomahawk_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.heatstats_recovery
+    - !append-once Items.heatstats_damage
+    - !append-once Items.heatstats_thermal
+    - !append-once Items.heatstats_thermal2
+    - !append-once Items.heatstats_thermal3
+  appearanceResourceName: heat_app
+  damageType: DamageTypes.Physical
+  quality: Quality.Rare
+  displayName: heat_name
+  hudIcon:
+    atlasResourcePath: heat\icon\heat_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: heat\icon\heat.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_heat_inline0
+    - Items.Base_heat_inline1
+  slotPartListPreset:
+    - Items.Preset_heat_inline1
+  statPools:
+    - BaseStatPools.ThrowRecovery
+    
+Items.Base_heat_inline0:
+  $base: Items.Base_Axe_inline0
+  itemPartList:
+    - Items.Base_heat_inline1
+Items.Base_heat_inline1:
+  $base: Items.Base_Axe_inline1
+  item: Items.heat_grip_prt
+Items.heat_grip_prt:
+  $base: Items.w_tomahawk_common_grip
+  appearanceResourceName: heat_grip    
+  
+Items.Preset_heat_inline1:
+  $base: Items.Preset_Tomahawk_Default_inline1
+  itemPartPreset: Items.heat_grip_prt
+  
+Items.heatstats_recovery:
+  $type: gamedataConstantStatModifier_Record
+  value: -5.4
+  modifierType: Additive
+  statType: BaseStats.ThrowRecovery
+  
+Items.heatstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.heatstats_thermal:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.DealsThermalDamage
+  
+Items.heatstats_thermal2:
+  $type: gamedataConstantStatModifier_Record
+  value: 50
+  modifierType: Additive
+  statType: BaseStats.ThermalDamage
+
+Items.heatstats_thermal3:
+  $type: gamedataConstantStatModifier_Record
+  value: 30
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+

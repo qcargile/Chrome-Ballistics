@@ -1,0 +1,43 @@
+Items.Machete_Default:
+  $base: Items.Preset_Machete_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.chetestats_damage
+  appearanceResourceName: chete_app
+  quality: Quality.Common
+  displayName: chete_name
+  hudIcon:
+    atlasResourcePath: chete\icon\chete_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: chete\icon\chete.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_chete_inline1
+    - Items.Base_chete_inline2
+  slotPartListPreset:
+    - Items.Preset_chete_inline0
+    
+Items.Base_chete_inline1:
+  $base: Items.Base_Machete_inline1
+  itemPartList:
+    - Items.Base_chete_inline2
+Items.Base_chete_inline2:
+  $base: Items.Base_Machete_inline3
+  item: Items.chete_grip_prt
+Items.chete_grip_prt:
+  $base: Items.w_machete_common_grip
+  appearanceResourceName: chete_grip    
+  
+Items.Preset_chete_inline0:
+  $base: Items.Preset_Machete_Default_inline0
+  itemPartPreset: Items.chete_grip_prt
+  
+Items.chetestats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.DPS
+

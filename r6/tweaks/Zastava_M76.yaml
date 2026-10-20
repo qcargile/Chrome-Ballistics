@@ -1,0 +1,255 @@
+Items.Zastava_M76:
+  $base: Items.Preset_Ajax_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.m76stats_rof 
+    - !append-once Items.m76stats_damage
+    - !append-once Items.m76stats_reload  
+    - !append-once Items.m76stats_recoil2
+    - !append-once Items.m76stats_reload2  
+    - !append-once Items.m76stats_equip
+    - !append-once Items.m76stats_mag
+    - !append-once Items.m76stats_spread
+    - !append-once Items.m76stats_spread2
+    - !append-once Items.m76stats_spread3
+    - !append-once Items.m76stats_armor
+    - !append-once Items.m76stats_headshotmult
+    - !append-once Items.m76stats_effectiverange
+    - !append-once Items.m76stats_maxrange
+  appearanceResourceName: m76_app
+  audioName: wea_set_kyubi
+  primaryTriggerMode: TriggerMode.Charge
+  secondaryTriggerMode: TriggerMode.Charge
+  triggerModes:
+    - TriggerMode.Charge
+    - TriggerMode.Charge
+  attacks:
+    - !append-once Attacks.m76_fullautomode
+    - !append-once Attacks.m76_semiautomode
+  rangedAttacks: Attacks.m76attacks
+  quality: Quality.Epic
+  displayName: m76_name
+  localizedDescription: m76_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: m76\icon\m76_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: m76\icon\m76.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_m76_inline2
+    - Items.Base_m76_inline4
+    - Items.Base_m76_inline6
+    - Items.Base_m76_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.GradPossibleScopesList
+    - Items.NekomataPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_m76_inline0
+    - Items.Preset_m76_inline1
+    - Items.Preset_m76_inline2
+    - Items.Preset_m76_inline3
+  
+Items.Base_m76_inline2:
+  $base: Items.Base_Ajax_inline2
+  itemPartList:
+    - Items.Base_m76_inline3
+Items.Base_m76_inline3:
+  $base: Items.Base_Ajax_inline3
+  item: Items.m76_rcv_prt
+Items.m76_rcv_prt:
+  $base: Items.w_rifle_assault__militech_ajax__rcv1
+  appearanceResourceName: m76_rcv
+#base
+Items.Base_m76_inline4:
+  $base: Items.Base_Ajax_inline4
+  itemPartList:
+    - Items.Base_m76_inline5
+Items.Base_m76_inline5:
+  $base: Items.Base_Ajax_inline5
+  item: Items.m76_base_prt
+Items.m76_base_prt:
+  $base: Items.w_rifle_assault__militech_ajax__base1
+  appearanceResourceName: m76_base
+#mag
+Items.Base_m76_inline6:
+  $base: Items.Base_Ajax_inline6
+  itemPartList:
+    - Items.Base_m76_inline7
+Items.Base_m76_inline7:
+  $base: Items.Base_Ajax_inline7
+  item: Items.m76_mag_std_prt
+Items.m76_mag_std_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_std
+  appearanceResourceName: m76_mag_std
+#reload
+Items.Base_m76_inline8:
+  $base: Items.Base_Ajax_inline8
+  itemPartList:
+    - Items.Base_m76_inline9
+Items.Base_m76_inline9:
+  $base: Items.Base_Ajax_inline9
+  item: Items.m76_mag_stdr_prt
+Items.m76_mag_stdr_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_stdr
+  appearanceResourceName: m76_mag_stdr
+#preset
+Items.Preset_m76_inline0:
+  $base: Items.Preset_Ajax_Default_inline0
+  itemPartPreset: Items.m76_rcv_prt
+Items.Preset_m76_inline1:
+  $base: Items.Preset_Ajax_Default_inline1
+  itemPartPreset: Items.m76_base_prt
+Items.Preset_m76_inline2:
+  $base: Items.Preset_Ajax_Default_inline2
+  itemPartPreset: Items.m76_mag_std_prt
+Items.Preset_m76_inline3:
+  $base: Items.Preset_Ajax_Default_inline3
+  itemPartPreset: Items.m76_mag_stdr_prt
+  
+Items.m76stats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.05
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.m76stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 105
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.m76stats_reload:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+  
+Items.m76stats_reload2:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBase
+  
+Items.m76stats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.35
+  modifierType: Additive
+  statType: BaseStats.RecoilRecoveryTime
+
+Items.m76stats_equip:
+  $type: gamedataConstantStatModifier_Record
+  value: -1.0
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.m76stats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: -10
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+
+Items.m76stats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.m76stats_spread2:
+  $type: gamedataConstantStatModifier_Record
+  value: -1
+  modifierType: Additive
+  statType: BaseStats.SpreadAdsMaxX
+  
+Items.m76stats_spread3:
+  $type: gamedataConstantStatModifier_Record
+  value: -4
+  modifierType: Additive
+  statType: BaseStats.SpreadMaxX
+  
+Items.m76stats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+Items.m76stats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+  
+Items.m76stats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 50
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.m76stats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 75
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+
+  
+Attacks.m76_fullautomode:
+    $base: Attacks.Bullet_GameEffect
+    statusEffects:
+    -   $type: StatusEffectAttackData
+        statusEffect:
+            $base: BaseStatusEffect.Vulnerable
+            maxStacks:
+                statModifiers:
+                -   $type: ConstantStatModifier
+                    statType: BaseStats.MaxStacks
+                    modifierType: Additive
+                    value: 5.0
+            reapplyPackagesOnMaxStacks: false
+            removeAllStacksWhenDurationEnds: false
+            packages:
+            -   $base: BaseStatusEffect.Vulnerable_inline2
+                stackable: true
+        resistPool: BaseStatPools.BurningTrigger
+        applyImmediately: true
+
+Attacks.m76_semiautomode:
+    $base: Attacks.Bullet_GameEffect
+    statusEffects:
+    -   $type: StatusEffectAttackData
+        statusEffect:
+            $base: BaseStatusEffect.Vulnerable
+            maxStacks:
+                statModifiers:
+                -   $type: ConstantStatModifier
+                    statType: BaseStats.MaxStacks
+                    modifierType: Additive
+                    value: 5.0
+            reapplyPackagesOnMaxStacks: false
+            removeAllStacksWhenDurationEnds: false
+            packages:
+            -   $base: BaseStatusEffect.Vulnerable_inline2
+                stackable: true
+        resistPool: BaseStatPools.BurningTrigger
+        applyImmediately: true
+            
+
+Attacks.m76attack1:
+    $type: RangedAttack
+    playerAttack: Attacks.m76_fullautomode
+    secondaryPlayerAttack: Attacks.m76_fullautomode
+    playerTimeDilated: Attacks.m76_fullautomode
+    secondaryPlayerTimeDilated: Attacks.m76_fullautomode
+
+Attacks.m76attacks:
+    $type: RangedAttackPackage
+    defaultFire: Attacks.m76attack1
+    chargeFire: Attacks.m76attack1
+
+
+  

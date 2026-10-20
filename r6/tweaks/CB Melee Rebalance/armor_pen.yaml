@@ -1,0 +1,125 @@
+Items.Base_Knife_RPG_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationLow
+
+Items.Base_Katana_RPG_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Machete_RPG_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_One_Hand_Blunt_RPG_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Baton_Alpha_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Baton_Beta_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Baton_Gamma_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.MantisBladesRPGStats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Nano_Wires_RPG_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationMedium
+
+Items.Base_Axe_RPG_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh
+
+Items.Base_Chainsword_RPG_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh
+
+Items.Base_Two_Hand_Blunt_RPG_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh
+
+Items.Strong_Arms_RPG_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh
+
+Items.Base_Two_Hand_Hammer_RPG_Stats:
+  statModifiers:
+    - !remove AttackModifier.WeaponArmorPenetrationLow
+    - !remove AttackModifier.WeaponArmorPenetrationMedium
+    - !remove AttackModifier.WeaponArmorPenetrationHigh
+    - !remove AttackModifier.WeaponArmorPenetrationVeryHigh
+    - !remove AttackModifier.WeaponArmorPenetrationFull
+    - !append-once AttackModifier.WeaponArmorPenetrationHigh

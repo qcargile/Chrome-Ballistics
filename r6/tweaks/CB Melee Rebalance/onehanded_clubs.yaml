@@ -1,0 +1,41 @@
+# Dildo (One-Handed Club)
+Items.Dildo_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 195.8               # default value – 69
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Fingers Cane (One-Handed Club)
+Items.Fingers_Cane_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 210.4               # default value – 67
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Crowbar (One-Handed Club)
+Items.Crowbar_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 195.4               # default value – 67
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Baton (One-Handed Club)
+Items.Baton_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 170.4               # default value – 62
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Iron Pipe (One-Handed Club)
+Items.Iron_Pipe_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 185.4               # default value – 67
+  modifierType: Additive
+  statType: BaseStats.DPS
+
+# Tire Iron (One-Handed Club)
+Items.Tire_Iron_Damage_Stats_inline0:
+  $type: gamedataConstantStatModifier_Record
+  value: 180.4               # default value – 67
+  modifierType: Additive
+  statType: BaseStats.DPS

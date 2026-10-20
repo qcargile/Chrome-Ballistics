@@ -1,0 +1,209 @@
+Items.Fabarm_SDASS:
+  $base: Items.Preset_Tactician_Default
+  tags:
+    - !append ForceDismember
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.sdassstats_damage
+    - !append-once Items.sdassstats_rof
+    - !append-once Items.sdassstats_spread
+    - !append-once Items.sdassstats_mag
+    - !append-once Items.sdassstats_pierce
+    - !append-once Items.sdassstats_armor
+    - !append-once Items.sdassstats_crit
+    - !append-once Items.sdassstats_bleeding
+    - !append-once Items.sdassstats_burning
+    - !append-once Items.sdassstats_electrocute
+    - !append-once Items.sdassstats_poison
+    - !append-once Items.sdassstats_stun
+    - !append-once Items.sdassstats_headshotmult
+    - !append-once Items.sdassstats_effectiverange
+    - !append-once Items.sdassstats_maxrange
+    - !append-once Items.sdassstats_aimoffset
+  statModifierGroups: 
+    - !remove Items.IconicQualityRandomization
+    - !remove Items.QualityRandomization
+    - !remove Items.ItemPlusRandomizer_MaxQuality
+    - !remove Items.ItemPlusRandomizer_Below_MaxQuality
+  ammo: Ammo.ShotgunAmmo
+  appearanceResourceName: sdass_app
+  blueprint: Items.Base_Power_Shotgun_Blueprint
+  fxPackage: WeaponFxPackage.PowerLargeCaliber
+  hudIcon:
+    atlasResourcePath: sdass\icon\sdass_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: sdass\icon\sdass.inkatlas
+    atlasPartName: slot_01
+  quality: Quality.Epic
+  displayName: sdass_name
+  localizedDescription: sdass_description
+  slotPartList:
+    - Items.Base_sdass_inline2
+    - Items.Base_sdass_inline4
+    - Items.Base_sdass_inline6
+    - Items.Base_sdass_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+    - Items.RiflePossibleScopesList
+    - Items.Fabarm_SDASS_ProSight
+    - Items.UniversalShotgunSuppressorList
+  slotPartListPreset:
+    - Items.Preset_sdass_inline0
+    - Items.Preset_sdass_inline1
+    - Items.Preset_sdass_inline2
+    - Items.Preset_sdass_inline3
+  visualTags:
+    - Default
+    
+Items.Base_sdass_inline2:
+  $base: Items.Base_Tactician_inline2
+  itemPartList:
+    - Items.Base_sdass_inline3
+Items.Base_sdass_inline3:
+  $base: Items.Base_Tactician_inline3
+  item: Items.sdass_rcv_prt
+Items.sdass_rcv_prt:
+  $base: Items.w_shotgun_constitutional_tactician_rcv1
+  appearanceResourceName: sdass_rcv
+Items.Base_sdass_inline4:
+  $base: Items.Base_Tactician_inline4
+  itemPartList:
+    - Items.Base_sdass_inline5
+Items.Base_sdass_inline5:
+  $base: Items.Base_Tactician_inline5
+  item: Items.sdass_base_prt
+Items.sdass_base_prt:
+  $base: Items.w_shotgun_constitutional_tactician_base1
+  appearanceResourceName: sdass_base
+Items.Base_sdass_inline6:
+  $base: Items.Base_Tactician_inline6
+  itemPartList:
+    - Items.Base_sdass_inline7
+Items.Base_sdass_inline7:
+  $base: Items.Base_Tactician_inline7
+  item: Items.sdass_mag_std_prt
+Items.sdass_mag_std_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_std
+  appearanceResourceName: sdass_mag_std
+Items.Base_sdass_inline8:
+  $base: Items.Base_Tactician_inline8
+  itemPartList:
+    - Items.Base_sdass_inline9
+Items.Base_sdass_inline9:
+  $base: Items.Base_Tactician_inline9
+  item: Items.sdass_mag_stdr_prt
+Items.sdass_mag_stdr_prt:
+  $base: Items.w_shotgun_constitutional_tactician_mag_stdr
+  appearanceResourceName: sdass_mag_stdr
+Items.Preset_sdass_inline0:
+  $base: Items.Preset_Tactician_Default_inline0
+  itemPartPreset: Items.sdass_rcv_prt
+Items.Preset_sdass_inline1:
+  $base: Items.Preset_Tactician_Default_inline1
+  itemPartPreset: Items.sdass_base_prt
+Items.Preset_sdass_inline2:
+  $base: Items.Preset_Tactician_Default_inline2
+  itemPartPreset: Items.sdass_mag_std_prt
+Items.Preset_sdass_inline3:
+  $base: Items.Preset_Tactician_Default_inline3
+  itemPartPreset: Items.sdass_mag_stdr_prt
+  
+Items.sdassstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 23
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.sdassstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.00
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.sdassstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.sdassstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.sdassstats_crit:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Items.sdassstats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate
+  
+Items.sdassstats_poison:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.PoisonedApplicationRate
+  
+Items.sdassstats_electrocute:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.sdassstats_bleeding:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  
+Items.sdassstats_burning:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.sdassstats_headshotmult:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.15
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+
+Items.sdassstats_spread:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.SpreadUseInAds
+  
+Items.sdassstats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.sdassstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 8
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.sdassstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+Items.sdassstats_aimoffset:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.1
+  modifierType: Additive
+  statType: BaseStats.AimOffset
+  

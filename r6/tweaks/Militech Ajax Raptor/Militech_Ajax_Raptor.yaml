@@ -1,0 +1,154 @@
+Items.Militech_Ajax_Raptor:
+  $base: Items.Preset_Ajax_Default
+  tags:
+    - !append-once Silenced
+    - !append-once IconicWeapon 
+  statModifiers:
+    - !append-once Quality.IconicItem
+    - !append-once Items.ajaxraptorstats_rof 
+    - !append-once Items.ajaxraptorstats_damage
+    - !append-once Items.ajaxraptorstats_mag
+    - !append-once Items.ajaxraptorstats_effectiverange
+    - !append-once Items.ajaxraptorstats_maxrange
+    - !append-once Items.ajaxraptorstats_armor
+    - !append-once Items.ajaxraptorstats_pierce
+    - !append-once Items.ajaxraptorstats_silent
+  appearanceResourceName: ajaxraptor_app
+  audioName: wea_set_ajax                  #CHANGE WEAPON FIRING SOUND: change "ajax" to another weapon in lowercase letters. EXAMPLE: "copperhead", "lexington", "sidewinder". Only other full auto weapon sounds will work unless you have Trigger Mode Control installed, then all gun sounds will work
+  quality: Quality.Uncommon
+  displayName: ajaxraptor_name
+  localizedDescription: ajaxraptor_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: ajaxraptor\icon\ajaxraptor_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: ajaxraptor\icon\ajaxraptor.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_ajaxraptor_inline2
+    - Items.Base_ajaxraptor_inline4
+    - Items.Base_ajaxraptor_inline6
+    - Items.Base_ajaxraptor_inline8
+    - Items.RiflePossibleScopesList
+    - Items.AjaxRaptorMuzzleList
+  slotPartListPreset:
+    - Items.Preset_ajaxraptor_inline0
+    - Items.Preset_ajaxraptor_inline1
+    - Items.Preset_ajaxraptor_inline2
+    - Items.Preset_ajaxraptor_inline3
+    - Items.Preset_ajaxraptor_inline4
+  
+Items.Base_ajaxraptor_inline2:
+  $base: Items.Base_Ajax_inline2
+  itemPartList:
+    - Items.Base_ajaxraptor_inline3
+Items.Base_ajaxraptor_inline3:
+  $base: Items.Base_Ajax_inline3
+  item: Items.ajaxraptor_rcv_prt
+Items.ajaxraptor_rcv_prt:
+  $base: Items.w_rifle_assault__militech_ajax__rcv1
+  appearanceResourceName: ajaxraptor_rcv
+#base
+Items.Base_ajaxraptor_inline4:
+  $base: Items.Base_Ajax_inline4
+  itemPartList:
+    - Items.Base_ajaxraptor_inline5
+Items.Base_ajaxraptor_inline5:
+  $base: Items.Base_Ajax_inline5
+  item: Items.ajaxraptor_base_prt
+Items.ajaxraptor_base_prt:
+  $base: Items.w_rifle_assault__militech_ajax__base1
+  appearanceResourceName: ajaxraptor_base
+#mag
+Items.Base_ajaxraptor_inline6:
+  $base: Items.Base_Ajax_inline6
+  itemPartList:
+    - Items.Base_ajaxraptor_inline7
+Items.Base_ajaxraptor_inline7:
+  $base: Items.Base_Ajax_inline7
+  item: Items.ajaxraptor_mag_std_prt
+Items.ajaxraptor_mag_std_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_std
+  appearanceResourceName: ajaxraptor_mag_std
+#reload
+Items.Base_ajaxraptor_inline8:
+  $base: Items.Base_Ajax_inline8
+  itemPartList:
+    - Items.Base_ajaxraptor_inline9
+Items.Base_ajaxraptor_inline9:
+  $base: Items.Base_Ajax_inline9
+  item: Items.ajaxraptor_mag_stdr_prt
+Items.ajaxraptor_mag_stdr_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_stdr
+  appearanceResourceName: ajaxraptor_mag_stdr
+#preset
+Items.Preset_ajaxraptor_inline0:
+  $base: Items.Preset_Ajax_Default_inline0
+  itemPartPreset: Items.ajaxraptor_rcv_prt
+Items.Preset_ajaxraptor_inline1:
+  $base: Items.Preset_Ajax_Default_inline1
+  itemPartPreset: Items.ajaxraptor_base_prt
+Items.Preset_ajaxraptor_inline2:
+  $base: Items.Preset_Ajax_Default_inline2
+  itemPartPreset: Items.ajaxraptor_mag_std_prt
+Items.Preset_ajaxraptor_inline3:
+  $base: Items.Preset_Ajax_Default_inline3
+  itemPartPreset: Items.ajaxraptor_mag_stdr_prt
+  
+Items.ajaxraptorstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 55                                              #EDIT DAMAGE: HIGHER NUMBER = MORE DAMAGE, LOWER NUMBER = LESS DAMAGE
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.ajaxraptorstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.04                                          #EDIT RATE OF FIRE: LOWER NUMBER = HIGHER ROF, HIGHER NUMBER = LOWER ROF. TRY TO KEEP THIS BETWEEN "-0.10" (HIGH ROF) and "0.10" (LOW ROF)
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.ajaxraptorstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0                                              #EDIT MAG CAPACITY: 0 = DEFAULT CAPACITY (30 ROUNDS) EXAMPLE: IF YOU WANT 50 ROUNDS YOU WILL PUT "20" AS THE VALUE
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+Items.ajaxraptorstats_effectiverange:
+  $type: gamedataConstantStatModifier_Record
+  value: 0                                              #EDIT EFFECTIVE RANGE: 0 = DEFAULT (42 M)
+  modifierType: Additive
+  statType: BaseStats.EffectiveRange
+  
+Items.ajaxraptorstats_pierce:
+  $type: gamedataConstantStatModifier_Record
+  value: 0                                               #ENABLE/DISABLE WALL PIERCE ABILITY: 0=OFF, 1=ON
+  modifierType: Additive
+  statType: BaseStats.TechPierceEnabled
+  
+Items.ajaxraptorstats_maxrange:
+  $type: gamedataConstantStatModifier_Record
+  value: 40
+  modifierType: Additive
+  statType: BaseStats.MaximumRange
+  
+Items.ajaxraptorstats_armor:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.75
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  
+Items.ajaxraptorstats_silent:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.CanSilentKill
+
+Items.Preset_ajaxraptor_inline4:
+  $type: gamedataSlotItemPartPreset_Record
+  itemPartPreset: Items.AjaxRaptor_Suppressor
+  slot: AttachmentSlots.PowerModule
+
+
+  

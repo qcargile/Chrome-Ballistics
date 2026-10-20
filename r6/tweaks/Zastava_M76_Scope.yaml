@@ -1,0 +1,153 @@
+Items.Zastava_M76_Scope:
+  $base: Items.Base_Long_Scope
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  animSetResource: ''
+  appearanceResourceName: m76_scope_app
+  canDrop: True
+  crosshair: Crosshairs.None
+  deprecated: False
+  dropObject: defaultItemDrop
+  enableNpcRPGData: False
+  friendlyName: ''
+  garmentOffset: 0
+  icon:
+    atlasResourcePath: m76_scope\icon\m76_scope.inkatlas
+    atlasPartName: ItemPart
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: True
+  isSingleInstance: False
+  itemType: ItemType.Gen_Misc
+  localizedName: ''
+  mass: 1
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  parentAttachmentType: ParentAttachmentType.Animated
+  powerLevelDeterminedByParent: True
+  quality: Quality.Random
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  savable: False
+  animationParameters: []
+  displayName: m76_scope_name
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.Scope
+    - Price.ItemQualityMultiplier
+    - Price.BuyPrice_StreetCred_Discount
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  connections: []
+  equipAreas: []
+  equipPrereqs: []
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  hairSkinnedMeshComponents: []
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots:
+    - AttachmentSlots.Scope
+  previewBBoxOverride: []
+  requiredSlots: []
+  sellPrice:
+    - Price.Scope
+    - Price.ItemQualityMultiplier
+    - Price.SellMultiplier
+  slotPartList: []
+  slotPartListPreset: []
+  tags:
+    - itemPart
+    - WeaponMod
+    - LongScope
+  variants: []
+  visualTags: []
+  effectors: []
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+  statModifierGroups:
+    - Items.QualityRandomization_Attachments
+  statModifiers:
+    - !append-once Items.m76_scopestats_zoom
+    - !append-once Items.m76_scopestats_fov
+    - !append-once Items.m76_scopestats_aimoffset
+    - !append-once Items.m76_scopestats_sway
+    - !append-once Items.m76_scopestats_sway2
+    - !append-once Items.m76_scopestats_sway3
+    - !append-once Items.m76_scopestats_sway4
+    - !append-once Items.m76_scopestats_sway5
+    - !append-once Items.m76_scopestats_sway6
+    - !append-once Items.m76_scopestats_sway7
+  statPools: []
+  weakspots: []
+  
+Items.m76_scopestats_zoom:
+  $type: gamedataConstantStatModifier_Record
+  value: 6.0
+  modifierType: Additive
+  statType: BaseStats.ZoomLevel
+  
+Items.m76_scopestats_fov:
+  $type: gamedataConstantStatModifier_Record
+  value: -15
+  modifierType: Additive
+  statType: BaseStats.ScopeFOV
+  
+Items.m76_scopestats_aimoffset:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.2
+  modifierType: Additive
+  statType: BaseStats.ScopeOffset
+  
+Items.m76_scopestats_sway:
+  $type: gamedataConstantStatModifier_Record
+  value: -3
+  modifierType: Additive
+  statType: BaseStats.SwaySideMinimumAngleDistance
+  
+Items.m76_scopestats_sway2:
+  $type: gamedataConstantStatModifier_Record
+  value: -50
+  modifierType: Additive
+  statType: BaseStats.SwaySideTopAngleLimit
+  
+Items.m76_scopestats_sway3:
+  $type: gamedataConstantStatModifier_Record
+  value: -50
+  modifierType: Additive
+  statType: BaseStats.SwaySideBottomAngleLimit
+  
+Items.m76_scopestats_sway4:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.69
+  modifierType: Additive
+  statType: BaseStats.SwayCurvatureMinimumFactor
+  
+Items.m76_scopestats_sway5:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.20
+  modifierType: Additive
+  statType: BaseStats.RecoilDriftRandomRangeMin
+  
+Items.m76_scopestats_sway6:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.17
+  modifierType: Additive
+  statType: BaseStats.SwayCenterMaximumAngleOffset
+  
+Items.m76_scopestats_sway7:
+  $type: gamedataConstantStatModifier_Record
+  value: -2.5
+  modifierType: Additive
+  statType: BaseStats.SwaySideMaximumAngleDistance
+

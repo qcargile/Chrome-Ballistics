@@ -1,0 +1,50 @@
+Items.Scythe_Default:
+  $base: Items.Preset_Machete_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.scystats_damage
+    - !append-once Items.scystats_leap
+  appearanceResourceName: scy_app
+  quality: Quality.Common
+  displayName: scy_name
+  hudIcon:
+    atlasResourcePath: scy\icon\scy_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: scy\icon\scy.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_scy_inline2
+  slotPartListPreset:
+    - Items.Preset_scy_inline0
+    
+Items.Base_chete_inline1:
+  $base: Items.Base_Machete_inline1
+  itemPartList:
+    - Items.Base_scy_inline2
+Items.Base_scy_inline2:
+  $base: Items.Base_Machete_inline3
+  item: Items.scy_grip_prt
+Items.scy_grip_prt:
+  $base: Items.w_machete_common_grip
+  appearanceResourceName: scy_grip    
+  
+Items.Preset_scy_inline0:
+  $base: Items.Preset_Machete_Default_inline0
+  itemPartPreset: Items.scy_grip_prt
+  
+Items.scystats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.scystats_leap:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.CanMeleeLeap
+
+

@@ -1,0 +1,111 @@
+Items.Kendall44:
+  $base: Items.Preset_Unity_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.kendallstats_damage
+    - !append-once Items.kendallstats_rof
+    - !append-once Items.kendallstats_mag
+  appearanceResourceName: kendall_app
+  quality: Quality.Rare
+  displayName: kendall_name
+  localizedDescription: kendall_description
+  visualTags:
+   - Default
+  hudIcon:
+    atlasResourcePath: kendall\icon\kendall_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: kendall\icon\kendall.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_kendall_inline2
+    - Items.Base_kendall_inline4
+    - Items.Base_kendall_inline6
+    - Items.Base_kendall_inline8
+    - Items.HandgunPossibleScopesList
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.HandgunPossibleMuzzleBraksList
+  slotPartListPreset:
+    - Items.Preset_kendall_inline0
+    - Items.Preset_kendall_inline1
+    - Items.Preset_kendall_inline2
+    - Items.Preset_kendall_inline3
+  
+Items.Base_kendall_inline2:
+  $base: Items.Base_Unity_inline2
+  itemPartList:
+    - Items.Base_kendall_inline3
+Items.Base_kendall_inline3:
+  $base: Items.Base_Unity_inline3
+  item: Items.kendall_rcv_prt
+Items.kendall_rcv_prt:
+  $base: Items.w_handgun__constitutional_unity__rcv1
+  appearanceResourceName: kendall_rcv
+#base
+Items.Base_kendall_inline4:
+  $base: Items.Base_Unity_inline4
+  itemPartList:
+    - Items.Base_kendall_inline5
+Items.Base_kendall_inline5:
+  $base: Items.Base_Unity_inline5
+  item: Items.kendall_base_prt
+Items.kendall_base_prt:
+  $base: Items.w_handgun__constitutional_unity__base1
+  appearanceResourceName: kendall_base
+#mag
+Items.Base_kendall_inline6:
+  $base: Items.Base_Unity_inline6
+  itemPartList:
+    - Items.Base_kendall_inline7
+Items.Base_kendall_inline7:
+  $base: Items.Base_Unity_inline7
+  item: Items.kendall_mag_std_prt
+Items.kendall_mag_std_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_std
+  appearanceResourceName: kendall_mag_std
+#reload
+Items.Base_kendall_inline8:
+  $base: Items.Base_Unity_inline8
+  itemPartList:
+    - Items.Base_kendall_inline9
+Items.Base_kendall_inline9:
+  $base: Items.Base_Unity_inline9
+  item: Items.kendall_mag_stdr_prt
+Items.kendall_mag_stdr_prt:
+  $base: Items.w_handgun__constitutional_unity__mag_stdr
+  appearanceResourceName: kendall_mag_stdr
+#preset
+Items.Preset_kendall_inline0:
+  $base: Items.Preset_Unity_Default_inline0
+  itemPartPreset: Items.kendall_rcv_prt
+Items.Preset_kendall_inline1:
+  $base: Items.Preset_Unity_Default_inline1
+  itemPartPreset: Items.kendall_base_prt
+Items.Preset_kendall_inline2:
+  $base: Items.Preset_Unity_Default_inline2
+  itemPartPreset: Items.kendall_mag_std_prt
+Items.Preset_kendall_inline3:
+  $base: Items.Preset_Unity_Default_inline3
+  itemPartPreset: Items.kendall_mag_stdr_prt
+  
+Items.kendallstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 60
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.kendallstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.15
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+
+Items.kendallstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+  
+

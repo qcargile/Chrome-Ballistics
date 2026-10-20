@@ -1,0 +1,95 @@
+Items.Zelda_Master_Sword:
+  $base: Items.Preset_Katana_Wakako
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.linkstats_damage
+    - !append-once Items.linkstats_thermal
+    - !append-once Items.linkstats_thermal2
+    - !append-once Items.linkstats_thermal3
+    - !append-once Items.linkstats_electric
+    - !append-once Items.linkstats_electric2
+    - !append-once Items.linkstats_electric3
+    - !append-once Items.linkstats_stun                        
+  appearanceResourceName: link_app
+  quality: Quality.Legendary
+  displayName: link_name
+  hudIcon:
+    atlasResourcePath: link\icon\link_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: link\icon\link.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_link_inline1
+    - Items.Base_link_inline2
+  slotPartListPreset:
+    - Items.Preset_link_inline3
+    - Items.Preset_Katana_Wakako_inline4
+    
+Items.Base_link_inline1:
+  $base: Items.Base_Katana_inline1
+  itemPartList:
+    - Items.Base_link_inline2
+Items.Base_link_inline2:
+  $base: Items.Base_Katana_inline2
+  item: Items.link_grip_prt
+Items.link_grip_prt:
+  $base: Items.w_katana_grip
+  appearanceResourceName: link_grip    
+  
+Items.Preset_link_inline3:
+  $base: Items.Preset_Katana_Wakako_inline3
+  itemPartPreset: Items.link_grip_prt
+  
+Items.linkstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.linkstats_thermal:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.DealsThermalDamage
+  
+Items.linkstats_thermal2:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.ThermalDamage
+
+Items.linkstats_thermal3:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  
+Items.linkstats_electric:
+  $type: gamedataConstantStatModifier_Record
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.DealsElectricDamage
+  
+Items.linkstats_electric2:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.ElectricDamage
+
+Items.linkstats_electric3:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.ElectrocutedApplicationRate
+  
+Items.linkstats_stun:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.StunApplicationRate 
+
+
+ 

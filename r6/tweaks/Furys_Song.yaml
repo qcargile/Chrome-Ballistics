@@ -1,0 +1,44 @@
+Items.Furys_Song:
+  $base: Items.Preset_Katana_Wakako
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem 
+    - !append-once Items.songstats_damage
+  appearanceResourceName: song_app
+  quality: Quality.Epic
+  displayName: song_name
+  hudIcon:
+    atlasResourcePath: song\icon\song_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: song\icon\song.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_song_inline1
+    - Items.Base_song_inline2
+  slotPartListPreset:
+    - Items.Preset_song_inline3
+    - Items.Preset_Katana_Wakako_inline4
+    
+Items.Base_song_inline1:
+  $base: Items.Base_Katana_inline1
+  itemPartList:
+    - Items.Base_song_inline2
+Items.Base_song_inline2:
+  $base: Items.Base_Katana_inline2
+  item: Items.song_grip_prt
+Items.song_grip_prt:
+  $base: Items.w_katana_grip
+  appearanceResourceName: song_grip    
+  
+Items.Preset_song_inline3:
+  $base: Items.Preset_Katana_Wakako_inline3
+  itemPartPreset: Items.song_grip_prt
+  
+Items.songstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 0
+  modifierType: Additive
+  statType: BaseStats.DPS
+

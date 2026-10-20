@@ -1,0 +1,198 @@
+Items.Electric_HellfireMk2:
+  $base: Items.Preset_Silverhand_3516
+  tags:
+    - !append-once IconicWeapon
+    - !append-once ManualTriggerSwap 
+    - !append-once TriggerBoundAttacks
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.el2_hf_stats_damage
+  attacks:
+    - !append-once Attacks.el2_hf_fullautomode
+    - !append-once Attacks.el2_hf_semiautomode
+  rangedAttacks: Attacks.el2_hf_attacks
+  fxPackage: WeaponFxPackage.el2_hf_effects
+  fxPackageQuickMelee: WeaponFxPackage.QuickMeleeFxPackage
+  primaryTriggerMode: TriggerMode.SemiAuto
+  secondaryTriggerMode: TriggerMode.SemiAuto
+  appearanceResourceName: el2_hf_app
+  hudIcon:
+    atlasResourcePath: el2_hf\icon\el2_hf_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: el2_hf\icon\el2_hf.inkatlas
+    atlasPartName: slot_01
+  quality: Quality.Legendary
+  triggerModes:
+    - TriggerMode.SemiAuto
+    - TriggerMode.SemiAuto
+  displayName: el2_hf_gun_name
+  localizedDescription: el2_hf_gun_description
+  slotPartList:
+    - Items.Base_el2_hf_inline3
+    - Items.Base_el2_hf_inline5
+    - Items.Base_el2_hf_inline7
+    - Items.Base_el2_hf_inline9
+  slotPartListPreset:
+    - Items.Preset_el2_hf_inline3
+    - Items.Preset_el2_hf_inline4
+    - Items.Preset_el2_hf_inline5
+    - Items.Preset_el2_hf_inline6
+  visualTags:
+    - Default
+
+Items.Base_el2_hf_inline3:
+  $base: Items.Base_Silverhand_inline3
+  itemPartList:
+    - Items.Base_el2_hf_inline4
+Items.Base_el2_hf_inline4:
+  $base: Items.Base_Silverhand_inline4
+  item: Items.el2_hf_rcv_prt
+Items.el2_hf_rcv_prt:
+  $base: Items.w_handgun__malorian_silverhand__rcv1
+  appearanceResourceName: el2_hf_rcv
+#base
+Items.Base_el2_hf_inline5:
+  $base: Items.Base_Silverhand_inline5
+  itemPartList:
+    - Items.Base_el2_hf_inline6
+Items.Base_el2_hf_inline6:
+  $base: Items.Base_Silverhand_inline6
+  item: Items.el2_hf_base_prt
+Items.el2_hf_base_prt:
+  $base: Items.w_handgun__malorian_silverhand__base1
+  appearanceResourceName: el2_hf_base
+#mag
+Items.Base_el2_hf_inline7:
+  $base: Items.Base_Silverhand_inline7
+  itemPartList:
+    - Items.Base_el2_hf_inline8
+Items.Base_el2_hf_inline8:
+  $base: Items.Base_Silverhand_inline8
+  item: Items.el2_hf_std_prt
+Items.el2_hf_std_prt:
+  $base: Items.w_handgun__malorian_silverhand__mag_std
+  appearanceResourceName: el2_hf_mag_std
+#reload
+Items.Base_el2_hf_inline9:
+  $base: Items.Base_Silverhand_inline9
+  itemPartList:
+    - Items.Base_el2_hf_inline10
+Items.Base_el2_hf_inline10:
+  $base: Items.Base_Silverhand_inline10
+  item: Items.el2_hf_stdr_prt
+Items.el2_hf_stdr_prt:
+  $base: Items.w_handgun__malorian_silverhand__mag_stdr
+  appearanceResourceName: el2_hf_mag_stdr
+  
+Items.Base_el2_hf_inline11:
+  $base: Items.Base_Silverhand_inline11
+  itemPartList:
+    - Items.Base_el2_hf_inline12
+Items.Base_el2_hf_inline12:
+  $base: Items.Base_Silverhand_inline12
+  item: Items.el2_hf_base_prt
+Items.el2_hf_base_prt:
+  $base: Items.w_handgun__malorian_silverhand__base1
+  appearanceResourceName: el2_hf_base
+#preset
+Items.Preset_el2_hf_inline3:
+  $base: Items.Preset_Silverhand_3516_inline3
+  itemPartPreset: Items.el2_hf_rcv_prt
+Items.Preset_el2_hf_inline4:
+  $base: Items.Preset_Silverhand_3516_inline4
+  itemPartPreset: Items.el2_hf_base_prt
+Items.Preset_el2_hf_inline5:
+  $base: Items.Preset_Silverhand_3516_inline5
+  itemPartPreset: Items.el2_hf_std_prt
+Items.Preset_el2_hf_inline6:
+  $base: Items.Preset_Silverhand_3516_inline6
+  itemPartPreset: Items.el2_hf_stdr_prt
+Items.Preset_el2_hf_inline7:
+  $base: Items.Preset_Silverhand_3516_inline7
+  itemPartPreset: Items.el2_hf_base_prt
+  
+Items.el2_hf_stats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: -35
+  modifierType: Additive
+  statType: BaseStats.DPS
+ 
+Attacks.el2_hf_fullautomode:
+    $base: Attacks.Bullet_GameEffect
+    explosionAttack:
+        $base: Attacks.EMPBrick
+        playerIncomingDamageMultiplier: 0.20
+        effectName: ep1_explosions
+        effectTag: breach_emp_explosion
+        range: 10.0
+        statModifiers:
+        -   $type: CombinedStatModifier
+            refStat: BaseStats.DamagePerHit
+            statType: BaseStats.ElectricDamage
+            modifierType: Additive
+            refObject: Owner
+            value: 3.0
+        hitFlags:
+        -   !append-once EMPGrenade
+        -   !append-once PlayerEMPGrenadeDOTOverride
+        hitReactionSeverityMin: 2
+        explosionDamageVSVehicles: 20.0
+        statusEffects:
+        -   $type: StatusEffectAttackData
+            statusEffect: BaseStatusEffect.Electrocuted
+            resistPool: BaseStatPools.ElectrocutedTrigger
+            applyImmediately: true           
+
+Attacks.el2_hf_semiautomode:
+    $base: Attacks.Bullet_GameEffect
+    explosionAttack:
+        $base: Attacks.IncendiaryGrenade
+        playerIncomingDamageMultiplier: 0.20
+        effectName: explosions
+        effectTag: incendiary_explosion
+        range: 10.0
+        statModifiers:
+        -   $type: CombinedStatModifier
+            refStat: BaseStats.DamagePerHit
+            statType: BaseStats.ThermalDamage
+            modifierType: Additive
+            refObject: Owner
+            value: 3.0
+        hitFlags:
+        -   !append-once DeviceExplosionAttack
+        -   !append-once DetonateGrenades
+        -   !append-once BulletExplosion
+        hitReactionSeverityMin: 2
+        explosionDamageVSVehicles: 20.0
+        statusEffects:
+        -   $type: StatusEffectAttackData
+            statusEffect: BaseStatusEffect.EpicBurnGrenade
+            resistPool: BaseStatPools.BurningTrigger
+            applyImmediately: true
+            
+
+Attacks.el2_hf_attack1:
+    $type: RangedAttack
+    playerAttack: Attacks.el2_hf_semiautomode
+    secondaryPlayerAttack: Attacks.el2_hf_fullautomode
+    playerTimeDilated: Attacks.el2_hf_semiautomode
+    secondaryPlayerTimeDilated: Attacks.el2_hf_fullautomode
+
+Attacks.el2_hf_attacks:
+    $type: RangedAttackPackage
+    defaultFire: Attacks.el2_hf_attack1
+    chargeFire: Attacks.el2_hf_attack1
+   
+   
+WeaponFxPackage.el2_hf_effects:
+    $base: WeaponFxPackage.PowerRifleAssault
+    vfx_hitscan_trail: base\fx\weapons\trails\power\thermal\w_trail_thermal_power_hmg.effect
+    NPC_vfx_hitscan_trail: base\fx\weapons\trails\power\thermal\w_trail_thermal_power_hmg.effect
+    vfx_hitscan_trail_slowmo: base\fx\weapons\trails\power\thermal\w_trail_thermal_power_hmg.effect
+    vfx_hitscan_trail_ricochet: base\fx\weapons\trails\power\thermal\w_trail_thermal_power_hmg.effect
+    vfx_impact_damage_thermal: base\fx\weapons\impacts\_elemental\thermal\imp_add_on_thermal.effect
+
+
+
+ 

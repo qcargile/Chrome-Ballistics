@@ -1,0 +1,141 @@
+Items.AKM:
+  $base: Items.Preset_Ajax_Default
+  tags:
+    - !append-once IconicWeapon 
+  statModifiers: 
+    - !append-once Quality.IconicItem
+    - !append-once Items.akmstats_rof 
+    - !append-once Items.akmstats_damage
+    - !append-once Items.akmstats_reload  
+    - !append-once Items.akmstats_recoil2
+    - !append-once Items.akmstats_reload2  
+    - !append-once Items.akmstats_equip
+    - !append-once Items.akmstats_mag
+  appearanceResourceName: akm_app
+  audioName: wea_set_copperhead
+  quality: Quality.Rare
+  displayName: akm_name
+  localizedDescription: akm_description
+  visualTags:
+    - Default
+  hudIcon:
+    atlasResourcePath: akm\icon\akm_hud.inkatlas
+    atlasPartName: slot_01
+  icon:  
+    atlasResourcePath: akm\icon\akm.inkatlas
+    atlasPartName: slot_01
+  slotPartList:
+    - Items.Base_akm_inline2
+    - Items.Base_akm_inline4
+    - Items.Base_akm_inline6
+    - Items.Base_akm_inline8
+    - Items.RangedWeaponPossibleMuzzleList
+    - Items.RiflePossibleMuzzleBrakeList
+    - Items.HandgunPossibleScopesList
+  slotPartListPreset:
+    - Items.Preset_akm_inline0
+    - Items.Preset_akm_inline1
+    - Items.Preset_akm_inline2
+    - Items.Preset_akm_inline3
+  
+Items.Base_akm_inline2:
+  $base: Items.Base_Ajax_inline2
+  itemPartList:
+    - Items.Base_akm_inline3
+Items.Base_akm_inline3:
+  $base: Items.Base_Ajax_inline3
+  item: Items.akm_rcv_prt
+Items.akm_rcv_prt:
+  $base: Items.w_rifle_assault__militech_ajax__rcv1
+  appearanceResourceName: akm_rcv
+#base
+Items.Base_akm_inline4:
+  $base: Items.Base_Ajax_inline4
+  itemPartList:
+    - Items.Base_akm_inline5
+Items.Base_akm_inline5:
+  $base: Items.Base_Ajax_inline5
+  item: Items.akm_base_prt
+Items.akm_base_prt:
+  $base: Items.w_rifle_assault__militech_ajax__base1
+  appearanceResourceName: akm_base
+#mag
+Items.Base_akm_inline6:
+  $base: Items.Base_Ajax_inline6
+  itemPartList:
+    - Items.Base_akm_inline7
+Items.Base_akm_inline7:
+  $base: Items.Base_Ajax_inline7
+  item: Items.akm_mag_std_prt
+Items.akm_mag_std_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_std
+  appearanceResourceName: akm_mag_std
+#reload
+Items.Base_akm_inline8:
+  $base: Items.Base_Ajax_inline8
+  itemPartList:
+    - Items.Base_akm_inline9
+Items.Base_akm_inline9:
+  $base: Items.Base_Ajax_inline9
+  item: Items.akm_mag_stdr_prt
+Items.akm_mag_stdr_prt:
+  $base: Items.w_rifle_assault__militech_ajax__mag_stdr
+  appearanceResourceName: akm_mag_stdr
+#preset
+Items.Preset_akm_inline0:
+  $base: Items.Preset_Ajax_Default_inline0
+  itemPartPreset: Items.akm_rcv_prt
+Items.Preset_akm_inline1:
+  $base: Items.Preset_Ajax_Default_inline1
+  itemPartPreset: Items.akm_base_prt
+Items.Preset_akm_inline2:
+  $base: Items.Preset_Ajax_Default_inline2
+  itemPartPreset: Items.akm_mag_std_prt
+Items.Preset_akm_inline3:
+  $base: Items.Preset_Ajax_Default_inline3
+  itemPartPreset: Items.akm_mag_stdr_prt
+  
+Items.akmstats_rof:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.06
+  modifierType: Additive
+  statType: BaseStats.CycleTimeBase
+  
+Items.akmstats_damage:
+  $type: gamedataConstantStatModifier_Record
+  value: 90
+  modifierType: Additive
+  statType: BaseStats.DPS
+  
+Items.akmstats_reload:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.EmptyReloadTime
+  
+Items.akmstats_reload2:
+  $type: gamedataConstantStatModifier_Record
+  value: -0.50
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBase
+  
+Items.akmstats_recoil2:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.35
+  modifierType: Additive
+  statType: BaseStats.RecoilRecoveryTime
+
+Items.akmstats_equip:
+  $type: gamedataConstantStatModifier_Record
+  value: -1.0
+  modifierType: Additive
+  statType: BaseStats.EquipDuration_First
+  
+Items.akmstats_mag:
+  $type: gamedataConstantStatModifier_Record
+  value: 10
+  modifierType: Additive
+  statType: BaseStats.MagazineCapacityBase
+
+
+  
