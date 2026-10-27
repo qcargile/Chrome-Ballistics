@@ -1,0 +1,4657 @@
+Prereqs.CBVendorLevel8:
+  $type: gamedataStatPrereq_Record
+  prereqClassName: StatPrereq
+  comparisonType: GreaterOrEqual
+  objectToCheck: Player
+  statType: Level
+  valueToCheck: 8.0
+
+Prereqs.CBVendorLevel18:
+  $type: gamedataStatPrereq_Record
+  prereqClassName: StatPrereq
+  comparisonType: GreaterOrEqual
+  objectToCheck: Player
+  statType: Level
+  valueToCheck: 18.0
+
+Prereqs.CBVendorLevel28:
+  $type: gamedataStatPrereq_Record
+  prereqClassName: StatPrereq
+  comparisonType: GreaterOrEqual
+  objectToCheck: Player
+  statType: Level
+  valueToCheck: 28.0
+
+Prereqs.CBVendorLevel40:
+  $type: gamedataStatPrereq_Record
+  prereqClassName: StatPrereq
+  comparisonType: GreaterOrEqual
+  objectToCheck: Player
+  statType: Level
+  valueToCheck: 40.0
+
+Items.AK_117.cbAtelierPrice: 75000
+Items.AK_117.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_AK_117:
+  $type: gamedataVendorItem_Record
+  item: Items.AK_117
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.AK_205.cbAtelierPrice: 80000
+Items.AK_205.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_AK_205:
+  $type: gamedataVendorItem_Record
+  item: Items.AK_205
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.AK_Custom.cbAtelierPrice: 34000
+Items.AK_Custom.cbAtelierQuality: "Common"
+
+Items.CBVendor_AK_Custom:
+  $type: gamedataVendorItem_Record
+  item: Items.AK_Custom
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.AK_Prototype_MkII.cbAtelierPrice: 354779
+Items.AK_Prototype_MkII.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_AK_Prototype_MkII:
+  $type: gamedataVendorItem_Record
+  item: Items.AK_Prototype_MkII
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.AK47_Black_Cat.cbAtelierPrice: 172567
+Items.AK47_Black_Cat.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AK47_Black_Cat:
+  $type: gamedataVendorItem_Record
+  item: Items.AK47_Black_Cat
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.AK47_Steel_Curtain.cbAtelierPrice: 170818
+Items.AK47_Steel_Curtain.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AK47_Steel_Curtain:
+  $type: gamedataVendorItem_Record
+  item: Items.AK47_Steel_Curtain
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.AKM.cbAtelierPrice: 164440
+Items.AKM.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AKM:
+  $type: gamedataVendorItem_Record
+  item: Items.AKM
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.AKS_74U.cbAtelierPrice: 33104
+Items.AKS_74U.cbAtelierQuality: "Common"
+
+Items.CBVendor_AKS_74U:
+  $type: gamedataVendorItem_Record
+  item: Items.AKS_74U
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.KN44.cbAtelierPrice: 92282
+Items.KN44.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_KN44:
+  $type: gamedataVendorItem_Record
+  item: Items.KN44
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.RPK.cbAtelierPrice: 276887
+Items.RPK.cbAtelierQuality: "Epic"
+
+Items.CBVendor_RPK:
+  $type: gamedataVendorItem_Record
+  item: Items.RPK
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Zastava_M76.cbAtelierPrice: 235000
+Items.Zastava_M76.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Zastava_M76:
+  $type: gamedataVendorItem_Record
+  item: Items.Zastava_M76
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.glock_17.cbAtelierPrice: 22000
+Items.glock_17.cbAtelierQuality: "Common"
+
+Items.CBVendor_glock_17:
+  $type: gamedataVendorItem_Record
+  item: Items.glock_17
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.glock_18.cbAtelierPrice: 94350
+Items.glock_18.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_glock_18:
+  $type: gamedataVendorItem_Record
+  item: Items.glock_18
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.glock_18_100.cbAtelierPrice: 191100
+Items.glock_18_100.cbAtelierQuality: "Rare"
+
+Items.CBVendor_glock_18_100:
+  $type: gamedataVendorItem_Record
+  item: Items.glock_18_100
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.glock_18_vspec.cbAtelierPrice: 252650
+Items.glock_18_vspec.cbAtelierQuality: "Epic"
+
+Items.CBVendor_glock_18_vspec:
+  $type: gamedataVendorItem_Record
+  item: Items.glock_18_vspec
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.glock_valentinos.cbAtelierPrice: 343900
+Items.glock_valentinos.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_glock_valentinos:
+  $type: gamedataVendorItem_Record
+  item: Items.glock_valentinos
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Militech_M77_Viper.cbAtelierPrice: 55000
+Items.Militech_M77_Viper.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Militech_M77_Viper:
+  $type: gamedataVendorItem_Record
+  item: Items.Militech_M77_Viper
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Militech_Beam_Rifle.cbAtelierPrice: 240000
+Items.Militech_Beam_Rifle.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Militech_Beam_Rifle:
+  $type: gamedataVendorItem_Record
+  item: Items.Militech_Beam_Rifle
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Militech_Beam_Rifle_Smart.cbAtelierPrice: 255000
+Items.Militech_Beam_Rifle_Smart.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Militech_Beam_Rifle_Smart:
+  $type: gamedataVendorItem_Record
+  item: Items.Militech_Beam_Rifle_Smart
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Arasaka_Masayuki.cbAtelierPrice: 25000
+Items.Arasaka_Masayuki.cbAtelierQuality: "Common"
+
+Items.CBVendor_Arasaka_Masayuki:
+  $type: gamedataVendorItem_Record
+  item: Items.Arasaka_Masayuki
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Desert_Eagle.cbAtelierPrice: 45000
+Items.Desert_Eagle.cbAtelierQuality: "Common"
+
+Items.CBVendor_Desert_Eagle:
+  $type: gamedataVendorItem_Record
+  item: Items.Desert_Eagle
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Militech_Stinger.cbAtelierPrice: 356750
+Items.Militech_Stinger.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Militech_Stinger:
+  $type: gamedataVendorItem_Record
+  item: Items.Militech_Stinger
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.RSh12.cbAtelierPrice: 191950
+Items.RSh12.cbAtelierQuality: "Rare"
+
+Items.CBVendor_RSh12:
+  $type: gamedataVendorItem_Record
+  item: Items.RSh12
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Longbow_DMR.cbAtelierPrice: 290000
+Items.Longbow_DMR.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Longbow_DMR:
+  $type: gamedataVendorItem_Record
+  item: Items.Longbow_DMR
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.VHS_D2_Tactical.cbAtelierPrice: 45000
+Items.VHS_D2_Tactical.cbAtelierQuality: "Common"
+
+Items.CBVendor_VHS_D2_Tactical:
+  $type: gamedataVendorItem_Record
+  item: Items.VHS_D2_Tactical
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Lawgiver_MKIII.cbAtelierPrice: 215000
+Items.Lawgiver_MKIII.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Lawgiver_MKIII:
+  $type: gamedataVendorItem_Record
+  item: Items.Lawgiver_MKIII
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Lawgiver_MKIII_Stun.cbAtelierPrice: 345000
+Items.Lawgiver_MKIII_Stun.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Lawgiver_MKIII_Stun:
+  $type: gamedataVendorItem_Record
+  item: Items.Lawgiver_MKIII_Stun
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Lawgiver_MKIII_Fire.cbAtelierPrice: 235000
+Items.Lawgiver_MKIII_Fire.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Lawgiver_MKIII_Fire:
+  $type: gamedataVendorItem_Record
+  item: Items.Lawgiver_MKIII_Fire
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Lawgiver_MKIII_Flechette.cbAtelierPrice: 210600
+Items.Lawgiver_MKIII_Flechette.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Lawgiver_MKIII_Flechette:
+  $type: gamedataVendorItem_Record
+  item: Items.Lawgiver_MKIII_Flechette
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.MasterpieceArms_MPA30SST.cbAtelierPrice: 30000
+Items.MasterpieceArms_MPA30SST.cbAtelierQuality: "Common"
+
+Items.CBVendor_MasterpieceArms_MPA30SST:
+  $type: gamedataVendorItem_Record
+  item: Items.MasterpieceArms_MPA30SST
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.OTs14_Groza.cbAtelierPrice: 105000
+Items.OTs14_Groza.cbAtelierQuality: "Rare"
+
+Items.CBVendor_OTs14_Groza:
+  $type: gamedataVendorItem_Record
+  item: Items.OTs14_Groza
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.B23R.cbAtelierPrice: 24000
+Items.B23R.cbAtelierQuality: "Common"
+
+Items.CBVendor_B23R:
+  $type: gamedataVendorItem_Record
+  item: Items.B23R
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Beretta_93R.cbAtelierPrice: 25000
+Items.Beretta_93R.cbAtelierQuality: "Common"
+
+Items.CBVendor_Beretta_93R:
+  $type: gamedataVendorItem_Record
+  item: Items.Beretta_93R
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Desolator.cbAtelierPrice: 225000
+Items.Desolator.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Desolator:
+  $type: gamedataVendorItem_Record
+  item: Items.Desolator
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Malorian_Arms_FireX.cbAtelierPrice: 335000
+Items.Malorian_Arms_FireX.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Malorian_Arms_FireX:
+  $type: gamedataVendorItem_Record
+  item: Items.Malorian_Arms_FireX
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Malorian_Arms_StunX.cbAtelierPrice: 325000
+Items.Malorian_Arms_StunX.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Malorian_Arms_StunX:
+  $type: gamedataVendorItem_Record
+  item: Items.Malorian_Arms_StunX
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Malorian_Arms_X.cbAtelierPrice: 315000
+Items.Malorian_Arms_X.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Malorian_Arms_X:
+  $type: gamedataVendorItem_Record
+  item: Items.Malorian_Arms_X
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Mozu_Revolver.cbAtelierPrice: 75368
+Items.Mozu_Revolver.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Mozu_Revolver:
+  $type: gamedataVendorItem_Record
+  item: Items.Mozu_Revolver
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.MR6.cbAtelierPrice: 33794
+Items.MR6.cbAtelierQuality: "Common"
+
+Items.CBVendor_MR6:
+  $type: gamedataVendorItem_Record
+  item: Items.MR6
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Prokolot.cbAtelierPrice: 25360
+Items.Prokolot.cbAtelierQuality: "Common"
+
+Items.CBVendor_Prokolot:
+  $type: gamedataVendorItem_Record
+  item: Items.Prokolot
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.RK5.cbAtelierPrice: 95000
+Items.RK5.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_RK5:
+  $type: gamedataVendorItem_Record
+  item: Items.RK5
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.RK5_Extended_Mag.cbAtelierPrice: 185000
+Items.RK5_Extended_Mag.cbAtelierQuality: "Rare"
+
+Items.CBVendor_RK5_Extended_Mag:
+  $type: gamedataVendorItem_Record
+  item: Items.RK5_Extended_Mag
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Strife_Mk2.cbAtelierPrice: 36000
+Items.Strife_Mk2.cbAtelierQuality: "Common"
+
+Items.CBVendor_Strife_Mk2:
+  $type: gamedataVendorItem_Record
+  item: Items.Strife_Mk2
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Strife_Mk2_Extended_Mag.cbAtelierPrice: 46600
+Items.Strife_Mk2_Extended_Mag.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Strife_Mk2_Extended_Mag:
+  $type: gamedataVendorItem_Record
+  item: Items.Strife_Mk2_Extended_Mag
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Zenith_CA40.cbAtelierPrice: 24500
+Items.Zenith_CA40.cbAtelierQuality: "Common"
+
+Items.CBVendor_Zenith_CA40:
+  $type: gamedataVendorItem_Record
+  item: Items.Zenith_CA40
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Canik_Rival_S.cbAtelierPrice: 45600
+Items.Canik_Rival_S.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Canik_Rival_S:
+  $type: gamedataVendorItem_Record
+  item: Items.Canik_Rival_S
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Daemon_9mm.cbAtelierPrice: 175100
+Items.Daemon_9mm.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Daemon_9mm:
+  $type: gamedataVendorItem_Record
+  item: Items.Daemon_9mm
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.GS_9mm.cbAtelierPrice: 204850
+Items.GS_9mm.cbAtelierQuality: "Epic"
+
+Items.CBVendor_GS_9mm:
+  $type: gamedataVendorItem_Record
+  item: Items.GS_9mm
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Kendall44.cbAtelierPrice: 175350
+Items.Kendall44.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Kendall44:
+  $type: gamedataVendorItem_Record
+  item: Items.Kendall44
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.M9_Phantom_Limb.cbAtelierPrice: 23000
+Items.M9_Phantom_Limb.cbAtelierQuality: "Common"
+
+Items.CBVendor_M9_Phantom_Limb:
+  $type: gamedataVendorItem_Record
+  item: Items.M9_Phantom_Limb
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.M27S.cbAtelierPrice: 91850
+Items.M27S.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_M27S:
+  $type: gamedataVendorItem_Record
+  item: Items.M27S
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.ONI_Smart_Pistol.cbAtelierPrice: 175600
+Items.ONI_Smart_Pistol.cbAtelierQuality: "Rare"
+
+Items.CBVendor_ONI_Smart_Pistol:
+  $type: gamedataVendorItem_Record
+  item: Items.ONI_Smart_Pistol
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.OSP_18.cbAtelierPrice: 86100
+Items.OSP_18.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_OSP_18:
+  $type: gamedataVendorItem_Record
+  item: Items.OSP_18
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.P220.cbAtelierPrice: 23500
+Items.P220.cbAtelierQuality: "Common"
+
+Items.CBVendor_P220:
+  $type: gamedataVendorItem_Record
+  item: Items.P220
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Stechkin_APS.cbAtelierPrice: 24000
+Items.Stechkin_APS.cbAtelierQuality: "Common"
+
+Items.CBVendor_Stechkin_APS:
+  $type: gamedataVendorItem_Record
+  item: Items.Stechkin_APS
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.USP_45_Fate_Maker.cbAtelierPrice: 305000
+Items.USP_45_Fate_Maker.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_USP_45_Fate_Maker:
+  $type: gamedataVendorItem_Record
+  item: Items.USP_45_Fate_Maker
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.AR15_SLR.cbAtelierPrice: 184900
+Items.AR15_SLR.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AR15_SLR:
+  $type: gamedataVendorItem_Record
+  item: Items.AR15_SLR
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Flatline.cbAtelierPrice: 175000
+Items.Flatline.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Flatline:
+  $type: gamedataVendorItem_Record
+  item: Items.Flatline
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.XPR_50.cbAtelierPrice: 400000
+Items.XPR_50.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_XPR_50:
+  $type: gamedataVendorItem_Record
+  item: Items.XPR_50
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Scar_Black_Default_Stock.cbAtelierPrice: 83150
+Items.Scar_Black_Default_Stock.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Scar_Black_Default_Stock:
+  $type: gamedataVendorItem_Record
+  item: Items.Scar_Black_Default_Stock
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Scar_Black_Short_Stock.cbAtelierPrice: 89400
+Items.Scar_Black_Short_Stock.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Scar_Black_Short_Stock:
+  $type: gamedataVendorItem_Record
+  item: Items.Scar_Black_Short_Stock
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Scar_Jack_Default_Stock.cbAtelierPrice: 195400
+Items.Scar_Jack_Default_Stock.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Scar_Jack_Default_Stock:
+  $type: gamedataVendorItem_Record
+  item: Items.Scar_Jack_Default_Stock
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Scar_Jack_Short_Stock.cbAtelierPrice: 85650
+Items.Scar_Jack_Short_Stock.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Scar_Jack_Short_Stock:
+  $type: gamedataVendorItem_Record
+  item: Items.Scar_Jack_Short_Stock
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Scar_Mack_Default_Stock.cbAtelierPrice: 231900
+Items.Scar_Mack_Default_Stock.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Scar_Mack_Default_Stock:
+  $type: gamedataVendorItem_Record
+  item: Items.Scar_Mack_Default_Stock
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Scar_Mack_Short_Stock.cbAtelierPrice: 226150
+Items.Scar_Mack_Short_Stock.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Scar_Mack_Short_Stock:
+  $type: gamedataVendorItem_Record
+  item: Items.Scar_Mack_Short_Stock
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Scar_Night_City_Special.cbAtelierPrice: 340000
+Items.Scar_Night_City_Special.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Scar_Night_City_Special:
+  $type: gamedataVendorItem_Record
+  item: Items.Scar_Night_City_Special
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Scar_Sludge_Default_Stock.cbAtelierPrice: 395000
+Items.Scar_Sludge_Default_Stock.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Scar_Sludge_Default_Stock:
+  $type: gamedataVendorItem_Record
+  item: Items.Scar_Sludge_Default_Stock
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Scar_Sludge_Short_Stock.cbAtelierPrice: 385000
+Items.Scar_Sludge_Short_Stock.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Scar_Sludge_Short_Stock:
+  $type: gamedataVendorItem_Record
+  item: Items.Scar_Sludge_Short_Stock
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Nokota_Stingray.cbAtelierPrice: 315000
+Items.Nokota_Stingray.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Nokota_Stingray:
+  $type: gamedataVendorItem_Record
+  item: Items.Nokota_Stingray
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Nokota_Taipan.cbAtelierPrice: 340000
+Items.Nokota_Taipan.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Nokota_Taipan:
+  $type: gamedataVendorItem_Record
+  item: Items.Nokota_Taipan
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Doom_Chainsaw.cbAtelierPrice: 65000
+Items.Doom_Chainsaw.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Doom_Chainsaw:
+  $type: gamedataVendorItem_Record
+  item: Items.Doom_Chainsaw
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Fleshlight.cbAtelierPrice: 270000
+Items.Fleshlight.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Fleshlight:
+  $type: gamedataVendorItem_Record
+  item: Items.Fleshlight
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Hatchet_Heat_Hawk.cbAtelierPrice: 165250
+Items.Hatchet_Heat_Hawk.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Hatchet_Heat_Hawk:
+  $type: gamedataVendorItem_Record
+  item: Items.Hatchet_Heat_Hawk
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Hatchet_No_Masters.cbAtelierPrice: 40250
+Items.Hatchet_No_Masters.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Hatchet_No_Masters:
+  $type: gamedataVendorItem_Record
+  item: Items.Hatchet_No_Masters
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Hatchet_Riddle_Of_Steel.cbAtelierPrice: 40500
+Items.Hatchet_Riddle_Of_Steel.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Hatchet_Riddle_Of_Steel:
+  $type: gamedataVendorItem_Record
+  item: Items.Hatchet_Riddle_Of_Steel
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.HF_Murasama.cbAtelierPrice: 310000
+Items.HF_Murasama.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_HF_Murasama:
+  $type: gamedataVendorItem_Record
+  item: Items.HF_Murasama
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Leviathan_Axe.cbAtelierPrice: 140250
+Items.Leviathan_Axe.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Leviathan_Axe:
+  $type: gamedataVendorItem_Record
+  item: Items.Leviathan_Axe
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Louisville_Slugger.cbAtelierPrice: 20000
+Items.Louisville_Slugger.cbAtelierQuality: "Common"
+
+Items.CBVendor_Louisville_Slugger:
+  $type: gamedataVendorItem_Record
+  item: Items.Louisville_Slugger
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Machete_Default.cbAtelierPrice: 20250
+Items.Machete_Default.cbAtelierQuality: "Common"
+
+Items.CBVendor_Machete_Default:
+  $type: gamedataVendorItem_Record
+  item: Items.Machete_Default
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Scythe_Blood_Bunny.cbAtelierPrice: 175500
+Items.Scythe_Blood_Bunny.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Scythe_Blood_Bunny:
+  $type: gamedataVendorItem_Record
+  item: Items.Scythe_Blood_Bunny
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Scythe_Default.cbAtelierPrice: 20500
+Items.Scythe_Default.cbAtelierQuality: "Common"
+
+Items.CBVendor_Scythe_Default:
+  $type: gamedataVendorItem_Record
+  item: Items.Scythe_Default
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Sledgehammer_Doom_Hammer.cbAtelierPrice: 65500
+Items.Sledgehammer_Doom_Hammer.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Sledgehammer_Doom_Hammer:
+  $type: gamedataVendorItem_Record
+  item: Items.Sledgehammer_Doom_Hammer
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Swiss_Army_Knife.cbAtelierPrice: 20750
+Items.Swiss_Army_Knife.cbAtelierQuality: "Common"
+
+Items.CBVendor_Swiss_Army_Knife:
+  $type: gamedataVendorItem_Record
+  item: Items.Swiss_Army_Knife
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Teeth_of_Terra.cbAtelierPrice: 190750
+Items.Teeth_of_Terra.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Teeth_of_Terra:
+  $type: gamedataVendorItem_Record
+  item: Items.Teeth_of_Terra
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Vampire_Metal_Stake.cbAtelierPrice: 40750
+Items.Vampire_Metal_Stake.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Vampire_Metal_Stake:
+  $type: gamedataVendorItem_Record
+  item: Items.Vampire_Metal_Stake
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Zelda_Master_Sword.cbAtelierPrice: 350000
+Items.Zelda_Master_Sword.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Zelda_Master_Sword:
+  $type: gamedataVendorItem_Record
+  item: Items.Zelda_Master_Sword
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Electric_Hellfire.cbAtelierPrice: 500000
+Items.Electric_Hellfire.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Electric_Hellfire:
+  $type: gamedataVendorItem_Record
+  item: Items.Electric_Hellfire
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Electric_HellfireMk2.cbAtelierPrice: 500000
+Items.Electric_HellfireMk2.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Electric_HellfireMk2:
+  $type: gamedataVendorItem_Record
+  item: Items.Electric_HellfireMk2
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.M79.cbAtelierPrice: 750000
+Items.M79.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_M79:
+  $type: gamedataVendorItem_Record
+  item: Items.M79
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.XM25.cbAtelierPrice: 1000000
+Items.XM25.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_XM25:
+  $type: gamedataVendorItem_Record
+  item: Items.XM25
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Arasaka_Nobunaga.cbAtelierPrice: 245000
+Items.Arasaka_Nobunaga.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Arasaka_Nobunaga:
+  $type: gamedataVendorItem_Record
+  item: Items.Arasaka_Nobunaga
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.manavortex_vergil_devil_katana.cbAtelierPrice: 1000000
+Items.manavortex_vergil_devil_katana.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_manavortex_vergil_devil_katana:
+  $type: gamedataVendorItem_Record
+  item: Items.manavortex_vergil_devil_katana
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.combat_master.cbAtelierPrice: 24500
+Items.combat_master.cbAtelierQuality: "Common"
+
+Items.CBVendor_combat_master:
+  $type: gamedataVendorItem_Record
+  item: Items.combat_master
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Militech_Ajax_Raptor.cbAtelierPrice: 78205
+Items.Militech_Ajax_Raptor.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Militech_Ajax_Raptor:
+  $type: gamedataVendorItem_Record
+  item: Items.Militech_Ajax_Raptor
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Armatech_458_SOCOM.cbAtelierPrice: 209250
+Items.Armatech_458_SOCOM.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Armatech_458_SOCOM:
+  $type: gamedataVendorItem_Record
+  item: Items.Armatech_458_SOCOM
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Armatech_MK1_556.cbAtelierPrice: 147500
+Items.Armatech_MK1_556.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Armatech_MK1_556:
+  $type: gamedataVendorItem_Record
+  item: Items.Armatech_MK1_556
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.MK78_SAW.cbAtelierPrice: 300000
+Items.MK78_SAW.cbAtelierQuality: "Epic"
+
+Items.CBVendor_MK78_SAW:
+  $type: gamedataVendorItem_Record
+  item: Items.MK78_SAW
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.HCAR_Black.cbAtelierPrice: 150000
+Items.HCAR_Black.cbAtelierQuality: "Rare"
+
+Items.CBVendor_HCAR_Black:
+  $type: gamedataVendorItem_Record
+  item: Items.HCAR_Black
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.DTIR_HCAR_Black.cbAtelierPrice: 150000
+Items.DTIR_HCAR_Black.cbAtelierQuality: "Rare"
+
+Items.CBVendor_DTIR_HCAR_Black:
+  $type: gamedataVendorItem_Record
+  item: Items.DTIR_HCAR_Black
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Mateba_6_Unica.cbAtelierPrice: 60000
+Items.Mateba_6_Unica.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Mateba_6_Unica:
+  $type: gamedataVendorItem_Record
+  item: Items.Mateba_6_Unica
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Mateba_6_Unica_Comp.cbAtelierPrice: 60000
+Items.Mateba_6_Unica_Comp.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Mateba_6_Unica_Comp:
+  $type: gamedataVendorItem_Record
+  item: Items.Mateba_6_Unica_Comp
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Burya_Basilic.cbAtelierPrice: 250000
+Items.Burya_Basilic.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Burya_Basilic:
+  $type: gamedataVendorItem_Record
+  item: Items.Burya_Basilic
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Gravitazer.cbAtelierPrice: 300000
+Items.Gravitazer.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Gravitazer:
+  $type: gamedataVendorItem_Record
+  item: Items.Gravitazer
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.HK416.cbAtelierPrice: 150000
+Items.HK416.cbAtelierQuality: "Rare"
+
+Items.CBVendor_HK416:
+  $type: gamedataVendorItem_Record
+  item: Items.HK416
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Colt_M4_Carbine.cbAtelierPrice: 150000
+Items.Colt_M4_Carbine.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Colt_M4_Carbine:
+  $type: gamedataVendorItem_Record
+  item: Items.Colt_M4_Carbine
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Sig_Sauer_XM7.cbAtelierPrice: 150000
+Items.Sig_Sauer_XM7.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Sig_Sauer_XM7:
+  $type: gamedataVendorItem_Record
+  item: Items.Sig_Sauer_XM7
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.L85A3_Black.cbAtelierPrice: 200000
+Items.L85A3_Black.cbAtelierQuality: "Epic"
+
+Items.CBVendor_L85A3_Black:
+  $type: gamedataVendorItem_Record
+  item: Items.L85A3_Black
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.L85A3_Black_Olive.cbAtelierPrice: 200000
+Items.L85A3_Black_Olive.cbAtelierQuality: "Epic"
+
+Items.CBVendor_L85A3_Black_Olive:
+  $type: gamedataVendorItem_Record
+  item: Items.L85A3_Black_Olive
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.L85A3_Black_Tan.cbAtelierPrice: 200000
+Items.L85A3_Black_Tan.cbAtelierQuality: "Epic"
+
+Items.CBVendor_L85A3_Black_Tan:
+  $type: gamedataVendorItem_Record
+  item: Items.L85A3_Black_Tan
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.L85A3_Tan_Olive.cbAtelierPrice: 200000
+Items.L85A3_Tan_Olive.cbAtelierQuality: "Epic"
+
+Items.CBVendor_L85A3_Tan_Olive:
+  $type: gamedataVendorItem_Record
+  item: Items.L85A3_Tan_Olive
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.KVD_Enforcer.cbAtelierPrice: 150000
+Items.KVD_Enforcer.cbAtelierQuality: "Rare"
+
+Items.CBVendor_KVD_Enforcer:
+  $type: gamedataVendorItem_Record
+  item: Items.KVD_Enforcer
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.KVD_Techtronika.cbAtelierPrice: 150000
+Items.KVD_Techtronika.cbAtelierQuality: "Rare"
+
+Items.CBVendor_KVD_Techtronika:
+  $type: gamedataVendorItem_Record
+  item: Items.KVD_Techtronika
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.KVInhibitor.cbAtelierPrice: 200000
+Items.KVInhibitor.cbAtelierQuality: "Epic"
+
+Items.CBVendor_KVInhibitor:
+  $type: gamedataVendorItem_Record
+  item: Items.KVInhibitor
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.KVInhibitor_GRAU.cbAtelierPrice: 200000
+Items.KVInhibitor_GRAU.cbAtelierQuality: "Epic"
+
+Items.CBVendor_KVInhibitor_GRAU:
+  $type: gamedataVendorItem_Record
+  item: Items.KVInhibitor_GRAU
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Fabarm_SDASS.cbAtelierPrice: 200000
+Items.Fabarm_SDASS.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Fabarm_SDASS:
+  $type: gamedataVendorItem_Record
+  item: Items.Fabarm_SDASS
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Franchi_PA3.cbAtelierPrice: 25000
+Items.Franchi_PA3.cbAtelierQuality: "Common"
+
+Items.CBVendor_Franchi_PA3:
+  $type: gamedataVendorItem_Record
+  item: Items.Franchi_PA3
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.FS12_Shotgun.cbAtelierPrice: 150000
+Items.FS12_Shotgun.cbAtelierQuality: "Rare"
+
+Items.CBVendor_FS12_Shotgun:
+  $type: gamedataVendorItem_Record
+  item: Items.FS12_Shotgun
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.HardReboot_Shotgun.cbAtelierPrice: 300000
+Items.HardReboot_Shotgun.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_HardReboot_Shotgun:
+  $type: gamedataVendorItem_Record
+  item: Items.HardReboot_Shotgun
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.KS23_Shotgun.cbAtelierPrice: 300000
+Items.KS23_Shotgun.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_KS23_Shotgun:
+  $type: gamedataVendorItem_Record
+  item: Items.KS23_Shotgun
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Lockwood680.cbAtelierPrice: 150000
+Items.Lockwood680.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Lockwood680:
+  $type: gamedataVendorItem_Record
+  item: Items.Lockwood680
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.M10Breacher_Wasteland.cbAtelierPrice: 200000
+Items.M10Breacher_Wasteland.cbAtelierQuality: "Epic"
+
+Items.CBVendor_M10Breacher_Wasteland:
+  $type: gamedataVendorItem_Record
+  item: Items.M10Breacher_Wasteland
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.MCS880.cbAtelierPrice: 150000
+Items.MCS880.cbAtelierQuality: "Rare"
+
+Items.CBVendor_MCS880:
+  $type: gamedataVendorItem_Record
+  item: Items.MCS880
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Model680_Showstopper.cbAtelierPrice: 200000
+Items.Model680_Showstopper.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Model680_Showstopper:
+  $type: gamedataVendorItem_Record
+  item: Items.Model680_Showstopper
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Model680.cbAtelierPrice: 200000
+Items.Model680.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Model680:
+  $type: gamedataVendorItem_Record
+  item: Items.Model680
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Mossberg590_Cruiser.cbAtelierPrice: 60000
+Items.Mossberg590_Cruiser.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Mossberg590_Cruiser:
+  $type: gamedataVendorItem_Record
+  item: Items.Mossberg590_Cruiser
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Shotgun_LastRites.cbAtelierPrice: 300000
+Items.Shotgun_LastRites.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Shotgun_LastRites:
+  $type: gamedataVendorItem_Record
+  item: Items.Shotgun_LastRites
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.AK_117_Suppressor.cbAtelierPrice: 5000
+Items.AK_117_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AK_117_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.AK_117_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.AK_205_Suppressor.cbAtelierPrice: 5000
+Items.AK_205_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AK_205_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.AK_205_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.AK_Custom_Suppressor.cbAtelierPrice: 5000
+Items.AK_Custom_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AK_Custom_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.AK_Custom_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.AK_Holo_Sight.cbAtelierPrice: 5000
+Items.AK_Holo_Sight.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AK_Holo_Sight:
+  $type: gamedataVendorItem_Record
+  item: Items.AK_Holo_Sight
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.AK_RedDot_Sight.cbAtelierPrice: 5000
+Items.AK_RedDot_Sight.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AK_RedDot_Sight:
+  $type: gamedataVendorItem_Record
+  item: Items.AK_RedDot_Sight
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.AK_Reflex_Sight.cbAtelierPrice: 5000
+Items.AK_Reflex_Sight.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AK_Reflex_Sight:
+  $type: gamedataVendorItem_Record
+  item: Items.AK_Reflex_Sight
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.AK47_Black_Cat_Supp.cbAtelierPrice: 5000
+Items.AK47_Black_Cat_Supp.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AK47_Black_Cat_Supp:
+  $type: gamedataVendorItem_Record
+  item: Items.AK47_Black_Cat_Supp
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.AK47_Steel_Curtain_Supp.cbAtelierPrice: 5000
+Items.AK47_Steel_Curtain_Supp.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AK47_Steel_Curtain_Supp:
+  $type: gamedataVendorItem_Record
+  item: Items.AK47_Steel_Curtain_Supp
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.AKM_Suppressor.cbAtelierPrice: 5000
+Items.AKM_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AKM_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.AKM_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.AKS_74U_Suppressor.cbAtelierPrice: 5000
+Items.AKS_74U_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AKS_74U_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.AKS_74U_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.AR15_Ironsights.cbAtelierPrice: 5000
+Items.AR15_Ironsights.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AR15_Ironsights:
+  $type: gamedataVendorItem_Record
+  item: Items.AR15_Ironsights
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.AR15_Suppressor.cbAtelierPrice: 5000
+Items.AR15_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AR15_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.AR15_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.B23R_Suppressor.cbAtelierPrice: 5000
+Items.B23R_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_B23R_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.B23R_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Beretta_93R_Suppressor.cbAtelierPrice: 5000
+Items.Beretta_93R_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Beretta_93R_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.Beretta_93R_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Desolator_Suppressor.cbAtelierPrice: 5000
+Items.Desolator_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Desolator_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.Desolator_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.HK_IronSights.cbAtelierPrice: 5000
+Items.HK_IronSights.cbAtelierQuality: "Rare"
+
+Items.CBVendor_HK_IronSights:
+  $type: gamedataVendorItem_Record
+  item: Items.HK_IronSights
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.HK_Suppressor.cbAtelierPrice: 5000
+Items.HK_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_HK_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.HK_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Holo_Sight.cbAtelierPrice: 5000
+Items.Holo_Sight.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Holo_Sight:
+  $type: gamedataVendorItem_Record
+  item: Items.Holo_Sight
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Hybrid_Sight.cbAtelierPrice: 5000
+Items.Hybrid_Sight.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Hybrid_Sight:
+  $type: gamedataVendorItem_Record
+  item: Items.Hybrid_Sight
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.KN44_Suppressor.cbAtelierPrice: 5000
+Items.KN44_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_KN44_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.KN44_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Longbow_DMR_Scope.cbAtelierPrice: 5000
+Items.Longbow_DMR_Scope.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Longbow_DMR_Scope:
+  $type: gamedataVendorItem_Record
+  item: Items.Longbow_DMR_Scope
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Longbow_DMR_Suppressor.cbAtelierPrice: 5000
+Items.Longbow_DMR_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Longbow_DMR_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.Longbow_DMR_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.M4_Carry_Handle.cbAtelierPrice: 5000
+Items.M4_Carry_Handle.cbAtelierQuality: "Rare"
+
+Items.CBVendor_M4_Carry_Handle:
+  $type: gamedataVendorItem_Record
+  item: Items.M4_Carry_Handle
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.M4_IronSights.cbAtelierPrice: 5000
+Items.M4_IronSights.cbAtelierQuality: "Rare"
+
+Items.CBVendor_M4_IronSights:
+  $type: gamedataVendorItem_Record
+  item: Items.M4_IronSights
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Militech_M77_Viper_Suppressor.cbAtelierPrice: 5000
+Items.Militech_M77_Viper_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Militech_M77_Viper_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.Militech_M77_Viper_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.MR6_Suppressor.cbAtelierPrice: 5000
+Items.MR6_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_MR6_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.MR6_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.OTs_Groza_ACOG.cbAtelierPrice: 5000
+Items.OTs_Groza_ACOG.cbAtelierQuality: "Rare"
+
+Items.CBVendor_OTs_Groza_ACOG:
+  $type: gamedataVendorItem_Record
+  item: Items.OTs_Groza_ACOG
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.OTs_Groza_IronSight.cbAtelierPrice: 5000
+Items.OTs_Groza_IronSight.cbAtelierQuality: "Rare"
+
+Items.CBVendor_OTs_Groza_IronSight:
+  $type: gamedataVendorItem_Record
+  item: Items.OTs_Groza_IronSight
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.OTs_Groza_Reflex.cbAtelierPrice: 5000
+Items.OTs_Groza_Reflex.cbAtelierQuality: "Rare"
+
+Items.CBVendor_OTs_Groza_Reflex:
+  $type: gamedataVendorItem_Record
+  item: Items.OTs_Groza_Reflex
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.OTs_Groza_Suppressor.cbAtelierPrice: 5000
+Items.OTs_Groza_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_OTs_Groza_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.OTs_Groza_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Rifle_Scope.cbAtelierPrice: 5000
+Items.Rifle_Scope.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Rifle_Scope:
+  $type: gamedataVendorItem_Record
+  item: Items.Rifle_Scope
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.RK5_Suppressor.cbAtelierPrice: 5000
+Items.RK5_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_RK5_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.RK5_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.RPK_Suppressor.cbAtelierPrice: 5000
+Items.RPK_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_RPK_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.RPK_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Strife_Suppressor.cbAtelierPrice: 5000
+Items.Strife_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Strife_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.Strife_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Trijicon_ACOG.cbAtelierPrice: 5000
+Items.Trijicon_ACOG.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Trijicon_ACOG:
+  $type: gamedataVendorItem_Record
+  item: Items.Trijicon_ACOG
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.VHS_Holo_Sight.cbAtelierPrice: 5000
+Items.VHS_Holo_Sight.cbAtelierQuality: "Rare"
+
+Items.CBVendor_VHS_Holo_Sight:
+  $type: gamedataVendorItem_Record
+  item: Items.VHS_Holo_Sight
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.VHS_Hybrid_Sight.cbAtelierPrice: 5000
+Items.VHS_Hybrid_Sight.cbAtelierQuality: "Rare"
+
+Items.CBVendor_VHS_Hybrid_Sight:
+  $type: gamedataVendorItem_Record
+  item: Items.VHS_Hybrid_Sight
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.VHS_Iron_Sight.cbAtelierPrice: 5000
+Items.VHS_Iron_Sight.cbAtelierQuality: "Rare"
+
+Items.CBVendor_VHS_Iron_Sight:
+  $type: gamedataVendorItem_Record
+  item: Items.VHS_Iron_Sight
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.VHS_Reflex_Sight.cbAtelierPrice: 5000
+Items.VHS_Reflex_Sight.cbAtelierQuality: "Rare"
+
+Items.CBVendor_VHS_Reflex_Sight:
+  $type: gamedataVendorItem_Record
+  item: Items.VHS_Reflex_Sight
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.VHS_Suppressor.cbAtelierPrice: 5000
+Items.VHS_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_VHS_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.VHS_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.VHS_Trijicon_ACOG.cbAtelierPrice: 5000
+Items.VHS_Trijicon_ACOG.cbAtelierQuality: "Rare"
+
+Items.CBVendor_VHS_Trijicon_ACOG:
+  $type: gamedataVendorItem_Record
+  item: Items.VHS_Trijicon_ACOG
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.XM7_IronSights.cbAtelierPrice: 5000
+Items.XM7_IronSights.cbAtelierQuality: "Rare"
+
+Items.CBVendor_XM7_IronSights:
+  $type: gamedataVendorItem_Record
+  item: Items.XM7_IronSights
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.XM7_Suppressor.cbAtelierPrice: 5000
+Items.XM7_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_XM7_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.XM7_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.XPR50_Scope.cbAtelierPrice: 5000
+Items.XPR50_Scope.cbAtelierQuality: "Rare"
+
+Items.CBVendor_XPR50_Scope:
+  $type: gamedataVendorItem_Record
+  item: Items.XPR50_Scope
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.XPR50_Suppressor.cbAtelierPrice: 5000
+Items.XPR50_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_XPR50_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.XPR50_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Zastava_M76_Scope.cbAtelierPrice: 5000
+Items.Zastava_M76_Scope.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Zastava_M76_Scope:
+  $type: gamedataVendorItem_Record
+  item: Items.Zastava_M76_Scope
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Zastava_M76_Suppressor.cbAtelierPrice: 5000
+Items.Zastava_M76_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Zastava_M76_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.Zastava_M76_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Zenith_Suppressor.cbAtelierPrice: 5000
+Items.Zenith_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Zenith_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.Zenith_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Nokota_Stingray_Reflex_Sight.cbAtelierPrice: 5000
+Items.Nokota_Stingray_Reflex_Sight.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Nokota_Stingray_Reflex_Sight:
+  $type: gamedataVendorItem_Record
+  item: Items.Nokota_Stingray_Reflex_Sight
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Nokota_Stingray_Suppressor.cbAtelierPrice: 5000
+Items.Nokota_Stingray_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Nokota_Stingray_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.Nokota_Stingray_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.MasterpieceArms_MPA30SST_Suppressor.cbAtelierPrice: 5000
+Items.MasterpieceArms_MPA30SST_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_MasterpieceArms_MPA30SST_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.MasterpieceArms_MPA30SST_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Flatline_Suppressor.cbAtelierPrice: 5000
+Items.Flatline_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Flatline_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.Flatline_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Flatline_Barrel_Stabilizer.cbAtelierPrice: 5000
+Items.Flatline_Barrel_Stabilizer.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Flatline_Barrel_Stabilizer:
+  $type: gamedataVendorItem_Record
+  item: Items.Flatline_Barrel_Stabilizer
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Flatline_Iron_Sight.cbAtelierPrice: 5000
+Items.Flatline_Iron_Sight.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Flatline_Iron_Sight:
+  $type: gamedataVendorItem_Record
+  item: Items.Flatline_Iron_Sight
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Flatline_HCOG.cbAtelierPrice: 5000
+Items.Flatline_HCOG.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Flatline_HCOG:
+  $type: gamedataVendorItem_Record
+  item: Items.Flatline_HCOG
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Flatline_Holo.cbAtelierPrice: 5000
+Items.Flatline_Holo.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Flatline_Holo:
+  $type: gamedataVendorItem_Record
+  item: Items.Flatline_Holo
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.RSh12_Suppressor.cbAtelierPrice: 5000
+Items.RSh12_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_RSh12_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.RSh12_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.RSh12_Muzzle_Brake.cbAtelierPrice: 5000
+Items.RSh12_Muzzle_Brake.cbAtelierQuality: "Rare"
+
+Items.CBVendor_RSh12_Muzzle_Brake:
+  $type: gamedataVendorItem_Record
+  item: Items.RSh12_Muzzle_Brake
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.RSh12_Dot_Sight.cbAtelierPrice: 5000
+Items.RSh12_Dot_Sight.cbAtelierQuality: "Rare"
+
+Items.CBVendor_RSh12_Dot_Sight:
+  $type: gamedataVendorItem_Record
+  item: Items.RSh12_Dot_Sight
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Lawgiver_Suppressor.cbAtelierPrice: 5000
+Items.Lawgiver_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Lawgiver_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.Lawgiver_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.USP_Fate_Maker_Suppressor.cbAtelierPrice: 5000
+Items.USP_Fate_Maker_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_USP_Fate_Maker_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.USP_Fate_Maker_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.USP_45_Fate_Maker_Scope.cbAtelierPrice: 5000
+Items.USP_45_Fate_Maker_Scope.cbAtelierQuality: "Rare"
+
+Items.CBVendor_USP_45_Fate_Maker_Scope:
+  $type: gamedataVendorItem_Record
+  item: Items.USP_45_Fate_Maker_Scope
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.M9_Phantom_Limb_Suppressor.cbAtelierPrice: 5000
+Items.M9_Phantom_Limb_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_M9_Phantom_Limb_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.M9_Phantom_Limb_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Daemon_9mm_Suppressor.cbAtelierPrice: 5000
+Items.Daemon_9mm_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Daemon_9mm_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.Daemon_9mm_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.P220_Suppressor.cbAtelierPrice: 5000
+Items.P220_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_P220_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.P220_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Kendall44_Suppressor.cbAtelierPrice: 5000
+Items.Kendall44_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Kendall44_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.Kendall44_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Canik_Rival_S_Compensator.cbAtelierPrice: 5000
+Items.Canik_Rival_S_Compensator.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Canik_Rival_S_Compensator:
+  $type: gamedataVendorItem_Record
+  item: Items.Canik_Rival_S_Compensator
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Canik_Rival_S_Suppressor.cbAtelierPrice: 5000
+Items.Canik_Rival_S_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Canik_Rival_S_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.Canik_Rival_S_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.M27S_Suppressor.cbAtelierPrice: 5000
+Items.M27S_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_M27S_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.M27S_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.OSP_18_Suppressor.cbAtelierPrice: 5000
+Items.OSP_18_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_OSP_18_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.OSP_18_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Stechkin_APS_Suppressor.cbAtelierPrice: 5000
+Items.Stechkin_APS_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Stechkin_APS_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.Stechkin_APS_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Arasaka_Nobunaga_Scope.cbAtelierPrice: 5000
+Items.Arasaka_Nobunaga_Scope.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Arasaka_Nobunaga_Scope:
+  $type: gamedataVendorItem_Record
+  item: Items.Arasaka_Nobunaga_Scope
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Arasaka_Nobunaga_Suppressor2.cbAtelierPrice: 5000
+Items.Arasaka_Nobunaga_Suppressor2.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Arasaka_Nobunaga_Suppressor2:
+  $type: gamedataVendorItem_Record
+  item: Items.Arasaka_Nobunaga_Suppressor2
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Arasaka_Nobunaga_Suppressor.cbAtelierPrice: 5000
+Items.Arasaka_Nobunaga_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Arasaka_Nobunaga_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.Arasaka_Nobunaga_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Armatech_MK1_Sight.cbAtelierPrice: 5000
+Items.Armatech_MK1_Sight.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Armatech_MK1_Sight:
+  $type: gamedataVendorItem_Record
+  item: Items.Armatech_MK1_Sight
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Armatech_MK1_Suppressor.cbAtelierPrice: 5000
+Items.Armatech_MK1_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Armatech_MK1_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.Armatech_MK1_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.M4_Suppressor.cbAtelierPrice: 5000
+Items.M4_Suppressor.cbAtelierQuality: "Rare"
+
+Items.CBVendor_M4_Suppressor:
+  $type: gamedataVendorItem_Record
+  item: Items.M4_Suppressor
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.KVInhibitor_Scope.cbAtelierPrice: 5000
+Items.KVInhibitor_Scope.cbAtelierQuality: "Rare"
+
+Items.CBVendor_KVInhibitor_Scope:
+  $type: gamedataVendorItem_Record
+  item: Items.KVInhibitor_Scope
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.KVD_Techtronika_4xScope.cbAtelierPrice: 5000
+Items.KVD_Techtronika_4xScope.cbAtelierQuality: "Rare"
+
+Items.CBVendor_KVD_Techtronika_4xScope:
+  $type: gamedataVendorItem_Record
+  item: Items.KVD_Techtronika_4xScope
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Fabarm_SDASS_Sight.cbAtelierPrice: 5000
+Items.Fabarm_SDASS_Sight.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Fabarm_SDASS_Sight:
+  $type: gamedataVendorItem_Record
+  item: Items.Fabarm_SDASS_Sight
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Shotgun_Flechette_Ammo.cbAtelierPrice: 5000
+Items.Shotgun_Flechette_Ammo.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Shotgun_Flechette_Ammo:
+  $type: gamedataVendorItem_Record
+  item: Items.Shotgun_Flechette_Ammo
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Shotgun_Incendiary_Ammo.cbAtelierPrice: 5000
+Items.Shotgun_Incendiary_Ammo.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Shotgun_Incendiary_Ammo:
+  $type: gamedataVendorItem_Record
+  item: Items.Shotgun_Incendiary_Ammo
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.Shotgun_Slug.cbAtelierPrice: 5000
+Items.Shotgun_Slug.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Shotgun_Slug:
+  $type: gamedataVendorItem_Record
+  item: Items.Shotgun_Slug
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.USG_SuppressorTypeA.cbAtelierPrice: 5000
+Items.USG_SuppressorTypeA.cbAtelierQuality: "Rare"
+
+Items.CBVendor_USG_SuppressorTypeA:
+  $type: gamedataVendorItem_Record
+  item: Items.USG_SuppressorTypeA
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.USG_SuppressorTypeB.cbAtelierPrice: 5000
+Items.USG_SuppressorTypeB.cbAtelierQuality: "Rare"
+
+Items.CBVendor_USG_SuppressorTypeB:
+  $type: gamedataVendorItem_Record
+  item: Items.USG_SuppressorTypeB
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.USG_SuppressorTypeC.cbAtelierPrice: 5000
+Items.USG_SuppressorTypeC.cbAtelierQuality: "Rare"
+
+Items.CBVendor_USG_SuppressorTypeC:
+  $type: gamedataVendorItem_Record
+  item: Items.USG_SuppressorTypeC
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+
+Items.AjaxRaptor_Recipe_Common.cbAtelierPrice: 2000
+Items.AjaxRaptor_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_AjaxRaptor_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.AjaxRaptor_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.AjaxRaptor_Recipe_Epic.cbAtelierPrice: 16000
+Items.AjaxRaptor_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_AjaxRaptor_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.AjaxRaptor_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.AjaxRaptor_Recipe_Legendary.cbAtelierPrice: 32000
+Items.AjaxRaptor_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_AjaxRaptor_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.AjaxRaptor_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.AjaxRaptor_Recipe_Rare.cbAtelierPrice: 8000
+Items.AjaxRaptor_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_AjaxRaptor_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.AjaxRaptor_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.AjaxRaptor_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.AjaxRaptor_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_AjaxRaptor_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.AjaxRaptor_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Armatech556_Recipe_Common.cbAtelierPrice: 2000
+Items.Armatech556_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_Armatech556_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.Armatech556_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Armatech556_Recipe_Epic.cbAtelierPrice: 16000
+Items.Armatech556_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Armatech556_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.Armatech556_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Armatech556_Recipe_Legendary.cbAtelierPrice: 32000
+Items.Armatech556_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Armatech556_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.Armatech556_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Armatech556_Recipe_Rare.cbAtelierPrice: 8000
+Items.Armatech556_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Armatech556_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.Armatech556_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Armatech556_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.Armatech556_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Armatech556_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.Armatech556_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.ArmatechSocom_Recipe_Epic.cbAtelierPrice: 16000
+Items.ArmatechSocom_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_ArmatechSocom_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.ArmatechSocom_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.ArmatechSocom_Recipe_Legendary.cbAtelierPrice: 32000
+Items.ArmatechSocom_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_ArmatechSocom_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.ArmatechSocom_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.ArmatechSocom_Recipe_Rare.cbAtelierPrice: 8000
+Items.ArmatechSocom_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_ArmatechSocom_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.ArmatechSocom_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.DTIRBlack_Recipe_Common.cbAtelierPrice: 2000
+Items.DTIRBlack_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_DTIRBlack_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.DTIRBlack_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.DTIRBlack_Recipe_Epic.cbAtelierPrice: 16000
+Items.DTIRBlack_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_DTIRBlack_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.DTIRBlack_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.DTIRBlack_Recipe_Legendary.cbAtelierPrice: 32000
+Items.DTIRBlack_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_DTIRBlack_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.DTIRBlack_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.DTIRBlack_Recipe_Rare.cbAtelierPrice: 8000
+Items.DTIRBlack_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_DTIRBlack_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.DTIRBlack_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.DTIRBlack_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.DTIRBlack_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_DTIRBlack_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.DTIRBlack_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.HCARBlack_Recipe_Common.cbAtelierPrice: 2000
+Items.HCARBlack_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_HCARBlack_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.HCARBlack_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.HCARBlack_Recipe_Epic.cbAtelierPrice: 16000
+Items.HCARBlack_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_HCARBlack_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.HCARBlack_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.HCARBlack_Recipe_Legendary.cbAtelierPrice: 32000
+Items.HCARBlack_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_HCARBlack_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.HCARBlack_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.HCARBlack_Recipe_Rare.cbAtelierPrice: 8000
+Items.HCARBlack_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_HCARBlack_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.HCARBlack_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.HCARBlack_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.HCARBlack_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_HCARBlack_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.HCARBlack_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.MK78SAW_Recipe_Common.cbAtelierPrice: 2000
+Items.MK78SAW_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_MK78SAW_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.MK78SAW_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.MK78SAW_Recipe_Epic.cbAtelierPrice: 16000
+Items.MK78SAW_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_MK78SAW_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.MK78SAW_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.MK78SAW_Recipe_Legendary.cbAtelierPrice: 32000
+Items.MK78SAW_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_MK78SAW_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.MK78SAW_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.MK78SAW_Recipe_Rare.cbAtelierPrice: 8000
+Items.MK78SAW_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_MK78SAW_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.MK78SAW_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.MK78SAW_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.MK78SAW_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_MK78SAW_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.MK78SAW_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Mateba6Comp_Recipe_Common.cbAtelierPrice: 2000
+Items.Mateba6Comp_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_Mateba6Comp_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.Mateba6Comp_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Mateba6Comp_Recipe_Epic.cbAtelierPrice: 16000
+Items.Mateba6Comp_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Mateba6Comp_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.Mateba6Comp_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Mateba6Comp_Recipe_Legendary.cbAtelierPrice: 32000
+Items.Mateba6Comp_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Mateba6Comp_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.Mateba6Comp_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Mateba6Comp_Recipe_Rare.cbAtelierPrice: 8000
+Items.Mateba6Comp_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Mateba6Comp_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.Mateba6Comp_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Mateba6Comp_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.Mateba6Comp_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Mateba6Comp_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.Mateba6Comp_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Mateba6Unica_Recipe_Common.cbAtelierPrice: 2000
+Items.Mateba6Unica_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_Mateba6Unica_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.Mateba6Unica_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Mateba6Unica_Recipe_Epic.cbAtelierPrice: 16000
+Items.Mateba6Unica_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Mateba6Unica_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.Mateba6Unica_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Mateba6Unica_Recipe_Legendary.cbAtelierPrice: 32000
+Items.Mateba6Unica_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_Mateba6Unica_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.Mateba6Unica_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Mateba6Unica_Recipe_Rare.cbAtelierPrice: 8000
+Items.Mateba6Unica_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Mateba6Unica_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.Mateba6Unica_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Mateba6Unica_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.Mateba6Unica_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Mateba6Unica_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.Mateba6Unica_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Nobunaga_Recipe_Common.cbAtelierPrice: 2000
+Items.Nobunaga_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_Nobunaga_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.Nobunaga_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Nobunaga_Recipe_Epic.cbAtelierPrice: 16000
+Items.Nobunaga_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_Nobunaga_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.Nobunaga_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Nobunaga_Recipe_Rare.cbAtelierPrice: 8000
+Items.Nobunaga_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_Nobunaga_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.Nobunaga_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Nobunaga_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.Nobunaga_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_Nobunaga_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.Nobunaga_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_AK_117_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_AK_117_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_AK_117_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_AK_117_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_AK_205_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_AK_205_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_AK_205_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_AK_205_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_AK_Custom_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_AK_Custom_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_AK_Custom_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_AK_Custom_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_AK_Prototype_MkII_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_AK_Prototype_MkII_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_AK_Prototype_MkII_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_AK_Prototype_MkII_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_AK47_Black_Cat_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_AK47_Black_Cat_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_AK47_Black_Cat_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_AK47_Black_Cat_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_AK47_Steel_Curtain_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_AK47_Steel_Curtain_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_AK47_Steel_Curtain_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_AK47_Steel_Curtain_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_AKM_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_AKM_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_AKM_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_AKM_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_AKS_74U_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_AKS_74U_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_AKS_74U_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_AKS_74U_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_KN44_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_KN44_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_KN44_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_KN44_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_RPK_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_RPK_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_RPK_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_RPK_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Zastava_M76_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Zastava_M76_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Zastava_M76_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Zastava_M76_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_glock_17_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_glock_17_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_glock_17_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_glock_17_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_glock_18_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_glock_18_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_glock_18_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_glock_18_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_glock_18_100_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_glock_18_100_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_glock_18_100_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_glock_18_100_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_glock_18_vspec_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_glock_18_vspec_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_glock_18_vspec_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_glock_18_vspec_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_glock_valentinos_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_glock_valentinos_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_glock_valentinos_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_glock_valentinos_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_Militech_M77_Viper_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_Militech_M77_Viper_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_Militech_M77_Viper_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Militech_M77_Viper_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_Militech_Beam_Rifle_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Militech_Beam_Rifle_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Militech_Beam_Rifle_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Militech_Beam_Rifle_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Militech_Beam_Rifle_Smart_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Militech_Beam_Rifle_Smart_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Militech_Beam_Rifle_Smart_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Militech_Beam_Rifle_Smart_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Arasaka_Masayuki_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_Arasaka_Masayuki_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_Arasaka_Masayuki_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Arasaka_Masayuki_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_Desert_Eagle_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_Desert_Eagle_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_Desert_Eagle_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Desert_Eagle_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_Militech_Stinger_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_Militech_Stinger_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_Militech_Stinger_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Militech_Stinger_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_RSh12_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_RSh12_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_RSh12_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_RSh12_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_Longbow_DMR_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Longbow_DMR_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Longbow_DMR_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Longbow_DMR_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_VHS_D2_Tactical_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_VHS_D2_Tactical_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_VHS_D2_Tactical_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_VHS_D2_Tactical_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_Lawgiver_MKIII_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Lawgiver_MKIII_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Lawgiver_MKIII_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Lawgiver_MKIII_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Lawgiver_MKIII_Stun_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Lawgiver_MKIII_Stun_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Lawgiver_MKIII_Stun_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Lawgiver_MKIII_Stun_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Lawgiver_MKIII_Fire_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Lawgiver_MKIII_Fire_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Lawgiver_MKIII_Fire_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Lawgiver_MKIII_Fire_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Lawgiver_MKIII_Flechette_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Lawgiver_MKIII_Flechette_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Lawgiver_MKIII_Flechette_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Lawgiver_MKIII_Flechette_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_MasterpieceArms_MPA30SST_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_MasterpieceArms_MPA30SST_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_MasterpieceArms_MPA30SST_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_MasterpieceArms_MPA30SST_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_OTs14_Groza_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_OTs14_Groza_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_OTs14_Groza_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_OTs14_Groza_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_B23R_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_B23R_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_B23R_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_B23R_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_Beretta_93R_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_Beretta_93R_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_Beretta_93R_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Beretta_93R_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_Desolator_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Desolator_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Desolator_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Desolator_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Malorian_Arms_FireX_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_Malorian_Arms_FireX_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_Malorian_Arms_FireX_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Malorian_Arms_FireX_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_Malorian_Arms_StunX_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_Malorian_Arms_StunX_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_Malorian_Arms_StunX_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Malorian_Arms_StunX_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_Malorian_Arms_X_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_Malorian_Arms_X_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_Malorian_Arms_X_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Malorian_Arms_X_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_Mozu_Revolver_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_Mozu_Revolver_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_Mozu_Revolver_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Mozu_Revolver_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_MR6_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_MR6_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_MR6_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_MR6_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_Prokolot_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_Prokolot_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_Prokolot_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Prokolot_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_RK5_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_RK5_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_RK5_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_RK5_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_RK5_Extended_Mag_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_RK5_Extended_Mag_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_RK5_Extended_Mag_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_RK5_Extended_Mag_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_Strife_Mk2_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_Strife_Mk2_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_Strife_Mk2_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Strife_Mk2_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_Strife_Mk2_Extended_Mag_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_Strife_Mk2_Extended_Mag_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_Strife_Mk2_Extended_Mag_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Strife_Mk2_Extended_Mag_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_Zenith_CA40_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_Zenith_CA40_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_Zenith_CA40_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Zenith_CA40_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_Canik_Rival_S_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_Canik_Rival_S_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_Canik_Rival_S_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Canik_Rival_S_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_Daemon_9mm_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_Daemon_9mm_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_Daemon_9mm_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Daemon_9mm_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_GS_9mm_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_GS_9mm_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_GS_9mm_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_GS_9mm_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Kendall44_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_Kendall44_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_Kendall44_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Kendall44_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_M9_Phantom_Limb_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_M9_Phantom_Limb_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_M9_Phantom_Limb_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_M9_Phantom_Limb_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_M27S_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_M27S_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_M27S_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_M27S_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_ONI_Smart_Pistol_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_ONI_Smart_Pistol_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_ONI_Smart_Pistol_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_ONI_Smart_Pistol_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_OSP_18_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_OSP_18_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_OSP_18_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_OSP_18_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_P220_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_P220_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_P220_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_P220_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_Stechkin_APS_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_Stechkin_APS_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_Stechkin_APS_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Stechkin_APS_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_USP_45_Fate_Maker_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_USP_45_Fate_Maker_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_USP_45_Fate_Maker_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_USP_45_Fate_Maker_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_AR15_SLR_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_AR15_SLR_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_AR15_SLR_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_AR15_SLR_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_Flatline_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Flatline_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Flatline_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Flatline_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_XPR_50_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_XPR_50_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_XPR_50_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_XPR_50_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_Scar_Black_Default_Stock_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_Scar_Black_Default_Stock_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_Scar_Black_Default_Stock_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Scar_Black_Default_Stock_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_Scar_Black_Short_Stock_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_Scar_Black_Short_Stock_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_Scar_Black_Short_Stock_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Scar_Black_Short_Stock_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_Scar_Jack_Default_Stock_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_Scar_Jack_Default_Stock_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_Scar_Jack_Default_Stock_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Scar_Jack_Default_Stock_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_Scar_Jack_Short_Stock_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_Scar_Jack_Short_Stock_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_Scar_Jack_Short_Stock_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Scar_Jack_Short_Stock_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_Scar_Mack_Default_Stock_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Scar_Mack_Default_Stock_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Scar_Mack_Default_Stock_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Scar_Mack_Default_Stock_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Scar_Mack_Short_Stock_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Scar_Mack_Short_Stock_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Scar_Mack_Short_Stock_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Scar_Mack_Short_Stock_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Scar_Night_City_Special_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_Scar_Night_City_Special_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_Scar_Night_City_Special_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Scar_Night_City_Special_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_Scar_Sludge_Default_Stock_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_Scar_Sludge_Default_Stock_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_Scar_Sludge_Default_Stock_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Scar_Sludge_Default_Stock_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_Scar_Sludge_Short_Stock_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_Scar_Sludge_Short_Stock_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_Scar_Sludge_Short_Stock_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Scar_Sludge_Short_Stock_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_Nokota_Stingray_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_Nokota_Stingray_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_Nokota_Stingray_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Nokota_Stingray_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_Nokota_Taipan_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_Nokota_Taipan_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_Nokota_Taipan_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Nokota_Taipan_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_Doom_Chainsaw_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_Doom_Chainsaw_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_Doom_Chainsaw_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Doom_Chainsaw_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_Fleshlight_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_Fleshlight_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_Fleshlight_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Fleshlight_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_Hatchet_Heat_Hawk_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_Hatchet_Heat_Hawk_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_Hatchet_Heat_Hawk_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Hatchet_Heat_Hawk_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_Hatchet_No_Masters_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_Hatchet_No_Masters_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_Hatchet_No_Masters_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Hatchet_No_Masters_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_Hatchet_Riddle_Of_Steel_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_Hatchet_Riddle_Of_Steel_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_Hatchet_Riddle_Of_Steel_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Hatchet_Riddle_Of_Steel_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_HF_Murasama_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_HF_Murasama_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_HF_Murasama_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_HF_Murasama_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_Leviathan_Axe_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Leviathan_Axe_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Leviathan_Axe_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Leviathan_Axe_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Louisville_Slugger_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_Louisville_Slugger_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_Louisville_Slugger_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Louisville_Slugger_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_Machete_Default_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_Machete_Default_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_Machete_Default_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Machete_Default_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_Scythe_Blood_Bunny_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Scythe_Blood_Bunny_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Scythe_Blood_Bunny_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Scythe_Blood_Bunny_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Scythe_Default_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_Scythe_Default_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_Scythe_Default_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Scythe_Default_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_Sledgehammer_Doom_Hammer_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_Sledgehammer_Doom_Hammer_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_Sledgehammer_Doom_Hammer_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Sledgehammer_Doom_Hammer_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_Swiss_Army_Knife_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_Swiss_Army_Knife_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_Swiss_Army_Knife_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Swiss_Army_Knife_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_Teeth_of_Terra_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Teeth_of_Terra_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Teeth_of_Terra_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Teeth_of_Terra_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Vampire_Metal_Stake_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_Vampire_Metal_Stake_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_Vampire_Metal_Stake_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Vampire_Metal_Stake_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_Zelda_Master_Sword_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_Zelda_Master_Sword_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_Zelda_Master_Sword_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Zelda_Master_Sword_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_Electric_Hellfire_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_Electric_Hellfire_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_Electric_Hellfire_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Electric_Hellfire_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_Electric_HellfireMk2_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_Electric_HellfireMk2_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_Electric_HellfireMk2_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Electric_HellfireMk2_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_M79_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_M79_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_M79_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_M79_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_XM25_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_XM25_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_XM25_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_XM25_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_manavortex_vergil_devil_katana_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_manavortex_vergil_devil_katana_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_manavortex_vergil_devil_katana_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_manavortex_vergil_devil_katana_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_combat_master_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_combat_master_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_combat_master_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_combat_master_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_Burya_Basilic_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_Burya_Basilic_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_Burya_Basilic_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Burya_Basilic_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_Gravitazer_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_Gravitazer_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_Gravitazer_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Gravitazer_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_HK416_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_HK416_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_HK416_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_HK416_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_Colt_M4_Carbine_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_Colt_M4_Carbine_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_Colt_M4_Carbine_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Colt_M4_Carbine_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_Sig_Sauer_XM7_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_Sig_Sauer_XM7_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_Sig_Sauer_XM7_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Sig_Sauer_XM7_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.L85A3Black_Recipe_Epic.cbAtelierPrice: 16000
+Items.L85A3Black_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_L85A3Black_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.L85A3Black_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.L85A3BlackOlive_Recipe_Epic.cbAtelierPrice: 16000
+Items.L85A3BlackOlive_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_L85A3BlackOlive_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.L85A3BlackOlive_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.L85A3BlackTan_Recipe_Epic.cbAtelierPrice: 16000
+Items.L85A3BlackTan_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_L85A3BlackTan_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.L85A3BlackTan_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.L85A3TanOlive_Recipe_Epic.cbAtelierPrice: 16000
+Items.L85A3TanOlive_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_L85A3TanOlive_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.L85A3TanOlive_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.KVDEnforcer_Recipe_Rare.cbAtelierPrice: 8000
+Items.KVDEnforcer_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_KVDEnforcer_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.KVDEnforcer_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.KVDTechtronika_Recipe_Rare.cbAtelierPrice: 8000
+Items.KVDTechtronika_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_KVDTechtronika_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.KVDTechtronika_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.KVInhibitor_Recipe_Epic.cbAtelierPrice: 16000
+Items.KVInhibitor_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_KVInhibitor_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.KVInhibitor_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.KVGRAU_Recipe_Epic.cbAtelierPrice: 16000
+Items.KVGRAU_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_KVGRAU_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.KVGRAU_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Fabarm_SDASS_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Fabarm_SDASS_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Fabarm_SDASS_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Fabarm_SDASS_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Franchi_PA3_Recipe_Common.cbAtelierPrice: 2000
+Items.CB_Franchi_PA3_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.CBVendor_CB_Franchi_PA3_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Franchi_PA3_Recipe_Common
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CB_FS12_Shotgun_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_FS12_Shotgun_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_FS12_Shotgun_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_FS12_Shotgun_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_HardReboot_Shotgun_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_HardReboot_Shotgun_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_HardReboot_Shotgun_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_HardReboot_Shotgun_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_KS23_Shotgun_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_KS23_Shotgun_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_KS23_Shotgun_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_KS23_Shotgun_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CB_Lockwood680_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_Lockwood680_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_Lockwood680_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Lockwood680_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_M10Breacher_Wasteland_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_M10Breacher_Wasteland_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_M10Breacher_Wasteland_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_M10Breacher_Wasteland_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_MCS880_Recipe_Rare.cbAtelierPrice: 8000
+Items.CB_MCS880_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.CBVendor_CB_MCS880_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_MCS880_Recipe_Rare
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CB_Model680_Showstopper_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Model680_Showstopper_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Model680_Showstopper_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Model680_Showstopper_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Model680_Recipe_Epic.cbAtelierPrice: 16000
+Items.CB_Model680_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.CBVendor_CB_Model680_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Model680_Recipe_Epic
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CB_Mossberg590_Cruiser_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.CB_Mossberg590_Cruiser_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.CBVendor_CB_Mossberg590_Cruiser_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Mossberg590_Cruiser_Recipe_Uncommon
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CB_Shotgun_LastRites_Recipe_Legendary.cbAtelierPrice: 32000
+Items.CB_Shotgun_LastRites_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.CBVendor_CB_Shotgun_LastRites_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: Items.CB_Shotgun_LastRites_Recipe_Legendary
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Vendors.bls_ina_se1_gunsmith_02:
+  itemStock:
+    - !append-once Items.CBVendor_Fabarm_SDASS
+    - !append-once Items.CBVendor_Franchi_PA3
+    - !append-once Items.CBVendor_FS12_Shotgun
+    - !append-once Items.CBVendor_HardReboot_Shotgun
+    - !append-once Items.CBVendor_KS23_Shotgun
+    - !append-once Items.CBVendor_Lockwood680
+    - !append-once Items.CBVendor_M10Breacher_Wasteland
+    - !append-once Items.CBVendor_MCS880
+    - !append-once Items.CBVendor_Model680_Showstopper
+    - !append-once Items.CBVendor_Model680
+    - !append-once Items.CBVendor_Mossberg590_Cruiser
+    - !append-once Items.CBVendor_Shotgun_LastRites
+    - !append-once Items.CBVendor_CB_Fabarm_SDASS_Recipe_Epic
+    - !append-once Items.CBVendor_CB_Franchi_PA3_Recipe_Common
+    - !append-once Items.CBVendor_CB_FS12_Shotgun_Recipe_Rare
+    - !append-once Items.CBVendor_CB_HardReboot_Shotgun_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_KS23_Shotgun_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_Lockwood680_Recipe_Rare
+    - !append-once Items.CBVendor_CB_M10Breacher_Wasteland_Recipe_Epic
+    - !append-once Items.CBVendor_CB_MCS880_Recipe_Rare
+    - !append-once Items.CBVendor_CB_Model680_Showstopper_Recipe_Epic
+    - !append-once Items.CBVendor_CB_Model680_Recipe_Epic
+    - !append-once Items.CBVendor_CB_Mossberg590_Cruiser_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_Shotgun_LastRites_Recipe_Legendary
+    - !append-once Items.CBVendor_Fabarm_SDASS_Sight
+    - !append-once Items.CBVendor_Shotgun_Flechette_Ammo
+    - !append-once Items.CBVendor_Shotgun_Incendiary_Ammo
+    - !append-once Items.CBVendor_Shotgun_Slug
+    - !append-once Items.CBVendor_USG_SuppressorTypeA
+    - !append-once Items.CBVendor_USG_SuppressorTypeB
+    - !append-once Items.CBVendor_USG_SuppressorTypeC
+
+Vendors.cct_dtn_guns_01:
+  itemStock:
+    - !remove Items.armatech_sight_stock
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !append-once Items.CBVendor_Militech_M77_Viper
+    - !append-once Items.CBVendor_Militech_Ajax_Raptor
+    - !append-once Items.CBVendor_Armatech_458_SOCOM
+    - !append-once Items.CBVendor_Armatech_MK1_556
+    - !append-once Items.CBVendor_MK78_SAW
+    - !append-once Items.CBVendor_HK416
+    - !append-once Items.CBVendor_Colt_M4_Carbine
+    - !append-once Items.CBVendor_Sig_Sauer_XM7
+    - !append-once Items.CBVendor_AjaxRaptor_Recipe_Common
+    - !append-once Items.CBVendor_AjaxRaptor_Recipe_Epic
+    - !append-once Items.CBVendor_AjaxRaptor_Recipe_Legendary
+    - !append-once Items.CBVendor_AjaxRaptor_Recipe_Rare
+    - !append-once Items.CBVendor_AjaxRaptor_Recipe_Uncommon
+    - !append-once Items.CBVendor_Armatech556_Recipe_Common
+    - !append-once Items.CBVendor_Armatech556_Recipe_Epic
+    - !append-once Items.CBVendor_Armatech556_Recipe_Legendary
+    - !append-once Items.CBVendor_Armatech556_Recipe_Rare
+    - !append-once Items.CBVendor_Armatech556_Recipe_Uncommon
+    - !append-once Items.CBVendor_ArmatechSocom_Recipe_Epic
+    - !append-once Items.CBVendor_ArmatechSocom_Recipe_Legendary
+    - !append-once Items.CBVendor_ArmatechSocom_Recipe_Rare
+    - !append-once Items.CBVendor_MK78SAW_Recipe_Common
+    - !append-once Items.CBVendor_MK78SAW_Recipe_Epic
+    - !append-once Items.CBVendor_MK78SAW_Recipe_Legendary
+    - !append-once Items.CBVendor_MK78SAW_Recipe_Rare
+    - !append-once Items.CBVendor_MK78SAW_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_Militech_M77_Viper_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_HK416_Recipe_Rare
+    - !append-once Items.CBVendor_CB_Colt_M4_Carbine_Recipe_Rare
+    - !append-once Items.CBVendor_CB_Sig_Sauer_XM7_Recipe_Rare
+    - !append-once Items.CBVendor_HK_IronSights
+    - !append-once Items.CBVendor_HK_Suppressor
+    - !append-once Items.CBVendor_Holo_Sight
+    - !append-once Items.CBVendor_Hybrid_Sight
+    - !append-once Items.CBVendor_M4_Carry_Handle
+    - !append-once Items.CBVendor_M4_IronSights
+    - !append-once Items.CBVendor_Militech_M77_Viper_Suppressor
+    - !append-once Items.CBVendor_Rifle_Scope
+    - !append-once Items.CBVendor_Trijicon_ACOG
+    - !append-once Items.CBVendor_XM7_IronSights
+    - !append-once Items.CBVendor_XM7_Suppressor
+    - !append-once Items.CBVendor_Armatech_MK1_Sight
+    - !append-once Items.CBVendor_Armatech_MK1_Suppressor
+    - !append-once Items.CBVendor_M4_Suppressor
+
+Vendors.cz_stadium_gunsmith_01:
+  itemStock:
+    - !append-once Items.CBVendor_Militech_Beam_Rifle
+    - !append-once Items.CBVendor_Militech_Beam_Rifle_Smart
+    - !append-once Items.CBVendor_Militech_Stinger
+    - !append-once Items.CBVendor_Electric_Hellfire
+    - !append-once Items.CBVendor_Electric_HellfireMk2
+    - !append-once Items.CBVendor_M79
+    - !append-once Items.CBVendor_XM25
+    - !append-once Items.CBVendor_Gravitazer
+    - !append-once Items.CBVendor_CB_Militech_Beam_Rifle_Recipe_Epic
+    - !append-once Items.CBVendor_CB_Militech_Beam_Rifle_Smart_Recipe_Epic
+    - !append-once Items.CBVendor_CB_Militech_Stinger_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_Electric_Hellfire_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_Electric_HellfireMk2_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_M79_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_XM25_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_Gravitazer_Recipe_Legendary
+
+Vendors.hey_gle_gunsmith_01:
+  itemStock:
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !append-once Items.CBVendor_Malorian_Arms_FireX
+    - !append-once Items.CBVendor_Malorian_Arms_StunX
+    - !append-once Items.CBVendor_Malorian_Arms_X
+    - !append-once Items.CBVendor_Mozu_Revolver
+    - !append-once Items.CBVendor_Mateba_6_Unica
+    - !append-once Items.CBVendor_Mateba_6_Unica_Comp
+    - !append-once Items.CBVendor_RSh12
+    - !append-once Items.CBVendor_Burya_Basilic
+    - !append-once Items.CBVendor_Mateba6Comp_Recipe_Common
+    - !append-once Items.CBVendor_Mateba6Comp_Recipe_Epic
+    - !append-once Items.CBVendor_Mateba6Comp_Recipe_Legendary
+    - !append-once Items.CBVendor_Mateba6Comp_Recipe_Rare
+    - !append-once Items.CBVendor_Mateba6Comp_Recipe_Uncommon
+    - !append-once Items.CBVendor_Mateba6Unica_Recipe_Common
+    - !append-once Items.CBVendor_Mateba6Unica_Recipe_Epic
+    - !append-once Items.CBVendor_Mateba6Unica_Recipe_Legendary
+    - !append-once Items.CBVendor_Mateba6Unica_Recipe_Rare
+    - !append-once Items.CBVendor_Mateba6Unica_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_RSh12_Recipe_Rare
+    - !append-once Items.CBVendor_CB_Malorian_Arms_FireX_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_Malorian_Arms_StunX_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_Malorian_Arms_X_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_Mozu_Revolver_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_Burya_Basilic_Recipe_Legendary
+    - !append-once Items.CBVendor_RSh12_Suppressor
+    - !append-once Items.CBVendor_RSh12_Muzzle_Brake
+    - !append-once Items.CBVendor_RSh12_Dot_Sight
+
+Vendors.hey_rey_gunsmith_01:
+  itemStock:
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !append-once Items.CBVendor_Longbow_DMR
+    - !append-once Items.CBVendor_XPR_50
+    - !append-once Items.CBVendor_KVD_Enforcer
+    - !append-once Items.CBVendor_KVD_Techtronika
+    - !append-once Items.CBVendor_Nokota_Stingray
+    - !append-once Items.CBVendor_Nokota_Taipan
+    - !append-once Items.CBVendor_CB_Longbow_DMR_Recipe_Epic
+    - !append-once Items.CBVendor_CB_XPR_50_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_Nokota_Stingray_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_Nokota_Taipan_Recipe_Legendary
+    - !append-once Items.CBVendor_KVDEnforcer_Recipe_Rare
+    - !append-once Items.CBVendor_KVDTechtronika_Recipe_Rare
+    - !append-once Items.CBVendor_Longbow_DMR_Scope
+    - !append-once Items.CBVendor_Longbow_DMR_Suppressor
+    - !append-once Items.CBVendor_XPR50_Scope
+    - !append-once Items.CBVendor_XPR50_Suppressor
+    - !append-once Items.CBVendor_Nokota_Stingray_Reflex_Sight
+    - !append-once Items.CBVendor_Nokota_Stingray_Suppressor
+    - !append-once Items.CBVendor_KVD_Techtronika_4xScope
+
+Vendors.hey_spr_gunsmith_01:
+  itemStock:
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+
+Vendors.pac_wwd_gunsmith_01:
+  itemStock:
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !remove Items.m79_stock
+    - !append-once Items.CBVendor_Desolator
+    - !append-once Items.CBVendor_Flatline
+    - !append-once Items.CBVendor_Zenith_CA40
+    - !append-once Items.CBVendor_Lawgiver_MKIII
+    - !append-once Items.CBVendor_Lawgiver_MKIII_Stun
+    - !append-once Items.CBVendor_Lawgiver_MKIII_Fire
+    - !append-once Items.CBVendor_Lawgiver_MKIII_Flechette
+    - !append-once Items.CBVendor_CB_Lawgiver_MKIII_Recipe_Epic
+    - !append-once Items.CBVendor_CB_Lawgiver_MKIII_Stun_Recipe_Epic
+    - !append-once Items.CBVendor_CB_Lawgiver_MKIII_Fire_Recipe_Epic
+    - !append-once Items.CBVendor_CB_Lawgiver_MKIII_Flechette_Recipe_Epic
+    - !append-once Items.CBVendor_CB_Desolator_Recipe_Epic
+    - !append-once Items.CBVendor_CB_Zenith_CA40_Recipe_Common
+    - !append-once Items.CBVendor_CB_Flatline_Recipe_Epic
+    - !append-once Items.CBVendor_Desolator_Suppressor
+    - !append-once Items.CBVendor_Zenith_Suppressor
+    - !append-once Items.CBVendor_Flatline_Suppressor
+    - !append-once Items.CBVendor_Flatline_Barrel_Stabilizer
+    - !append-once Items.CBVendor_Flatline_Iron_Sight
+    - !append-once Items.CBVendor_Flatline_HCOG
+    - !append-once Items.CBVendor_Flatline_Holo
+    - !append-once Items.CBVendor_Lawgiver_Suppressor
+
+Vendors.pac_wwd_melee_01:
+  itemStock:
+    - !append-once Items.CBVendor_Fleshlight
+    - !append-once Items.CBVendor_Hatchet_Heat_Hawk
+    - !append-once Items.CBVendor_Hatchet_No_Masters
+    - !append-once Items.CBVendor_Hatchet_Riddle_Of_Steel
+    - !append-once Items.CBVendor_Leviathan_Axe
+    - !append-once Items.CBVendor_Vampire_Metal_Stake
+    - !append-once Items.CBVendor_Zelda_Master_Sword
+    - !append-once Items.CBVendor_CB_Fleshlight_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_Hatchet_Heat_Hawk_Recipe_Rare
+    - !append-once Items.CBVendor_CB_Hatchet_No_Masters_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_Hatchet_Riddle_Of_Steel_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_Leviathan_Axe_Recipe_Epic
+    - !append-once Items.CBVendor_CB_Vampire_Metal_Stake_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_Zelda_Master_Sword_Recipe_Legendary
+
+Vendors.std_arr_gunsmith_01:
+  itemStock:
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !append-once Items.CBVendor_HCAR_Black
+    - !append-once Items.CBVendor_DTIR_HCAR_Black
+    - !append-once Items.CBVendor_L85A3_Black
+    - !append-once Items.CBVendor_L85A3_Black_Olive
+    - !append-once Items.CBVendor_L85A3_Black_Tan
+    - !append-once Items.CBVendor_L85A3_Tan_Olive
+    - !append-once Items.CBVendor_VHS_D2_Tactical
+    - !append-once Items.CBVendor_M27S
+    - !append-once Items.CBVendor_DTIRBlack_Recipe_Common
+    - !append-once Items.CBVendor_DTIRBlack_Recipe_Epic
+    - !append-once Items.CBVendor_DTIRBlack_Recipe_Legendary
+    - !append-once Items.CBVendor_DTIRBlack_Recipe_Rare
+    - !append-once Items.CBVendor_DTIRBlack_Recipe_Uncommon
+    - !append-once Items.CBVendor_HCARBlack_Recipe_Common
+    - !append-once Items.CBVendor_HCARBlack_Recipe_Epic
+    - !append-once Items.CBVendor_HCARBlack_Recipe_Legendary
+    - !append-once Items.CBVendor_HCARBlack_Recipe_Rare
+    - !append-once Items.CBVendor_HCARBlack_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_VHS_D2_Tactical_Recipe_Common
+    - !append-once Items.CBVendor_CB_M27S_Recipe_Uncommon
+    - !append-once Items.CBVendor_L85A3Black_Recipe_Epic
+    - !append-once Items.CBVendor_L85A3BlackOlive_Recipe_Epic
+    - !append-once Items.CBVendor_L85A3BlackTan_Recipe_Epic
+    - !append-once Items.CBVendor_L85A3TanOlive_Recipe_Epic
+    - !append-once Items.CBVendor_VHS_Holo_Sight
+    - !append-once Items.CBVendor_VHS_Hybrid_Sight
+    - !append-once Items.CBVendor_VHS_Iron_Sight
+    - !append-once Items.CBVendor_VHS_Reflex_Sight
+    - !append-once Items.CBVendor_VHS_Suppressor
+    - !append-once Items.CBVendor_VHS_Trijicon_ACOG
+    - !append-once Items.CBVendor_M27S_Suppressor
+
+Vendors.std_arr_melee_01:
+  itemStock:
+    - !append-once Items.CBVendor_Doom_Chainsaw
+    - !append-once Items.CBVendor_Louisville_Slugger
+    - !append-once Items.CBVendor_Sledgehammer_Doom_Hammer
+    - !append-once Items.CBVendor_Teeth_of_Terra
+    - !append-once Items.CBVendor_CB_Doom_Chainsaw_Recipe_Rare
+    - !append-once Items.CBVendor_CB_Louisville_Slugger_Recipe_Common
+    - !append-once Items.CBVendor_CB_Sledgehammer_Doom_Hammer_Recipe_Rare
+    - !append-once Items.CBVendor_CB_Teeth_of_Terra_Recipe_Epic
+
+Vendors.std_rcr_gunsmith_01:
+  itemStock:
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !append-once Items.CBVendor_Scar_Black_Default_Stock
+    - !append-once Items.CBVendor_Scar_Black_Short_Stock
+    - !append-once Items.CBVendor_Scar_Jack_Default_Stock
+    - !append-once Items.CBVendor_Scar_Jack_Short_Stock
+    - !append-once Items.CBVendor_Scar_Mack_Default_Stock
+    - !append-once Items.CBVendor_Scar_Mack_Short_Stock
+    - !append-once Items.CBVendor_Scar_Night_City_Special
+    - !append-once Items.CBVendor_Scar_Sludge_Default_Stock
+    - !append-once Items.CBVendor_Scar_Sludge_Short_Stock
+    - !append-once Items.CBVendor_AR15_SLR
+    - !append-once Items.CBVendor_CB_AR15_SLR_Recipe_Rare
+    - !append-once Items.CBVendor_CB_Scar_Black_Default_Stock_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_Scar_Black_Short_Stock_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_Scar_Jack_Default_Stock_Recipe_Rare
+    - !append-once Items.CBVendor_CB_Scar_Jack_Short_Stock_Recipe_Rare
+    - !append-once Items.CBVendor_CB_Scar_Mack_Default_Stock_Recipe_Epic
+    - !append-once Items.CBVendor_CB_Scar_Mack_Short_Stock_Recipe_Epic
+    - !append-once Items.CBVendor_CB_Scar_Night_City_Special_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_Scar_Sludge_Default_Stock_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_Scar_Sludge_Short_Stock_Recipe_Legendary
+    - !append-once Items.CBVendor_AR15_Ironsights
+    - !append-once Items.CBVendor_AR15_Suppressor
+
+Vendors.wat_kab_gunsmith_01:
+  itemStock:
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !append-once Items.CBVendor_MasterpieceArms_MPA30SST
+    - !append-once Items.CBVendor_Prokolot
+    - !append-once Items.CBVendor_Daemon_9mm
+    - !append-once Items.CBVendor_GS_9mm
+    - !append-once Items.CBVendor_Kendall44
+    - !append-once Items.CBVendor_M9_Phantom_Limb
+    - !append-once Items.CBVendor_ONI_Smart_Pistol
+    - !append-once Items.CBVendor_OSP_18
+    - !append-once Items.CBVendor_P220
+    - !append-once Items.CBVendor_Stechkin_APS
+    - !append-once Items.CBVendor_USP_45_Fate_Maker
+    - !append-once Items.CBVendor_CB_MasterpieceArms_MPA30SST_Recipe_Common
+    - !append-once Items.CBVendor_CB_Prokolot_Recipe_Common
+    - !append-once Items.CBVendor_CB_Daemon_9mm_Recipe_Rare
+    - !append-once Items.CBVendor_CB_GS_9mm_Recipe_Epic
+    - !append-once Items.CBVendor_CB_Kendall44_Recipe_Rare
+    - !append-once Items.CBVendor_CB_M9_Phantom_Limb_Recipe_Common
+    - !append-once Items.CBVendor_CB_ONI_Smart_Pistol_Recipe_Rare
+    - !append-once Items.CBVendor_CB_OSP_18_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_P220_Recipe_Common
+    - !append-once Items.CBVendor_CB_Stechkin_APS_Recipe_Common
+    - !append-once Items.CBVendor_CB_USP_45_Fate_Maker_Recipe_Legendary
+    - !append-once Items.CBVendor_MasterpieceArms_MPA30SST_Suppressor
+    - !append-once Items.CBVendor_USP_Fate_Maker_Suppressor
+    - !append-once Items.CBVendor_USP_45_Fate_Maker_Scope
+    - !append-once Items.CBVendor_M9_Phantom_Limb_Suppressor
+    - !append-once Items.CBVendor_Daemon_9mm_Suppressor
+    - !append-once Items.CBVendor_P220_Suppressor
+    - !append-once Items.CBVendor_Kendall44_Suppressor
+    - !append-once Items.CBVendor_OSP_18_Suppressor
+    - !append-once Items.CBVendor_Stechkin_APS_Suppressor
+
+Vendors.wat_kab_gunsmith_02:
+  itemStock:
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+
+Vendors.wat_lch_gunsmith_01:
+  itemStock:
+    - !remove Items.armatech_sight_stock
+    - !remove Items.armatech_supp_stock
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !append-once Items.CBVendor_glock_17
+    - !append-once Items.CBVendor_glock_18
+    - !append-once Items.CBVendor_glock_18_100
+    - !append-once Items.CBVendor_glock_18_vspec
+    - !append-once Items.CBVendor_glock_valentinos
+    - !append-once Items.CBVendor_Desert_Eagle
+    - !append-once Items.CBVendor_B23R
+    - !append-once Items.CBVendor_Beretta_93R
+    - !append-once Items.CBVendor_MR6
+    - !append-once Items.CBVendor_RK5
+    - !append-once Items.CBVendor_RK5_Extended_Mag
+    - !append-once Items.CBVendor_Strife_Mk2
+    - !append-once Items.CBVendor_Strife_Mk2_Extended_Mag
+    - !append-once Items.CBVendor_Canik_Rival_S
+    - !append-once Items.CBVendor_combat_master
+    - !append-once Items.CBVendor_CB_glock_17_Recipe_Common
+    - !append-once Items.CBVendor_CB_glock_18_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_glock_18_100_Recipe_Rare
+    - !append-once Items.CBVendor_CB_glock_18_vspec_Recipe_Epic
+    - !append-once Items.CBVendor_CB_glock_valentinos_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_Desert_Eagle_Recipe_Common
+    - !append-once Items.CBVendor_CB_B23R_Recipe_Common
+    - !append-once Items.CBVendor_CB_Beretta_93R_Recipe_Common
+    - !append-once Items.CBVendor_CB_MR6_Recipe_Common
+    - !append-once Items.CBVendor_CB_RK5_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_RK5_Extended_Mag_Recipe_Rare
+    - !append-once Items.CBVendor_CB_Strife_Mk2_Recipe_Common
+    - !append-once Items.CBVendor_CB_Strife_Mk2_Extended_Mag_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_Canik_Rival_S_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_combat_master_Recipe_Common
+    - !append-once Items.CBVendor_B23R_Suppressor
+    - !append-once Items.CBVendor_Beretta_93R_Suppressor
+    - !append-once Items.CBVendor_MR6_Suppressor
+    - !append-once Items.CBVendor_RK5_Suppressor
+    - !append-once Items.CBVendor_Strife_Suppressor
+    - !append-once Items.CBVendor_Canik_Rival_S_Compensator
+    - !append-once Items.CBVendor_Canik_Rival_S_Suppressor
+
+Vendors.wat_nid_gunsmith_01:
+  itemStock:
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !append-once Items.CBVendor_AK_117
+    - !append-once Items.CBVendor_AK_205
+    - !append-once Items.CBVendor_AK_Custom
+    - !append-once Items.CBVendor_AK_Prototype_MkII
+    - !append-once Items.CBVendor_AK47_Black_Cat
+    - !append-once Items.CBVendor_AK47_Steel_Curtain
+    - !append-once Items.CBVendor_AKM
+    - !append-once Items.CBVendor_AKS_74U
+    - !append-once Items.CBVendor_KN44
+    - !append-once Items.CBVendor_RPK
+    - !append-once Items.CBVendor_Zastava_M76
+    - !append-once Items.CBVendor_OTs14_Groza
+    - !append-once Items.CBVendor_CB_AK_117_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_AK_205_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_AK_Custom_Recipe_Common
+    - !append-once Items.CBVendor_CB_AK_Prototype_MkII_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_AK47_Black_Cat_Recipe_Rare
+    - !append-once Items.CBVendor_CB_AK47_Steel_Curtain_Recipe_Rare
+    - !append-once Items.CBVendor_CB_AKM_Recipe_Rare
+    - !append-once Items.CBVendor_CB_AKS_74U_Recipe_Common
+    - !append-once Items.CBVendor_CB_KN44_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_RPK_Recipe_Epic
+    - !append-once Items.CBVendor_CB_Zastava_M76_Recipe_Epic
+    - !append-once Items.CBVendor_CB_OTs14_Groza_Recipe_Rare
+    - !append-once Items.CBVendor_AK_117_Suppressor
+    - !append-once Items.CBVendor_AK_205_Suppressor
+    - !append-once Items.CBVendor_AK_Custom_Suppressor
+    - !append-once Items.CBVendor_AK_Holo_Sight
+    - !append-once Items.CBVendor_AK_RedDot_Sight
+    - !append-once Items.CBVendor_AK_Reflex_Sight
+    - !append-once Items.CBVendor_AK47_Black_Cat_Supp
+    - !append-once Items.CBVendor_AK47_Steel_Curtain_Supp
+    - !append-once Items.CBVendor_AKM_Suppressor
+    - !append-once Items.CBVendor_AKS_74U_Suppressor
+    - !append-once Items.CBVendor_KN44_Suppressor
+    - !append-once Items.CBVendor_OTs_Groza_ACOG
+    - !append-once Items.CBVendor_OTs_Groza_IronSight
+    - !append-once Items.CBVendor_OTs_Groza_Reflex
+    - !append-once Items.CBVendor_OTs_Groza_Suppressor
+    - !append-once Items.CBVendor_RPK_Suppressor
+    - !append-once Items.CBVendor_Zastava_M76_Scope
+    - !append-once Items.CBVendor_Zastava_M76_Suppressor
+
+Vendors.wbr_jpn_gunsmith_01:
+  itemStock:
+    - !remove Items.b23_supp_stock
+    - !remove Items.grav_stock
+    - !append-once Items.CBVendor_Arasaka_Masayuki
+    - !append-once Items.CBVendor_Arasaka_Nobunaga
+    - !append-once Items.CBVendor_KVInhibitor
+    - !append-once Items.CBVendor_KVInhibitor_GRAU
+    - !append-once Items.CBVendor_Nobunaga_Recipe_Common
+    - !append-once Items.CBVendor_Nobunaga_Recipe_Epic
+    - !append-once Items.CBVendor_Nobunaga_Recipe_Rare
+    - !append-once Items.CBVendor_Nobunaga_Recipe_Uncommon
+    - !append-once Items.CBVendor_CB_Arasaka_Masayuki_Recipe_Common
+    - !append-once Items.CBVendor_KVInhibitor_Recipe_Epic
+    - !append-once Items.CBVendor_KVGRAU_Recipe_Epic
+    - !append-once Items.CBVendor_Arasaka_Nobunaga_Scope
+    - !append-once Items.CBVendor_Arasaka_Nobunaga_Suppressor2
+    - !append-once Items.CBVendor_Arasaka_Nobunaga_Suppressor
+    - !append-once Items.CBVendor_KVInhibitor_Scope
+
+Vendors.wbr_jpn_melee_01:
+  itemStock:
+    - !append-once Items.CBVendor_HF_Murasama
+    - !append-once Items.CBVendor_Machete_Default
+    - !append-once Items.CBVendor_Scythe_Blood_Bunny
+    - !append-once Items.CBVendor_Scythe_Default
+    - !append-once Items.CBVendor_Swiss_Army_Knife
+    - !append-once Items.CBVendor_manavortex_vergil_devil_katana
+    - !append-once Items.CBVendor_CB_HF_Murasama_Recipe_Legendary
+    - !append-once Items.CBVendor_CB_Machete_Default_Recipe_Common
+    - !append-once Items.CBVendor_CB_Scythe_Blood_Bunny_Recipe_Epic
+    - !append-once Items.CBVendor_CB_Scythe_Default_Recipe_Common
+    - !append-once Items.CBVendor_CB_Swiss_Army_Knife_Recipe_Common
+    - !append-once Items.CBVendor_CB_manavortex_vergil_devil_katana_Recipe_Legendary
