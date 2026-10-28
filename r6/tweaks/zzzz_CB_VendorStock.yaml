@@ -1498,7 +1498,8 @@ Items.CBVendor_Shotgun_LastRites:
   generationPrereqs:
     - Prereqs.CBVendorLevel40
 
-Items.AK_117_Suppressor.cbAtelierPrice: 5000
+Items.AK_117_Suppressor.cbAtelierPrice: 20000
+Items.AK_117_Suppressor.cbVendorAttachment: true
 Items.AK_117_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_AK_117_Suppressor:
@@ -1508,7 +1509,8 @@ Items.CBVendor_AK_117_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.AK_205_Suppressor.cbAtelierPrice: 5000
+Items.AK_205_Suppressor.cbAtelierPrice: 20000
+Items.AK_205_Suppressor.cbVendorAttachment: true
 Items.AK_205_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_AK_205_Suppressor:
@@ -1518,7 +1520,8 @@ Items.CBVendor_AK_205_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.AK_Custom_Suppressor.cbAtelierPrice: 5000
+Items.AK_Custom_Suppressor.cbAtelierPrice: 20000
+Items.AK_Custom_Suppressor.cbVendorAttachment: true
 Items.AK_Custom_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_AK_Custom_Suppressor:
@@ -1528,7 +1531,8 @@ Items.CBVendor_AK_Custom_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.AK_Holo_Sight.cbAtelierPrice: 5000
+Items.AK_Holo_Sight.cbAtelierPrice: 20000
+Items.AK_Holo_Sight.cbVendorAttachment: true
 Items.AK_Holo_Sight.cbAtelierQuality: "Rare"
 
 Items.CBVendor_AK_Holo_Sight:
@@ -1538,7 +1542,8 @@ Items.CBVendor_AK_Holo_Sight:
   quantity:
     - Vendors.Always_Present
 
-Items.AK_RedDot_Sight.cbAtelierPrice: 5000
+Items.AK_RedDot_Sight.cbAtelierPrice: 20000
+Items.AK_RedDot_Sight.cbVendorAttachment: true
 Items.AK_RedDot_Sight.cbAtelierQuality: "Rare"
 
 Items.CBVendor_AK_RedDot_Sight:
@@ -1548,7 +1553,8 @@ Items.CBVendor_AK_RedDot_Sight:
   quantity:
     - Vendors.Always_Present
 
-Items.AK_Reflex_Sight.cbAtelierPrice: 5000
+Items.AK_Reflex_Sight.cbAtelierPrice: 20000
+Items.AK_Reflex_Sight.cbVendorAttachment: true
 Items.AK_Reflex_Sight.cbAtelierQuality: "Rare"
 
 Items.CBVendor_AK_Reflex_Sight:
@@ -1558,7 +1564,8 @@ Items.CBVendor_AK_Reflex_Sight:
   quantity:
     - Vendors.Always_Present
 
-Items.AK47_Black_Cat_Supp.cbAtelierPrice: 5000
+Items.AK47_Black_Cat_Supp.cbAtelierPrice: 20000
+Items.AK47_Black_Cat_Supp.cbVendorAttachment: true
 Items.AK47_Black_Cat_Supp.cbAtelierQuality: "Rare"
 
 Items.CBVendor_AK47_Black_Cat_Supp:
@@ -1568,7 +1575,8 @@ Items.CBVendor_AK47_Black_Cat_Supp:
   quantity:
     - Vendors.Always_Present
 
-Items.AK47_Steel_Curtain_Supp.cbAtelierPrice: 5000
+Items.AK47_Steel_Curtain_Supp.cbAtelierPrice: 20000
+Items.AK47_Steel_Curtain_Supp.cbVendorAttachment: true
 Items.AK47_Steel_Curtain_Supp.cbAtelierQuality: "Rare"
 
 Items.CBVendor_AK47_Steel_Curtain_Supp:
@@ -1578,7 +1586,8 @@ Items.CBVendor_AK47_Steel_Curtain_Supp:
   quantity:
     - Vendors.Always_Present
 
-Items.AKM_Suppressor.cbAtelierPrice: 5000
+Items.AKM_Suppressor.cbAtelierPrice: 20000
+Items.AKM_Suppressor.cbVendorAttachment: true
 Items.AKM_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_AKM_Suppressor:
@@ -1588,7 +1597,8 @@ Items.CBVendor_AKM_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.AKS_74U_Suppressor.cbAtelierPrice: 5000
+Items.AKS_74U_Suppressor.cbAtelierPrice: 20000
+Items.AKS_74U_Suppressor.cbVendorAttachment: true
 Items.AKS_74U_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_AKS_74U_Suppressor:
@@ -1598,7 +1608,8 @@ Items.CBVendor_AKS_74U_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.AR15_Ironsights.cbAtelierPrice: 5000
+Items.AR15_Ironsights.cbAtelierPrice: 20000
+Items.AR15_Ironsights.cbVendorAttachment: true
 Items.AR15_Ironsights.cbAtelierQuality: "Rare"
 
 Items.CBVendor_AR15_Ironsights:
@@ -1608,7 +1619,8 @@ Items.CBVendor_AR15_Ironsights:
   quantity:
     - Vendors.Always_Present
 
-Items.AR15_Suppressor.cbAtelierPrice: 5000
+Items.AR15_Suppressor.cbAtelierPrice: 20000
+Items.AR15_Suppressor.cbVendorAttachment: true
 Items.AR15_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_AR15_Suppressor:
@@ -1618,7 +1630,8 @@ Items.CBVendor_AR15_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.B23R_Suppressor.cbAtelierPrice: 5000
+Items.B23R_Suppressor.cbAtelierPrice: 20000
+Items.B23R_Suppressor.cbVendorAttachment: true
 Items.B23R_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_B23R_Suppressor:
@@ -1628,7 +1641,8 @@ Items.CBVendor_B23R_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Beretta_93R_Suppressor.cbAtelierPrice: 5000
+Items.Beretta_93R_Suppressor.cbAtelierPrice: 20000
+Items.Beretta_93R_Suppressor.cbVendorAttachment: true
 Items.Beretta_93R_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Beretta_93R_Suppressor:
@@ -1638,7 +1652,8 @@ Items.CBVendor_Beretta_93R_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Desolator_Suppressor.cbAtelierPrice: 5000
+Items.Desolator_Suppressor.cbAtelierPrice: 20000
+Items.Desolator_Suppressor.cbVendorAttachment: true
 Items.Desolator_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Desolator_Suppressor:
@@ -1648,7 +1663,8 @@ Items.CBVendor_Desolator_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.HK_IronSights.cbAtelierPrice: 5000
+Items.HK_IronSights.cbAtelierPrice: 20000
+Items.HK_IronSights.cbVendorAttachment: true
 Items.HK_IronSights.cbAtelierQuality: "Rare"
 
 Items.CBVendor_HK_IronSights:
@@ -1658,7 +1674,8 @@ Items.CBVendor_HK_IronSights:
   quantity:
     - Vendors.Always_Present
 
-Items.HK_Suppressor.cbAtelierPrice: 5000
+Items.HK_Suppressor.cbAtelierPrice: 20000
+Items.HK_Suppressor.cbVendorAttachment: true
 Items.HK_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_HK_Suppressor:
@@ -1668,7 +1685,8 @@ Items.CBVendor_HK_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Holo_Sight.cbAtelierPrice: 5000
+Items.Holo_Sight.cbAtelierPrice: 20000
+Items.Holo_Sight.cbVendorAttachment: true
 Items.Holo_Sight.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Holo_Sight:
@@ -1678,7 +1696,8 @@ Items.CBVendor_Holo_Sight:
   quantity:
     - Vendors.Always_Present
 
-Items.Hybrid_Sight.cbAtelierPrice: 5000
+Items.Hybrid_Sight.cbAtelierPrice: 20000
+Items.Hybrid_Sight.cbVendorAttachment: true
 Items.Hybrid_Sight.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Hybrid_Sight:
@@ -1688,7 +1707,8 @@ Items.CBVendor_Hybrid_Sight:
   quantity:
     - Vendors.Always_Present
 
-Items.KN44_Suppressor.cbAtelierPrice: 5000
+Items.KN44_Suppressor.cbAtelierPrice: 20000
+Items.KN44_Suppressor.cbVendorAttachment: true
 Items.KN44_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_KN44_Suppressor:
@@ -1698,7 +1718,8 @@ Items.CBVendor_KN44_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Longbow_DMR_Scope.cbAtelierPrice: 5000
+Items.Longbow_DMR_Scope.cbAtelierPrice: 20000
+Items.Longbow_DMR_Scope.cbVendorAttachment: true
 Items.Longbow_DMR_Scope.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Longbow_DMR_Scope:
@@ -1708,7 +1729,8 @@ Items.CBVendor_Longbow_DMR_Scope:
   quantity:
     - Vendors.Always_Present
 
-Items.Longbow_DMR_Suppressor.cbAtelierPrice: 5000
+Items.Longbow_DMR_Suppressor.cbAtelierPrice: 20000
+Items.Longbow_DMR_Suppressor.cbVendorAttachment: true
 Items.Longbow_DMR_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Longbow_DMR_Suppressor:
@@ -1718,7 +1740,8 @@ Items.CBVendor_Longbow_DMR_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.M4_Carry_Handle.cbAtelierPrice: 5000
+Items.M4_Carry_Handle.cbAtelierPrice: 20000
+Items.M4_Carry_Handle.cbVendorAttachment: true
 Items.M4_Carry_Handle.cbAtelierQuality: "Rare"
 
 Items.CBVendor_M4_Carry_Handle:
@@ -1728,7 +1751,8 @@ Items.CBVendor_M4_Carry_Handle:
   quantity:
     - Vendors.Always_Present
 
-Items.M4_IronSights.cbAtelierPrice: 5000
+Items.M4_IronSights.cbAtelierPrice: 20000
+Items.M4_IronSights.cbVendorAttachment: true
 Items.M4_IronSights.cbAtelierQuality: "Rare"
 
 Items.CBVendor_M4_IronSights:
@@ -1738,17 +1762,19 @@ Items.CBVendor_M4_IronSights:
   quantity:
     - Vendors.Always_Present
 
-Items.Militech_M77_Viper_Suppressor.cbAtelierPrice: 5000
+Items.Militech_M77_Viper_Suppressor.cbAtelierPrice: 20000
+Items.Militech_M77_Viper_Suppressor.cbVendorAttachment: true
 Items.Militech_M77_Viper_Suppressor.cbAtelierQuality: "Rare"
 
-Items.CBVendor_Militech_M77_Viper_Suppressor:
+Items.CBVendor_M77ViperSuppressor:
   $type: gamedataVendorItem_Record
   item: Items.Militech_M77_Viper_Suppressor
   forceQuality: Rare
   quantity:
     - Vendors.Always_Present
 
-Items.MR6_Suppressor.cbAtelierPrice: 5000
+Items.MR6_Suppressor.cbAtelierPrice: 20000
+Items.MR6_Suppressor.cbVendorAttachment: true
 Items.MR6_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_MR6_Suppressor:
@@ -1758,7 +1784,8 @@ Items.CBVendor_MR6_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.OTs_Groza_ACOG.cbAtelierPrice: 5000
+Items.OTs_Groza_ACOG.cbAtelierPrice: 20000
+Items.OTs_Groza_ACOG.cbVendorAttachment: true
 Items.OTs_Groza_ACOG.cbAtelierQuality: "Rare"
 
 Items.CBVendor_OTs_Groza_ACOG:
@@ -1768,7 +1795,8 @@ Items.CBVendor_OTs_Groza_ACOG:
   quantity:
     - Vendors.Always_Present
 
-Items.OTs_Groza_IronSight.cbAtelierPrice: 5000
+Items.OTs_Groza_IronSight.cbAtelierPrice: 20000
+Items.OTs_Groza_IronSight.cbVendorAttachment: true
 Items.OTs_Groza_IronSight.cbAtelierQuality: "Rare"
 
 Items.CBVendor_OTs_Groza_IronSight:
@@ -1778,7 +1806,8 @@ Items.CBVendor_OTs_Groza_IronSight:
   quantity:
     - Vendors.Always_Present
 
-Items.OTs_Groza_Reflex.cbAtelierPrice: 5000
+Items.OTs_Groza_Reflex.cbAtelierPrice: 20000
+Items.OTs_Groza_Reflex.cbVendorAttachment: true
 Items.OTs_Groza_Reflex.cbAtelierQuality: "Rare"
 
 Items.CBVendor_OTs_Groza_Reflex:
@@ -1788,7 +1817,8 @@ Items.CBVendor_OTs_Groza_Reflex:
   quantity:
     - Vendors.Always_Present
 
-Items.OTs_Groza_Suppressor.cbAtelierPrice: 5000
+Items.OTs_Groza_Suppressor.cbAtelierPrice: 20000
+Items.OTs_Groza_Suppressor.cbVendorAttachment: true
 Items.OTs_Groza_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_OTs_Groza_Suppressor:
@@ -1798,7 +1828,8 @@ Items.CBVendor_OTs_Groza_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Rifle_Scope.cbAtelierPrice: 5000
+Items.Rifle_Scope.cbAtelierPrice: 20000
+Items.Rifle_Scope.cbVendorAttachment: true
 Items.Rifle_Scope.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Rifle_Scope:
@@ -1808,7 +1839,8 @@ Items.CBVendor_Rifle_Scope:
   quantity:
     - Vendors.Always_Present
 
-Items.RK5_Suppressor.cbAtelierPrice: 5000
+Items.RK5_Suppressor.cbAtelierPrice: 20000
+Items.RK5_Suppressor.cbVendorAttachment: true
 Items.RK5_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_RK5_Suppressor:
@@ -1818,7 +1850,8 @@ Items.CBVendor_RK5_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.RPK_Suppressor.cbAtelierPrice: 5000
+Items.RPK_Suppressor.cbAtelierPrice: 20000
+Items.RPK_Suppressor.cbVendorAttachment: true
 Items.RPK_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_RPK_Suppressor:
@@ -1828,7 +1861,8 @@ Items.CBVendor_RPK_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Strife_Suppressor.cbAtelierPrice: 5000
+Items.Strife_Suppressor.cbAtelierPrice: 20000
+Items.Strife_Suppressor.cbVendorAttachment: true
 Items.Strife_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Strife_Suppressor:
@@ -1838,7 +1872,8 @@ Items.CBVendor_Strife_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Trijicon_ACOG.cbAtelierPrice: 5000
+Items.Trijicon_ACOG.cbAtelierPrice: 20000
+Items.Trijicon_ACOG.cbVendorAttachment: true
 Items.Trijicon_ACOG.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Trijicon_ACOG:
@@ -1848,7 +1883,8 @@ Items.CBVendor_Trijicon_ACOG:
   quantity:
     - Vendors.Always_Present
 
-Items.VHS_Holo_Sight.cbAtelierPrice: 5000
+Items.VHS_Holo_Sight.cbAtelierPrice: 20000
+Items.VHS_Holo_Sight.cbVendorAttachment: true
 Items.VHS_Holo_Sight.cbAtelierQuality: "Rare"
 
 Items.CBVendor_VHS_Holo_Sight:
@@ -1858,7 +1894,8 @@ Items.CBVendor_VHS_Holo_Sight:
   quantity:
     - Vendors.Always_Present
 
-Items.VHS_Hybrid_Sight.cbAtelierPrice: 5000
+Items.VHS_Hybrid_Sight.cbAtelierPrice: 20000
+Items.VHS_Hybrid_Sight.cbVendorAttachment: true
 Items.VHS_Hybrid_Sight.cbAtelierQuality: "Rare"
 
 Items.CBVendor_VHS_Hybrid_Sight:
@@ -1868,7 +1905,8 @@ Items.CBVendor_VHS_Hybrid_Sight:
   quantity:
     - Vendors.Always_Present
 
-Items.VHS_Iron_Sight.cbAtelierPrice: 5000
+Items.VHS_Iron_Sight.cbAtelierPrice: 20000
+Items.VHS_Iron_Sight.cbVendorAttachment: true
 Items.VHS_Iron_Sight.cbAtelierQuality: "Rare"
 
 Items.CBVendor_VHS_Iron_Sight:
@@ -1878,7 +1916,8 @@ Items.CBVendor_VHS_Iron_Sight:
   quantity:
     - Vendors.Always_Present
 
-Items.VHS_Reflex_Sight.cbAtelierPrice: 5000
+Items.VHS_Reflex_Sight.cbAtelierPrice: 20000
+Items.VHS_Reflex_Sight.cbVendorAttachment: true
 Items.VHS_Reflex_Sight.cbAtelierQuality: "Rare"
 
 Items.CBVendor_VHS_Reflex_Sight:
@@ -1888,7 +1927,8 @@ Items.CBVendor_VHS_Reflex_Sight:
   quantity:
     - Vendors.Always_Present
 
-Items.VHS_Suppressor.cbAtelierPrice: 5000
+Items.VHS_Suppressor.cbAtelierPrice: 20000
+Items.VHS_Suppressor.cbVendorAttachment: true
 Items.VHS_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_VHS_Suppressor:
@@ -1898,7 +1938,8 @@ Items.CBVendor_VHS_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.VHS_Trijicon_ACOG.cbAtelierPrice: 5000
+Items.VHS_Trijicon_ACOG.cbAtelierPrice: 20000
+Items.VHS_Trijicon_ACOG.cbVendorAttachment: true
 Items.VHS_Trijicon_ACOG.cbAtelierQuality: "Rare"
 
 Items.CBVendor_VHS_Trijicon_ACOG:
@@ -1908,7 +1949,8 @@ Items.CBVendor_VHS_Trijicon_ACOG:
   quantity:
     - Vendors.Always_Present
 
-Items.XM7_IronSights.cbAtelierPrice: 5000
+Items.XM7_IronSights.cbAtelierPrice: 20000
+Items.XM7_IronSights.cbVendorAttachment: true
 Items.XM7_IronSights.cbAtelierQuality: "Rare"
 
 Items.CBVendor_XM7_IronSights:
@@ -1918,7 +1960,8 @@ Items.CBVendor_XM7_IronSights:
   quantity:
     - Vendors.Always_Present
 
-Items.XM7_Suppressor.cbAtelierPrice: 5000
+Items.XM7_Suppressor.cbAtelierPrice: 20000
+Items.XM7_Suppressor.cbVendorAttachment: true
 Items.XM7_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_XM7_Suppressor:
@@ -1928,7 +1971,8 @@ Items.CBVendor_XM7_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.XPR50_Scope.cbAtelierPrice: 5000
+Items.XPR50_Scope.cbAtelierPrice: 20000
+Items.XPR50_Scope.cbVendorAttachment: true
 Items.XPR50_Scope.cbAtelierQuality: "Rare"
 
 Items.CBVendor_XPR50_Scope:
@@ -1938,7 +1982,8 @@ Items.CBVendor_XPR50_Scope:
   quantity:
     - Vendors.Always_Present
 
-Items.XPR50_Suppressor.cbAtelierPrice: 5000
+Items.XPR50_Suppressor.cbAtelierPrice: 20000
+Items.XPR50_Suppressor.cbVendorAttachment: true
 Items.XPR50_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_XPR50_Suppressor:
@@ -1948,7 +1993,8 @@ Items.CBVendor_XPR50_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Zastava_M76_Scope.cbAtelierPrice: 5000
+Items.Zastava_M76_Scope.cbAtelierPrice: 20000
+Items.Zastava_M76_Scope.cbVendorAttachment: true
 Items.Zastava_M76_Scope.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Zastava_M76_Scope:
@@ -1958,7 +2004,8 @@ Items.CBVendor_Zastava_M76_Scope:
   quantity:
     - Vendors.Always_Present
 
-Items.Zastava_M76_Suppressor.cbAtelierPrice: 5000
+Items.Zastava_M76_Suppressor.cbAtelierPrice: 20000
+Items.Zastava_M76_Suppressor.cbVendorAttachment: true
 Items.Zastava_M76_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Zastava_M76_Suppressor:
@@ -1968,7 +2015,8 @@ Items.CBVendor_Zastava_M76_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Zenith_Suppressor.cbAtelierPrice: 5000
+Items.Zenith_Suppressor.cbAtelierPrice: 20000
+Items.Zenith_Suppressor.cbVendorAttachment: true
 Items.Zenith_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Zenith_Suppressor:
@@ -1978,7 +2026,8 @@ Items.CBVendor_Zenith_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Nokota_Stingray_Reflex_Sight.cbAtelierPrice: 5000
+Items.Nokota_Stingray_Reflex_Sight.cbAtelierPrice: 20000
+Items.Nokota_Stingray_Reflex_Sight.cbVendorAttachment: true
 Items.Nokota_Stingray_Reflex_Sight.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Nokota_Stingray_Reflex_Sight:
@@ -1988,7 +2037,8 @@ Items.CBVendor_Nokota_Stingray_Reflex_Sight:
   quantity:
     - Vendors.Always_Present
 
-Items.Nokota_Stingray_Suppressor.cbAtelierPrice: 5000
+Items.Nokota_Stingray_Suppressor.cbAtelierPrice: 20000
+Items.Nokota_Stingray_Suppressor.cbVendorAttachment: true
 Items.Nokota_Stingray_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Nokota_Stingray_Suppressor:
@@ -1998,7 +2048,8 @@ Items.CBVendor_Nokota_Stingray_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.MasterpieceArms_MPA30SST_Suppressor.cbAtelierPrice: 5000
+Items.MasterpieceArms_MPA30SST_Suppressor.cbAtelierPrice: 20000
+Items.MasterpieceArms_MPA30SST_Suppressor.cbVendorAttachment: true
 Items.MasterpieceArms_MPA30SST_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_MasterpieceArms_MPA30SST_Suppressor:
@@ -2008,7 +2059,8 @@ Items.CBVendor_MasterpieceArms_MPA30SST_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Flatline_Suppressor.cbAtelierPrice: 5000
+Items.Flatline_Suppressor.cbAtelierPrice: 20000
+Items.Flatline_Suppressor.cbVendorAttachment: true
 Items.Flatline_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Flatline_Suppressor:
@@ -2018,7 +2070,8 @@ Items.CBVendor_Flatline_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Flatline_Barrel_Stabilizer.cbAtelierPrice: 5000
+Items.Flatline_Barrel_Stabilizer.cbAtelierPrice: 20000
+Items.Flatline_Barrel_Stabilizer.cbVendorAttachment: true
 Items.Flatline_Barrel_Stabilizer.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Flatline_Barrel_Stabilizer:
@@ -2028,7 +2081,8 @@ Items.CBVendor_Flatline_Barrel_Stabilizer:
   quantity:
     - Vendors.Always_Present
 
-Items.Flatline_Iron_Sight.cbAtelierPrice: 5000
+Items.Flatline_Iron_Sight.cbAtelierPrice: 20000
+Items.Flatline_Iron_Sight.cbVendorAttachment: true
 Items.Flatline_Iron_Sight.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Flatline_Iron_Sight:
@@ -2038,7 +2092,8 @@ Items.CBVendor_Flatline_Iron_Sight:
   quantity:
     - Vendors.Always_Present
 
-Items.Flatline_HCOG.cbAtelierPrice: 5000
+Items.Flatline_HCOG.cbAtelierPrice: 20000
+Items.Flatline_HCOG.cbVendorAttachment: true
 Items.Flatline_HCOG.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Flatline_HCOG:
@@ -2048,7 +2103,8 @@ Items.CBVendor_Flatline_HCOG:
   quantity:
     - Vendors.Always_Present
 
-Items.Flatline_Holo.cbAtelierPrice: 5000
+Items.Flatline_Holo.cbAtelierPrice: 20000
+Items.Flatline_Holo.cbVendorAttachment: true
 Items.Flatline_Holo.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Flatline_Holo:
@@ -2058,7 +2114,8 @@ Items.CBVendor_Flatline_Holo:
   quantity:
     - Vendors.Always_Present
 
-Items.RSh12_Suppressor.cbAtelierPrice: 5000
+Items.RSh12_Suppressor.cbAtelierPrice: 20000
+Items.RSh12_Suppressor.cbVendorAttachment: true
 Items.RSh12_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_RSh12_Suppressor:
@@ -2068,7 +2125,8 @@ Items.CBVendor_RSh12_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.RSh12_Muzzle_Brake.cbAtelierPrice: 5000
+Items.RSh12_Muzzle_Brake.cbAtelierPrice: 20000
+Items.RSh12_Muzzle_Brake.cbVendorAttachment: true
 Items.RSh12_Muzzle_Brake.cbAtelierQuality: "Rare"
 
 Items.CBVendor_RSh12_Muzzle_Brake:
@@ -2078,7 +2136,8 @@ Items.CBVendor_RSh12_Muzzle_Brake:
   quantity:
     - Vendors.Always_Present
 
-Items.RSh12_Dot_Sight.cbAtelierPrice: 5000
+Items.RSh12_Dot_Sight.cbAtelierPrice: 20000
+Items.RSh12_Dot_Sight.cbVendorAttachment: true
 Items.RSh12_Dot_Sight.cbAtelierQuality: "Rare"
 
 Items.CBVendor_RSh12_Dot_Sight:
@@ -2088,7 +2147,8 @@ Items.CBVendor_RSh12_Dot_Sight:
   quantity:
     - Vendors.Always_Present
 
-Items.Lawgiver_Suppressor.cbAtelierPrice: 5000
+Items.Lawgiver_Suppressor.cbAtelierPrice: 20000
+Items.Lawgiver_Suppressor.cbVendorAttachment: true
 Items.Lawgiver_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Lawgiver_Suppressor:
@@ -2098,7 +2158,8 @@ Items.CBVendor_Lawgiver_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.USP_Fate_Maker_Suppressor.cbAtelierPrice: 5000
+Items.USP_Fate_Maker_Suppressor.cbAtelierPrice: 20000
+Items.USP_Fate_Maker_Suppressor.cbVendorAttachment: true
 Items.USP_Fate_Maker_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_USP_Fate_Maker_Suppressor:
@@ -2108,7 +2169,8 @@ Items.CBVendor_USP_Fate_Maker_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.USP_45_Fate_Maker_Scope.cbAtelierPrice: 5000
+Items.USP_45_Fate_Maker_Scope.cbAtelierPrice: 20000
+Items.USP_45_Fate_Maker_Scope.cbVendorAttachment: true
 Items.USP_45_Fate_Maker_Scope.cbAtelierQuality: "Rare"
 
 Items.CBVendor_USP_45_Fate_Maker_Scope:
@@ -2118,7 +2180,8 @@ Items.CBVendor_USP_45_Fate_Maker_Scope:
   quantity:
     - Vendors.Always_Present
 
-Items.M9_Phantom_Limb_Suppressor.cbAtelierPrice: 5000
+Items.M9_Phantom_Limb_Suppressor.cbAtelierPrice: 20000
+Items.M9_Phantom_Limb_Suppressor.cbVendorAttachment: true
 Items.M9_Phantom_Limb_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_M9_Phantom_Limb_Suppressor:
@@ -2128,7 +2191,8 @@ Items.CBVendor_M9_Phantom_Limb_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Daemon_9mm_Suppressor.cbAtelierPrice: 5000
+Items.Daemon_9mm_Suppressor.cbAtelierPrice: 20000
+Items.Daemon_9mm_Suppressor.cbVendorAttachment: true
 Items.Daemon_9mm_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Daemon_9mm_Suppressor:
@@ -2138,7 +2202,8 @@ Items.CBVendor_Daemon_9mm_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.P220_Suppressor.cbAtelierPrice: 5000
+Items.P220_Suppressor.cbAtelierPrice: 20000
+Items.P220_Suppressor.cbVendorAttachment: true
 Items.P220_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_P220_Suppressor:
@@ -2148,7 +2213,8 @@ Items.CBVendor_P220_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Kendall44_Suppressor.cbAtelierPrice: 5000
+Items.Kendall44_Suppressor.cbAtelierPrice: 20000
+Items.Kendall44_Suppressor.cbVendorAttachment: true
 Items.Kendall44_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Kendall44_Suppressor:
@@ -2158,7 +2224,8 @@ Items.CBVendor_Kendall44_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Canik_Rival_S_Compensator.cbAtelierPrice: 5000
+Items.Canik_Rival_S_Compensator.cbAtelierPrice: 20000
+Items.Canik_Rival_S_Compensator.cbVendorAttachment: true
 Items.Canik_Rival_S_Compensator.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Canik_Rival_S_Compensator:
@@ -2168,7 +2235,8 @@ Items.CBVendor_Canik_Rival_S_Compensator:
   quantity:
     - Vendors.Always_Present
 
-Items.Canik_Rival_S_Suppressor.cbAtelierPrice: 5000
+Items.Canik_Rival_S_Suppressor.cbAtelierPrice: 20000
+Items.Canik_Rival_S_Suppressor.cbVendorAttachment: true
 Items.Canik_Rival_S_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Canik_Rival_S_Suppressor:
@@ -2178,7 +2246,8 @@ Items.CBVendor_Canik_Rival_S_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.M27S_Suppressor.cbAtelierPrice: 5000
+Items.M27S_Suppressor.cbAtelierPrice: 20000
+Items.M27S_Suppressor.cbVendorAttachment: true
 Items.M27S_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_M27S_Suppressor:
@@ -2188,7 +2257,8 @@ Items.CBVendor_M27S_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.OSP_18_Suppressor.cbAtelierPrice: 5000
+Items.OSP_18_Suppressor.cbAtelierPrice: 20000
+Items.OSP_18_Suppressor.cbVendorAttachment: true
 Items.OSP_18_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_OSP_18_Suppressor:
@@ -2198,7 +2268,8 @@ Items.CBVendor_OSP_18_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Stechkin_APS_Suppressor.cbAtelierPrice: 5000
+Items.Stechkin_APS_Suppressor.cbAtelierPrice: 20000
+Items.Stechkin_APS_Suppressor.cbVendorAttachment: true
 Items.Stechkin_APS_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Stechkin_APS_Suppressor:
@@ -2208,7 +2279,8 @@ Items.CBVendor_Stechkin_APS_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Arasaka_Nobunaga_Scope.cbAtelierPrice: 5000
+Items.Arasaka_Nobunaga_Scope.cbAtelierPrice: 20000
+Items.Arasaka_Nobunaga_Scope.cbVendorAttachment: true
 Items.Arasaka_Nobunaga_Scope.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Arasaka_Nobunaga_Scope:
@@ -2218,7 +2290,8 @@ Items.CBVendor_Arasaka_Nobunaga_Scope:
   quantity:
     - Vendors.Always_Present
 
-Items.Arasaka_Nobunaga_Suppressor2.cbAtelierPrice: 5000
+Items.Arasaka_Nobunaga_Suppressor2.cbAtelierPrice: 20000
+Items.Arasaka_Nobunaga_Suppressor2.cbVendorAttachment: true
 Items.Arasaka_Nobunaga_Suppressor2.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Arasaka_Nobunaga_Suppressor2:
@@ -2228,7 +2301,8 @@ Items.CBVendor_Arasaka_Nobunaga_Suppressor2:
   quantity:
     - Vendors.Always_Present
 
-Items.Arasaka_Nobunaga_Suppressor.cbAtelierPrice: 5000
+Items.Arasaka_Nobunaga_Suppressor.cbAtelierPrice: 20000
+Items.Arasaka_Nobunaga_Suppressor.cbVendorAttachment: true
 Items.Arasaka_Nobunaga_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Arasaka_Nobunaga_Suppressor:
@@ -2238,7 +2312,8 @@ Items.CBVendor_Arasaka_Nobunaga_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.Armatech_MK1_Sight.cbAtelierPrice: 5000
+Items.Armatech_MK1_Sight.cbAtelierPrice: 20000
+Items.Armatech_MK1_Sight.cbVendorAttachment: true
 Items.Armatech_MK1_Sight.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Armatech_MK1_Sight:
@@ -2248,7 +2323,8 @@ Items.CBVendor_Armatech_MK1_Sight:
   quantity:
     - Vendors.Always_Present
 
-Items.Armatech_MK1_Suppressor.cbAtelierPrice: 5000
+Items.Armatech_MK1_Suppressor.cbAtelierPrice: 20000
+Items.Armatech_MK1_Suppressor.cbVendorAttachment: true
 Items.Armatech_MK1_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Armatech_MK1_Suppressor:
@@ -2258,7 +2334,8 @@ Items.CBVendor_Armatech_MK1_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.M4_Suppressor.cbAtelierPrice: 5000
+Items.M4_Suppressor.cbAtelierPrice: 20000
+Items.M4_Suppressor.cbVendorAttachment: true
 Items.M4_Suppressor.cbAtelierQuality: "Rare"
 
 Items.CBVendor_M4_Suppressor:
@@ -2268,7 +2345,8 @@ Items.CBVendor_M4_Suppressor:
   quantity:
     - Vendors.Always_Present
 
-Items.KVInhibitor_Scope.cbAtelierPrice: 5000
+Items.KVInhibitor_Scope.cbAtelierPrice: 20000
+Items.KVInhibitor_Scope.cbVendorAttachment: true
 Items.KVInhibitor_Scope.cbAtelierQuality: "Rare"
 
 Items.CBVendor_KVInhibitor_Scope:
@@ -2278,7 +2356,8 @@ Items.CBVendor_KVInhibitor_Scope:
   quantity:
     - Vendors.Always_Present
 
-Items.KVD_Techtronika_4xScope.cbAtelierPrice: 5000
+Items.KVD_Techtronika_4xScope.cbAtelierPrice: 20000
+Items.KVD_Techtronika_4xScope.cbVendorAttachment: true
 Items.KVD_Techtronika_4xScope.cbAtelierQuality: "Rare"
 
 Items.CBVendor_KVD_Techtronika_4xScope:
@@ -2288,7 +2367,8 @@ Items.CBVendor_KVD_Techtronika_4xScope:
   quantity:
     - Vendors.Always_Present
 
-Items.Fabarm_SDASS_Sight.cbAtelierPrice: 5000
+Items.Fabarm_SDASS_Sight.cbAtelierPrice: 20000
+Items.Fabarm_SDASS_Sight.cbVendorAttachment: true
 Items.Fabarm_SDASS_Sight.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Fabarm_SDASS_Sight:
@@ -2298,7 +2378,8 @@ Items.CBVendor_Fabarm_SDASS_Sight:
   quantity:
     - Vendors.Always_Present
 
-Items.Shotgun_Flechette_Ammo.cbAtelierPrice: 5000
+Items.Shotgun_Flechette_Ammo.cbAtelierPrice: 20000
+Items.Shotgun_Flechette_Ammo.cbVendorAttachment: true
 Items.Shotgun_Flechette_Ammo.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Shotgun_Flechette_Ammo:
@@ -2308,7 +2389,8 @@ Items.CBVendor_Shotgun_Flechette_Ammo:
   quantity:
     - Vendors.Always_Present
 
-Items.Shotgun_Incendiary_Ammo.cbAtelierPrice: 5000
+Items.Shotgun_Incendiary_Ammo.cbAtelierPrice: 20000
+Items.Shotgun_Incendiary_Ammo.cbVendorAttachment: true
 Items.Shotgun_Incendiary_Ammo.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Shotgun_Incendiary_Ammo:
@@ -2318,7 +2400,8 @@ Items.CBVendor_Shotgun_Incendiary_Ammo:
   quantity:
     - Vendors.Always_Present
 
-Items.Shotgun_Slug.cbAtelierPrice: 5000
+Items.Shotgun_Slug.cbAtelierPrice: 20000
+Items.Shotgun_Slug.cbVendorAttachment: true
 Items.Shotgun_Slug.cbAtelierQuality: "Rare"
 
 Items.CBVendor_Shotgun_Slug:
@@ -2328,7 +2411,8 @@ Items.CBVendor_Shotgun_Slug:
   quantity:
     - Vendors.Always_Present
 
-Items.USG_SuppressorTypeA.cbAtelierPrice: 5000
+Items.USG_SuppressorTypeA.cbAtelierPrice: 20000
+Items.USG_SuppressorTypeA.cbVendorAttachment: true
 Items.USG_SuppressorTypeA.cbAtelierQuality: "Rare"
 
 Items.CBVendor_USG_SuppressorTypeA:
@@ -2338,7 +2422,8 @@ Items.CBVendor_USG_SuppressorTypeA:
   quantity:
     - Vendors.Always_Present
 
-Items.USG_SuppressorTypeB.cbAtelierPrice: 5000
+Items.USG_SuppressorTypeB.cbAtelierPrice: 20000
+Items.USG_SuppressorTypeB.cbVendorAttachment: true
 Items.USG_SuppressorTypeB.cbAtelierQuality: "Rare"
 
 Items.CBVendor_USG_SuppressorTypeB:
@@ -2348,7 +2433,8 @@ Items.CBVendor_USG_SuppressorTypeB:
   quantity:
     - Vendors.Always_Present
 
-Items.USG_SuppressorTypeC.cbAtelierPrice: 5000
+Items.USG_SuppressorTypeC.cbAtelierPrice: 20000
+Items.USG_SuppressorTypeC.cbVendorAttachment: true
 Items.USG_SuppressorTypeC.cbAtelierQuality: "Rare"
 
 Items.CBVendor_USG_SuppressorTypeC:
@@ -4281,7 +4367,7 @@ Vendors.cct_dtn_guns_01:
     - !append-once Items.CBVendor_Hybrid_Sight
     - !append-once Items.CBVendor_M4_Carry_Handle
     - !append-once Items.CBVendor_M4_IronSights
-    - !append-once Items.CBVendor_Militech_M77_Viper_Suppressor
+    - !append-once Items.CBVendor_M77ViperSuppressor
     - !append-once Items.CBVendor_Rifle_Scope
     - !append-once Items.CBVendor_Trijicon_ACOG
     - !append-once Items.CBVendor_XM7_IronSights

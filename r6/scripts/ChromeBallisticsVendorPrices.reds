@@ -4,22 +4,37 @@ module ChromeBallistics.Vendors
 import BetterEddies.Pricing.ItemPriceAuthority
 
 @if(ModuleExists("BetterEddies.Pricing"))
+import BetterEddies.Pricing.PricingSystem
+
+@if(ModuleExists("BetterEddies.Pricing"))
 import BetterEddies.Config.MBESettings
 
 @if(ModuleExists("BetterEddies.Pricing"))
-public func ChromeBallisticsVendorPrice(itemID: ItemID, quality: String, price: Int32) -> Int32 {
+public func ChromeBallisticsVendorPrice(vendorObject: wref<GameObject>, itemID: ItemID, quality: String, price: Int32) -> Int32 {
+  let resolved: Int32 = price;
   if MBESettings.EnablePriceAuthority() {
-    let rank: Int32 = ItemPriceAuthority.QualityRankFromString(quality);
-    let resolved: Int32 = ItemPriceAuthority.PricedValue(itemID, rank, ItemPriceAuthority.AvgTypeMult(), ItemPriceAuthority.AvgEvoMult());
-    if resolved > 0 {
-      return resolved;
+    let mbePrice: Int32;
+    if TweakDBInterface.GetBool(ItemID.GetTDBID(itemID) + t".cbVendorAttachment", false) {
+      mbePrice = Cast<Int32>(Cast<Float>(price) * MBESettings.PriceClassMult_WeaponMod());
+    } else {
+      let rank: Int32 = ItemPriceAuthority.QualityRankFromString(quality);
+      mbePrice = ItemPriceAuthority.PricedValue(itemID, rank, ItemPriceAuthority.AvgTypeMult(), ItemPriceAuthority.AvgEvoMult());
+    };
+    if mbePrice > 0 {
+      resolved = mbePrice;
     };
   };
-  return price;
+  if IsDefined(vendorObject) {
+    let pricing: ref<PricingSystem> = PricingSystem.GetInstance(vendorObject.GetGame());
+    if IsDefined(pricing) {
+      return pricing.ModulateBuy(resolved, vendorObject);
+    };
+  };
+  return resolved;
 }
 
 @if(!ModuleExists("BetterEddies.Pricing"))
-public func ChromeBallisticsVendorPrice(itemID: ItemID, quality: String, price: Int32) -> Int32 {
+public func ChromeBallisticsVendorPrice(vendorObject: wref<GameObject>, itemID: ItemID, quality: String, price: Int32) -> Int32 {
   return price;
 }
 
@@ -31,5 +46,5 @@ public final static func GetBuyPrice(vendorObject: wref<GameObject>, itemID: Ite
   if price < 0 {
     return basePrice;
   };
-  return ChromeBallisticsVendorPrice(itemID, TweakDBInterface.GetString(recordID + t".cbAtelierQuality", ""), price);
+  return ChromeBallisticsVendorPrice(vendorObject, itemID, TweakDBInterface.GetString(recordID + t".cbAtelierQuality", ""), price);
 }
