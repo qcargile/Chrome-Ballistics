@@ -1,0 +1,864 @@
+Items.Arasaka_Blade.quality: t"Quality.Common"
+Items.Arasaka_Blade.cbAtelierPrice: 20000
+Items.Arasaka_Blade.cbAtelierQuality: "Common"
+Items.Arasaka_Blade.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.ArasakaBlade_Crafting_Recipe_Common.quality: t"Quality.Common"
+Items.ArasakaBlade_Crafting_Recipe_Common.cbAtelierPrice: 20000
+Items.ArasakaBlade_Crafting_Recipe_Common.cbAtelierQuality: "Common"
+Items.ArasakaBlade_Crafting_Recipe_Common.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.ArasakaBlade_Recipe_Common.cbAtelierPrice: 2000
+Items.ArasakaBlade_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.ArasakaBlade_Recipe_Common.displayName: l"arasakablade_name"
+
+Items.ArasakaBlade_Recipe_Common.tags: [ n"Recipe", n"SkipActivityLogOnRemove", n"HideInBackpackUI", n"Common" ]
+
+Items.CBVendor_Arasaka_Blade:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Arasaka_Blade"
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CBVendor_ArasakaBlade_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: t"Items.ArasakaBlade_Recipe_Common"
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Kindjal.quality: t"Quality.Common"
+Items.Kindjal.cbAtelierPrice: 20000
+Items.Kindjal.cbAtelierQuality: "Common"
+Items.Kindjal.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Kindjal_Crafting_Recipe_Common.quality: t"Quality.Common"
+Items.Kindjal_Crafting_Recipe_Common.cbAtelierPrice: 20000
+Items.Kindjal_Crafting_Recipe_Common.cbAtelierQuality: "Common"
+Items.Kindjal_Crafting_Recipe_Common.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Kindjal_Recipe_Common.cbAtelierPrice: 2000
+Items.Kindjal_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.Kindjal_Recipe_Common.displayName: l"kindjal_name"
+
+Items.Kindjal_Recipe_Common.tags: [ n"Recipe", n"SkipActivityLogOnRemove", n"HideInBackpackUI", n"Common" ]
+
+Items.CBVendor_Kindjal:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Kindjal"
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CBVendor_Kindjal_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Kindjal_Recipe_Common"
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Katana_Sakai.quality: t"Quality.Common"
+Items.Katana_Sakai.cbAtelierPrice: 20000
+Items.Katana_Sakai.cbAtelierQuality: "Common"
+Items.Katana_Sakai.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Sakai_Crafting_Recipe_Common.quality: t"Quality.Common"
+Items.Sakai_Crafting_Recipe_Common.cbAtelierPrice: 20000
+Items.Sakai_Crafting_Recipe_Common.cbAtelierQuality: "Common"
+Items.Sakai_Crafting_Recipe_Common.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Sakai_Recipe_Common.cbAtelierPrice: 2000
+Items.Sakai_Recipe_Common.cbAtelierQuality: "Common"
+
+Items.Sakai_Recipe_Common.displayName: l"katana_sakai_name"
+
+Items.Sakai_Recipe_Common.tags: [ n"Recipe", n"SkipActivityLogOnRemove", n"HideInBackpackUI", n"Common" ]
+
+Items.CBVendor_Katana_Sakai:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Katana_Sakai"
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.CBVendor_Sakai_Recipe_Common:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Sakai_Recipe_Common"
+  forceQuality: Common
+  quantity:
+    - Vendors.Always_Present
+
+Items.Black_Noir_Sword.quality: t"Quality.Uncommon"
+Items.Black_Noir_Sword.cbAtelierPrice: 60000
+Items.Black_Noir_Sword.cbAtelierQuality: "Uncommon"
+Items.Black_Noir_Sword.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.BlackNoirSword_Crafting_Recipe_Uncommon.quality: t"Quality.Uncommon"
+Items.BlackNoirSword_Crafting_Recipe_Uncommon.cbAtelierPrice: 60000
+Items.BlackNoirSword_Crafting_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+Items.BlackNoirSword_Crafting_Recipe_Uncommon.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.BlackNoirSword_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.BlackNoirSword_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.BlackNoirSword_Recipe_Common.displayName: l"blacknoir_name"
+
+Items.BlackNoirSword_Recipe_Common.tags: [ n"Recipe", n"SkipActivityLogOnRemove", n"HideInBackpackUI", n"Common" ]
+
+Items.CBVendor_Black_Noir_Sword:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Black_Noir_Sword"
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CBVendor_BlackNoirSword_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: t"Items.BlackNoirSword_Recipe_Uncommon"
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Katana_Samurai.quality: t"Quality.Uncommon"
+Items.Katana_Samurai.cbAtelierPrice: 60000
+Items.Katana_Samurai.cbAtelierQuality: "Uncommon"
+Items.Katana_Samurai.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Samurai_Crafting_Recipe_Uncommon.quality: t"Quality.Uncommon"
+Items.Samurai_Crafting_Recipe_Uncommon.cbAtelierPrice: 60000
+Items.Samurai_Crafting_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+Items.Samurai_Crafting_Recipe_Uncommon.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.SamuraiKatana_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.SamuraiKatana_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.SamuraiKatana_Recipe_Common.displayName: l"katana_samurai_name"
+
+Items.SamuraiKatana_Recipe_Common.tags: [ n"Recipe", n"SkipActivityLogOnRemove", n"HideInBackpackUI", n"Common" ]
+
+Items.CBVendor_Katana_Samurai:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Katana_Samurai"
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CBVendor_SamuraiKatana_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: t"Items.SamuraiKatana_Recipe_Uncommon"
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Katana_Synthwave.quality: t"Quality.Uncommon"
+Items.Katana_Synthwave.cbAtelierPrice: 60000
+Items.Katana_Synthwave.cbAtelierQuality: "Uncommon"
+Items.Katana_Synthwave.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Synthwave_Crafting_Recipe_Uncommon.quality: t"Quality.Uncommon"
+Items.Synthwave_Crafting_Recipe_Uncommon.cbAtelierPrice: 60000
+Items.Synthwave_Crafting_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+Items.Synthwave_Crafting_Recipe_Uncommon.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Synthwave_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.Synthwave_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.Synthwave_Recipe_Common.displayName: l"katana_synthwave_name"
+
+Items.Synthwave_Recipe_Common.tags: [ n"Recipe", n"SkipActivityLogOnRemove", n"HideInBackpackUI", n"Common" ]
+
+Items.CBVendor_Katana_Synthwave:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Katana_Synthwave"
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CBVendor_Synthwave_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Synthwave_Recipe_Uncommon"
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Katana_BlackMortal_Blade.quality: t"Quality.Uncommon"
+Items.Katana_BlackMortal_Blade.cbAtelierPrice: 60000
+Items.Katana_BlackMortal_Blade.cbAtelierQuality: "Uncommon"
+Items.Katana_BlackMortal_Blade.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.BlackMortal_Crafting_Recipe_Uncommon.quality: t"Quality.Uncommon"
+Items.BlackMortal_Crafting_Recipe_Uncommon.cbAtelierPrice: 60000
+Items.BlackMortal_Crafting_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+Items.BlackMortal_Crafting_Recipe_Uncommon.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.BlackMortal_Recipe_Uncommon.cbAtelierPrice: 4000
+Items.BlackMortal_Recipe_Uncommon.cbAtelierQuality: "Uncommon"
+
+Items.BlackMortal_Recipe_Common.displayName: l"katana_blackmortal_name"
+
+Items.BlackMortal_Recipe_Common.tags: [ n"Recipe", n"SkipActivityLogOnRemove", n"HideInBackpackUI", n"Common" ]
+
+Items.CBVendor_Katana_BlackMortal_Blade:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Katana_BlackMortal_Blade"
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.CBVendor_BlackMortal_Recipe_Uncommon:
+  $type: gamedataVendorItem_Record
+  item: t"Items.BlackMortal_Recipe_Uncommon"
+  forceQuality: Uncommon
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel8
+
+Items.Katana_Nagakiba.quality: t"Quality.Rare"
+Items.Katana_Nagakiba.cbAtelierPrice: 125000
+Items.Katana_Nagakiba.cbAtelierQuality: "Rare"
+Items.Katana_Nagakiba.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Nagakiba_Crafting_Recipe_Rare.quality: t"Quality.Rare"
+Items.Nagakiba_Crafting_Recipe_Rare.cbAtelierPrice: 125000
+Items.Nagakiba_Crafting_Recipe_Rare.cbAtelierQuality: "Rare"
+Items.Nagakiba_Crafting_Recipe_Rare.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Nagakiba_Recipe_Rare.cbAtelierPrice: 8000
+Items.Nagakiba_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.Nagakiba_Recipe_Common.displayName: l"katana_nagakiba_name"
+
+Items.Nagakiba_Recipe_Common.tags: [ n"Recipe", n"SkipActivityLogOnRemove", n"HideInBackpackUI", n"Common" ]
+
+Items.CBVendor_Katana_Nagakiba:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Katana_Nagakiba"
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CBVendor_Nagakiba_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Nagakiba_Recipe_Rare"
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Katana_Tanjiro.quality: t"Quality.Rare"
+Items.Katana_Tanjiro.cbAtelierPrice: 125000
+Items.Katana_Tanjiro.cbAtelierQuality: "Rare"
+Items.Katana_Tanjiro.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Tanjiro_Crafting_Recipe_Rare.quality: t"Quality.Rare"
+Items.Tanjiro_Crafting_Recipe_Rare.cbAtelierPrice: 125000
+Items.Tanjiro_Crafting_Recipe_Rare.cbAtelierQuality: "Rare"
+Items.Tanjiro_Crafting_Recipe_Rare.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Tanjiro_Recipe_Rare.cbAtelierPrice: 8000
+Items.Tanjiro_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.Tanjiro_Recipe_Common.displayName: l"katana_tanjiro_name"
+
+Items.Tanjiro_Recipe_Common.tags: [ n"Recipe", n"SkipActivityLogOnRemove", n"HideInBackpackUI", n"Common" ]
+
+Items.CBVendor_Katana_Tanjiro:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Katana_Tanjiro"
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CBVendor_Tanjiro_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Tanjiro_Recipe_Rare"
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Katana_Cyberfang.quality: t"Quality.Rare"
+Items.Katana_Cyberfang.cbAtelierPrice: 125000
+Items.Katana_Cyberfang.cbAtelierQuality: "Rare"
+Items.Katana_Cyberfang.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Cyberfang_Crafting_Recipe_Rare.quality: t"Quality.Rare"
+Items.Cyberfang_Crafting_Recipe_Rare.cbAtelierPrice: 125000
+Items.Cyberfang_Crafting_Recipe_Rare.cbAtelierQuality: "Rare"
+Items.Cyberfang_Crafting_Recipe_Rare.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Katana_Cyberfang.statModifiers:
+  - !remove t"Items.katana_cyberfangstats_charge"
+Items.Cyberfang_Crafting_Recipe_Rare.statModifiers:
+  - !remove t"Items.katana_cyberfangstats_charge"
+
+Items.Cyberfang_Recipe_Rare.cbAtelierPrice: 8000
+Items.Cyberfang_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.Cyberfang_Recipe_Common.displayName: l"katana_cyberfang_name"
+
+Items.Cyberfang_Recipe_Common.tags: [ n"Recipe", n"SkipActivityLogOnRemove", n"HideInBackpackUI", n"Common" ]
+
+Items.CBVendor_Katana_Cyberfang:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Katana_Cyberfang"
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CBVendor_Cyberfang_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Cyberfang_Recipe_Rare"
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Katana_DazzlingBlade.quality: t"Quality.Rare"
+Items.Katana_DazzlingBlade.cbAtelierPrice: 125000
+Items.Katana_DazzlingBlade.cbAtelierQuality: "Rare"
+Items.Katana_DazzlingBlade.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.DazzlingBlade_Crafting_Recipe_Rare.quality: t"Quality.Rare"
+Items.DazzlingBlade_Crafting_Recipe_Rare.cbAtelierPrice: 125000
+Items.DazzlingBlade_Crafting_Recipe_Rare.cbAtelierQuality: "Rare"
+Items.DazzlingBlade_Crafting_Recipe_Rare.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.DazzlingBlade_Recipe_Rare.cbAtelierPrice: 8000
+Items.DazzlingBlade_Recipe_Rare.cbAtelierQuality: "Rare"
+
+Items.DazzlingBlade_Recipe_Common.displayName: l"katana_dazzling_name"
+
+Items.DazzlingBlade_Recipe_Common.tags: [ n"Recipe", n"SkipActivityLogOnRemove", n"HideInBackpackUI", n"Common" ]
+
+Items.DazzlingBlade_Recipe_Uncommon.displayName: l"katana_dazzling_name"
+
+Items.DazzlingBlade_Recipe_Epic.displayName: l"katana_dazzling_name"
+
+Items.DazzlingBlade_Recipe_Legendary.displayName: l"katana_dazzling_name"
+
+Items.CBVendor_Katana_DazzlingBlade:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Katana_DazzlingBlade"
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.CBVendor_DazzlingBlade_Recipe_Rare:
+  $type: gamedataVendorItem_Record
+  item: t"Items.DazzlingBlade_Recipe_Rare"
+  forceQuality: Rare
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel18
+
+Items.Katana_AzureSlash.quality: t"Quality.Epic"
+Items.Katana_AzureSlash.cbAtelierPrice: 250000
+Items.Katana_AzureSlash.cbAtelierQuality: "Epic"
+Items.Katana_AzureSlash.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.AzureSlash_Crafting_Recipe_Epic.quality: t"Quality.Epic"
+Items.AzureSlash_Crafting_Recipe_Epic.cbAtelierPrice: 250000
+Items.AzureSlash_Crafting_Recipe_Epic.cbAtelierQuality: "Epic"
+Items.AzureSlash_Crafting_Recipe_Epic.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.AzureSlash_Recipe_Epic.cbAtelierPrice: 16000
+Items.AzureSlash_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.AzureSlash_Recipe_Common.displayName: l"katana_azure_name"
+
+Items.AzureSlash_Recipe_Common.tags: [ n"Recipe", n"SkipActivityLogOnRemove", n"HideInBackpackUI", n"Common" ]
+
+Items.CBVendor_Katana_AzureSlash:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Katana_AzureSlash"
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CBVendor_AzureSlash_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: t"Items.AzureSlash_Recipe_Epic"
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Katana_Susurrus.quality: t"Quality.Epic"
+Items.Katana_Susurrus.cbAtelierPrice: 250000
+Items.Katana_Susurrus.cbAtelierQuality: "Epic"
+Items.Katana_Susurrus.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Susurrus_Crafting_Recipe_Epic.quality: t"Quality.Epic"
+Items.Susurrus_Crafting_Recipe_Epic.cbAtelierPrice: 250000
+Items.Susurrus_Crafting_Recipe_Epic.cbAtelierQuality: "Epic"
+Items.Susurrus_Crafting_Recipe_Epic.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Susurrus_Recipe_Epic.cbAtelierPrice: 16000
+Items.Susurrus_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.Susurrus_Recipe_Common.displayName: l"katana_susurrus_name"
+
+Items.Susurrus_Recipe_Common.tags: [ n"Recipe", n"SkipActivityLogOnRemove", n"HideInBackpackUI", n"Common" ]
+
+Items.CBVendor_Katana_Susurrus:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Katana_Susurrus"
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CBVendor_Susurrus_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Susurrus_Recipe_Epic"
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Katana_MortalBlade.quality: t"Quality.Epic"
+Items.Katana_MortalBlade.cbAtelierPrice: 250000
+Items.Katana_MortalBlade.cbAtelierQuality: "Epic"
+Items.Katana_MortalBlade.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.MortalBlade_Crafting_Recipe_Epic.quality: t"Quality.Epic"
+Items.MortalBlade_Crafting_Recipe_Epic.cbAtelierPrice: 250000
+Items.MortalBlade_Crafting_Recipe_Epic.cbAtelierQuality: "Epic"
+Items.MortalBlade_Crafting_Recipe_Epic.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.MortalBlade_Recipe_Epic.cbAtelierPrice: 16000
+Items.MortalBlade_Recipe_Epic.cbAtelierQuality: "Epic"
+
+Items.MortalBlade_Recipe_Common.displayName: l"katana_mortal_name"
+
+Items.MortalBlade_Recipe_Common.tags: [ n"Recipe", n"SkipActivityLogOnRemove", n"HideInBackpackUI", n"Common" ]
+
+Items.CBVendor_Katana_MortalBlade:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Katana_MortalBlade"
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.CBVendor_MortalBlade_Recipe_Epic:
+  $type: gamedataVendorItem_Record
+  item: t"Items.MortalBlade_Recipe_Epic"
+  forceQuality: Epic
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel28
+
+Items.Katana_GoldenRoses.quality: t"Quality.Legendary"
+Items.Katana_GoldenRoses.cbAtelierPrice: 400000
+Items.Katana_GoldenRoses.cbAtelierQuality: "Legendary"
+Items.Katana_GoldenRoses.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.GoldenRoses_Crafting_Recipe_Legendary.quality: t"Quality.Legendary"
+Items.GoldenRoses_Crafting_Recipe_Legendary.cbAtelierPrice: 400000
+Items.GoldenRoses_Crafting_Recipe_Legendary.cbAtelierQuality: "Legendary"
+Items.GoldenRoses_Crafting_Recipe_Legendary.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.GoldenRoses_Recipe_Legendary.cbAtelierPrice: 32000
+Items.GoldenRoses_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.GoldenRoses_Recipe_Common.displayName: l"katana_goldenroses_name"
+
+Items.GoldenRoses_Recipe_Common.tags: [ n"Recipe", n"SkipActivityLogOnRemove", n"HideInBackpackUI", n"Common" ]
+
+Items.GoldenRoses_Recipe_Uncommon.displayName: l"katana_goldenroses_name"
+
+Items.GoldenRoses_Recipe_Epic.displayName: l"katana_goldenroses_name"
+
+Items.GoldenRoses_Recipe_Legendary.displayName: l"katana_goldenroses_name"
+
+Items.CBVendor_Katana_GoldenRoses:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Katana_GoldenRoses"
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CBVendor_GoldenRoses_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: t"Items.GoldenRoses_Recipe_Legendary"
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.Sword_of_Night.quality: t"Quality.Legendary"
+Items.Sword_of_Night.cbAtelierPrice: 400000
+Items.Sword_of_Night.cbAtelierQuality: "Legendary"
+Items.Sword_of_Night.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.SwordOfNight_Crafting_Recipe_Legendary.quality: t"Quality.Legendary"
+Items.SwordOfNight_Crafting_Recipe_Legendary.cbAtelierPrice: 400000
+Items.SwordOfNight_Crafting_Recipe_Legendary.cbAtelierQuality: "Legendary"
+Items.SwordOfNight_Crafting_Recipe_Legendary.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.SwordOfNight_Recipe_Legendary.cbAtelierPrice: 32000
+Items.SwordOfNight_Recipe_Legendary.cbAtelierQuality: "Legendary"
+
+Items.SwordOfNight_Recipe_Common.displayName: l"swordofnight_name"
+
+Items.SwordOfNight_Recipe_Common.tags: [ n"Recipe", n"SkipActivityLogOnRemove", n"HideInBackpackUI", n"Common" ]
+
+Items.CBVendor_Sword_of_Night:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Sword_of_Night"
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CBVendor_SwordOfNight_Recipe_Legendary:
+  $type: gamedataVendorItem_Record
+  item: t"Items.SwordOfNight_Recipe_Legendary"
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Vendors.bls_ina_se5_melee_01.itemStock:
+  - !remove t"Items.ArasakaBlade_recipe_Rare_stock"
+  - !remove t"Items.ArasakaBlade_recipe_Epic_stock"
+  - !remove t"Items.BlackNoirSword_recipe_Rare_stock"
+  - !remove t"Items.BlackNoirSword_recipe_Epic_stock"
+  - !remove t"Items.AzureSlash_recipe_Rare_stock"
+  - !remove t"Items.AzureSlash_recipe_Epic_stock"
+  - !remove t"Items.BlackMortal_recipe_Rare_stock"
+  - !remove t"Items.BlackMortal_recipe_Epic_stock"
+  - !remove t"Items.Cyberfang_recipe_Rare_stock"
+  - !remove t"Items.Cyberfang_recipe_Epic_stock"
+  - !remove t"Items.DazzlingBlade_recipe_Rare_stock"
+  - !remove t"Items.DazzlingBlade_recipe_Epic_stock"
+  - !remove t"Items.GoldenRoses_recipe_Rare_stock"
+  - !remove t"Items.GoldenRoses_recipe_Epic_stock"
+  - !remove t"Items.MortalBlade_recipe_Rare_stock"
+  - !remove t"Items.MortalBlade_recipe_Epic_stock"
+  - !remove t"Items.Nagakiba_recipe_Rare_stock"
+  - !remove t"Items.Nagakiba_recipe_Epic_stock"
+  - !remove t"Items.Sakai_recipe_Rare_stock"
+  - !remove t"Items.Sakai_recipe_Epic_stock"
+  - !remove t"Items.Samurai_recipe_Rare_stock"
+  - !remove t"Items.Samurai_recipe_Epic_stock"
+  - !remove t"Items.Susurrus_recipe_Rare_stock"
+  - !remove t"Items.Susurrus_recipe_Epic_stock"
+  - !remove t"Items.Synthwave_recipe_Rare_stock"
+  - !remove t"Items.Synthwave_recipe_Epic_stock"
+  - !remove t"Items.Tanjiro_recipe_Rare_stock"
+  - !remove t"Items.Tanjiro_recipe_Epic_stock"
+  - !remove t"Items.Kindjal_recipe_Rare_stock"
+  - !remove t"Items.Kindjal_recipe_Epic_stock"
+  - !remove t"Items.SwordOfNight_recipe_Rare_stock"
+  - !remove t"Items.SwordOfNight_recipe_Epic_stock"
+  - !append-once t"Items.CBVendor_Katana_MortalBlade"
+  - !append-once t"Items.CBVendor_MortalBlade_Recipe_Epic"
+  - !append-once t"Items.CBVendor_Sword_of_Night"
+  - !append-once t"Items.CBVendor_SwordOfNight_Recipe_Legendary"
+
+Vendors.pac_cvi_melee_01.itemStock:
+  - !append-once t"Items.CBVendor_Katana_Synthwave"
+  - !append-once t"Items.CBVendor_Synthwave_Recipe_Uncommon"
+  - !append-once t"Items.CBVendor_Katana_Susurrus"
+  - !append-once t"Items.CBVendor_Susurrus_Recipe_Epic"
+
+Vendors.pac_wwd_melee_01.itemStock:
+  - !remove t"Items.ArasakaBlade_recipe_iconic_stock"
+  - !remove t"Items.BlackNoirSword_recipe_iconic_stock"
+  - !remove t"Items.KatanaAzureSlash_recipe_stock_iconic"
+  - !remove t"Items.KatanaBlackMortal_recipe_iconic_stock"
+  - !remove t"Items.Cyberfang_Iconic_recipe_Legendary_stock"
+  - !remove t"Items.KatanaDazzlingBlade_recipe_iconic_stock"
+  - !remove t"Items.KatanaGoldenRoses_recipe_iconic_stock"
+  - !remove t"Items.MortalBlade_Iconic_recipe_iconic_stock"
+  - !remove t"Items.KatanaNagakiba_recipe_iconic_stock"
+  - !remove t"Items.KatanaSakai_recipe_iconic_stock"
+  - !remove t"Items.KatanaSamurai_recipe_iconic_stock"
+  - !remove t"Items.KatanaSusurrus_recipe_iconic_stock"
+  - !remove t"Items.KatanaSynthwave_recipe_iconic_stock"
+  - !remove t"Items.Tanjiro_Iconic_recipe_Legendary_stock"
+  - !remove t"Items.Kindjal_recipe_iconic_stock"
+  - !remove t"Items.SwordOfNight_recipe_iconic_stock"
+  - !append-once t"Items.CBVendor_Katana_DazzlingBlade"
+  - !append-once t"Items.CBVendor_DazzlingBlade_Recipe_Rare"
+  - !append-once t"Items.CBVendor_Katana_GoldenRoses"
+  - !append-once t"Items.CBVendor_GoldenRoses_Recipe_Legendary"
+
+Vendors.std_arr_melee_01.itemStock:
+  - !append-once t"Items.CBVendor_Katana_BlackMortal_Blade"
+  - !append-once t"Items.CBVendor_BlackMortal_Recipe_Uncommon"
+  - !append-once t"Items.CBVendor_Katana_Cyberfang"
+  - !append-once t"Items.CBVendor_Cyberfang_Recipe_Rare"
+
+Vendors.wat_lch_melee_01.itemStock:
+  - !remove t"Items.arasakablade_stock"
+  - !remove t"Items.ArasakaBlade_recipe_Uncommon_stock"
+  - !remove t"Items.ArasakaBlade_recipe_Common_stock"
+  - !remove t"Items.ArasakaBlade_recipe_Legendary_stock"
+  - !remove t"Items.blacknoir_stock"
+  - !remove t"Items.BlackNoirSword_recipe_Uncommon_stock"
+  - !remove t"Items.BlackNoirSword_recipe_Common_stock"
+  - !remove t"Items.BlackNoirSword_recipe_Legendary_stock"
+  - !remove t"Items.katana_azure_stock"
+  - !remove t"Items.AzureSlash_recipe_Uncommon_stock"
+  - !remove t"Items.AzureSlash_recipe_Common_stock"
+  - !remove t"Items.AzureSlash_recipe_Legendary_stock"
+  - !remove t"Items.katana_blackmortal_stock"
+  - !remove t"Items.BlackMortal_recipe_Uncommon_stock"
+  - !remove t"Items.BlackMortal_recipe_Common_stock"
+  - !remove t"Items.BlackMortal_recipe_Legendary_stock"
+  - !remove t"Items.katana_cyberfang_stock"
+  - !remove t"Items.Cyberfang_recipe_Uncommon_stock"
+  - !remove t"Items.Cyberfang_recipe_Common_stock"
+  - !remove t"Items.Cyberfang_recipe_Legendary_stock"
+  - !remove t"Items.katana_dazzling_stock"
+  - !remove t"Items.DazzlingBlade_recipe_Uncommon_stock"
+  - !remove t"Items.DazzlingBlade_recipe_Common_stock"
+  - !remove t"Items.DazzlingBlade_recipe_Legendary_stock"
+  - !remove t"Items.katana_goldenroses_stock"
+  - !remove t"Items.GoldenRoses_recipe_Uncommon_stock"
+  - !remove t"Items.GoldenRoses_recipe_Common_stock"
+  - !remove t"Items.GoldenRoses_recipe_Legendary_stock"
+  - !remove t"Items.katana_mortal_stock"
+  - !remove t"Items.MortalBlade_recipe_Uncommon_stock"
+  - !remove t"Items.MortalBlade_recipe_Common_stock"
+  - !remove t"Items.MortalBlade_recipe_Legendary_stock"
+  - !remove t"Items.katana_nagakiba_stock"
+  - !remove t"Items.Nagakiba_recipe_Uncommon_stock"
+  - !remove t"Items.Nagakiba_recipe_Common_stock"
+  - !remove t"Items.Nagakiba_recipe_Legendary_stock"
+  - !remove t"Items.katana_sakai_stock"
+  - !remove t"Items.Sakai_recipe_Uncommon_stock"
+  - !remove t"Items.Sakai_recipe_Common_stock"
+  - !remove t"Items.Sakai_recipe_Legendary_stock"
+  - !remove t"Items.katana_samurai_stock"
+  - !remove t"Items.Samurai_recipe_Uncommon_stock"
+  - !remove t"Items.Samurai_recipe_Common_stock"
+  - !remove t"Items.Samurai_recipe_Legendary_stock"
+  - !remove t"Items.katana_susurrus_stock"
+  - !remove t"Items.Susurrus_recipe_Uncommon_stock"
+  - !remove t"Items.Susurrus_recipe_Common_stock"
+  - !remove t"Items.Susurrus_recipe_Legendary_stock"
+  - !remove t"Items.katana_synthwave_stock"
+  - !remove t"Items.Synthwave_recipe_Uncommon_stock"
+  - !remove t"Items.Synthwave_recipe_Common_stock"
+  - !remove t"Items.Synthwave_recipe_Legendary_stock"
+  - !remove t"Items.katana_tanjiro_stock"
+  - !remove t"Items.Tanjiro_recipe_Uncommon_stock"
+  - !remove t"Items.Tanjiro_recipe_Common_stock"
+  - !remove t"Items.Tanjiro_recipe_Legendary_stock"
+  - !remove t"Items.kindjal_stock"
+  - !remove t"Items.Kindjal_recipe_Uncommon_stock"
+  - !remove t"Items.Kindjal_recipe_Common_stock"
+  - !remove t"Items.Kindjal_recipe_Legendary_stock"
+  - !remove t"Items.kindjal_stock"
+  - !remove t"Items.SwordOfNight_recipe_Uncommon_stock"
+  - !remove t"Items.SwordOfNight_recipe_Common_stock"
+  - !remove t"Items.SwordOfNight_recipe_Legendary_stock"
+  - !append-once t"Items.CBVendor_Arasaka_Blade"
+  - !append-once t"Items.CBVendor_ArasakaBlade_Recipe_Common"
+  - !append-once t"Items.CBVendor_Kindjal"
+  - !append-once t"Items.CBVendor_Kindjal_Recipe_Common"
+  - !append-once t"Items.CBVendor_Katana_Sakai"
+  - !append-once t"Items.CBVendor_Sakai_Recipe_Common"
+  - !append-once t"Items.CBVendor_Katana_Tanjiro"
+  - !append-once t"Items.CBVendor_Tanjiro_Recipe_Rare"
+
+Vendors.wbr_jpn_melee_01.itemStock:
+  - !remove t"Items.arasakablade_stock_iconic"
+  - !remove t"Items.blacknoir_stock_iconic"
+  - !remove t"Items.katana_azure_stock_iconic"
+  - !remove t"Items.katana_blackmortal_stock_iconic"
+  - !remove t"Items.katana_cyberfang_stock_iconic"
+  - !remove t"Items.katana_dazzling_stock_iconic"
+  - !remove t"Items.katana_goldenroses_stock_iconic"
+  - !remove t"Items.katana_mortal_stock_iconic"
+  - !remove t"Items.katana_nagakiba_stock_iconic"
+  - !remove t"Items.katana_sakai_stock_iconic"
+  - !remove t"Items.katana_samurai_stock_iconic"
+  - !remove t"Items.katana_susurrus_stock_iconic"
+  - !remove t"Items.katana_synthwave_stock_iconic"
+  - !remove t"Items.katana_tanjiro_stock_iconic"
+  - !remove t"Items.kindjal_stock_iconic"
+  - !remove t"Items.swordofnight_stock_iconic"
+  - !append-once t"Items.CBVendor_Black_Noir_Sword"
+  - !append-once t"Items.CBVendor_BlackNoirSword_Recipe_Uncommon"
+  - !append-once t"Items.CBVendor_Katana_Samurai"
+  - !append-once t"Items.CBVendor_SamuraiKatana_Recipe_Uncommon"
+  - !append-once t"Items.CBVendor_Katana_Nagakiba"
+  - !append-once t"Items.CBVendor_Nagakiba_Recipe_Rare"
+  - !append-once t"Items.CBVendor_Katana_AzureSlash"
+  - !append-once t"Items.CBVendor_AzureSlash_Recipe_Epic"
