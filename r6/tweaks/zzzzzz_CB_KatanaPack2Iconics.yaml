@@ -1,0 +1,244 @@
+Items.Katana_Samurai_Iconic.cbAtelierPrice: 1000000
+Items.Katana_Samurai_Iconic.cbAtelierQuality: "Legendary"
+Items.Katana_Samurai_Iconic.cbFixedVendorPrice: true
+Items.Katana_Samurai_Iconic.quality: t"Quality.Legendary"
+
+Items.KatanaSamurai_Crafting_Recipe_Iconic.cbAtelierPrice: 1000000
+Items.KatanaSamurai_Crafting_Recipe_Iconic.cbAtelierQuality: "Legendary"
+Items.KatanaSamurai_Crafting_Recipe_Iconic.cbFixedVendorPrice: true
+Items.KatanaSamurai_Crafting_Recipe_Iconic.quality: t"Quality.Legendary"
+
+Items.KatanaSamurai_Recipe_Iconic.cbAtelierPrice: 1000000
+Items.KatanaSamurai_Recipe_Iconic.cbAtelierQuality: "Legendary"
+Items.KatanaSamurai_Recipe_Iconic.cbFixedVendorPrice: true
+Items.KatanaSamurai_Recipe_Iconic.quality: t"Quality.Legendary"
+
+Items.Katana_Samurai_Iconic.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.KatanaSamurai_Crafting_Recipe_Iconic.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.CBVendor_Katana_Samurai_Iconic:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Katana_Samurai_Iconic"
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CBVendor_KatanaSamurai_Recipe_Iconic:
+  $type: gamedataVendorItem_Record
+  item: t"Items.KatanaSamurai_Recipe_Iconic"
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Vendors.wbr_jpn_melee_01.itemStock:
+  - !append-once t"Items.CBVendor_Katana_Samurai_Iconic"
+  - !append-once t"Items.CBVendor_KatanaSamurai_Recipe_Iconic"
+
+Items.Katana_Cyberfang_Iconic.cbAtelierPrice: 1250000
+Items.Katana_Cyberfang_Iconic.cbAtelierQuality: "Legendary"
+Items.Katana_Cyberfang_Iconic.cbFixedVendorPrice: true
+Items.Katana_Cyberfang_Iconic.quality: t"Quality.Legendary"
+
+Items.Cyberfang_Iconic_Crafting_Recipe_Iconic.cbAtelierPrice: 1250000
+Items.Cyberfang_Iconic_Crafting_Recipe_Iconic.cbAtelierQuality: "Legendary"
+Items.Cyberfang_Iconic_Crafting_Recipe_Iconic.cbFixedVendorPrice: true
+Items.Cyberfang_Iconic_Crafting_Recipe_Iconic.quality: t"Quality.Legendary"
+
+Items.Cyberfang_Iconic_Recipe_Iconic.cbAtelierPrice: 1250000
+Items.Cyberfang_Iconic_Recipe_Iconic.cbAtelierQuality: "Legendary"
+Items.Cyberfang_Iconic_Recipe_Iconic.cbFixedVendorPrice: true
+Items.Cyberfang_Iconic_Recipe_Iconic.quality: t"Quality.Legendary"
+
+Items.Katana_Cyberfang_Iconic.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Cyberfang_Iconic_Crafting_Recipe_Iconic.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.CBVendor_Katana_Cyberfang_Iconic:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Katana_Cyberfang_Iconic"
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CBVendor_Cyberfang_Iconic_Recipe_Iconic:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Cyberfang_Iconic_Recipe_Iconic"
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Vendors.std_arr_melee_01.itemStock:
+  - !append-once t"Items.CBVendor_Katana_Cyberfang_Iconic"
+  - !append-once t"Items.CBVendor_Cyberfang_Iconic_Recipe_Iconic"
+
+Items.Katana_MortalBlade_Iconic.cbAtelierPrice: 1500000
+Items.Katana_MortalBlade_Iconic.cbAtelierQuality: "Legendary"
+Items.Katana_MortalBlade_Iconic.cbFixedVendorPrice: true
+Items.Katana_MortalBlade_Iconic.quality: t"Quality.Legendary"
+
+Items.MortalBlade_Iconic_Crafting_Recipe_Iconic.cbAtelierPrice: 1500000
+Items.MortalBlade_Iconic_Crafting_Recipe_Iconic.cbAtelierQuality: "Legendary"
+Items.MortalBlade_Iconic_Crafting_Recipe_Iconic.cbFixedVendorPrice: true
+Items.MortalBlade_Iconic_Crafting_Recipe_Iconic.quality: t"Quality.Legendary"
+
+Items.MortalBlade_Recipe_Iconic.cbAtelierPrice: 1500000
+Items.MortalBlade_Recipe_Iconic.cbAtelierQuality: "Legendary"
+Items.MortalBlade_Recipe_Iconic.cbFixedVendorPrice: true
+Items.MortalBlade_Recipe_Iconic.quality: t"Quality.Legendary"
+
+Items.Katana_MortalBlade_Iconic.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.MortalBlade_Iconic_Crafting_Recipe_Iconic.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.CBVendor_Katana_MortalBlade_Iconic:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Katana_MortalBlade_Iconic"
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CBVendor_MortalBlade_Recipe_Iconic:
+  $type: gamedataVendorItem_Record
+  item: t"Items.MortalBlade_Recipe_Iconic"
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Vendors.bls_ina_se5_melee_01.itemStock:
+  - !append-once t"Items.CBVendor_Katana_MortalBlade_Iconic"
+  - !append-once t"Items.CBVendor_MortalBlade_Recipe_Iconic"
+
+Items.Katana_Tanjiro_Iconic.cbAtelierPrice: 1750000
+Items.Katana_Tanjiro_Iconic.cbAtelierQuality: "Legendary"
+Items.Katana_Tanjiro_Iconic.cbFixedVendorPrice: true
+Items.Katana_Tanjiro_Iconic.quality: t"Quality.Legendary"
+
+Items.Tanjiro_Iconic_Crafting_Recipe_Iconic.cbAtelierPrice: 1750000
+Items.Tanjiro_Iconic_Crafting_Recipe_Iconic.cbAtelierQuality: "Legendary"
+Items.Tanjiro_Iconic_Crafting_Recipe_Iconic.cbFixedVendorPrice: true
+Items.Tanjiro_Iconic_Crafting_Recipe_Iconic.quality: t"Quality.Legendary"
+
+Items.Tanjiro_Iconic_Recipe_Iconic.cbAtelierPrice: 1750000
+Items.Tanjiro_Iconic_Recipe_Iconic.cbAtelierQuality: "Legendary"
+Items.Tanjiro_Iconic_Recipe_Iconic.cbFixedVendorPrice: true
+Items.Tanjiro_Iconic_Recipe_Iconic.quality: t"Quality.Legendary"
+
+Items.Katana_Tanjiro_Iconic.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.Tanjiro_Iconic_Crafting_Recipe_Iconic.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.CBVendor_Katana_Tanjiro_Iconic:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Katana_Tanjiro_Iconic"
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CBVendor_Tanjiro_Iconic_Recipe_Iconic:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Tanjiro_Iconic_Recipe_Iconic"
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Vendors.pac_cvi_melee_01.itemStock:
+  - !append-once t"Items.CBVendor_Katana_Tanjiro_Iconic"
+  - !append-once t"Items.CBVendor_Tanjiro_Iconic_Recipe_Iconic"
+
+Items.Sword_of_Night_Iconic.cbAtelierPrice: 2000000
+Items.Sword_of_Night_Iconic.cbAtelierQuality: "Legendary"
+Items.Sword_of_Night_Iconic.cbFixedVendorPrice: true
+Items.Sword_of_Night_Iconic.quality: t"Quality.Legendary"
+
+Items.SwordOfNight_Crafting_Recipe_Iconic.cbAtelierPrice: 2000000
+Items.SwordOfNight_Crafting_Recipe_Iconic.cbAtelierQuality: "Legendary"
+Items.SwordOfNight_Crafting_Recipe_Iconic.cbFixedVendorPrice: true
+Items.SwordOfNight_Crafting_Recipe_Iconic.quality: t"Quality.Legendary"
+
+Items.SwordOfNight_Recipe_Iconic.cbAtelierPrice: 2000000
+Items.SwordOfNight_Recipe_Iconic.cbAtelierQuality: "Legendary"
+Items.SwordOfNight_Recipe_Iconic.cbFixedVendorPrice: true
+Items.SwordOfNight_Recipe_Iconic.quality: t"Quality.Legendary"
+
+Items.Sword_of_Night_Iconic.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.SwordOfNight_Crafting_Recipe_Iconic.statModifierGroups:
+  - !remove t"Items.IconicQualityRandomization"
+  - !remove t"Items.QualityRandomization"
+  - !remove t"Items.ItemPlusRandomizer_MaxQuality"
+  - !remove t"Items.ItemPlusRandomizer_Below_MaxQuality"
+
+Items.CBVendor_Sword_of_Night_Iconic:
+  $type: gamedataVendorItem_Record
+  item: t"Items.Sword_of_Night_Iconic"
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Items.CBVendor_SwordOfNight_Recipe_Iconic:
+  $type: gamedataVendorItem_Record
+  item: t"Items.SwordOfNight_Recipe_Iconic"
+  forceQuality: Legendary
+  quantity:
+    - Vendors.Always_Present
+  generationPrereqs:
+    - Prereqs.CBVendorLevel40
+
+Vendors.pac_wwd_melee_01.itemStock:
+  - !append-once t"Items.CBVendor_Sword_of_Night_Iconic"
+  - !append-once t"Items.CBVendor_SwordOfNight_Recipe_Iconic"

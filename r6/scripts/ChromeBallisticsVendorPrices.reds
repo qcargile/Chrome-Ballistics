@@ -46,5 +46,8 @@ public final static func GetBuyPrice(vendorObject: wref<GameObject>, itemID: Ite
   if price < 0 {
     return basePrice;
   };
+  if TweakDBInterface.GetBool(recordID + t".cbFixedVendorPrice", false) {
+    return price;
+  };
   return ChromeBallisticsVendorPrice(vendorObject, itemID, TweakDBInterface.GetString(recordID + t".cbAtelierQuality", ""), price);
 }
