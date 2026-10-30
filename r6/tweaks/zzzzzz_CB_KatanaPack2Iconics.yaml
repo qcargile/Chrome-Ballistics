@@ -62,6 +62,12 @@ Items.Cyberfang_Iconic_Recipe_Iconic.cbAtelierQuality: "Legendary"
 Items.Cyberfang_Iconic_Recipe_Iconic.cbFixedVendorPrice: true
 Items.Cyberfang_Iconic_Recipe_Iconic.quality: t"Quality.Legendary"
 
+Items.Katana_Cyberfang_Iconic.statModifiers:
+  - !remove t"Items.katana_cyberfangstats_iconic_charge"
+
+Items.Cyberfang_Iconic_Crafting_Recipe_Iconic.statModifiers:
+  - !remove t"Items.katana_cyberfangstats_iconic_charge"
+
 Items.Katana_Cyberfang_Iconic.statModifierGroups:
   - !remove t"Items.IconicQualityRandomization"
   - !remove t"Items.QualityRandomization"
